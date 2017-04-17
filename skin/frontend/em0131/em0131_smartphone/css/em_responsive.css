@@ -1,0 +1,6 @@
+@media (min-width: 768px) and (max-width: 991px){
+	.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des h1{
+		font-size:160%!important;
+	}
+	
+}

@@ -1,0 +1,23 @@
+/**
+ * EMThemes
+ *
+ * @license commercial software
+ * @copyright (c) 2012 Codespot Software JSC - EMThemes.com. (http://www.emthemes.com)
+ */
+.typo_general_page_bg_image img,
+.top_header_bg_image img ,
+.header_header_bg_image img ,
+.footer_footer_bg_image img,
+.body_body_bg_image img{ width:30px; height:30px; border:2px solid #ffffff }
+.typo_general_page_bg_image:hover img,
+.typo_general_page_bg_image.selected img,
+.header_top_header_bg_image:hover img,
+.header_top_header_bg_image.selected img,
+.header_header_bg_image:hover img,
+.header_header_bg_image.selected img,
+.footer_footer_bg_image:hover img,
+.footer_footer_bg_image.selected img,
+.body_body_bg_image:hover img,
+.body_body_bg_image.selected img{ border:2px solid #000000 }
+
+

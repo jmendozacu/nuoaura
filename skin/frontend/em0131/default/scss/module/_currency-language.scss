@@ -1,0 +1,115 @@
+/*==============Currency Language===============*/
+.em-wrapper-header .toolbar-switch{
+	.toolbar-title{ margin:0 -10px; padding:0 10px;
+		select{ margin:7px 10px; background:#fff; color:#a1a1a1}
+	}
+}
+.em-language-currency{	
+	display:inline-block;
+	vertical-align: top;
+	.block{
+		border:none;
+		margin:0;
+		padding:0;
+	}
+    .toolbar-switch{
+        float:left; 
+	    margin:0;
+        span.current{
+	        padding:10px;
+			border:0;
+            position:relative;
+			@include transition1;
+			float:right;
+        }
+        &:hover{
+            span.current{z-index:2;}
+        } 
+    }
+    .toolbar-dropdown{
+	    width:auto;
+        ul{
+	        top:50px; 
+			right:auto;
+			left:0;
+	        width:130px;
+			border:none;
+	        box-shadow:0px 1px 2px #dddddd;
+			-moz-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+        }
+        li{
+	        padding:5px;
+	        background-color:#fff;
+	        float:none;
+            @include transition1;
+        }
+    }
+	.block-currency{
+		li{ 
+			padding-top:2px;
+		}
+	}
+	.block-currency,
+    .form-language{
+		float:left;
+		ul{
+			float:left;
+			margin-bottom:0;
+		}
+		li{ 
+			float:left; 
+			padding-bottom:0; 
+			margin-right:10px
+		}
+		.toolbar-dropdown li{
+			padding-bottom:5px;
+			margin-right:0;
+			width:100%;
+		}
+        span.current{ 
+            background-position:20px center;
+        }
+		
+        li a{
+            display:block;
+            text-align:right;
+			&:hover{
+				/*text-decoration:underline;*/
+			}
+        }
+    }
+    .toolbar-dropdown{
+		li a{
+            display:block;
+            text-align:right;
+        }
+	}
+    .block-currency .toolbar-dropdown ul{ width:60px}
+	.form-language{
+		&.toolbar-switch span.current{
+			padding-left:45px;	
+		}
+		.toolbar-dropdown ul li a{
+			background-position: 0px 4px;
+			padding-left:25px;
+		}
+	}
+}
+.em-language-currency{
+	
+	.em-language-style01,
+	.em-currency-style01{
+		.toolbar-dropdown ul{
+			li{
+				padding:5px 20px;
+				a{
+					text-align:left;
+				}
+			}
+		}
+	}
+}
+
+

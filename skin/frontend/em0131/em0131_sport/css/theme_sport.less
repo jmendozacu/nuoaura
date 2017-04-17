@@ -1,0 +1,34 @@
+.wrapper{
+	.changeBkg (@page_bg_color; @image_bg_url; @page_bg_image; @page_bg_position; @page_bg_repeat; @page_bg_attachment;);
+}
+
+.catalog-product-view .em-wrapper-header .em-header-style29 .em-header-bottom .col-sm-24{
+	.changeBkg(@topmenu_bg_color);
+}
+
+
+.em-wrapper-header .navbar-fixed-top{
+	.changeBkg (@topmenu_bg_color);
+}
+
+.em-wrapper-brands{
+	.changeBkg (@body_bg_color);
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+	.changeAllColor(#a1a1a1; #000000; #000000);
+	&:hover{
+		.changeAllColor(@body_text6_color;@body_bg3_color; @body_bg3_color);
+	}
+}
+
+.img-banner{
+	.button-link{
+		padding:10px 25px;
+		.changeAllColor(#434343; #ffffff; #ffffff);
+		font-size:100%;
+		&:hover{
+			.changeAllColor(@btn1_text_color;@btn1_line_color; @btn1_bg_color);
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.em-wrapper-ads-10{
+	&.em-line-01{
+		margin-bottom:0;
+	}
+	overflow:hidden;
+	img{
+		@include border-radius(0);
+	}
+	.em-blog-item{
+		padding:1px;
+		margin-bottom:$space_block;
+	}
+	.em-blog-time{		
+		@include position_style(absolute, left, 20px, top, 20px);
+		display:inline-block;
+		@include border-radius(100%);
+		padding:13px 20px;
+		z-index: 0;
+		font-weight:700;
+		color:#fff;
+		text-transform:uppercase;
+		&:before{
+			content: "";
+			background-color: #000;
+			@include opacity(0.6);
+			@include border-radius(100%);
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+		}
+		p{
+			margin:0;
+			line-height:1.2;
+			&:first-child{
+				font-size:170%;
+			}
+		}
+	}
+	.em-box{
+		padding:17px 20px 5px;
+		border-top:0;
+		@include border-radius(0 0 5px 5px);
+		@include transition1;
+		position:relative;
+		.em-blog-des{
+			clear:both;
+		}
+		.link-more{
+			font-weight:bold;
+			&:before{
+				@include font-awesome(\f101,100%);
+				padding-right:5px;
+			}
+		}
+	}
+}
+.em-background-wrapper-ads{
+	background-image: url(../images/media/home/layout_glass/em_ads_06.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding: 5rem 0 1rem;
+}
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-ads-10 .em-box .link-more:before{ padding-right:0; padding-left:5px; content: "\f100";}
+}

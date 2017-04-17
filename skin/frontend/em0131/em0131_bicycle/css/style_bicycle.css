@@ -1,0 +1,31 @@
+/*$max-content-width: value screen*/
+/*Category product*/
+/*button style*/
+.em-slideshow .owl-theme .owl-controls .owl-buttons div {
+  top: 44%;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des {
+  left: 15%;
+  top: 30%;
+  width: 67%;
+}
+
+.em-background-wrapper-ads {
+  background: url(../images/em_bkg.jpg) no-repeat 0 center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/*Main Color Variation*/
+.em-color span.emColorStyle01 {
+  background: #67a9bf;
+}
+.em-color span.emColorStyle02 {
+  background: #f9ad7b;
+}
+.em-color span.emColorStyle03 {
+  background: #c5523f;
+}
+.em-color span.emColorStyle04 {
+  background: #aacf9b;
+}

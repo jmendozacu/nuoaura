@@ -1,0 +1,95 @@
+.em-header-style03{
+	.link-account{		
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.welcome-msg,
+	.account-link,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2;
+		display:inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		margin-left:-1px;
+		margin-bottom:-1px;
+	}
+	.toolbar-switch{
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		margin-right:-1px;
+		margin-bottom:-1px;
+		span.current{
+			padding:$padding3x / 2;
+		}
+	}
+	.em-header-ads{
+		padding:$padding3x / 2;
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		margin-bottom:-1px;
+		span:before{
+			@include font-awesome(\f098,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-wrapper-header-top{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		display: inline-block;
+		width: 100%;
+	}
+	.em-logo .logo{
+		margin:$padding3x 0;
+	}
+	.em-top-cart{
+		.em-summary-topcart{
+			display:inline-block;
+			border-style: solid;
+			border-width: 1px;
+			@include border-radius(5px);
+			.em-amount-topcart{
+				&:after{
+					content:"\f107";
+					float:right;
+					text-align:center;
+					padding: 12px 0;
+					width:35px;
+					@include border-radius(5px);
+				}
+				.em-topcart-text{
+					margin-left:10px;
+					display: inline-block;
+					padding-top: 8px;
+				}
+			}
+		}
+	}
+}

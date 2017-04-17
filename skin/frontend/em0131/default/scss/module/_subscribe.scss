@@ -1,0 +1,149 @@
+.em-wrapper-newsletter{
+	.em-block-title{
+		float:left;
+		margin-right:20px;
+		margin-top:10px;
+	}
+}
+
+@mixin newsletter_clearbutton{
+	.block-subscribe{
+		.actions{
+			float:none;
+			button.button{
+				float:none;
+				display:inline-block;
+				span{
+					float:none;
+					display:inline-block;
+					
+				}
+			}
+		}
+		.input-box{
+			width:100%;
+			float:none;
+			input.input-text{
+				margin-right:0;
+			}
+		}
+		
+	}
+}
+
+/*===========block subscribe=============*/
+.block-subscribe {
+	border:none;
+	margin:0;
+	padding:0;
+	&:before,&:after{
+		position:static;
+		height:0;
+	}
+	.input-box
+	{
+		float:left;
+		width:200px;
+	}
+	.actions{
+		float:left;
+		button.button{
+			margin-right:0px;
+			padding:10px;
+		}
+	}
+	input.input-text
+	{
+		width:100%;
+		margin-bottom:10px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+
+.newsletter-clearbutton{
+	@include newsletter_clearbutton;
+}
+
+.newsletter-fullbutton{
+	button.button{
+		width:100%;
+	}
+}
+
+.newsletter-boder-input-act{
+	.block-subscribe{
+		border:1px solid;
+		padding:$padding3x / 2 $padding3x;
+		@include border-radius(5px);
+		input.input-text{
+			border:none;
+			margin-bottom:0;
+			background:transparent;
+			height:50px;
+		}
+		.input-box{
+			width:65%;
+			margin-right:0px;
+		}
+		.actions{
+			float:right;
+			button.button{
+				margin-bottom:0;
+				padding: 13px 20px;
+			}
+		}
+	}
+}
+
+.em-wrapper-newsletter{
+	margin-bottom:20px;
+}
+
+.em-newsletter-style05{
+	.block-subscribe {
+		position:relative;
+		.input-box{
+			width: 98%;
+			input.input-text{
+				padding-right:100px;
+			}
+		}
+		.actions button.button{
+			@include position_style(absolute, right, 0, top, 0px);
+			font-size:100%;
+		}
+	}
+}
+
+.em-wrapper-newsletter03{
+	background-image: url(../images/media/home/em_ads_15.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding:6rem 0;
+	.block-subscribe{
+		padding: 10px;
+		.actions button.button{
+			padding: 9px 20px;
+			border-width: 2px;
+		}
+		input.input-text{
+			height:40px;
+		}
+	}
+}
+
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-newsletter03{
+		.block-subscribe .input-box{ float:right;}
+		.block-subscribe .actions{ float:left;}
+	}
+}

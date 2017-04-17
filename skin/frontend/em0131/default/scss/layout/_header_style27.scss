@@ -1,0 +1,188 @@
+.em-header-style27{
+	.toolbar-switch .toolbar-title{ padding:0 !important;}
+	.link-account,.em-logout-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link,.em-account-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f084,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f004,100%);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f02c,100%);
+			margin-right:10px;			
+		}
+	}
+	.welcome-msg,
+	.account-link,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2 - 1px 0 $padding3x / 2;
+		margin-left:$padding3x;
+		display:inline-block;
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+	}
+	.em-language-currency{
+		margin:0 -#{($padding3x/2)};
+	}
+	.toolbar-switch{		
+		margin:0 ($padding3x/2);		
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+		span.current{
+			padding:$padding3x / 2 - 1px 0 $padding3x / 2;			
+			min-height:49px;
+		}
+	}
+	.em-language-currency .form-language.toolbar-switch span.current{
+		padding-left:25px;
+		background-position: 0px center;
+	}
+	.em-logo .logo{
+		margin:$padding2x 0;
+	}
+	.em-phone{
+		margin:$padding3x + $padding1x 0 0;
+		font-size:110%;
+		span{
+			margin:0 10px;
+		}
+	}
+	.em-menu-hoz,
+	.em-search{
+		display:inline-block;
+		vertical-align: top;
+	}
+	.em-search{
+		.em-search-icon{
+			display: block;
+			padding: 17px $padding2x;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: transparent;
+			@include transition1;
+			span:before{
+				font-size:1.4rem;
+			}
+		}
+		  
+	}
+	.line-top{
+		border-top-style: solid;
+		border-top-width: 1px;
+	}
+	.em_nav{
+		.hnav .menu-item-depth-0,
+		.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+			margin:0;
+			display: inline-block;
+			float: none;
+			> a{
+				span{
+					padding:$padding3x / 2 $padding2x;
+					border-top-width:2px;
+					text-transform:uppercase;
+				}
+			}
+			> .menu-container,.level0 ul{
+				text-align:left;
+			}
+		}
+	}
+	.em-top-cart{
+		margin-top:$padding2x + 5;	
+		.em-amount-topcart{ 
+            display:inline-block;
+			padding-bottom:30px;
+			margin-bottom:-30px;
+			width:50px;
+			&:after{
+				content:"";
+			}
+			&:before{
+				content:"\e835";
+				font-family: 'maki', sans-serif;
+				width: 50px;
+				height: 50px;
+				font-size: 1.8rem;
+				text-align:center;
+				display:inline-block;
+				padding:15px 5px;
+				@include border-radius(5px);
+			}
+			.em-topcart-text{
+				display:none;
+			}
+			.em-topcart-qty{
+				@include position_style(absolute, left, 33%, top, -8px);
+				@include border-radius(100%);
+				padding: 0px 6px;
+				font-size:12px;
+				
+			}
+		}
+	}
+	
+	/*fixed top*/
+	.em-fixed-top{	
+		&.navbar-fixed-top{
+			.em-search{
+				display:none;
+			}
+		}
+	}
+}
+
+
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-header-style27{
+		.welcome-msg,
+		.account-link,
+		.em-top-links > ul li,	
+		.em-top-links ul.links li,	
+		.em-top-links ul.em-links-wishlist li{
+			margin-left:0;
+			margin-right:30px;
+		}
+		.em-links-wishlist a:before,.link-account:before, .em-logout-link:before,
+		.em-register-link:before, .em-account-link:before{ margin-right:0; margin-left:10px;}
+		.em_nav{
+			.hnav .menu-item-depth-0,
+			.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+				> .menu-container,ul{
+					text-align:right;
+				}
+			}		
+		}
+		.em-top-cart .em-amount-topcart .em-topcart-qty{
+			left: 25%;
+		}
+	}
+}

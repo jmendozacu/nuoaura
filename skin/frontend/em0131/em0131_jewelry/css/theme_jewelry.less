@@ -1,0 +1,23 @@
+.em-wrapper-brands{
+	.changeBkg (@footer_bg_color);
+	margin-bottom:0;
+}
+.em-wrapper-banners{ .changeBkg(#f8f1ee);}
+.em-footer-info{ border-top:1px solid @footer_line_color; border-bottom:1px solid @footer_line_color}
+.slider-style02 .owl-theme .owl-controls .owl-buttons div{
+	.changeBkg(darken(@footer_bg_color, 20%));
+	.changeLine(darken(@footer_bg_color, 20%));
+}
+.em-wrapper-footer .em-footer-style07 .em-social .em-social-icon{
+	.changeBkg(darken(@footer_bg3_color, 2%));
+}
+.newsletter-clearbutton .block-subscribe .actions button.button span{ .changeFont(@general_font);}
+
+/*mobile*/
+/*EM Menu Mobile*/
+#em-mheader .em-top-cart:hover .em-amount-topcart:before,
+#em-mheader .em-top-search .form-search button.button:hover,
+#em-mheader #em-mheader-menu-icon:hover{	
+	border:1px solid @header_bg3_color;
+}
+#em-mheader .em-top-search .form-search input.input-text{ border:1px solid @header_bg3_color; color:@header_bg3_color}

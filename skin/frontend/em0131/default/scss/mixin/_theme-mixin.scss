@@ -1,0 +1,160 @@
+@mixin hideText(){
+    font-size:0; 
+ 	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: left;}
+
+@mixin boxCenter(){
+    text-align:center;
+    display:inline-block;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin changeIcon($width, $height, $animal, $bkg-position){
+	width:$width;
+	height:$height;
+	background-image: url('../images/#{$animal}.png');
+	background-position:$bkg-position;
+	background-repeat:no-repeat;
+}
+
+@mixin before_after_icon($hoz, $px_hoz, $ver, $px_ver){
+	content:"";
+	position:absolute;
+	#{$hoz}:$px_hoz;
+	#{$ver}:$px_ver;
+}
+
+@mixin arrow_dropdown($px_hoz, $px_ver, $arrow_size){
+	width: 0;
+	height: 0;
+	content: "";
+	position: absolute;
+	top: $px_hoz;
+	right: $px_ver;
+	border: $arrow_size solid transparent;
+	border-top-color: #000000;
+}
+
+@mixin transition1{
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+@mixin border-radius($radius){
+	-moz-border-radius:$radius; 
+	-webkit-border-radius:$radius; 
+	border-radius:$radius;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+  
+}
+
+
+@mixin font-awesome($font,$font-size){
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	content:"#{$font}";
+	font-size:$font-size;
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
+@mixin position_style($position_value, $hoz, $px_hoz, $ver, $px_ver){
+	position:$position_value;
+	#{$hoz}:$px_hoz;
+	#{$ver}:$px_ver;
+}
+
+
+
+/*$max-content-width: value screen*/
+/*Category product*/
+@mixin grid_column($i, $g){
+    @if $g !=0{
+    width:($max-content-width - ($i * $g)) / $i;
+    margin: 0 $g+ px;
+    }
+    @else{
+        width:$max-content-width / $i;
+    }
+}
+
+@mixin column($i, $g){
+    @if $g !=0{
+        @media (max-width: $max-content-width){
+            width:($max-content-width - ($i * $g)) / $i;
+            margin: 0 $g+ px;
+        }
+    }
+    @else{
+        width:$max-content-width / $i;
+    }
+}
+
+
+
+/*button style*/
+@mixin button_icon($width, $height, $animal, $bkg-position) {
+	@include hideText();
+	width:$width;
+	height:$height;
+	background-image: url('/images/#{$animal}.png');
+	background-position:$bkg-position;
+	border:1px solid #cdcdcd;
+	overflow: visible;
+	cursor: pointer;
+}
+
+
+// Transformations
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); // IE9 only
+          transform: rotate($degrees);
+}
+@mixin scale($scale-args...) {
+  -webkit-transform: scale($scale-args);
+      -ms-transform: scale($scale-args); // IE9 only
+          transform: scale($scale-args);
+}

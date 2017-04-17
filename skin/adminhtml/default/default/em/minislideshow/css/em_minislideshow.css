@@ -1,0 +1,80 @@
+.item .show_trans{width:60px;height:30px; display:inline-block;vertical-align:middle;}
+.item .trans_demo{background-image:url(../images/transition/demo.png);}
+.item .trans_boxslide{background-image:url(../images/transition/boxslide.png);}
+.item .trans_boxfade{background-image:url(../images/transition/boxfade.png);}
+.item .trans_slotzoom-horizontal{background-image:url(../images/transition/slotzoom-horizontal.png);}
+.item .trans_slotslide-horizontal{background-image:url(../images/transition/slotslide-horizontal.png);}
+.item .trans_slotfade-horizontal{background-image:url(../images/transition/slotfade-horizontal.png);}
+.item .trans_slotzoom-vertical{background-image:url(../images/transition/slotzoom-vertical.png);}
+.item .trans_slotslide-vertical{background-image:url(../images/transition/slotslide-vertical.png);}
+.item .trans_slotfade-vertical{background-image:url(../images/transition/slotfade-vertical.png);}
+.item .trans_curtain-1{background-image:url(../images/transition/curtain-1.png);}
+.item .trans_curtain-2{background-image:url(../images/transition/curtain-2.png);}
+.item .trans_curtain-3{background-image:url(../images/transition/curtain-3.png);}
+.item .trans_slideleft{background-image:url(../images/transition/slideleft.png); }
+.item .trans_slideright{background-image:url(../images/transition/slideright.png);}
+.item .trans_slideup{background-image:url(../images/transition/slideup.png);}
+.item .trans_slidedown{background-image:url(../images/transition/slidedown.png);}
+.item .trans_fade{background-image:url(../images/transition/fade.png);}
+.item .trans_flyin{background-image:url(../images/transition/flyin.png);}
+.item .trans_cubic{background-image:url(../images/transition/cubic.png);}
+.item .trans_turnoff{background-image:url(../images/transition/turnoff.png);}
+.item .trans_3dcurtain-horizontal{background-image:url(../images/transition/3dcurtain-horizontal.png);}
+.item .trans_3dcurtain-vertical{background-image:url(../images/transition/3dcurtain-vertical.png);}
+.item .trans_papercut{background-image:url(../images/transition/papercut.png);}
+
+.item .col_first{ display:block; padding-bottom:15px;}
+.item .col_two{ display:block; padding:10px 0;}
+.item .col_first img{ vertical-align:middle;}
+.item .col_first .right{ margin-top:13px; margin-right:20px}
+.option-header textarea{ width:270px;}
+.custom-options .opt-type{ width:auto}
+#minislideshow_tabs_form_general_content #minislideshow_general3 table{width:100%;}
+#minislideshow_tabs_form_general_content #minislideshow_general3 table tbody{float:left;}
+#minislideshow_tabs_form_general_content #minislideshow_general3 table tbody tr{float:left;width:40%}
+#minislideshow_tabs_form_general_content table tbody tr td{width:150px}
+#minislideshow_tabs_form_general_content table tbody tr td label{width:100px}
+
+.entry-edit .entry-edit-head{ height:36px; line-height:36px}
+.custom-options .option-header td select{ min-height:21px}
+.item.expand{ height:45px; overflow:hidden; -moz-transition: all 400ms ease;
+	}
+.btn_expand{
+	float:right;
+	position:relative;
+}
+.btn_expand span{
+	float:right;
+	width:15px;
+	height:15px;
+	text-indent:-9999px;
+	background:url(../images/icon.jpg) -15px 0 no-repeat;
+	position:absolute;
+	top:-11px;
+	right:-11px;
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+}
+.expand .btn_expand span{
+	background:url(../images/icon.jpg) 0 0 no-repeat;
+}
+
+.video-upload-frm{}
+.video-upload-frm .row_left{ float:left; width:25%}
+.video-upload-frm .row_right{ float:left; width:40%; text-align:right}
+.video_content .item{ clear:both}
+.video_content .item.item_title > div{ background:#E7EFEF; text-transform:uppercase; font-weight:700}
+.video_content .item div{text-align:center}
+.video_content .item div.row_2{ text-align:left}
+.video_content .item > div{ border: 1px solid #cdcdcd;box-sizing: border-box;padding: 5px; margin-bottom:-1px; margin-left:-1px}
+.video_content .item .row_1{float:left; width:10%}
+.video_content .item .row_2{float:left; width:45%}
+.video_content .item .row_3{float:left; width:10%}
+.entry-edit .video_content .content{ clear:both; padding:10px 0px}
+.adminhtml-minislideshow-edit .main-col-inner .entry-edit .entry-edit-head h4{padding:8px !important;}

@@ -1,0 +1,218 @@
+.em-header-style14{
+	.info-right{
+		padding:$padding2x + 3px 0;
+	}
+	.em-header-bottom{
+		position:relative;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			right: 0;
+			top: auto;
+			height: 4px;
+			box-shadow: 0 3px 3px #CACACA;;
+			-moz-box-shadow: 0 3px 3px #CACACA;;
+			-webkit-box-shadow: 0 3px 3px #CACACA;;
+		}
+	}
+	.link-account,.em-logout-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link,.em-account-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f084,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f004,100%);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f02c,100%);
+			margin-right:10px;			
+		}
+	}
+	.welcome-msg,
+	.account-link,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2 $padding2x;
+		display:inline-block;
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+		&:after{
+			content:"|";
+			@include position_style(absolute, left, 0, top, auto);
+		}
+	}	
+	.account-link{
+		&:after{
+			content:"";
+		}
+	}
+	.toolbar-switch{	
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+		&:after{
+			content:"|";
+			@include position_style(absolute, left, 0, top, 14px);
+		}
+		span.current{
+			padding:$padding3x / 2 $padding2x;
+		}
+		.toolbar-dropdown ul{
+			right: 0;
+			left: auto;
+		}
+		&.em-currency-style01 span.current{
+			padding-right:0;
+		}
+	}
+	.em-logo .logo{
+		margin:$padding2x 0;
+	}
+	.em-phone{
+		margin:$padding3x + $padding1x 0 0;
+		font-size:110%;
+		span{
+			margin:0 10px;
+		}
+	}
+	.em-search{
+		width: 100%;
+		padding-right: 50px;
+		display: inline-block;
+		.em-search-icon{
+			display: inline-block;
+			padding: 17px 15px;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: transparent;
+			@include transition1;
+			span:before{
+				font-size:1.4rem;
+			}
+		}
+		  
+	}
+	.em_nav{
+		.hnav .menu-item-depth-0,
+		.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+			margin:0;
+			> a{
+				span{
+					padding:$padding2x + 5px $padding2x;
+					border-width:1px;
+					border-top-width:2px;
+					border-color:transparent;
+					text-transform:uppercase;
+				}
+			}
+			> .menu-container{
+				top: 70px;
+			}
+		}
+	}
+	.em-wrapper-searchcart{
+		padding-top:14px;
+		position:relative;
+	}
+	.em-top-cart{
+		margin-left:$padding3x / 2;	
+		@include position_style(absolute, right, 0, top, 14px);	
+		.em-amount-topcart{ 
+            display:inline-block;
+			padding-bottom:30px;
+			margin-bottom:-30px;
+			float:right;
+			width:44px;
+			&:after{
+				content:"";
+			}
+			&:before{
+				content:"\e835";
+				font-family: 'maki', sans-serif;
+				width: 44px;
+				height: 44px;
+				font-size: 1.8rem;
+				text-align:center;
+				display:inline-block;
+				padding:11px 5px;
+				@include border-radius(5px);
+				@include transition1;
+			}
+			.em-topcart-text{
+				display:none;
+			}
+			.em-topcart-qty{
+				@include position_style(absolute, left, 34%, top, -7px);
+				@include border-radius(100%);
+				padding: 1px 5px;
+				font-size:10px;
+				
+			}
+		}
+	}
+	
+	/*fixed top*/
+	.em-fixed-top{		
+		.em-top-cart-sticky{
+			display:block!important;
+		}
+		&.navbar-fixed-top{
+			.em-search{
+				display:none;
+				width:auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 980px) {
+  .em-header-style14 .form-search input.input-text {
+    width: 310px;
+  }
+}
+
+
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-header-style14{
+		.em-links-wishlist a:before,.link-account:before, .em-logout-link:before, 
+		.em-register-link:before, .em-account-link:before{ margin-right:0; margin-left:10px;}
+		.toolbar-switch:after,
+		.welcome-msg:after, 
+		.account-link:after, 
+		.em-top-links > ul li:after, 
+		.em-top-links ul.links li:after, 
+		.em-top-links ul.em-links-wishlist li:after{ right:0; left:auto}
+		.toolbar-switch{ padding-left:0; padding-right:20px}
+		.em-header-bottom .em-top-cart{ right:auto; left:0px; margin-left:0;}
+		.em-header-bottom .em-top-cart .em-amount-topcart .em-topcart-qty{ left:23%}
+		.em-search{ padding-right:0; padding-left:50px;}
+	}
+	
+}

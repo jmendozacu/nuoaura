@@ -1,0 +1,30 @@
+/*Header*/
+.em-wrapper-header .navbar-fixed-top{
+	.em-search{
+		.em-search-icon{
+			span:before{
+				.changeColor(@btn1_text_color);
+				.changeBkg(@btn1_bg_color)!important;				
+			}
+		}
+		&:hover{
+			.em-search-icon span:before{
+				.changeColor(@btn4_text_color)!important;
+				.changeBkg(@btn4_bg_color)!important;	
+				
+			}
+		}
+	}
+}		
+/*footer*/
+.wrapper.em-box-custom{
+	.em-wrapper-footer{		
+		> div{
+			.changeBkg (@footer_bg_color; @image_bg_url; @footer_bg_image; @footer_bg_position; @footer_bg_repeat);
+			.em-footer-bottom{
+				.changeAllColor(@footer_text4_color; @footer_text4_color; @footer_bg2_color);
+			}
+		}
+	}
+}
+

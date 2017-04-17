@@ -1,0 +1,47 @@
+.em-wrapper-ads-11{	
+	margin-bottom:$space_block;
+	.em-ads-item{
+		padding:3.2rem 2rem 4rem;
+		position:relative;
+		@include border-radius(5px);
+		.em-ads-img{			
+			width:100px;
+			height:100px;
+			@include border-radius(100%);
+			img{
+				@include border-radius(100%);
+			}
+		}
+		.em-ads-content{
+			overflow:hidden;
+			padding:0 20px;
+		}
+		.em-ads-des .fa{
+			font-size:300%;
+		}
+		.em-ads-author span{
+			font-weight:italic;
+			&:first-child{
+				font-weight:bold;
+			}
+		}
+	}
+	.owl-theme .owl-controls .owl-pagination{
+		@include position_style(absolute, left, 10%, bottom, 20px);
+		margin:0;
+		span{
+			border-width: 2px;
+			width: 10px !important;
+			height: 10px !important;
+			margin: 0 0 0 5px !important;
+		}
+	}
+}
+
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-ads-11{
+		.owl-theme .owl-controls .owl-pagination{ left:auto; right:10%;}
+	}
+}

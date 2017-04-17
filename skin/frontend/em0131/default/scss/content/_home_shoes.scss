@@ -1,0 +1,45 @@
+.em-slideshow{
+	margin-bottom:0;	
+	.owl-theme .owl-controls .owl-buttons div{
+		top:44%;
+	}
+	.owl-carousel .owl-item .em-owlcarousel-des{
+		left: 15%;
+		top: 17%;
+		width: 70%;
+	}
+}
+
+.em-wrapper-brands{
+	margin:0;
+	.slider-style02{ margin:40px 0}
+}
+
+@media (min-width: 980px){
+	.form-search input.input-text{ width:310px;}
+}
+
+
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#50403f;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle02{
+		background:#52a360;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle03{
+		background:#ff6b8a;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle04{
+		background:#c85181;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+}

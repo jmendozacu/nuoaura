@@ -1,0 +1,173 @@
+#sidebar { width:300px; float:left }
+#main { width:800px; float:left; margin-left:20px; }
+@media (min-width: 768px) and (max-width: 1199px) {
+	#main { width:580px;}
+}
+
+#canvas .dropzone { min-height:500px }
+.dropzone, .dragzone { background:#eee; min-height:50px; padding:1em }
+.menu-item { margin:0 0 5px 0; padding:5px; width:250px; cursor:move }
+.menu-item.ui-sortable-placeholder { border:1px dashed #666; visibility:visible !important; background:transparent; }
+.menu-item-transport .menu-item:first-child { margin-top:15px }
+.menu-item-depth-1 { margin-left:30px }
+.menu-item-depth-2 { margin-left:60px }
+.menu-item-depth-3 { margin-left:90px }
+.menu-item-depth-4 { margin-left:120px }
+.menu-item-depth-5 { margin-left:150px }
+.menu-item-depth-6 { margin-left:180px }
+.menu-item-depth-7 { margin-left:210px }
+.menu-item-depth-8 { margin-left:240px }
+.menu-item-depth-9 { margin-left:270px }
+.menu-item-header { margin-bottom:0px; padding:2px 1px 2px 5px; }
+.menu-item-header .ui-icon { float:right }
+/* form elements */
+#sidebar .form-list td.label, 
+#canvas .form-list td.label { width:85px }
+#sidebar .form-list td.label label, 
+#canvas .form-list td.label label { width:70px }
+#sidebar .form-list td.value input.input-text,
+#canvas .form-list td.value input.input-text { width:135px }
+#sidebar .form-list td.value textarea,
+#canvas .form-list td.value textarea { width:230px }
+#container:after { content:'.';display:block;height:0;visibility:hidden;overflow:hidden;clear:both; }
+.ui-button-text-only .ui-button-text{display:inline-block;}
+tbody td .ui-state-default{clear:both; float:left; margin-left:0; *margin-top:1px}
+tfoot td .ui-state-default{*float:left; }
+.dropzone tfoot td .ui-state-default:first-child{*margin-left:0; }
+.dropzone tfoot td{position:relative; overflow:hidden}
+
+.dragzone .menu-item-content,.dragzone .menu-item-header .ui-child,.dragzone .menu-item-header .ui-icon, .dragzone .menu-item-child{display:none}
+
+/*custum menu*/
+.em_megamenu_bg{
+	background-color: #000;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	/*visibility: hidden;*/
+	width: 100%;
+	z-index: 998;
+	height: 1000px; opacity:0.5;}
+.em_megamenu_variable{width: 650px;
+	height: 440px;
+	position: fixed;
+	/*top: 180px;
+	left: 220px;*/
+	opacity: 1;
+	overflow: visible; 
+	background:#fff; 
+	z-index:999;  
+}
+.em_megamenu_icon{width: 650px;
+	height: 440px;
+	position: fixed;
+	opacity: 1;
+	overflow: visible; 
+	background:#fff; 
+	z-index:999;  
+}
+.em_megamenu_variable_inner, .em_megamenu_icon_inner{ overflow:auto; height:100%;}
+.emvariable_top, .emicon_top{
+	border-bottom: 1px solid #e6e6e6;
+	background: #6a838b url(images/top_bg.gif) 0 100% repeat-x;
+}
+.emvariable_title, .emicon_title{
+font: bold 12px/28px Arial, Helvetica, sans-serif;
+color: #fff;
+text-align: left; padding:0 15px; text-transform:uppercase}
+.emvariable_content, .emicon_content{  padding:20px 15px; background: #fafafa url(images/content_bg.gif) 0 0 repeat-x; overflow:auto; height: 370px;}
+.content-left{float:left; width:48%}
+.content-right{float:right; width:48%}
+.emvariable_content ul li{ padding:3px 0}
+.emvariable_content ul li.has_sub ul{ padding-left:25px}
+.emvariable_subcat{	float:left; margin-right:5px; background:url(images/col-ex.png) 0 bottom no-repeat; width:13px; height:13px; text-indent:-9999px; margin-top:3px; cursor:pointer}
+.emvariable_subcat.collapse{ background-position:0 0}
+.emvariable_close a, .emicon_close a{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	z-index: 8040;
+	width: 16px;
+	height: 16px;
+	background: url(images/window_close.png) no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+button.emvariable_button, button.emicon_button{ background:url(images/icon-link.png) 0 0 no-repeat !important; width:20px; height:10px; text-indent:-9999px; border: none !important;
+float: right !important;
+margin: -16px 12px 0 0;}
+input.input_emvariable, input.input_emicon{ padding-right: 30px; width: 107px !important;}
+
+/*Icon menu*/
+.emicon_message{ margin-top:10px}
+.emicon_info {padding-top:10px;}
+.emicon_info ul li.item_title{ text-transform:uppercase; font-weight:700}
+.emicon_info ul li{ float:left; width:100%;border: 1px solid #cdcdcd;margin-bottom: -1px;
+}
+.emicon_info ul li > div{ padding: 5px 10px; float:left;}
+.emicon_info ul li .row_1{ width:10%; text-align:center}
+.emicon_info ul li .row_2{ width:69%; border-left:1px solid #cdcdcd; border-right:1px solid #cdcdcd}
+.emicon_info ul li .row_2 a img{ float:left; margin-right:10px}
+.emicon_info ul li .row_3{ width:10%; text-align:center}
+.emicon_info ul li .row_3 > a{width: 15px;
+	height: 15px;
+	background: url(images/btn_window_close.gif) no-repeat 0 0;
+	text-indent:-9999px; display:inline-block}
+.ui-icon,
+.ui-child{
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background:url(images/ui-child.png) right 0 no-repeat;
+	width: 18px;
+	height:18px;
+	float:right;
+	margin-top:0px;
+	margin-left:0;
+}
+.ui-child.ui-child-minusthick{
+	background-position:0 0;
+}
+button.ui-icon-plusthick {
+
+}
+.ui-state-default.ui-child-plusthick, 
+.ui-widget-content .ui-state-default.ui-child-plusthick, 
+.ui-widget-header .ui-state-default.ui-child-plusthick{
+	border:none;
+	background:url(images/ui-child.png) -33px 3px no-repeat;
+}
+.ui-state-default.ui-child-minusthick, 
+.ui-widget-content .ui-state-default.ui-child-minusthick, 
+.ui-widget-header .ui-state-default.ui-child-minusthick{
+	border:none;
+	background:url(images/ui-child.png) 4px 3px no-repeat;
+}
+.ui-state-default.ui-icon-plusthick, 
+.ui-widget-content .ui-state-default.ui-icon-plusthick, 
+.ui-widget-header .ui-state-default.ui-icon-plusthick{
+	border:none;
+	border-right:1px solid #000;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	background:url(images/icon-plusthick.png) 3px 5px no-repeat;
+}
+.ui-state-default.ui-icon-minusthick, 
+.ui-widget-content .ui-state-default.ui-icon-minusthick, 
+.ui-widget-header .ui-state-default.ui-icon-minusthick{
+	border:none;
+	border-right:1px solid #000;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	background:url(images/icon-plusthick.png) -29px 5px no-repeat;
+}
+
+
+
+
+

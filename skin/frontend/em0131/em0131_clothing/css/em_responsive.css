@@ -1,0 +1,9 @@
+/*Resize Home 2*/
+@media (max-width:350px){
+	.em-ajax-featured{
+		.products-grid li.item{
+			width:300px !important;
+			height:auto !important;
+		}
+	}
+}

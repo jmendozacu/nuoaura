@@ -1,0 +1,6 @@
+/*Resize Home 4*/
+@media (max-width:768px){
+	.wrapper.em-box-custom .em-wrapper-footer > div{
+		position:static!important;
+	}
+}

@@ -1,0 +1,116 @@
+.em-wrapper-product-12{
+	margin-bottom:20px;
+	.em-filterproducts-grid{
+		.r-tabs{
+			margin-bottom:10px;
+			.r-tabs-nav{
+				padding-left:0;
+				padding-right:0;
+				.r-tabs-anchor{
+					padding:0!important;
+					margin-right:0;
+					margin-bottom:0;
+					display:block;
+					@include transition1;
+					text-transform:none;
+					img{
+						width:100%;
+						height:auto; @include border-radius(5px 5px 0 0);
+					}
+					
+				}
+				.r-tabs-tab{
+					@include border-radius(0px);
+					/* Firefox */
+					width: -moz-calc(100% / 3);
+					/* WebKit */
+					width: -webkit-calc(100% / 3);
+					/* Opera */
+					width: -o-calc(100% / 3);
+					/* Standard */
+					width: calc(100% / 3);
+					//display:inline-table;
+					float:left;
+					vertical-align:top;
+					padding:0 10px;
+					margin-bottom:20px;
+				}
+				.product-thumb-tab{
+					border:1px solid #e1e1e1; @include border-radius(5px); text-align:center; padding-bottom:18px;
+					.product-thumb a span{ padding:0px 20px; text-align:center; display:inline-block; max-height:35px; margin:20px 0 10px; overflow:hidden;}
+					.price-box{ text-align:center}
+					.ratings a{ display:inline-block}
+				}
+			}
+			.r-tabs-panel{
+				@include transition1;
+				@include opacity(0);
+				@include opacity-image;
+				&.r-tabs-state-active{
+					@include opacity(1);
+					padding:0px!important;
+					margin-bottom:20px;
+					@include border-radius(5px);
+					border:1px solid #e1e1e1;
+				}
+				.product-image{
+					display:block;
+					margin-bottom:20px;
+					position:relative;
+					@include transition1;
+					
+					img{
+						max-width:100%;
+						display:block;
+					}
+				}
+			}
+			.r-tabs-accordion-title .r-tabs-anchor{
+				img{
+					display:none;
+				}
+				span{
+					display:block;
+				}
+			}
+		}
+		.productlabels_icons{
+			display:none;
+		}
+		.em-item-tabs{
+			.em-more-views{
+				clear:both;
+				border-top:1px solid #e1e1e1;
+				padding-top: 20px;
+				margin-top: 15px;
+				margin:20px 0 0;
+				padding:20px 10px;
+				width:100%; display:inline-block; position:relative;
+				&:before,
+				&:after{  position: absolute;
+				  left: 49%;
+				  top: -19px;
+				  content: "";
+				  width: 15px;
+				  height: 12px;
+				  z-index: 1;
+				  border: 9px solid transparent;
+				  border-bottom-color: #eeeeee;}
+				  
+				&:after{border-bottom-color: #ffffff;
+				top: -17px;}  
+				img{ @include border-radius(0);}
+			}
+			.product-shop{
+				display:block;
+				overflow:hidden;
+				padding:0 20px; text-align:center;
+			}
+		}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	
+}

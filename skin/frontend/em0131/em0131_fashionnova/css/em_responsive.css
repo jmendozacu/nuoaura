@@ -1,0 +1,21 @@
+/*Resize Home 2*/
+@media (max-width: 992px){
+	.em-clear-padding .img-banner .desc h1{font-size:100%}
+	.em-clear-padding .img-banner:hover .desc .button-link{padding: 5px 5px;}
+}
+
+
+@media (max-width: 767px){
+	.em-area-header{
+		position:static;
+		width:100%;
+	}
+	.page .em-wrapper-content{
+		padding-left:0!important;
+	}
+}
+@media (max-width: 1199px) and (min-width: 768px){
+	.em-wrapper-product-20 .em-item-big,
+	.em-wrapper-product-20 .em-item-right{ width:100% !important;}
+	.em-box-bkg{ min-height:210px}
+}

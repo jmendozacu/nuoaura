@@ -1,0 +1,61 @@
+/*Fix layout box*/
+@media (min-width: 1280px) {
+  .wrapper.em-box-custom .page {
+    width: 1280px;
+  }
+}
+/*Header*/
+.em-header-style27 .line-to {
+  border: 0;
+}
+
+/*Slideshow*/
+.em-slideshow {
+  margin-bottom: 0;
+}
+.em-slideshow .owl-theme .owl-controls .owl-buttons div {
+  top: 44%;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des {
+  left: 15%;
+  top: 20%;
+  width: 67%;
+}
+
+/*Main Color Variation*/
+.em-color span.emColorStyle01 {
+  background: #fdb9d6;
+}
+.em-color span.emColorStyle01:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle01:after {
+  background: #000000;
+}
+.em-color span.emColorStyle02 {
+  background: #0a9efa;
+}
+.em-color span.emColorStyle02:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle02:after {
+  background: #000000;
+}
+.em-color span.emColorStyle03 {
+  background: #f91a10;
+}
+.em-color span.emColorStyle03:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle03:after {
+  background: #000000;
+}
+.em-color span.emColorStyle04 {
+  background: #e0b799;
+}
+.em-color span.emColorStyle04:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle04:after {
+  background: #000000;
+}

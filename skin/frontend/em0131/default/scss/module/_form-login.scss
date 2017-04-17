@@ -1,0 +1,109 @@
+/* ============================================ *
+ * Dropdown Login
+ * ============================================ */
+ /*dropdown login*/
+
+.account-link{
+	position:relative;
+	padding-bottom:20px;
+	margin-bottom:-20px;
+	a.link-logout,
+	a.link-login,
+	a.link-account{
+		display:inline-block;
+		clear:none;
+		position:relative;
+	}
+	
+	a.link-logout{
+		&:before{
+			content:'\f05e';
+		}
+	}
+}
+
+.em-account{
+	position:absolute;
+	top:50px;
+	right:0;
+	z-index:20;
+	padding-top:0;
+	text-align:left;
+	.block-content{
+		width:260px;
+		padding:17px 20px 9px;
+		background:#fff;
+		border:1px solid #f6f6f6;
+		@include box-shadow(0 0 5px #f6f6f6);
+		overflow:hidden;
+		.login-title{
+			text-transform:uppercase;
+			margin-bottom:3px;
+			display:none;
+		}
+		.login-desc{
+			display:none;
+		}
+		.action-forgot{
+			.actions{
+				float:left;
+				margin-top:2rem;
+				clear:both;
+			}
+			.login_forgotpassword{
+				float:left;
+				width:100%;
+				margin-top:2rem;
+				a.create-account-link-wishlist{
+					margin-left:5px;
+				}
+				p{
+					margin-bottom:5px;
+				}
+			}
+		}
+	}
+	.form-list{
+		li{
+			width:100%;
+			margin:0 0 4px !important;
+			padding:0 !important;
+			&:after,&:before{
+				display:none !important;
+			}
+		}
+		p.required{
+			font-size:85%;
+			padding:0;
+			margin:0;
+		}
+	}
+}
+.pull-right{
+	.account-link{
+		.em-account{
+			right:0; 
+			left:auto;
+			.form-list{
+				float:none;
+			}
+		}
+	}
+}
+/*end dropdown login*/
+
+ 
+ 
+/*Popup login*/
+.fancybox-outer{
+	.em-account{
+		position:static;
+		.block-content{
+			width:400px;
+			padding:40px;
+			border:0;
+			@include box-shadow(none);
+			
+		}
+	}
+}

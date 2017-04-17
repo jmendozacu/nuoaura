@@ -1,0 +1,208 @@
+.em-header-style03{
+	.toolbar-switch .toolbar-title{ padding:0 !important;}
+	.link-account,.em-logout-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link,.em-account-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f084,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f004,100%);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f02c,100%);
+			margin-right:10px;			
+		}
+	}
+	.welcome-msg,
+	.account-link,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2 - 1px 0 $padding3x / 2;	
+		margin-left:$padding3x;
+		display:inline-block;
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+	}
+	.em-language-currency{
+		margin:0 -#{($padding3x/2)};
+	}
+	.toolbar-switch{		
+		margin:0 ($padding3x/2);		
+		@include effect-hover-line-center;
+		overflow:initial;
+		&:before{
+			bottom:auto;
+			top:0;
+		}
+		span.current{
+			padding:$padding3x / 2 - 1px 0 $padding3x / 2;			
+			min-height:49px;
+		}
+	}
+	.em-language-currency .form-language.toolbar-switch span.current{
+		padding-left:25px;
+		background-position: 0px center;
+	}
+	.em-logo .logo{
+		margin:$padding3x 0;
+	}
+	.em-phone{
+		margin:$padding1x + 2 0 0;
+		font-size:110%;
+		.fa{
+			font-size:130%;
+			vertical-align:middle;
+		}
+		span{
+			margin:0 10px;
+			vertical-align:middle;
+		}
+	}
+	.em-line{
+		float:left;
+		width:100%;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		.em-menu-hoz{
+			padding-left:0;
+		}
+	}
+	.em-search{
+		width: 60%;
+		margin-top: 32px;
+		.form-search{
+			input.input-text{
+				height: 49px;
+				line-height: 39px;
+			}
+			.input_cat{
+				select{
+					height: 49px;
+					line-height: 48px;
+				}
+				.catsearch-dropdown{
+					span.current{
+						padding: 15px 30px 13px 5px;
+						min-height: 49px;
+					}
+					ul{
+						top:49px;
+					}
+				}
+			}
+		}
+		.em-search-style02 .form-search button.button{
+			padding: 18px 17px 17px;
+			width: 49px;
+		}
+	}
+	.em_nav{
+		.hnav .menu-item-depth-0,
+		.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+			margin:0;
+			> a{
+				span{
+					padding:$padding3x / 2 $padding2x;
+					border-width:1px;
+					border-top-width:2px;
+					border-color:transparent;
+					text-transform:uppercase;
+					margin-top:-1px;
+					margin-bottom:-1px;
+				}
+			}
+			> .menu-container{
+				top:49px;
+			}
+		}
+	}
+	.em-top-cart{
+		margin-top:$padding3x + 2;
+		margin-left:$padding1x;		
+		.em-amount-topcart{ 
+            display:inline-block;
+			padding-bottom:30px;
+			margin-bottom:-30px;
+			width:51px;
+			&:after{
+				content:"";
+			}
+			&:before{
+				content:"\e835";
+				font-family: 'maki', sans-serif;
+				width: 51px;
+				height: 51px;
+				font-size: 1.8rem;
+				text-align:center;
+				display:inline-block;
+				padding:15px 5px;
+				@include border-radius(5px);
+			}
+			.em-topcart-text{
+				display:none;
+			}
+			.em-topcart-qty{
+				@include position_style(absolute, left, 33%, top, -8px);
+				@include border-radius(100%);
+				padding: 1px 6px;
+				font-size:12px;
+				
+			}
+		}
+	}
+	/*fixed top*/
+	.em-fixed-top{
+		&.navbar-fixed-top{
+			.em-phone{
+				display:none;
+			}
+			.em-search{
+				width:auto;
+			}
+		}
+	}
+}
+
+.em-wrapper-header .em-header-style03 .em-fixed-top.navbar-fixed-top .em-line{ border:0 !important; padding:1px 0;}
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-header-style03{
+		.welcome-msg,
+		.account-link,
+		.em-top-links > ul li,	
+		.em-top-links ul.links li,	
+		.em-top-links ul.em-links-wishlist li{
+			margin-left:0;
+			margin-right:30px;
+		}
+		.em-links-wishlist a:before,.link-account:before, .em-logout-link:before,
+		.em-register-link:before, .em-account-link:before{ margin-right:0; margin-left:10px;}
+		
+		.em-top-cart .em-amount-topcart .em-topcart-qty{
+			left: 25%;
+		}
+	}
+}

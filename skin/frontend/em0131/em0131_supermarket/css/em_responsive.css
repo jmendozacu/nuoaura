@@ -1,0 +1,12 @@
+/*Resize Home 2*/
+@media (max-width:767px){
+	.em-line-01 .em-tabs{
+		margin-top:0;
+	}
+	.em-wrapper-footer address {
+		float: none !important;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+	}
+}

@@ -1,0 +1,36 @@
+.em-wrapper-area09{ 
+	.text-box{ margin:32px 0;}
+	.em-wrapper-ads-13{
+		.icon-banner-left{		
+			border-width:2px; border-style:solid
+		}
+		.em-banner-right{
+		}
+	}
+
+}
+#em-mheader .em-top-search .form-search input.input-text{ border-width:1px; border-style:solid}
+
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#33ccff;
+		&:before{background:#1F4A59;}
+		&:after{background:#B85954;}
+	}
+	&.emColorStyle02{
+		background:#ff9000;
+		&:before{background:#C77306;}
+		&:after{background:#FDCC30;}
+	}
+	&.emColorStyle03{
+		background:#e50d54;
+		&:before{background:#980334;}
+		&:after{background:#eda9c0;}
+	}
+	&.emColorStyle04{
+		background:#7e54d3;
+		&:before{background:#39177e;}
+		&:after{background:#d51af1;}
+	}
+}

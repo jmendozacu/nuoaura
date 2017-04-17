@@ -1,0 +1,23 @@
+.em-wrapper-ads-19{	
+	.row{margin-left:-2px;margin-right:-2px;display:flex}
+	.col-sm-8{padding-left:2px;padding-right:2px;margin-bottom:4px;}
+	.wrapper-content{
+		display:flex;
+		.inner-content{
+			@include border-radius(5px);
+			text-align:center;
+			display: inline-block;
+			width: 100%;
+			margin: 0;
+			padding-top:5rem;
+			.em-block-title{border-bottom-width: 0px;}
+			ul li{padding-bottom:1rem;}
+		}
+	}
+}
+
+
+/*===============RTL=================*/
+.em-rtl{
+	
+}

@@ -1,0 +1,26 @@
+.em-wrapper-product-24{
+	.em-hot-deals{
+		border:1px solid #e1e1e1;
+		@include border-radius(3px);
+		min-height:383px;
+		.widget-title h2{ 
+			background:#f7f7f7; 
+			color:#434343; 
+			padding:1.4rem 2rem; 
+			text-transform:uppercase; 
+			font-size:16px; 
+			@include border-radius(3px 3px 0 0);
+		}
+		.ratings{ display:none}
+		.owl-carousel{ margin:0 10px; padding:10px 0 5px}
+		.owl-theme .owl-controls .owl-buttons div{top:-50px !important}
+		.products-list .product-shop .price-box{ margin-bottom:10px; display:none}
+		.em-multideal-price-box span.price, .price-box span.price{ display:inline}
+		.em-multideal-price-box{ margin-bottom:15px;}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	
+}

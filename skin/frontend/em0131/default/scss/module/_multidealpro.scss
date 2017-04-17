@@ -1,0 +1,169 @@
+/*==============Multidealpro==============*/
+.multidealpro_products{
+	.products-grid{
+		clear:both;
+		margin:0 -10px;
+		.item{
+			width:280px;
+			margin:0 10px;
+			display:inline-table;
+			float:none !important;
+			.product-item{
+			}
+		}
+		
+	}
+}
+.em_multidealpro{
+	.show_clock,
+	.price-box{
+		display:inline-block;
+		vertical-align: middle;
+	}
+	.ratings{
+		padding-bottom:0;
+	}
+	
+}
+
+.multidealpro_recent .multidealpro_products{
+	/*border-style: solid;
+	border-width: 1px;
+	border-top:0;*/
+}
+.show_clock{
+	.price-box p.special-price .price-label{ 
+		display:inline-block; 
+	}
+	.price-box p:first-child{
+		margin-top:0;
+	}
+}
+/*Deal Home Page - Slider Multidealpro*/
+.em-special-deals{
+	padding-bottom:20px;
+	.widget-title h2{ margin-bottom:15px;}
+	.products-grid {
+		li.item{
+			border-style: solid;
+			border-width: 1px;
+			@include border-radius(5px);
+			padding:10px;
+			text-align:center;
+		}
+		.msg_soldout{
+			margin-top:10px;
+		}
+		.clock_style_1{
+			margin-top:3px;
+			margin-bottom:0;
+		}
+	}
+	.owl-carousel .owl-item .item{
+		border-width:1px;
+		border-style:solid;
+		@include border-radius(5px);
+		@include cat-effect01;
+		padding:10px;
+		text-align:center;
+		.product-shop{
+			position:static;
+		}		
+		.show_clock .clock{
+			position: absolute;
+			margin-bottom:0;
+			top:260px;
+            left:41px;
+			/*top: -67px;
+			width: 100%; @include transition1;*/
+			text-align:center;
+			/*-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: all 0.7s ease-in-out;
+			transition: all 0.7s ease-in-out;*/
+		}
+		&:hover{
+			.product-shop{
+				/*position:static;*/
+				/*.show_clock .clock{
+					-webkit-transform: scale(0);
+					-ms-transform: scale(0);
+					transform: scale(0);
+					opacity: 0;
+					filter: alpha(opacity=0);
+				}*/
+			}
+		}
+	}
+}
+
+
+.multidealpro_products{
+	/*border-style: solid;
+	border-width: 1px;
+	padding:10px;
+	@include border-radius(5px);*/
+}
+
+/*=======Multidealpro - Product Grid======*/
+.em_multidealpro{
+	.products-grid {
+		li.item{
+			display:inline-block;
+			float:none;
+			vertical-align:top;
+			@include border-radius(5px);
+		}
+	}
+}
+
+/*=======Multidealpro - Product List======*/
+.em_multidealpro,
+.multidealpro_products{
+	.products-list {
+		clear:both;
+		margin-top:20px;
+		li.item{
+			margin-bottom:20px;
+			.deal_qty,
+			.show_clock{
+				text-align:left;
+			}
+		}
+	}
+}
+/*=======Multidealpro - Sidebar======*/
+.em-sidebar {
+	.multidealpro_recent .multidealpro_products{ 
+		@include border-radius(0 0 5px 5px);
+		border:0;
+		padding-top:0;
+		.products-grid li.item{
+			padding:15px;
+			margin:0;
+			width:100%;
+			.product-item{
+				border:0;
+				@include box-shadow(none);
+			}
+		}
+	}
+	.em_multidealpro .products-grid{
+		li.item{
+			width:100%;
+			margin-right:0 !important;
+			border:0 !important;
+		}
+	}
+}
+
+
+.em_multidealpro{
+	.products-grid.owl-carousel .owl-item .item{
+		min-height:425px;
+	}
+}

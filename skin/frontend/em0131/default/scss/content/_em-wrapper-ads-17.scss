@@ -1,0 +1,25 @@
+.em-wrapper-ads-17{	
+	background-image: url(../images/media/home/bkg-parallax.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	filter: inherit;
+	padding:15.5rem 0;
+	text-align:center;
+	margin-bottom:55px;
+	.button-link{ float:none; display:inline-block; padding:13px 20px}
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1024px){
+	.em-wrapper-ads-17 {background-attachment: scroll !important;}
+}
+/*===============RTL=================*/
+.em-rtl{
+	.em-box .em-box-right{ left:0; right:auto;}
+	.em-box .em-box-left .block-info li.em-links-item a:before{   content: "\f100"} 
+}

@@ -1,0 +1,98 @@
+/*===================HEADER STYLE 27=========================*/
+.em-wrapper-header{
+	.em-header-style27{			
+		.em-top-cart{
+			.em-amount-topcart{
+				&:before{
+					.changeColor(#fff);
+				}
+				.em-topcart-qty{
+					.changeAllColor(#fff;  @header_bg2_color);
+				}
+			}
+		}		
+		.em-search{
+			.em-search-icon{				
+				span:before{
+					.changeColor(@topmenu_text_color);
+				}				
+			}
+			&:hover{
+				.em-search-icon{
+					.changeAllColor(@topmenu_hover_text_color;  @topmenu_line_color;  @topmenu_hover_bg_color);					
+					border-top-color:@topmenu_hover_text_color;
+					-webkit-box-shadow: 0 0 10px #ADADAD;
+					-moz-box-shadow: 0 0 10px #ADADAD;
+					box-shadow: 0 0 10px #ADADAD;		
+					span:before{
+						.changeColor(@topmenu_hover_text_color);
+					}
+				}
+			}
+		}
+		.em_nav{
+			.hnav .menu-item-depth-0,
+			.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+				> a{
+					span{
+						.changeAllColor(@topmenu_text_color;  transparent;  transparent);								
+					}
+				}
+				&:hover{
+					> a.em-menu-link span{
+						.changeAllColor(@topmenu_hover_text_color, @topmenu_line_color, @topmenu_hover_bg_color);
+						border-top-color:@topmenu_hover_text_color;
+						-webkit-box-shadow: 0 0 10px #ADADAD;
+						-moz-box-shadow: 0 0 10px #ADADAD;
+						box-shadow: 0 0 10px #ADADAD;
+					}
+				}
+			}
+		}
+	}
+}
+/*EM Menu Mobile*/
+#em-mheader .em-top-cart:hover .em-amount-topcart:before,
+#em-mheader .em-top-search .form-search button.button:hover,
+#em-mheader #em-mheader-menu-icon:hover{	
+	border:1px solid @header_bg3_color;
+}
+#em-mheader .em-top-search .form-search input.input-text{ border:1px solid @header_line_color; color:@header_line_color}
+/*end header*/
+
+.em-wrapper-brands .slider-style02{
+	.changeLine(@body_line_color);	
+}
+
+.em-wrapper-ads-11{ 
+	.em-ads-grid-item{
+		.changeBkg(@body_bg2_color);
+		.changeLine(@body_line_color);	
+	}
+	.em-ads-item{
+		.changeAllColor(@body_text_color; @body_line_color; transparent);
+		.em-ads-content .fa{
+			.changeColor(lighten(@body_text_color,20%));
+		}
+	}
+	.owl-theme .owl-controls .owl-pagination{		
+		span{
+			.changeLine(@body_line_color);
+			.changeBkg(transparent);
+		}
+		.owl-page.active span, span:hover{
+			.changeLine(@body_line2_color);
+			.changeBkg(transparent);
+		}
+	}
+}
+
+.em-wrapper-ads-09{
+	.changeColor(@body_text6_color);
+	.line-left,.line-right{
+		.changeLine(@body_text6_color);
+	}
+	h4{
+		.changeColor(@body_text6_color);
+	}
+}

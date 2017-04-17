@@ -1,0 +1,39 @@
+/* Magento 1 */
+h3.propoza-header {
+    background: url(full-logo.png) no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+    background-position: center;
+    height: 65px;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 200px;
+}
+
+button + a {
+    margin-left: 25px;
+}
+
+.adminhtml-quotes-index #anchor-content {
+    padding: 0;
+}
+
+.adminhtml-quotes-index #anchor-content iframe {
+    position: relative;
+    width: 100%;
+}
+
+.middle {
+    width: 100%;
+}
+
+.adminhtml-quotes-index #anchor-content iframe::-webkit-scrollbar {
+    display: none;
+}
+
+/*.propoza-iframe-container {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*overflow-x: hidden;*/
+    /*padding-right: 15px;*/
+/*}*/

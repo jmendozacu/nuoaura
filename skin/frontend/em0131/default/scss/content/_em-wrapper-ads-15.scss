@@ -1,0 +1,45 @@
+.em-wrapper-ads-15{	
+	margin-bottom:$space_block;
+	.em-ads-item{
+		padding:35px 20px 40px;
+		margin-top:30px;
+		position:relative;
+		@include border-radius(5px);
+		.em-ads-img{
+			@include position_style(absolute, right, 40px, top, -30px);
+			width:70px;
+			height:70px;
+			@include border-radius(100%);
+			border-style: solid;
+			border-width: 2px;
+			img{
+				@include border-radius(100%);
+			}
+		}
+		.em-ads-des .fa{
+			font-size:300%;
+		}
+		.em-ads-author span{
+			font-weight:italic;
+			&:first-child{
+				font-weight:bold;
+			}
+		}
+	}
+	.owl-theme .owl-controls .owl-pagination{
+		@include position_style(absolute, left, 25px, bottom, 20px);
+		margin:0;
+		span{
+			border-width: 2px;
+			width: 10px !important;
+			height: 10px !important;
+			margin: 0 0 0 5px !important;
+		}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-ads-15 .em-ads-item .em-ads-img{ right:auto; left:40px}
+	.em-wrapper-ads-15 .owl-theme .owl-controls .owl-pagination{ left:auto; right:25px;}
+}

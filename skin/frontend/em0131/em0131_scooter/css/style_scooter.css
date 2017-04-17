@@ -1,0 +1,79 @@
+.em-slideshow {
+  margin: 0px;
+}
+
+.em-wrapper-banners {
+  margin-bottom: 0;
+  clear: both;
+}
+
+.cms-index-index .em-wrapper-main .container-main {
+  padding-top: 0;
+}
+
+.img-banner {
+  margin: 0;
+}
+.img-banner img {
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.img-banner .desc {
+  position: absolute;
+  margin: 0 1rem;
+  color: #fff;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  left: 10%;
+  bottom: 10%;
+}
+.img-banner:hover {
+  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+.img-banner:hover .banner-img img {
+  opacity: 0.5;
+}
+.img-banner:hover .desc {
+  bottom: 15%;
+}
+
+.img-responsive {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.em-footer-style12 .em-footer-top {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container-fluid .col-sm-24 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Main Color Variation*/
+.em-color span.emColorStyle01 {
+  background: #fdb9d6;
+}
+.em-color span.emColorStyle02 {
+  background: #0a9efa;
+}
+.em-color span.emColorStyle03 {
+  background: #f91a10;
+}
+.em-color span.emColorStyle04 {
+  background: #e0b799;
+}

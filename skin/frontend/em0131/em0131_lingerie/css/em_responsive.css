@@ -1,0 +1,18 @@
+@media (max-width:767px){
+	.wrapper.em-box-custom{padding:0 !important}
+	.em-wrapper-area03 .container-fluild {
+		padding:0 10px;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.em-wrapper-ads-12 .em-blog-content img {
+		-moz-border-radius: 5px !important;
+		-webkit-border-radius: 5px !important;
+		border-radius: 5px !important;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	.em-wrapper-ads-11 .em-ads-item{
+		padding:2.5rem 2rem !important;
+	}
+}

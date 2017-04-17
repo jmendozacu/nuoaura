@@ -1,0 +1,88 @@
+/* ============================================ *
+ * CMS Pages
+ * ============================================ */
+ 
+//* -----------------------Sitemap----------------*// 
+
+.page-sitemap {
+    .links {
+        display: block;
+        text-align: right;
+        margin: 0 20px 0 0;
+
+        a { position: relative; }
+    }
+
+    .sitemap {
+        padding: 0 20px;
+        margin: 15px 0;
+
+        li {
+            margin: 3px 0;
+        }
+    }
+	.pager
+		{
+			text-align:center;
+			.amount{
+				margin-top:0; 
+				margin-right:10px;
+				margin-left:20px;
+			}
+		}
+
+}
+
+/*=================Advanced Search===============*/
+
+.sales-guest-form .form-alt{ overflow:hidden}
+.sales-guest-form .form-alt .input-box{ margin-bottom:10px; clear:both; float:left; text-align:left !important; width:260px!important}
+.sales-guest-form .form-alt .input-box input{ width:260px !important}
+.sales-guest-form .form-alt select{ width:260px}
+
+.advanced-search{
+	width:100%;
+	select.multiselect{
+		height:auto; 
+		width:95%
+	}
+	.form-list .input-range input.input-text{width:46.5%}
+	.form-list li.wide input.input-text,.form-list input.input-text{width:95%}
+}
+
+/*=================Contact Us===============*/
+#contactForm{
+	.fieldset{
+		display:block;
+		float:none;
+		width:100%;
+	}
+}
+
+/*Email to friend*/
+.send-friend{
+	.fieldset{
+		float:none;
+		width:100%;
+	}
+}
+
+
+/*===============ORDERS AND RETURNS==================*/
+.form-list select.guest-select{width: 300px;}
+
+
+/*================404 Page=====================*/
+.not-pound-content{
+	display:inline-block;
+	img.img-responsive{
+		display:inline-block;
+	}
+	.group-button{
+		li{
+			display:inline-block;
+			padding-top:10px;
+		}	
+	}
+}
+

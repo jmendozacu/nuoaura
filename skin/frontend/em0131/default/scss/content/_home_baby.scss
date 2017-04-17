@@ -1,0 +1,65 @@
+.em-slideshow{
+	margin-bottom:$space_small_block;	
+	.owl-theme .owl-controls .owl-buttons div{
+		top:44%;
+	}
+	.owl-carousel .owl-item .em-owlcarousel-des{
+		left: 15%;
+		top: 20%;
+		width: 67%;
+	}
+}
+
+.em-wrapper-area02,
+.em-wrapper-area03{
+	.em-wrapper-banners{
+		margin-bottom:$space_small_block;	
+	}
+}
+#em-mheader .em-top-search .form-search input.input-text{ border-width:1px; border-style:solid}
+
+/*footer full in box*/
+body{
+	overflow-x: hidden;
+}
+.wrapper.em-box-custom{
+	.em-wrapper-footer{
+		position:relative;
+		> div{
+			left:-500px;
+			right:-500px;
+			position:absolute;
+			top:0;
+		}
+	}
+}
+
+/*Fix layout box*/
+@media (min-width: 1280px){
+	.wrapper.em-box-custom .page {
+	  width: 1280px;
+	}
+}
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#fdb9d6;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle02{
+		background:#0a9efa;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle03{
+		background:#f91a10;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+	&.emColorStyle04{
+		background:#e0b799;
+		&:before{background:#ffffff;}
+		&:after{background:#000000;}
+	}
+}

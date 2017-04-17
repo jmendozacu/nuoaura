@@ -1,0 +1,53 @@
+#bg_fade {background-color:#000;left:0px;margin:0px;padding:0px;position:fixed;top:0px;visibility:hidden;width:100%;z-index:998;height:1000px}
+#containerDiv {min-width: 350px;max-width:500px;z-index: 9999;display:none;position:fixed;}
+#containerDiv .ajaxcart {position: relative;padding: 20px;text-align: center;border: 10px solid #a1a1a1;background-color: white;z-index: 99999; max-height:660px}
+#containerDiv .ajaxcart .row2 {clear:left; padding-bottom:0px; overflow:hidden}
+#containerDiv .ajaxcart #ajax_image img {float:left;margin-right:7px;}
+#containerDiv .ajaxcart #ajax_image  { margin-bottom: 10px;overflow: hidden;text-align: left;}
+#containerDiv .ajaxcart #ajax_image span {text-align:left;}
+
+
+#containerDiv .ajaxcart .row2 a span { border: 0 none;padding: 0;}
+.product-essential {position:relative;}
+.ajaxcart .product-options{ max-height:250px; /*overflow-y:scroll*/ overflow:auto;}
+.ajaxcart .product_title{ text-transform:uppercase; text-align:center}
+
+#containerDiv .ajaxcart .row2 .back{ float:left}
+#containerDiv .ajaxcart .row2 .next{ float:right}
+#containerDiv .ajaxcart .row2 a span{ float:left; display:inline-block}
+
+.ajax_crosssell{
+	padding-top:20px;
+	overflow:hidden;
+}
+.ajax_crosssell h2{
+	text-align:left;
+	margin-bottom:20px;
+}
+.ajax_crosssell #ajaxcar-crosssell li{
+	float:left;
+	width:95px;
+	margin-left:15px;
+}
+.ajax_crosssell #ajaxcar-crosssell li .price-box{
+	font-size:100%;
+}
+.ajax_crosssell #ajaxcar-crosssell li .price{
+	font-size:140%;
+}
+.ajax_crosssell #ajaxcar-crosssell li:first-child{
+	margin-left:0;
+}
+
+@media (max-width:767px){
+	.ajax_crosssell{
+		display:none;
+	}
+}
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 767px) {
+	#containerDiv {min-width: 350px;max-width:350px;}
+	
+
+}

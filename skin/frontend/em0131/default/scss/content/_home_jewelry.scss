@@ -1,0 +1,64 @@
+
+/*Slideshow*/
+.em-slideshow{
+	margin-bottom:0;	
+	.owl-theme .owl-controls .owl-buttons div{
+		top:44%;
+	}
+	.owl-carousel .owl-item .em-owlcarousel-des{
+		left: 15%;
+		top: 20%;
+		width: 67%;
+	}
+}
+
+/*Home page*/
+.em-wrapper-banners{
+	@include border-radius(5px); margin-bottom:55px; margin-top:-50px; position:relative; z-index:1;
+	.col-sm-8.first .img-responsive{ @include border-radius(5px 0 0 5px)}
+	.col-sm-8.last .img-responsive{ @include border-radius(0 5px 5px 0)}
+}
+.cms-index-index .em-wrapper-main .container-main{ padding-top:0;}
+.em-wrapper-area02{ margin-top:0;}
+
+.em-wrapper-brands{
+	margin:0;
+	.slider-style02{ margin:40px 0}
+}
+/*Footer*/
+.em-footer-style07 {
+	.em-footer-top{ 
+		padding-top:0; padding-bottom:0;
+		.em-footer-info{ padding-top:5.5rem; padding-bottom:6rem}
+	}
+	.em-footer-bottom{ padding-top:3.7rem;
+		.links{ display:none;}
+	}
+	.block-subscribe input.input-text{ border:0; height: 50px; padding: 5px 20px; line-height: 38px;}
+}
+
+
+
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#322923;
+		&:before{background:#be5960;}
+		&:after{background:#251d18;}
+	}
+	&.emColorStyle02{
+		background:#455660;
+		&:before{background:#f58e2f;}
+		&:after{background:#5b6b74;}
+	}
+	&.emColorStyle03{
+		background:#4c2c2c;
+		&:before{background:#895555;}
+		&:after{background:#684242;}
+	}
+	&.emColorStyle04{
+		background:#4c154d;
+		&:before{background:#a70778;}
+		&:after{background:#663967;}
+	}
+}

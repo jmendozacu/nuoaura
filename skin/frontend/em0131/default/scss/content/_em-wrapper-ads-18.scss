@@ -1,0 +1,45 @@
+.em-wrapper-ads-18{	
+	margin-bottom:$space_block;
+	.em-ads-item{
+		padding:0 2rem 5.3rem;
+		position:relative;
+		@include border-radius(5px);
+		.em-ads-img{
+			@include border-radius(100%);
+			margin-bottom:1rem;
+			img{
+				@include border-radius(100%);
+				display:inline-block;
+			}
+		}
+		.fa{
+			font-size:300%;
+			margin-bottom:1rem;
+		}
+		.em-ads-author span{
+			font-weight:italic;
+			&:first-child{
+				font-weight:bold;
+			}
+		}
+	}
+	.owl-theme .owl-controls .owl-pagination{
+		@include position_style(absolute, left, 10px, bottom, 45px);
+		right:10px;
+		margin:0;
+		span{
+			border-width: 2px;
+			width: 10px !important;
+			height: 10px !important;
+			margin: 0 0 0 5px !important;
+		}
+	}
+}
+
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-ads-11{
+		.owl-theme .owl-controls .owl-pagination{ left:auto; right:10%;}
+	}
+}

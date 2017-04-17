@@ -1,0 +1,29 @@
+.em-wrapper-ads-11{ 
+	.em-ads-grid-item{
+		.changeBkg(@body_bg2_color);
+		.changeLine(@body_line_color);	
+	}
+	.em-ads-item{
+		.changeAllColor(@body_text_color; @body_line_color; transparent);
+		.em-ads-content .fa{
+			.changeColor(lighten(@body_text_color,20%));
+		}
+	}
+	.owl-theme .owl-controls .owl-pagination{		
+		span{
+			.changeLine(@body_line_color);
+			.changeBkg(transparent);
+		}
+		.owl-page.active span, span:hover{
+			.changeLine(@body_line2_color);
+			.changeBkg(transparent);
+		}
+	}
+}
+/*EM Menu Mobile*/
+#em-mheader .em-top-cart:hover .em-amount-topcart:before,
+#em-mheader .em-top-search .form-search button.button:hover,
+#em-mheader #em-mheader-menu-icon:hover{	
+	border:1px solid @header_bg3_color;
+}
+#em-mheader .em-top-search .form-search input.input-text{ border:1px solid @header_bg3_color; color:@header_bg3_color}

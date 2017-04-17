@@ -1,0 +1,68 @@
+.em-header-style06{
+	.link-account{		
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,14px);
+			margin-right:10px;			
+		}
+	}
+	.em-logo .logo{
+		margin:$padding3x 0;
+	}
+	.welcome-msg,
+	.account-link,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2;
+		display:inline-block;
+	}
+	.toolbar-switch{
+		span.current{
+			padding:$padding3x / 2;
+		}
+		.toolbar-dropdown ul{
+			left:0;
+			right:auto;
+		}
+	}
+	.em-top-cart{
+		margin-top:$padding3x / 2;
+		margin-left:$padding3x / 2;
+		.em-amount-topcart{
+			&:before{
+				@include font-awesome(\f13e,14px);
+				margin-right:10px;			
+			}
+		}
+	}
+	.em-search{
+		@include position_style(absolute, right, 0px, top, 45px);
+	}
+	.em_nav{	
+		padding-right:30px;
+		.hnav{
+			margin-top:30px;
+		}
+	}
+}

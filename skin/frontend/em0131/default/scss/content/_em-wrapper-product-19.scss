@@ -1,0 +1,76 @@
+.em-wrapper-product-19{	
+	margin-bottom:$space_block;
+	.product-item{
+		display:inline-block;
+		width:100%;
+		border-style: solid;
+		border-width: 1px;
+		@include border-radius(5px);
+		.big-img{
+			/*display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			align-content: flex-start;	*/
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			overflow:hidden;
+			.product-image{
+				float:left;
+				width:73%;
+				margin:0;
+				position:relative;
+				&:before{
+					border-right-style: solid;
+					border-right-width: 1px;
+					content:'';
+					position:absolute; top:0; right:-1px; height:100%; width:1px;
+				}
+			}
+			.em-more-views{
+				overflow:hidden;
+				width:27%;
+				position:relative;
+				&:before{
+					border-right-style: solid;
+					border-right-width: 1px;
+					content:'';
+					position:absolute; top:0; left:0; height:100%; width:1px;
+				}
+				.more-view-img{
+					border-top-style: solid;
+					border-top-width: 1px;
+					text-align:center;
+					&:first-child{
+						border-top-width: 0px;
+					}
+				}
+			}
+			img{
+				@include border-radius(5px);
+				width:100%;
+				&.em-alt-hover.em-img-lazy,
+				&.em-img-lazy{
+				    /*
+					width:auto !important;
+					display:inline-block !important;
+					height:auto !important;*/
+				}
+			} 
+		}
+		.product-shop{
+			overflow:hidden;
+			clear:both;
+			padding:20px 30px 30px;
+			.price-box{
+				float:left;	
+				margin-bottom: 1.55rem;	
+				margin-right:10px;
+			}
+			.em-btn-addto{
+				float:right;
+			}	
+		}
+	}
+	
+}

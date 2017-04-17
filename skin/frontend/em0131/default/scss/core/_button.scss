@@ -1,0 +1,222 @@
+/* ============================================ *
+ * Button
+ * ============================================ */
+a.viewall,
+a.goto-cart,
+button.button,
+.tp-caption a.ss-btn-link,
+.button-link,
+.em-sidebar a.link-cart,
+#em_quickshop_handler{
+	border: 1px solid; 
+	overflow:visible; 
+	width:auto; 
+	margin:0 10px 10px 0;
+	padding:7px 10px;
+	cursor:pointer;
+	float:left;
+	@include border-radius(5px);
+	@include transition1;
+	white-space: nowrap;
+	span{
+		display:inline-block; 
+		text-align:center; 
+		text-transform:uppercase;
+		padding:0 3px;
+	}
+}
+
+.cart button.btn-checkout{
+	span span{padding:4px 10px;}
+}
+
+/*=====Button Icon=====*/
+@mixin button_icon($padding,$width,$font,$font-size){
+	@include hideText();
+	text-indent:0;
+	padding:$padding;
+	vertical-align:top;
+	width:$width;
+	span{
+		padding:0;
+	}
+	&:before{
+		@include font-awesome($font,$font-size);
+	}
+}
+/*=====Button Quickshop============*/
+.quickshop-link-container {
+	display:inline;
+	.quickshop-link{
+		@include button_icon(7px,30px,\f06e,14px);
+		float:none;
+		display:inline-block;
+		@include border-radius(3px);
+		border-style: solid;
+		border-width: 1px;
+	}
+}
+
+/*=====Button Add To Cart=====*/
+.em-sidebar a.link-cart,
+.button-link.link-cart,
+.em-sidebar button.button.btn-cart,
+button.button.btn-cart{
+	@include button_icon(7px,30px,\f07a,14px);
+	margin-right:5px;
+	float:none;
+	display:inline;
+	@include border-radius(3px);
+	font-size:0 /*!important*/;
+}
+
+button.button.btn-cart{
+	width:auto;
+	span{
+		padding:0 3px;
+	}
+}
+.em-featured-slider button.button.btn-cart{
+	font-size:0;
+	span{
+		padding:0;
+	}
+}
+/*=====End Button Add To Cart=====*/
+
+/*=====Button Add To Wishlist/Compare=====*/
+.add-to-links{
+	margin-bottom:0;
+}
+.link-wishlist,
+.add-to-links li a.link-wishlist{
+	@include button_icon(7px,30px,\f08a,14px);
+	border: 1px solid; 
+	@include transition1;
+	@include border-radius(3px);
+}
+
+.add-to-links li a.link-compare{
+	@include button_icon(7px,30px,\f079,14px);
+	border: 1px solid; 
+	@include transition1;
+	@include border-radius(3px);
+}
+/*=====End Button Add To Wishlist/Compare=====*/
+
+/*=====Button Back=====*/
+p.back-link a{
+	border: 1px solid; 
+	overflow:visible; 
+	width:auto; 
+	margin:0 10px 10px 0;
+	cursor:pointer;
+	float:left;
+	@include transition1;
+	padding:7px 25px;
+	text-transform:uppercase;
+	@include border-radius(3px);
+	small{
+		display:none;
+	}
+}
+/*=====End Button Back=====*/
+
+/*=====Button Remove/Edit=====*/
+.btn-remove,
+.btn-remove2{
+	font-size:0;
+	display:inline-block;
+	border:2px solid #d4d4d4;
+	@include border-radius(50%);
+	&:before{
+		@include font-awesome("\f00d",11px);
+		padding:3px 4px;
+		color:#fff;
+		background:#000000;
+		@include border-radius(50%);
+	}
+}
+
+/*Button edit*/
+.btn-edit{
+	font-size:0;
+	border:2px solid #d4d4d4;
+	@include border-radius(50%);
+	&:before{
+		@include font-awesome("\f040",11px);
+		padding:3px 4px;
+		color:#fff;
+		background:#000000;
+		@include border-radius(50%);
+	}
+}
+/*=====End Button Remove/Edit=====*/
+
+/*=====Button Fullwidth=====*/
+/*button fullwidth*/
+button.button-full-width,
+.button-full-width{
+	margin-right:0;
+	width:100%;
+	span{
+		float:none;
+		display:inline-block;
+		width:100%;
+	}
+}
+/*=====End Button Fullwidth=====*/
+
+
+/*======Button Ajax======*/
+.ajaxcart a.back,
+.ajaxcart a.next{
+	border: 1px solid; 
+	overflow:visible; 
+	width:auto; 
+	margin:0 10px 10px 0;
+	cursor:pointer;
+	float:left;
+	@include transition1;
+	padding:7px 25px;
+	@include border-radius(3px);
+	span{
+		float:left; 
+		text-align:center; 
+		text-transform:uppercase;
+	}
+}
+/*======End Button Ajax======*/
+
+
+/*========Button Load More=========*/
+.load-more-image{
+	text-align:center;
+	display:inline-block;
+	width:100%;
+	a.load-more{
+		display:inline-block;
+		padding:11px 20px;
+		margin-top:2rem;
+		min-width:220px;
+		@include border-radius(5px);
+		border-style: solid;
+		border-width: 1px;
+		@include transition1;
+	}
+}
+.em-ajax-product.products-grid{
+	margin-bottom:6rem;
+	#infscr-loading{
+		position: absolute;
+		bottom: -8rem;;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.em-ajax-product .item{ width: calc(100%/5); }
+@media (max-width:768px){
+ .em-ajax-product .item{  width: calc(100%/2);}
+}
+

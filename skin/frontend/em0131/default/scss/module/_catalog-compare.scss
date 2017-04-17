@@ -1,0 +1,66 @@
+/* ============================================ *
+ * Catalog - Compare
+ * ============================================ */
+ 
+.page-popup.catalog-product-compare-index{
+	padding:20px;
+}
+.block-compare .product-name:after {
+    @include clearfix;
+}
+.link-print{
+	position:relative;
+	float:right;
+	margin-top:-7px;
+	padding: 10px;
+	border: 2px solid;
+	font-weight:700;
+	text-transform: uppercase;
+	font-size: 85%;
+	&:before{
+		@include font-awesome(\f02f, 14px);
+		margin-right:5px
+	}
+}
+.compare-table {
+	&.data-table {
+		thead th{
+			background:none;
+		}
+		th{
+			padding:10px 20px;
+		}
+	}
+    .product-shop-row {
+        &.top td {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        &.bottom td {
+            padding-top: 0;
+        }
+    }
+	a.product-image{ 
+		text-align:center;
+		img{
+			width:auto;
+		}
+	}
+	.em-add-to-button{
+		p{
+			float:left;
+		}
+		
+	}
+}
+
+.page-popup.catalog-product-compare-index .buttons-set{
+	float:right;
+	button.button{
+		margin-top:20px;
+		margin-right:0;
+	}
+}
+
+

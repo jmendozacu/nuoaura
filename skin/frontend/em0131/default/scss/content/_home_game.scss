@@ -1,0 +1,72 @@
+.em-wrapper-header .em-header-style29{
+	.em_nav{
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		.menu-item-depth-0:first-child > a > span{
+			-moz-border-radius: 5px 0 0 5px;
+			-webkit-border-radius: 5px 0 0 5px;
+			border-radius: 5px 0 0 5px;
+		}
+	}
+}
+
+.em-slideshow{
+	margin-top:$space_small_block ;
+	.img-responsive{
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.owl-carousel .owl-item .em-owlcarousel-des{
+		&.em-owlcarousel-des-0{
+			left: 49%;
+			width: 48%;
+		}
+		&.em-owlcarousel-des-1{
+			left: 10%;
+		}
+	}
+}
+
+.em-wrapper-brands{
+	margin:0 0 $space_block ;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	.slider-style02{
+		padding:20px 50px;
+		margin:0;
+		.em-slider-navigation-icon.owl-theme .owl-controls .owl-buttons div{
+			&.owl-next{
+				right:-55px;
+			}
+			&.owl-prev{
+				left:-55px;
+			}
+		}
+	}
+}
+
+.em-wrapper-footer{
+	.em-footer-style09 .em-footer-info-bottom{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+}
+
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#0a9efa;
+	}
+	&.emColorStyle02{
+		background:#B30707;
+	}
+	&.emColorStyle03{
+		background:#e76f32;
+	}
+	&.emColorStyle04{
+		background:#488e53;
+	}
+}

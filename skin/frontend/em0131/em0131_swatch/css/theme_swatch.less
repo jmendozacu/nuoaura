@@ -1,0 +1,86 @@
+.cms-index-index .em-wrapper-header .em-header-top{ background:@header_bg_color}
+.em-wrapper-header .em-fixed-top.navbar-fixed-top{ background:@header_bg_color !important}
+.em-wrapper-header .em-header-top{ background:transparent;}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+	background:@header_bg3_color;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span { border-color:@header_bg3_color;}
+
+/*===================HEADER STYLE 28=========================*/
+.em-wrapper-header{
+	.em-header-style28{
+		.em-header-top a{ .link(@header_text2_color; @header_text_color);}
+		.toolbar-switch .toolbar-dropdown{
+			span.current{
+				color:@header_text2_color;
+			}
+			&:hover{
+				span.current{
+				color:@header_text_color;
+			}
+			}
+		}
+		
+		.em_nav ul.level0 a,
+		.em_nav .menu-container a{.link(@dropmenu_text_color, @dropmenu_text2_color)}
+		.em-search{
+			.em-search-icon{				
+				span:before{
+					.changeColor(@header_text2_color);
+				}				
+			}
+			&:hover{
+				.em-search-icon{
+					span:before{
+						color:@header_text_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Slideshow*/
+.em-slideshow{
+	a.button-link{
+		.changeAllColor(@btn3_text_color; @btn3_line_color; @btn3_bg_color; @h4_font );	
+		&:hover{
+			.changeAllColor(@btn3_text_color; @btn3_line_color; @body_text6_color);			
+		}
+		&.first{
+			.changeAllColor(@body_text6_color; @btn3_line_color; @btn3_line_color; @h4_font );			
+			&:hover{
+				.changeAllColor(@btn3_text_color; @btn3_line_color; @body_text6_color);
+			}
+		}
+	}
+}
+/*Product Home Page*/
+.section-product{
+	.product-shop{
+		.product-name{ .changeFont(@h2_font);}
+		.product-name a{ font-size:180%; font-weight:700}
+		.sku{ font:400 italic 2rem/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif}
+		.price{ font-size:160%;}
+		.add-to-links li a.link-wishlist,
+		.add-to-links li a.link-compare{ width:50px; height:50px; line-height:50px; border-width:2px; padding:0; text-align:center;
+			&:before{ font-size:20px; line-height:46px;}
+		}
+		button.button.btn-cart{ .changeFont(@h5_font); border-width:2px; padding:13px 20px;
+			&:before{ font-size:20px;}
+		}
+	}
+	
+}
+
+/*Footer*/
+.section-footer{ background:@footer_bg_color}
+
+

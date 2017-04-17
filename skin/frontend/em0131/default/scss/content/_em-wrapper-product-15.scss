@@ -1,0 +1,62 @@
+.em-wrapper-product-15{
+	border-style: solid;
+	border-width: 1px;
+	@include border-radius(5px);
+	overflow:hidden;
+	margin-bottom:$space_block;
+	.em-widget-title{
+		padding:13px 20px;
+		text-transform:uppercase;
+		@include border-radius(5px 5px 0 0);
+		h3, h2{
+			margin:0;
+		}
+	}
+	.products-list{		
+		display:flex;
+		width:100%;
+		padding:0px 20px; clear:both;
+		&:first-child{
+			div.item{
+				border-top-width: 0px;
+				padding-top:0;
+				padding-bottom: 20px;
+				margin-top:20px;
+				margin-bottom: 0;
+			}
+		}
+		div.item{
+			@include border-radius(0px);
+			/* Firefox */
+			width: -moz-calc(100% / 3);
+			/* WebKit */
+			width: -webkit-calc(100% / 3);
+			/* Opera */
+			width: -o-calc(100% / 3);
+			/* Standard */
+			width: calc(100% / 3);
+			padding:20px 10px 0;
+			float:left;
+			border:none;
+			border-top-style: dotted;
+			border-top-width: 1px;
+			border-right-style: dotted;
+			border-right-width: 1px;
+			margin:0 0 20px;
+			&.last{
+				border-right-width: 0px;
+				padding-right:0;
+			}			
+			&.first{
+				padding-left:0;
+			}
+		}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-wrapper-product-15 .products-list div.item{ border-right-width:0; border-left-style:dotted; border-left-width:1px; padding-left:10px; padding-right:10px;}
+	.em-wrapper-product-15 .products-list div.item.first{ padding-right:0;}
+	.em-wrapper-product-15 .products-list div.item.last{ padding-left:0; padding-right:10px; border-left-width:0;}
+}

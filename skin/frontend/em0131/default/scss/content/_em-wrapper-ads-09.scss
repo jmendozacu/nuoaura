@@ -1,0 +1,67 @@
+.em-wrapper-ads-09{	
+	margin-bottom:$space_block;
+	border-width: 1px;
+	border-style: solid;
+	@include border-radius(5px);
+	padding:0 10px;
+	.line-right{
+		margin-right:-1px;
+		border-right-style: dotted;
+	}
+	.line-left{
+		border-left-style: dotted;
+	}
+	.em-wrapper-ads-item{
+		margin-top:30px;
+		margin-bottom:30px;
+		.fa{
+			font-size:340%;
+			&:hover{
+				cursor:default;
+			}
+		}
+		h4{
+			font-weight:700;
+		}
+		.em-ads-content p{
+			margin-bottom:0;
+		}
+		&:nth-child(1) .fa:hover{
+			@include eff_slideshow(tada);	
+			-webkit-animation-duration: 4.0s;
+			-moz-animation-duration: 4.0s;
+			-webkit-animation-delay: 0s;
+			-moz-animation-delay: 0s;
+			-webkit-animation-timing-function: ease-out;
+			-moz-animation-timing-function: ease-out;
+		}
+		&:nth-child(2) .fa:hover{
+			@include eff_slideshow(flash);		
+			-webkit-animation-duration: 4.0s;
+			-moz-animation-duration: 4.0s;
+			-webkit-animation-delay: 0s;
+			-moz-animation-delay: 0s;
+			-webkit-animation-timing-function: ease-out;
+			-moz-animation-timing-function: ease-out;
+		}
+		&:nth-child(3) .fa:hover{
+			@include eff_slideshow(wobble);	
+			-webkit-animation-duration: 4.0s;
+			-moz-animation-duration: 4.0s;
+			-webkit-animation-delay: 0s;
+			-moz-animation-delay: 0s;
+			-webkit-animation-timing-function: ease-out;
+			-moz-animation-timing-function: ease-out;
+		}
+		&:nth-child(4) .fa:hover{
+			@include eff_slideshow(rotateIn);	
+			-webkit-animation-duration: 4.0s;
+			-moz-animation-duration: 4.0s;
+			-webkit-animation-delay: 0s;
+			-moz-animation-delay: 0s;
+			-webkit-animation-timing-function: ease-out;
+			-moz-animation-timing-function: ease-out;
+		}
+		
+	}
+}

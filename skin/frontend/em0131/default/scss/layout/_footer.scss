@@ -1,0 +1,84 @@
+/* ============================================ *
+ * Footer
+ * ============================================ */
+@import "core/theme_config";
+@import "footer_style11";
+@import "footer_style09";
+@import "footer_style08";
+@import "footer_style12";
+@import "footer_style07"; /*== Footer Layout Garden==*/
+@import "footer_style13";/*== Footer Layout Glass==*/
+@import "footer_style14";/*== Footer Layout Swatch==*/
+@import "footer_style02";/*== Footer Layout Mello==*/
+
+.em-wrapper-footer{
+	address{
+		line-height:1.35;
+		font-size:75%;
+	}
+	.em-footer-bottom{
+		padding-bottom:30px;
+	}
+}
+
+.em-payment{
+	text-align:center;
+	margin:0 -5px;
+	.em-payment-icon{margin-bottom:10px;}
+	.em-payment-icon{
+		margin:0 5px 10px;
+		@include transition1;
+		float:left;
+	}
+}
+
+.em-payment-icon.em-visa{
+	@include changeIcon(40px, 22px, icons, 0 -38px);
+}
+
+.em-payment-icon.em-master{
+	@include changeIcon(28px, 22px, icons, -54px -38px);
+}
+
+.em-payment-icon.em-paypal{
+	@include changeIcon(57px, 22px, icons, -122px -38px);
+}
+.em-payment-icon.em-express{
+	@include changeIcon(16px, 22px, icons, -93px -38px);
+}
+.em-payment-icon.em-other{
+	@include changeIcon(49px, 22px, icons, -192px -38px);
+}
+
+
+
+/*twitter*/
+.twitter-tweet{
+	width:100%!important;
+}
+/*social*/
+.em-social{
+	margin:0 -5px;
+	.em-social-border{
+		margin-bottom:5px;
+	}
+}
+.em-social-icon{
+	font-size:18px;
+	margin:0 5px;
+	@include transition1;
+	margin-bottom:5px;
+	&.last{
+		margin-right:0;
+	}
+}
+
+/*social border*/
+.em-social-border{
+	.em-social-icon{
+		display:inline-block;
+		padding: 6px;
+		border: 1px solid;
+	}
+}
+

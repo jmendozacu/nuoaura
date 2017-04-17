@@ -1,0 +1,35 @@
+.em-footer-style14{
+	padding-top:$padding2x * 4;
+	.em-footer-top{ padding-bottom:$padding2x * 4}
+	.em-logo-footer{ display:inline-block}
+	.newsletter-boder-input-act .block-subscribe{ padding:9px 10px;
+		.actions button.button{ padding:9px 20px}
+		input.input-text{ height:40px;}
+	}
+	.block-subscribe {
+		button.button{
+			border-style: solid;
+			border-width: 2px;
+		}
+	}
+	ul.footer-menu-links{
+		margin-bottom:$padding2x * 2;
+		li{ display:inline-block; margin:0 $padding2x;}
+		a{}
+	}
+	.em-footer-bottom{
+		border-top:1px solid #343434; padding-top:30px;
+		a{ text-transform:uppercase}
+		ul.links{ margin-bottom:20px}
+	}
+}
+
+.em-rtl{
+	.em-footer-style14{
+		.newsletter-boder-input-act .block-subscribe .actions{ 
+			float:left;
+			button.button{ margin-left:0;}
+		}
+		.block-subscribe .input-box{ float:right;}
+	}
+}

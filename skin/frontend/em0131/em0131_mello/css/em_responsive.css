@@ -1,0 +1,10 @@
+@media (max-width:500px){
+	.em-introduction-block .page-title span{
+		padding:0!important;
+	}
+	.em-introduction-block .page-title span:after,
+	.em-introduction-block .page-title span:before{
+		background:none;
+		display:none;
+	}
+}

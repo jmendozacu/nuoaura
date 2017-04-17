@@ -1,0 +1,51 @@
+$space_block : 50px;
+$space_small_block : 20px;
+
+@import "theme-var";
+@import "mixin/theme-mixin";
+@import "mixin/link-mixin";
+
+/*Core*/
+@import "core/reset";
+@import "core/button";
+@import "core/table";
+@import "core/effects";
+
+/*Module*/
+@import "module/configurableswatches";
+@import "module/tab-slider";
+@import "module/popup";
+@import "module/cms";
+@import "module/search";
+@import "module/price";
+@import "module/slideshow";
+@import "module/blog";
+@import "module/contacts";
+@import "module/checkout-cart-minicart";
+@import "module/checkout-cart";
+@import "module/checkout-onepage";
+@import "module/checkout-success";
+@import "module/blocksidebar-widget";
+@import "module/product-list";//product grid/list
+@import "module/catalog-product";//product detail
+@import "module/customer-account";//my-account
+@import "module/account-reviews";//my-account
+@import "module/customer-form";//login-register
+@import "module/catalog-compare";//login-register
+@import "module/variation";//variation fontend
+@import "module/loading_page";// loading page
+
+
+/*Layout*/
+@import "layout/header";
+@import "layout/footer";
+
+
+/*Content*/
+@import "content/home";
+@import "content/category";
+
+
+
+/*Test column mobile*/
+@import "layout/grid_column";

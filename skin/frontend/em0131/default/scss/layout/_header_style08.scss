@@ -1,0 +1,182 @@
+.em-header-style08{
+	.em-header-top{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-top-style: solid;
+		border-top-width: 3px;
+	}
+	.em-header-bottom{
+		position:relative;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			right: 0;
+			top: auto;
+			height: 4px;
+			box-shadow: 0 3px 3px #CACACA;
+			-moz-box-shadow: 0 3px 3px #CACACA;
+			-webkit-box-shadow: 0 3px 3px #CACACA;
+		}
+	}
+	.link-account,.em-logout-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f13e,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-register-link,.em-account-link{
+		position:relative;
+		&:before{
+			@include font-awesome(\f084,100%);
+			margin-right:10px;			
+		}
+	}
+	.em-links-wishlist a{
+		position:relative;
+		&:before{
+			@include font-awesome(\f004,100%);
+			margin-right:10px;			
+		}
+	}
+	.top-link-deal{
+		position:relative;
+		&:before{
+			@include font-awesome(\f02c,100%);
+			margin-right:10px;			
+		}
+	}
+	.welcome-msg,
+	.link-account,
+	.em-top-links > ul li,	
+	.em-top-links ul.links li,	
+	.em-top-links ul.em-links-wishlist li{	
+		padding:$padding3x / 2 - 1px $padding2x;		
+		display:inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		border-bottom-width: 0px;
+		margin-left:-1px;
+		min-height: 50px;
+	}
+	.em-top-links ul.links li{
+		margin-right:-1px;
+	}
+	.toolbar-switch{
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		border-bottom-width: 0px;
+		margin-right:-1px;
+		span.current{
+			padding:$padding3x / 2 - 1px $padding2x;			
+			min-height:50px;
+		}
+	}
+	.em-search{
+		display:inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+		border-bottom-width: 0px;
+		margin-left:-1px;
+		position:relative;
+		.em-search-icon{			
+			padding:18px $padding2x;
+			display:block;
+			span:before{
+				font-size:1.4rem;
+			}
+		}
+		.em-search-style01 .em-container-js-search{
+			top: 51px;
+		}
+	}
+	.em-logo .logo{
+		margin:$padding2x 0;
+	}
+	.em-header-bottom{
+		.em_nav{	
+			padding-right:70px;
+			padding-top:30px;
+			.hnav{
+				.menu-item-depth-0,
+				.menu-item-depth-0 > .em-catalog-navigation > li.level0{
+					margin:0;
+					> a.em-menu-link{
+						&:hover{
+							/*margin-bottom: -40px;
+							padding-bottom: 40px;
+							position:relative;
+							z-index:1;*/
+						}
+						span{
+							padding-bottom:31px;
+							border-top-width: 2px;
+							text-transform:uppercase;
+						}
+					}
+				}
+				.menu-item-depth-0 > .menu-container{
+					top:66px;
+				}
+			}
+		}
+		.em-top-cart{
+			display:inline-block !important;
+			@include position_style(absolute, right, 10px, top, 25px);
+			margin:0;
+			.em-amount-topcart{ 
+				display:inline-block;
+				padding-bottom:30px;
+				margin-bottom:-30px;
+				width:50px;
+				&:after{
+					content:"";
+				}
+				&:before{
+					content:"\e835";
+					font-family: 'maki', sans-serif;
+					width: 50px;
+					height: 50px;
+					font-size: 1.6rem;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					text-align:center;
+					display:inline-block;
+					padding:19px 5px 0px;
+					@include border-radius(5px);
+				}
+				.em-topcart-text{
+					display:none;
+				}
+				.em-topcart-qty{
+					@include position_style(absolute, left, 33%, top, -8px);
+					@include border-radius(100%);
+					padding: 0px 6px;
+					font-size:12px;			
+				}
+			}
+			.topcart-popup{
+				top:71px;
+			}
+		}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	.em-header-style08{
+		.em-links-wishlist a:before,.link-account:before, .em-logout-link:before, 
+		.em-register-link:before, .em-account-link:before{ margin-right:0; margin-left:10px;}
+	}
+	.em-header-style08 .em-header-bottom .em_nav{
+		padding-right:0; padding-left:70px;
+	}
+	.em-header-style08 .em-header-bottom .em-top-cart{ right:auto; left:10px;}
+	.em-header-style08 .em-header-bottom .em-top-cart .em-amount-topcart .em-topcart-qty{ left:23%}
+}

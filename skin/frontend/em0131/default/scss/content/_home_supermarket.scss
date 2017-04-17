@@ -1,0 +1,80 @@
+.em-banner-slideshow{
+	margin-top:20px;
+}
+.em-slideshow{
+	margin-bottom:$space_small_block;	
+	.owl-theme .owl-controls .owl-buttons div{
+		top:44%;
+	}
+	.owl-theme .owl-controls .owl-pagination{ left:42%; bottom:10px;}
+	.owl-carousel .owl-item .em-owlcarousel-des{
+		left: 15%;
+		top: 27%;
+		width: 67%;
+		h3{
+			&:before{
+				display:none;
+			}					
+		}
+	}
+}
+.em_nav .vnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a span, 
+.em_nav .vnav .menu-item-depth-0 > a span{
+	padding:15px 20px 16px;
+}
+.em-header-style27 .line-top{ border-bottom-width:1px; border-bottom-style:solid}
+.em-header-style27 .em_nav{
+	.hnav .menu-item-depth-0,
+	.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0{
+		> a{
+			span{
+				border-width:1px;
+				border-top-width:2px;
+				margin-top:-1px;
+				margin-bottom:-1px;
+			}
+		}
+		> .menu-container{
+			top:49px;
+		}
+	}
+}
+.em-wrapper-ads-17 {
+    background-image: url(../images/bkg-parallax.jpg);
+}
+
+.em-wrapper-area09{ 
+	.text-box{ margin:32px 0;}
+	.em-wrapper-ads-13{
+		.icon-banner-left{		
+			border-width:2px; border-style:solid
+		}
+		.em-banner-right{
+		}
+	}
+}
+.em-wrapper-brands{
+	margin:0;
+	.slider-style02{ margin:40px 0}
+}
+
+#em-mheader .em-top-search .form-search input.input-text{ border-width:1px; border-style:solid}
+.cms-index-index .menuleft,
+.menuleft{position:absolute; top:49px}
+
+
+/*Main Color Variation*/
+.em-color span{
+	&.emColorStyle01{
+		background:#c76709;
+	}
+	&.emColorStyle02{
+		background:#0b3853;
+	}
+	&.emColorStyle03{
+		background:#19570a;
+	}
+	&.emColorStyle04{
+		background:#910d0d;
+	}
+}

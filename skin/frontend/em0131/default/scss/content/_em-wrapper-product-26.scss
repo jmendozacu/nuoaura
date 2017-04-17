@@ -1,0 +1,84 @@
+.em-wrapper-product-26{
+	.custom-tab{
+		margin-bottom:2rem;
+		.tab-link{
+			a{
+				float:left;
+				width:20%;
+				padding:20px;
+				border-style: solid;
+				border-width: 1px;
+				border-left-width: 0px;
+				position:relative;
+				text-transform:uppercase;
+				min-width:150px;
+			}
+			&.active a:before{
+				@include font-awesome(\f0d7,25px);
+				line-height: 14px;
+				@include position_style(absolute, left, 45%, bottom, -11px)				
+			}
+			
+		}
+	}
+	.products-grid{
+		.item{
+			min-height:1px;
+			.product-item{
+				border-width:0;
+				left:0;				
+				margin:11% 0;
+				@include transition1;
+				a.product-image:after{
+					background-color:#fff;
+					left: -10px;
+					right: -10px;
+					top: -10px;
+					bottom: 0;
+				}
+				&:hover{
+					position:absolute;
+					width:120%;
+					left:-10%;
+					top:0;
+					z-index:2;
+					margin:0;
+					box-shadow:none;
+					a.product-image:after{
+						opacity: 0;
+						left: 50%;
+						right: 50%;
+						top: 50%;
+						bottom: 50%;
+					}
+				}
+			}
+		}
+		&:hover	.product-item a.product-image:after{
+			opacity: 0.6;
+		}
+		.owl-item-first .item:hover .product-item{left:0%;}
+		.owl-item-last .item:hover .product-item{left:-20%;}
+		&.owl-carousel{
+			.owl-wrapper-outer{
+				padding-bottom: 60px;
+				margin-bottom: -60px;
+				position: static;
+			}
+			&:hover{ z-index: 1;}
+		}
+		&.owl-theme .owl-controls .owl-buttons div.owl-prev{position:static; margin:0 1rem!important;}
+		&.owl-theme .owl-controls .owl-buttons div.owl-next{position:static; margin:0 1rem!important}	
+		&.owl-theme .owl-controls{
+			display: inline-block;    
+			bottom: 2rem;     
+			margin-bottom: 2rem;     
+			position: relative;
+		}
+	}
+}
+
+/*===============RTL=================*/
+.em-rtl{
+	
+}

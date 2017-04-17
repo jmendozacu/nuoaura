@@ -1,0 +1,69 @@
+/* ======================================================================================= */
+.em-multideal-price-box,
+.price-box{
+	p{
+		display:inline-block;
+		margin-bottom:0;
+		margin-top:0;
+		&:first-child{
+			margin-right:5px; 
+			margin-top:0;
+		}
+		&.price-to{
+			margin-top:0;
+		}
+	}
+	p.old-price,p.special-price{
+		.price-label{display:none;}
+	}
+	p.old-price{
+		
+	}
+	p.price-to{
+		
+	}
+	.price-label{
+		display: inline-block;		
+	}
+	span.price{
+		display:inline-block;
+	}
+}
+.em-multideal-price-box{ 
+	margin-bottom:14px;
+	.price-label{ display:none;}
+	.regular-price .price{text-decoration: line-through; font-weight:normal}
+}
+.multidealpro_products.em_multidealpro{
+	.price-box{ display:none;}
+}
+.products-list {
+	.price-box p{
+		margin-top:0px;
+		&.special-price{
+			margin-top:0;
+		}
+	}
+}
+/* Old price */
+.old-price {}
+.old-price .price {text-decoration:line-through;}
+
+/* Excluding tax */
+.price-excluding-tax { display:block; }
+
+/* Including tax */
+.price-including-tax { display:block; }
+
+/* FPT */
+.weee { display:block; }
+
+/* Excl tax (for order tables) */
+.price-excl-tax  { display:block; }
+.price-excl-tax .label { display:block;}
+.price-excl-tax .price { display:block; }
+
+/* Incl tax (for order tables) */
+.price-incl-tax { display:block; }
+.price-incl-tax .label { display:block; }
+.price-incl-tax .price { display:block;}

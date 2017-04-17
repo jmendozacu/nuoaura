@@ -1,0 +1,385 @@
+a.product-image{
+	position:relative; 
+	margin-bottom:18px; 
+	display:block;
+	img{
+		/*width:100%;
+		height:auto;*/
+		@include border-radius(0)
+	}
+}
+.products-grid a.product-image{
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+.product-name{
+
+}
+.ratings{
+	padding:0 0 1rem;
+	.rating-box{ 
+		margin-right:0;
+	}
+	.amount{
+		/*display:none;*/
+	}
+}
+div.desc{
+	margin-bottom:1.55rem;
+}
+/* View Type: Grid */
+
+.products-grid{
+	.item{
+		margin:0 0 10px;
+		float:left;
+		text-align:center;
+		margin-right:20px;
+		.product-item{
+			overflow:hidden;
+			width:100%;			
+			border-width:1px;
+			border-style:solid;
+		}
+		img{
+			width:100%;
+			height:auto;
+			@include border-radius(5px 5px 0 0);
+		}
+		.product-shop{
+			display:inline-block;
+			width:100%;
+			@include transition1;
+			padding:0 10px 10px;
+			.f-fix{ 
+			}
+		}
+		.add-to-links li{
+			float:none;
+			display:inline-block; vertical-align:top;
+		}
+	}
+}
+
+@mixin clearcss-item{
+	.products-grid{
+		li.item{
+			padding:0 !important;
+			border:0;
+			margin-right:0;
+			&:hover{
+				.product-item{
+					margin:-10px;
+				}
+			}
+		}
+	}
+}
+
+.em-crosssell-noslider,
+.em-upsell-noslider{
+	&.products-grid{
+		li.item{
+			padding:10px !important;
+			margin-right:0;
+		}
+	}
+}
+.category-products {
+	.products-grid{
+		li.item{
+			padding:0 10px;
+			margin-right:0;			
+		}
+	}
+	.item .product-item{
+		@include cat-effect01;
+		overflow:hidden;
+		width:auto; display:block; min-height:100%;
+		&:hover{
+			position:absolute;
+			top:0;
+			left:10px;
+			right:10px;
+			z-index:2;
+		}
+	}
+	.products-grid .em-btn-addto button.button{
+		margin-bottom:0;
+		font-size:0;
+		span{
+			padding:0;
+		}
+	}
+}
+
+	
+/* View Type: List */
+.products-list{
+	.product-image { 
+		float:left; 
+		margin:0 20px 10px 0; 
+	}
+	.product-shop {
+		overflow:hidden;
+		text-align:left;
+		.price-box{
+			margin-bottom:14px;
+		}
+	}
+	div.item{
+		display:inline-block;
+		width:100%;
+		margin-bottom:20px;
+	}
+	li.item{
+		overflow:hidden;
+	}
+}
+.em-sidebar {
+	.products-list{
+		margin-bottom:0;
+		.product-shop .price-box{
+			margin-bottom:0;
+		}
+	}
+}
+.products-list{
+	> .item{
+		padding:10px;
+		@include cat-effect01;
+		border:1px solid transparent;
+		@include border-radius(3px);
+		margin-bottom:40px;
+		a.product-image{
+			margin-bottom:0;
+		}
+		.product-shop{
+			margin-bottom:10px;
+		}
+	}
+}
+
+/*=================setting admin=====================*/
+/*single line*/
+.products-grid .item{
+	.product-name{
+	}
+	&:hover .product-name{
+	}
+}
+
+/*=======category setting hover effect===========*/
+@mixin product-hover{
+	&.products-grid li.item{
+		.product-item{
+			.em-element-display-hover{
+				transform: scale(0,0);
+				-moz-transform: scale(0,0);
+				-webkit-transform: scale(0,0);
+				@include transition1;
+				height:0;
+				opacity: 0!important;
+				// IE8 filter
+				filter: #{alpha(opacity=0!important)};
+			}
+			&:hover{
+				.em-element-display-hover{
+					@include transition1;
+					transform: scale(1,1);
+					-moz-transform: scale(1,1);
+					-webkit-transform: scale(1,1);
+					height:100%;
+					opacity: 1!important;
+					// IE8 filter
+					filter: #{alpha(opacity=100!important)};
+				}
+			}
+		}
+	}
+}
+
+/*Enable on all devices*/
+.emcatalog-enable-hover{
+	@include product-hover;
+}
+
+a.product-image .em-img-lazy{
+	
+}
+
+/*Effect Show Button Add Cart - Wishlist - Compare*/
+
+.product-shop-top{
+	position:relative;
+	.em-btn-addto,
+	.quickshop-link-container{ display:inline-block; vertical-align:top}
+	
+}
+@mixin button-show01{
+	.item{
+		.product-shop-top{
+			position:relative;
+			.bottom{
+				@include position_style(absolute, left, auto, bottom, 0px);
+				text-align:center;
+				width:100%;
+				@include opacity(0);
+				@include transition1;
+				button.button.btn-cart{
+					margin-bottom:0;
+				}
+			}
+			.out-of-stock{
+				display:inline-block;
+				vertical-align:top;
+				margin-right:0.5rem;
+				margin-top: 4px;
+			}
+			.quickshop-link-container,
+			.em-btn-addto{
+				display:inline-block;
+				vertical-align:top;
+			}
+		}
+		&:hover{
+			.bottom{
+				bottom:20px;
+				@include opacity(1);
+			}
+		}
+	}
+}
+@mixin button-hide-text{
+	button.button.btn-cart{
+		font-size:0;
+		span{
+			padding:0;
+		}
+	}
+}
+
+@mixin button-show02{
+	.item{
+		.add-to-links{
+			width:66.6667%;
+			float:left;
+			li{
+				width:50%;
+				float:left;
+				margin:0;
+				a{ width:100%; text-align:center; @include border-radius(0); border:0; padding:10px 7px;}
+			}
+		}
+		.em-btn-addto{
+			width: 75%;
+			float: left;
+		}
+		button.button.btn-cart{
+			font-size:0;
+			font-size: 0;
+			width: 33.3333%;
+			float: left;
+			border: 0;
+			margin: 0; text-align:center; @include border-radius(0); padding:10px 7px;
+			span{
+				padding:0;
+			}
+		}
+		.quickshop-link-container{width:25%; float:left; a{ width:100%; border:0; text-align:center;@include border-radius(0); padding:10px 7px}}
+		.em-element-display-hover{
+			/*dipslay:none;*/
+			@include transition1;
+			@include opacity(0);
+		}
+		.product-shop-top{
+			position:relative;
+			border:1px solid transparent;
+			overflow:hidden;
+			.bottom{
+				position:absolute;
+				bottom:-50px;
+				left:0;
+				width:100%;
+				text-align:center;
+				.em-element-cotent{
+					display:inline-block;
+					width: 100%;
+					vertical-align: top;
+				}
+			}
+		}		
+		&:hover{
+			.product-shop-top .bottom{
+				bottom:18px;
+				@include opacity(1);
+			}
+		}
+	}
+}
+@mixin button-show03{
+	.item{
+		.add-to-links{
+			width:100%;
+			float:left;
+			li{
+				width:100%;
+				float:left;
+				margin-right:0;
+				a{ width:100%; text-align:center; @include border-radius(0); border:0;}
+			}
+		}
+		.em-btn-addto{
+			width: 100%;
+			float: left;
+		}
+		button.button.btn-cart{
+			font-size:0;
+			font-size: 0;
+			width: 100%;
+			float: left;
+			border: 0;
+			margin: 0; text-align:center; @include border-radius(0);
+			span{
+				padding:0;
+			}
+		}
+		.quickshop-link-container{width:100%; float:left; a{ width:100%; border:0; text-align:center;@include border-radius(0)}}
+		.bottom{
+			/*dipslay:none;*/
+			@include transition1;
+			@include opacity(0);
+		}
+		.product-shop-top{
+			position:relative;
+			border:1px solid transparent;
+			overflow:hidden;
+			.bottom{
+				position:absolute;
+				top:10px;
+				left:-100px;
+				width:30px;
+				text-align:center;
+				.em-element-cotent{
+					display:inline-block;
+					width: 100%;
+					vertical-align: top;
+				}
+			}
+		}		
+		&:hover{
+			.product-shop-top .bottom{
+				@include opacity(1);
+				left:10px;
+			}
+		}
+	}
+}
+.category-products,
+.products-grid,
+.button-show01 .products-grid{ @include button-show01;}
+.button-show02 .products-grid{ @include button-show02;}
+.button-show03 .products-grid{ @include button-show03;}
+.button-hide-text{ @include button-hide-text }
