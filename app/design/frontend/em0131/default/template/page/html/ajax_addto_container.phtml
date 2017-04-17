@@ -1,0 +1,32 @@
+<?php
+	$_helper = $this->helper('catalog/product_compare');
+?>
+<div id="addtoContainer"  style="display:none">
+	<div class="ajaxaddto">
+		<img class='ajaxaddto_loading' id="ajaxaddto_loading" src='<?php echo $this->getSkinUrl('em/ajaxcart/images/loading.gif')?>' alt="" />
+		<div id="ajaxaddto_content" style="display:none">
+			<div class="ajaxaddto_row1 row1" >
+				<div id="ajaxaddto_image"></div>
+			</div>
+			<div class="row2">
+				
+				<a href="javascript:popWin('<?php echo $_helper->getListUrl() ?>','compare','top:0,left:0,width=820,height=600,resizable=yes,scrollbars=yes')" id="ajaxaddto_compareLink" class="btn_ajaxaddto"><span><?php echo Mage::helper('themeframework/settings')->__('View Comparison')?></span>
+					<span class="setcountdown"></span>
+				</a>
+				<?php if (Mage::getSingleton('customer/session')->isLoggedIn()==0): ?>
+					<a id="ajaxaddto_login_link" href="<?php echo Mage::helper('customer')->getLoginUrl(); ?>" class="btn_ajaxaddto" ><span><?php echo Mage::helper('themeframework/settings')->__('Go to login page')?></span>
+						<span class="setcountdown"></span>
+					</a>
+				<?php else: ?>
+					<a id="ajaxaddto_login_link" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK).'wishlist'; ?>" class="btn_ajaxaddto" ><span><?php echo Mage::helper('themeframework/settings')->__('View My Wishlist')?></span>
+						<span class="setcountdown"></span>
+					</a>
+				<?php endif; ?>
+				 <a href="javascript:void(0);" id="ajaxaddto_closeLink" class="back"><span><?php echo Mage::helper('themeframework/settings')->__('Close')?></span>
+				 	<span class="setcountdown"></span>
+				 </a>				 
+				 
+			</div>
+		</div>
+	</div>
+</div>

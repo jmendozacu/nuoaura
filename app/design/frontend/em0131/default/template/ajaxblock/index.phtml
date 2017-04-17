@@ -1,0 +1,49 @@
+<div id="em_ajax_tabs_<?php echo md5($this->getData('data')) ?>" class="emtabs-ajaxblock-loading"></div>
+<script type="text/javascript">
+    var $_request_<?php echo md5($this->getData('data')) ?> = jQuery.ajax({
+        url: '<?php echo $this->getUrl('ajaxblock') ?>',
+        method : 'POST',
+        data: {data: '<?php echo $this->getData('data') ?>'},
+    });    
+    $_request_<?php echo md5($this->getData('data')) ?>.done(function(data){
+        var $_e = jQuery('#em_ajax_tabs_<?php echo md5($this->getData('data')) ?>');
+        $_e.html(data);
+        $_e.removeClass('emtabs-ajaxblock-loading').addClass('emtabs-ajaxblock-loaded');
+        if (EM.SETTING.DISABLE_AJAX_ADDTO != 0){
+            var sWishlist = jQuery('.add-to-links').find('a.link-wishlist');
+            if(sWishlist.length){sWishlist.emAjaxWishList();}            
+
+            var sCompare = jQuery('.add-to-links').find('a.link-compare');
+            if(sCompare.length){
+                sCompare.emAjaxCompare({
+                    sidebarSelector : ".block-compare"
+                });
+            }
+        }
+        var $_qsLink = $_e.find('.quickshop-link');
+        var $_qsModal = jQuery('body').find('#em-qs-modal');
+        var $_qsContent = jQuery('body').find('#quickshop-content');
+        $_qsLink.on('click',function(event){
+            event.preventDefault();    
+            $_qsModal.modal('show');
+            var $_qsrequest = jQuery.ajax({
+                url: jQuery(this).attr('href'),
+                method: 'POST',
+                dataType : 'html',
+            });
+            $_qsrequest.done(function(data){
+                $_qsContent.html(data);
+                $_qsContent.removeClass('emfilter-ajaxblock-loading').addClass('emfilter-ajaxblock-loaded');
+                jQuery(window).trigger("qs_load");
+                initAjaxCart('#em-qs-modal .quickshop-main','qs_product_addtocart_form');
+            });
+            return false;
+        });
+        jQuery(window).trigger("ajaxblock"); 
+        $_qsModal.on('hidden.bs.modal', function (e) {
+            $_qsContent.empty();
+            $_qsContent.removeClass('emfilter-ajaxblock-loaded').addClass('emfilter-ajaxblock-loading');
+            jQuery(window).off("qs_load");
+        }); 
+    });        
+</script>

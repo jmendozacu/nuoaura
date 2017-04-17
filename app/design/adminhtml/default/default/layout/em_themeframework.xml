@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<editor>
+        <reference name="head">
+            <action method="addJs"><script>mage/adminhtml/typography.js</script></action>
+            <action method="addItem"><type>skin_css</type><name>em_themeframework/typography.css</name></action>
+        </reference>
+    </editor>
+    <adminhtml_themeframework_overview_index>
+        <reference name="head">            
+            <action method="addItem"><type>skin_css</type><name>em_themeframework/settings.css</name></action>
+        </reference>
+		<reference name="content">
+            <block type="themeframework/adminhtml_overview" name="cms_block"></block>
+        </reference>
+    </adminhtml_themeframework_overview_index>
+    <adminhtml_themeframework_area_index>
+		<reference name="content">
+            <block type="themeframework/adminhtml_area" name="cms_block"></block>
+        </reference>
+    </adminhtml_themeframework_area_index>
+	<adminhtml_themeframework_page_index>
+		<reference name="content">
+            <block type="themeframework/adminhtml_page" name="page_manager"></block>
+        </reference>
+    </adminhtml_themeframework_page_index>
+    <adminhtml_themeframework_basetheme_index>
+        <reference name="head">            
+            <action method="addItem"><type>skin_css</type><name>em_themeframework/settings.css</name></action>
+        </reference>
+        <reference name="content">            
+            <block type="themeframework/adminhtml_basetheme" name="basetheme_manager">
+            </block>
+        </reference>
+    </adminhtml_themeframework_basetheme_index>
+    <adminhtml_themeframework_theme_index>
+        <reference name="head">            
+            <action method="addItem"><type>skin_css</type><name>em_themeframework/settings.css</name></action>
+        </reference>
+        <reference name="content">
+            <block type="themeframework/adminhtml_theme_switcher" name="themeframework.store.switcher" before="-"/>
+            <block type="themeframework/adminhtml_theme" name="theme_manager">
+            </block>
+        </reference>
+    </adminhtml_themeframework_theme_index>
+    <adminhtml_themeframework_theme_edit>
+        <update handle="editor" />
+        <reference name="head">
+            <action method="addItem"><type>js_css</type><name>em/iehacks.css</name></action>
+            <action method="addItem"><type>js_css</type><name>em/colorjoe.css</name></action>
+            <action method="addCss"><stylesheet>em_themeframework/settings.css</stylesheet></action>
+            <action method="addJs"><script>em/colorjoe.js</script></action>
+            <action method="addJs"><script>em/jquery-1.8.3.min.js</script></action>
+            <action method="addJs"><script>em/jquery-noconflict.js</script></action>
+            <action method="addItem"><type>skin_js</type><name>em_themeframework/settings.js</name></action>
+
+        </reference>
+        <reference name="left">
+            <block type="themeframework/adminhtml_theme_switcher" name="themeframework.store.switcher" before="-"/>
+        </reference>
+    </adminhtml_themeframework_theme_edit>
+    
+
+	 <adminhtml_themeframework_theme_block>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_edit_tab_block" name="themeframework.theme.edit.tab.block"/>
+			<block type="adminhtml/widget_grid_serializer" name="excluded_block_grid_serializer">
+                <reference name="excluded_block_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.edit.tab.block</grid_block_name>
+                        <data_callback>_getExcludedBlocks</data_callback>
+                        <hidden_input_name>links[excluded]</hidden_input_name>
+                        <reload_param_name>excluded_blocks</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_block>
+	
+	<adminhtml_themeframework_theme_blockgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_edit_tab_block" name="themeframework.theme.edit.tab.block"/>
+        </block>
+    </adminhtml_themeframework_theme_blockgrid>
+
+        <!-- export theme -->
+    <!-- <themeframework_adminhtml_theme_export>
+        <reference name="content">            
+            <block type="themeframework/adminhtml_theme_export" name="export_container" >
+            </block>    
+        </reference>
+    </themeframework_adminhtml_theme_export> -->
+
+
+    <adminhtml_themeframework_theme_importpage>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_cmspage" name="themeframework.theme.import.grid.tab.cmspage"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_page_grid_serializer">
+                <reference name="import_page_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.cmspage</grid_block_name>
+                        <data_callback>_checkedPage</data_callback>
+                        <hidden_input_name>links[importpage]</hidden_input_name>
+                        <reload_param_name>import_page</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importpage>
+
+    <adminhtml_themeframework_theme_importblock>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_staticblock" name="themeframework.theme.import.grid.tab.staticblock"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_block_grid_serializer">
+                <reference name="import_block_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.staticblock</grid_block_name>
+                        <data_callback>_checkedBlock</data_callback>
+                        <hidden_input_name>links[importblock]</hidden_input_name>
+                        <reload_param_name>import_block</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importblock>
+
+    <adminhtml_themeframework_theme_importlayout>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_layout" name="themeframework.theme.import.grid.tab.layout"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_layout_grid_serializer">
+                <reference name="import_layout_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.layout</grid_block_name>
+                        <data_callback>_checkedLayout</data_callback>
+                        <hidden_input_name>links[importlayout]</hidden_input_name>
+                        <reload_param_name>import_layout</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importlayout>
+
+    <adminhtml_themeframework_theme_importfblock>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_flexibleblock" name="themeframework.theme.import.grid.tab.fblock"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_fblock_grid_serializer">
+                <reference name="import_fblock_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.fblock</grid_block_name>
+                        <data_callback>_checkedFblock</data_callback>
+                        <hidden_input_name>links[importfblock]</hidden_input_name>
+                        <reload_param_name>import_fblocks</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importfblock>
+
+    <adminhtml_themeframework_theme_importslideshow>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_slideshow" name="themeframework.theme.import.grid.tab.slideshow"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_slideshow_grid_serializer">
+                <reference name="import_slideshow_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.slideshow</grid_block_name>
+                        <data_callback>_checkedSlideshow</data_callback>
+                        <hidden_input_name>links[importslideshow]</hidden_input_name>
+                        <reload_param_name>import_slideshow</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importslideshow>
+
+    <adminhtml_themeframework_theme_importmegamenu>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_megamenu" name="themeframework.theme.import.grid.tab.menu"/>
+            <block type="adminhtml/widget_grid_serializer" name="import_menu_grid_serializer">
+                <reference name="import_menu_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>themeframework.theme.import.grid.tab.menu</grid_block_name>
+                        <data_callback>_checkedMenu</data_callback>
+                        <hidden_input_name>links[importmenu]</hidden_input_name>
+                        <reload_param_name>import_menu</reload_param_name>
+                    </action>
+
+                </reference>
+            </block>
+        </block>
+    </adminhtml_themeframework_theme_importmegamenu>
+    
+    <!-- <themeframework_adminhtml_theme_importfblockgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="themeframework/adminhtml_theme_import_grid_tab_flexibleblock" name="themeframework.theme.import.grid.tab.block"/>
+        </block>
+    </themeframework_adminhtml_theme_importfblockgrid> -->
+</layout>

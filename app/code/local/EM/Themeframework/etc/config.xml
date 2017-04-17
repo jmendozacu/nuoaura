@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * @category   EM
+ * @package    EM_Themeframework
+ * @author     Emthemes
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+	<modules>
+		<EM_Themeframework>
+			<version>1.0.0</version>
+		</EM_Themeframework>
+	</modules>
+	<frontend>
+		<routers>
+			<themeframework>
+				<use>standard</use>
+				<args>
+					<module>EM_Themeframework</module>
+					<frontName>themeframework</frontName>
+				</args>
+			</themeframework>
+		</routers>
+		<layout>
+			<updates>
+				<themeframework>
+					<file>em_themeframework.xml</file>
+				</themeframework>
+			</updates>
+		</layout>
+		<events>
+			<controller_action_layout_generate_xml_before>
+				<observers>
+					<themeframework_change_layout_themeframework>
+						<type>singleton</type>
+						<class>themeframework/observer</class>
+						<method>changeLayoutEvent</method>
+					</themeframework_change_layout_themeframework>
+				</observers>
+			</controller_action_layout_generate_xml_before>
+			<controller_action_layout_generate_blocks_after>
+				<observers>
+					<themeframework_change_template>
+						<type>singleton</type>
+						<class>themeframework/observer</class>
+						<method>changeTemplateEvent</method>
+					</themeframework_change_template>
+				</observers>
+			</controller_action_layout_generate_blocks_after>
+			<core_block_abstract_to_html_after>
+				<observers>
+					<designer>
+						<class>themeframework/observer</class>
+						<method>processAfterHtmlDispatch</method>
+					</designer>
+				</observers>
+			</core_block_abstract_to_html_after>
+			<flexible_block_package>
+				<observers>
+					<manage_blocks>
+						<class>themeframework/observer</class>
+						<method>getExcludedFBlock</method>
+					</manage_blocks>
+				</observers>
+			</flexible_block_package>
+			<controller_action_postdispatch>
+				<observers>
+					<themeframework_htmlcompression_model_observer>
+						<type>singleton</type>
+						<class>themeframework/observer</class>
+						<method>compressHtml</method>
+					</themeframework_htmlcompression_model_observer>
+				</observers>
+			</controller_action_postdispatch>
+		</events>
+	</frontend>
+	<adminhtml>
+		<menu>
+			<emthemes translate="title">
+				<title>EMThemes</title>
+				<sort_order>72</sort_order>
+				<children>
+                    <embasetheme_dashboard module="themeframework" translate="title">
+						<title>EMThemes Overview</title>
+						<sort_order>10</sort_order>
+						<action>adminhtml/themeframework_overview</action>
+					</embasetheme_dashboard>
+                    <emthemes_manager>
+                        <title>EM Themes Manager</title>
+						<sort_order>10</sort_order>
+                        <!--children>
+                            <embasetheme_manager module="themeframework" translate="title">
+        						<title>EM BaseTheme Manager</title>
+        						<sort_order>0</sort_order>
+        						<action>themeframework_admin/adminhtml_basetheme/</action>
+        					</embasetheme_manager>
+                        </children-->						
+                    </emthemes_manager>
+					<!--visual_content_editor module="themeframework" translate="title">
+						<title>Visual Content Editor</title>
+						<sort_order>20</sort_order>
+						<action>adminhtml/themeframework_area/previewBlock/</action>
+					</visual_content_editor-->
+					<emthemeframework module="themeframework" translate="title">
+						<title>EM Theme Framework</title>
+						<sort_order>40</sort_order>
+						<children>
+							<layout_manager module="themeframework" translate="title">
+								<title>Layout Design</title>
+								<sort_order>10</sort_order>
+								<action>adminhtml/themeframework_area/</action>
+							</layout_manager>
+							<page_manager module="themeframework" translate="title">
+								<title>Layout Update</title>
+								<sort_order>20</sort_order>
+								<action>adminhtml/themeframework_page/</action>
+							</page_manager>
+							<compress_html module="themeframework" translate="title">
+								<title>Settings</title>
+								<sort_order>30</sort_order>
+								<action>adminhtml/system_config/edit/section/themeframework/</action>
+							</compress_html>
+						</children>
+					</emthemeframework>
+                    <help module="themeframework" translate="title">
+						<title>Help &amp; Support</title>
+						<sort_order>130</sort_order>
+						<children>
+							<forum module="themeframework" translate="title">
+								<title>Request installation</title>
+								<sort_order>20</sort_order>
+								<action>adminhtml/themeframework_link/requestinstallation/</action>
+							</forum>
+							<ticket module="themeframework" translate="title">
+								<title>Technical support</title>
+								<sort_order>30</sort_order>
+								<action>adminhtml/themeframework_link/technicalsupport/</action>
+							</ticket>
+							<contact_us module="themeframework" translate="title">
+								<title>Contact Us</title>
+								<sort_order>30</sort_order>
+								<action>adminhtml/themeframework_link/contactus/</action>
+							</contact_us>
+                            <service module="themeframework" translate="title">
+								<title>More Service</title>
+								<sort_order>40</sort_order>
+								<action>adminhtml/themeframework_link/service/</action>
+							</service>
+						</children>
+					</help>
+				</children>
+			</emthemes>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<emthemes translate="title">
+							<title>EMThemes</title>
+							<sort_order>72</sort_order>
+							<children>
+								<em_themeframework>
+									<title>Theme Framework Editor</title>
+									<sort_order>30</sort_order>
+									<children>
+										<layout_manager>
+											<title>Layout Manager</title>
+											<sort_order>1</sort_order>
+										</layout_manager>
+										<page_manager>
+											<title>Page Manager</title>
+											<sort_order>2</sort_order>
+										</page_manager>
+									</children>
+								</em_themeframework>
+							</children>
+						</emthemes>
+						<system>
+							<children>
+								<config>
+									<children>
+										<themeframework>
+											<title>EM Themeframework - All</title>
+										</themeframework>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<themeframework>
+					<file>em_themeframework.xml</file>
+				</themeframework>
+			</updates>
+		</layout>
+		<events>
+			<cms_wysiwyg_config_prepare>
+				<observers>
+					<typography_observer>
+						<class>themeframework/observer</class>
+						<method>prepareWysiwygPluginConfig</method>
+					</typography_observer>
+				</observers>
+			</cms_wysiwyg_config_prepare>
+			<admin_system_config_changed_section_design>
+				<observers>
+					<reactive_emtheme>
+						<class>themeframework/observer</class>
+						<method>reactiveTheme</method>
+					</reactive_emtheme>
+				</observers>
+			</admin_system_config_changed_section_design>
+			<!--<model_save_after>
+				<observers>
+					<reactive_emtheme_system_design_schedule>
+						<class>themeframework/observer</class>
+						<method>reactiveByDesign</method>
+					</reactive_emtheme_system_design_schedule>
+				</observers>
+			</model_save_after>-->
+		</events>
+	</adminhtml>
+	<!--admin>
+		<routers>
+			<themeframework>
+				<use>admin</use>
+				<args>
+					<module>EM_Themeframework</module>
+					<frontName>themeframework_admin</frontName>
+				</args>
+			</themeframework>
+		</routers>
+	</admin-->
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<themeframework after="Mage_Adminhtml">EM_Themeframework_Adminhtml</themeframework>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<global>
+		<blocks>
+			<tag>
+				<rewrite>
+					<popular>EM_Themeframework_Block_Popular</popular>
+				</rewrite>
+			</tag>
+		</blocks>
+		<models>
+			<themeframework>
+				<class>EM_Themeframework_Model</class>
+				<resourceModel>themeframework_resource</resourceModel>
+			</themeframework>
+			<themeframework_resource>
+				<class>EM_Themeframework_Model_Resource</class>
+				<entities>
+					<area>
+						<table>themeframework_area</table>
+					</area>
+					<area_store>
+						<table>themeframework_area_store</table>
+					</area_store>
+					<page>
+						<table>themeframework_page</table>
+					</page>
+					<page_store>
+						<table>themeframework_page_store</table>
+					</page_store>
+					<theme>
+						<table>themeframework_theme</table>
+					</theme>
+					<active_store>
+						<table>themeframework_active_store</table>
+					</active_store>
+					<design_change_theme>
+						<table>themeframework_design_change_theme</table>
+					</design_change_theme>
+					<megamenupro>
+                        <table>megamenupro</table>
+                    </megamenupro>
+				</entities>
+			</themeframework_resource>
+			<core>
+				<rewrite>
+					<layout_update>EM_Themeframework_Model_Layout_Update</layout_update>
+				</rewrite>
+			</core>
+		</models>
+		<resources>
+			<themeframework_setup>
+				<setup>
+					<module>EM_Themeframework</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</themeframework_setup>
+			<themeframework_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</themeframework_write>
+			<themeframework_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</themeframework_read>
+		</resources>
+		<blocks>
+			<themeframework>
+				<class>EM_Themeframework_Block</class>
+			</themeframework>
+		</blocks>
+		<helpers>
+			<themeframework>
+				<class>EM_Themeframework_Helper</class>
+			</themeframework>
+		</helpers>
+		<default>
+			<themeframework>
+				<wysiwyg>
+					<enabled>enabled</enabled>
+				</wysiwyg>
+			</themeframework>
+		</default>
+	</global>
+	<default>
+		<themeframework>
+			<general>
+				<enable_compress_html>1</enable_compress_html>
+			</general>
+		</themeframework>
+	</default>
+</config>

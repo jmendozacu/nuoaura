@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="head">
+			<action method="addCss"><stylesheet>em/owlcarousel/owl.carousel.css</stylesheet></action>            
+            <action method="addJs"><script>em/jquery-1.11.3.min.js</script></action>
+            <action method="addJs"><script>em/jquery.ba-throttle-debounce.min.js</script></action>                        
+            <action method="addEMItem"><type>skin_js</type><name>em/owlcarousel/owl.carousel.rtl.js</name><params/><if>general_right_to_left</if><condition>1</condition></action>            
+            <action method="addEMItem"><type>skin_js</type><name>em/owlcarousel/owl.carousel.js</name><params/><if>general_right_to_left</if><condition>0</condition></action>
+		</reference>
+    </default>
+    <minislideshow_index_index>
+        <reference name="content">
+            <block type="minislideshow/minislideshow" name="minislideshow" template="em_minislideshow/minislideshow.phtml" />
+        </reference>
+    </minislideshow_index_index>
+</layout> 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <permission_block id="em0131">
+        <pblock>
+            <block_name><![CDATA[newsletter/subscribe]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[cms/block]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+		<pblock>
+            <block_name><![CDATA[blog/post_list_recent]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[blog/post_list]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[megamenupro/megamenupro]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[megamenupro/catalognavigation]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[minifilterproducts/list]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+		<pblock>
+            <block_name><![CDATA[minifilterproducts/listajax]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[recentreviewproducts/list]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[multidealpro/widgets]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[minislideshow/minislideshow]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>
+        <pblock>
+            <block_name><![CDATA[page/html_topmenu]]></block_name>
+            <is_allowed><![CDATA[1]]></is_allowed>
+        </pblock>    
+    </permission_block>
+</permissions>

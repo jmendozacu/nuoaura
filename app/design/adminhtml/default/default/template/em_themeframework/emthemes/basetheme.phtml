@@ -1,0 +1,57 @@
+<?php
+/**
+ * EMThemes
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the framework to newer
+ * versions in the future. If you wish to customize the framework for your
+ * needs please refer to http://www.emthemes.com/ for more information.
+ *
+ * @category    EM
+ * @package     EM_ThemeFramework
+ * @copyright   Copyright (c) 2012 CodeSpot JSC. (http://www.emthemes.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Adminhtml_Block_Widget_Grid
+ *
+ *  getId()
+ *  getCollection()
+ *  getColumns()
+ *  getPagerVisibility()
+ *  getVarNamePage()
+ */
+?>
+<?php 
+    $listBasetheme = $this->_buildBaseThemeArray();    
+?>
+<h2><?php echo $this->__('EMThemes List')?></h2>
+<ul class="themes-list">
+    <?php $i=0;foreach ($listBasetheme as $_index=>$_item):?>
+    <li class="theme-item">
+        <a class="img-theme" href="<?php echo Mage::helper("adminhtml")->getUrl($_item['action']) ?>"><img width="250" height="300" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/basetheme/'.$_item['identifier'].'.jpg'; ?>" /></a>
+        <div class="content">
+			<h5><a href="<?php echo Mage::helper("adminhtml")->getUrl($_item['action']) ?>"><?php echo str_replace('Settings','',$_item['title']) ?></a></h5>
+			<p><?php echo $_item['desciption'] ?></p>
+		</div>
+    </li>
+    <?php endforeach;?>
+</ul>
+<?php
+    //echo '<pre>';
+//    var_dump($listBasetheme);
+//    echo '</pre>';
+?>

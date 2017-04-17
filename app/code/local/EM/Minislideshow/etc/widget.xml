@@ -1,0 +1,16 @@
+<widgets>
+    <minislideshow type="minislideshow/minislideshow" module="minislideshow" translate="name description">
+        <name>EM Slideshow Compact </name>
+        <description type="desc"></description>
+        <parameters>
+			<slideshow>
+                <label>Slideshow : </label>
+                <visible>1</visible>
+				<required>1</required>
+                <description></description>
+                <type>select</type>
+                <source_model>minislideshow/slider</source_model>
+            </slideshow>
+		</parameters>
+    </minislideshow>
+</widgets>

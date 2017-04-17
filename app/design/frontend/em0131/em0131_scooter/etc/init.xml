@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <general>
+    <theme_name><![CDATA[EM0131 Everything Scooter Shop]]></theme_name>
+    <identifier><![CDATA[em0131-scooter]]></identifier>
+    <base_theme><![CDATA[em0131]]></base_theme>
+    <package><![CDATA[em0131]]></package>
+    <template><![CDATA[em0131_scooter]]></template>
+    <layout><![CDATA[em0131_scooter]]></layout>
+    <skin><![CDATA[em0131_scooter]]></skin>
+    <default_theme><![CDATA[]]></default_theme>
+    <path><![CDATA[scooter.jpg]]></path>
+    <is_clone><![CDATA[0]]></is_clone>
+  </general>
+  <settings>
+    <config_json><![CDATA[{"general_disable_responsive":"1","general_right_to_left":"0","general_right_to_left_preview":"","general_box_wide":"wide","general_box_wide_preview":"","general_wideslide_full":"0","general_wideslide_full_preview":"","general_sticky_element":"1","general_header_style":"style28","general_footer_style":"style07","general_disable_default_nav":"0","general_disable_hover_login":"1","general_cat_search":"-1","general_show_popup":"2","general_disable_ajaxaddto":"1","general_disable_frontend_variation":"1","general_admin_toolbar":"0","general_disable_collapse":"1","css_additional_css_file":"style_scooter.css,theme_scooter.less","css_custom_css":"","fonts_google_font_key":"AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI","fonts_google_fonts":["Lato","Lora","Raleway"],"fonts_font_family":"null","fonts_google_fonts_weights":"200,300,400,500,600,700,800","fonts_general_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h1_font":"700 30px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h2_font":"700 20px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h3_font":"700 18px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h4_font":"500 16px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h5_font":"500 14px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h6_font":"600 11px\/1.35 Lato,Helvetica, Arial, sans-serif","typo_general_page_bg_color":"#000000","typo_general_page_bg_image":"","typo_general_page_bg_file":"bkg-box.jpg","typo_general_page_bg_position":"center 0","typo_general_page_bg_repeat":"no-repeat","typo_general_page_bg_attachment":"inherit","typo_general_box_shadow":"0 0 5px #ffffff","typo_general_rounded_corner":"5px","header_header_bg_color":"#000000","header_header_bg2_color":"#1a1a1a","header_header_bg3_color":"#f8c53c","header_header_bg4_color":"#ffffff","header_header_bg5_color":"#ffffff","header_header_bg_image":"","header_header_bg_position":"0 0","header_header_bg_repeat":"repeat","header_header_text_color":"#a1a1a1","header_header_text2_color":"#ffffff","header_header_text3_color":"#282828","header_header_text4_color":"#a1a1a1","header_header_line_color":"#1a1a1a","menu_topmenu_bg_color":"#000000","menu_topmenu_hover_bg_color":"#000000","menu_topmenu_text_color":"#ffffff","menu_topmenu_hover_text_color":"#ffffff","menu_topmenu_line_color":"#f8c53c","menu_topmenu_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_vnav_bg_color":"#f8f8f8","menu_vnav_hover_bg_color":"#fedabf","menu_vnav_text_color":"#434343","menu_vnav_hover_text_color":"#f8c53c","menu_vnav_line_color":"#f8c53c","menu_vnav_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_dropmenu_bg_color":"#ffffff","menu_dropmenu_text_color":"#a1a1a1","menu_dropmenu_text2_color":"#f8c53c","menu_dropmenu_text3_color":"#434343","menu_dropmenu_line_color":"#e9e9e9","menu_dropmenu_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","body_body_bg_color":"#000000","body_body_bg2_color":"#ffffff","body_body_bg3_color":"#f8c53c","body_body_bg4_color":"#f1f1f1","body_body_tab_bg_color":"#ffffff","body_body_label_bg_color":"#f7d059","body_body_label_bg2_color":"#f83c3c","body_body_label_bg3_color":"rgba(44,190,221,1.00)","body_body_bg_image":"","body_body_bg_position":"0 0","body_body_bg_repeat":"repeat","body_body_text_color":"#a1a1a1","body_body_text2_color":"#000000","body_body_text3_color":"#434343","body_body_text4_color":"#434343","body_body_text5_color":"#f8c53c","body_body_text6_color":"#ffffff","body_body_text7_color":"#f8c53c","body_body_line_color":"#e1e1e1","body_body_line2_color":"#f8c53c","footer_footer_bg_color":"#000000","footer_footer_bg2_color":"#000000","footer_footer_bg3_color":"#272727","footer_footer_bg_image":"","footer_footer_bg_position":"0 0","footer_footer_bg_repeat":"repeat","footer_footer_text_color":"#a1a1a1","footer_footer_text2_color":"#ffffff","footer_footer_text3_color":"#f8c53c","footer_footer_text4_color":"#ffffff","footer_footer_line_color":"#343434","buttons_btn1_bg_color":"#f8c53c","buttons_btn1_text_color":"#ffffff","buttons_btn1_line_color":"#f8c53c","buttons_btn1_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn2_bg_color":"#f1f1f1","buttons_btn2_text_color":"#ffffff","buttons_btn2_line_color":"#f1f1f1","buttons_btn2_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn3_bg_color":"#f1f1f1","buttons_btn3_text_color":"#a1a1a1","buttons_btn3_line_color":"#f1f1f1","buttons_btn3_font":"700 12px\/1.15 Lato, Helvetica, Arial, sans-serif","buttons_btn4_bg_color":"#e79f65","buttons_btn4_text_color":"#ffffff","buttons_btn4_line_color":"#e79f65","buttons_btn4_font":"700 1.6rem\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn5_bg_color":"#f1f1f1","buttons_btn5_text_color":"#a1a1a1","buttons_btn5_line_color":"#f1f1f1","buttons_btn5_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn6_bg_color":"#f1f1f1","buttons_btn6_text_color":"#a1a1a1","buttons_btn6_line_color":"#f1f1f1","buttons_btn6_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn7_bg_color":"transparent","buttons_btn7_text_color":"#ffffff","buttons_btn7_line_color":"#ffffff","buttons_btn7_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","products_grid_onecolumn":"5","products_grid_twocolumns":"4","products_grid_threecolumns":"3","products_grid_desktop_small_onecolumn":"4","products_grid_desktop_small_twocolumns":"3","products_grid_desktop_small_threecolumns":"2","products_grid_tablet_onecolumn":"3","products_grid_tablet_twocolumns":"3","products_grid_tablet_threecolumns":"2","products_grid_items_mobile":"2","products_grid_image_ratio":"1","products_grid_custom_width":"1","products_grid_custom_height":"1","products_grid_alt_img":"image","products_grid_config_hover":"mobile","products_grid_align_center":"1","products_grid_show_thumbnail":"1","products_grid_show_label":"1","products_grid_show_product_name":"1","products_grid_auto_product_name":"0","products_grid_show_desc":"2","products_grid_show_price":"1","products_grid_show_reviews":"1","products_grid_show_addtocart":"1","products_list_gutter":"","products_list_image_ratio":"1","products_list_custom_width":"1","products_list_custom_height":"1","products_list_alt_img":"image","products_list_show_product_name":"1","products_list_show_thumbnail":"1","products_list_show_desc":"1","products_list_show_price":"1","products_list_show_reviews":"1","products_list_show_addtocart":"1","products_list_show_addto":"1","products_list_show_label":"1","product_detail_product_view_preview":"","product_detail_primary_column_width":"16","product_detail_base_image_width":"800","product_detail_base_image_height":"800","product_detail_secondary_column_width":"8","product_detail_primary_two_column_width":"12","product_detail_base_two_image_width":"500","product_detail_base_two_image_height":"500","product_detail_secondary_two_column_width":"12","product_detail_primary_three_column_width":"24","product_detail_base_three_image_width":"600","product_detail_base_three_image_height":"600","product_detail_secondary_three_column_width":"24","product_detail_show_sku":"1","product_detail_viewmode":"cloudzoom","product_detail_cloud_zoom_width":"200","product_detail_cloud_zoom_height":"200","product_detail_use_tabs":"1","moreview_width":"100","moreview_height":"100","moreview_enable_slider":"1","moreview_slider_items":"7","moreview_slider_items_desktop":"4","moreview_slider_items_desktop_small":"3","moreview_slider_items_tablet":"3","moreview_slider_items_mobile":"2","moreview_slider_navigation":"1","moreview_slider_pagination":"0","moreview_slider_pagination_numbers":"0","related_display":"dont_replace","related_position":"top_tabs","related_width":"180","related_height":"180","related_enable_slider":"1","related_slider_items":"4","related_slider_items_two":"4","related_slider_items_three":"3","related_slider_items_desktop":"5","related_slider_items_desktop_small":"3","related_slider_items_tablet":"3","related_slider_items_mobile":"2","related_slider_navigation":"1","related_slider_pagination":"0","related_slider_pagination_numbers":"0","upsell_display":"dont_replace","upsell_width":"180","upsell_height":"180","upsell_enable_slider":"1","upsell_slider_items":"4","upsell_slider_items_two":"3","upsell_slider_items_three":"2","upsell_slider_items_desktop":"4","upsell_slider_items_desktop_small":"3","upsell_slider_items_tablet":"3","upsell_slider_items_mobile":"2","upsell_slider_navigation":"1","upsell_slider_pagination":"0","upsell_slider_pagination_numbers":"0","position_catalog_shopby":"left","position_catalog_leftnav":"left","position_catalog_search_layer":"left","position_catalog_related":"right","position_compare":"all","position_poll":"all","position_popular_tags":"left","position_wishlist_sidebar":"all","position_reorder_sidebar":"right","home_position_compare":"0","home_position_poll":"0","home_position_tags":"0","home_position_wishlist":"0","home_position_reorder":"0","crossell_display":"dont_replace","crossell_width":"280","crossell_height":"280","crossell_enable_slider":"1","crossell_slider_items":"4","crossell_slider_items_desktop":"4","crossell_slider_items_desktop_small":"3","crossell_slider_items_tablet":"3","crossell_slider_items_mobile":"2","crossell_slider_navigation":"1","crossell_slider_pagination":"0","crossell_slider_pagination_numbers":"0","image_sidebar_width":"100","image_sidebar_height":"100","related_sidebar_width":"100","related_sidebar_height":"100","image_shopping_cart_width":"100","image_shopping_cart_height":"100","recently_viewed_width":"100","recently_viewed_height":"100","flashtag_enabled":"0","flashtag_count":"100","flashtag_max":"20","flashtag_min":"12","flashtag_maxcolor":"#646464","flashtag_normal":"#646464","flashtag_hover":"#646464","ajaxcart_auto_close":"0","contacts_map_enable":"1","contacts_map_address":"249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh","contacts_map_info":"We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.","contacts_map_height":"500","contacts_map_width":"100%","contacts_map_image":null,"snippets_enable":"1","snippets_review":"1","snippets_price":"1","snippets_breadcrumbs":"1","snippets_description":"1","header_header_bg_file":null,"body_body_bg_file":null,"footer_footer_bg_file":null}]]></config_json>
+    <excluded_blocks><![CDATA[em0131-fashion-area01-home-ads&em0131-fashion-area04-home-banners&em0131-fashion-area02-home-menu&em0131-fashion-area05-home-ads&em0131-fashion-area03-home-slideshow&em0131-fashion-area06-home-banners-slider&em0131-fashion-area-footer01-links&em0131-fashion-area-footer&em0131-fashion-area-footer03-payment&em0131-fashion-area-left01-home-banner&em0131-fashion-area-main01-home-banners&em0131-fashion-area-main02-home-tabs&em0131-fashion-area-left02-home-ads&em0131-fashion-area-main03-home-banner&em0131-fashion-area-left03-home-recent-blog&em0131-fashion-area-main04-home-best-sales&em0131-fashion-area-left04-home-banner&em0131-fashion-area-footer02-payment&em0131-fashion-area06-banners-slider&em0131-fashion-area05-ads&em0131-fashion-area04-banners&em0131-area-left-category-banners&em0131-area-navigation-top-menu&em0131-fashion-area-footer01-links-style09]]></excluded_blocks>
+  </settings>
+  <sample_data>
+    <flexible_block>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area Header 01 - Header 27]]></title>
+        <position><![CDATA[em_area_header01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area-header01-header27]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<p class="em-phone"><i class="fa fa-fw"></i><span>{{config path="general/store_information/phone"}}</span></p>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area Navigation - Top Menu]]></title>
+        <position><![CDATA[em0131.top.menu]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area-navigation-top-menu]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-menu">{{widget type="megamenupro/megamenupro" menu="4"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area 01 - Slideshow Banners]]></title>
+        <position><![CDATA[em_area1]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area01-slideshow-banners]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-slideshow">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-22 col-sm-push-1">
+<div class="col-sm-12 em-clear-padding">
+<div class="em-slideshow">{{widget type="minislideshow/minislideshow" slideshow="22"}}</div>
+</div>
+<div class="col-sm-12 em-clear-padding hidden-xs">
+<div class="img-banner clearer"><a class="banner-img" title="em-sample-title" href="#"><img class="img-responsive" alt="em_ads_01.jpg" src="{{media url='wysiwyg/em0131/layout_scooter/home/em_ads_01.jpg'}}" />
+<span class="desc">
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; margin: 0; color: #fff; display:block">best top</span>
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; color: #fff; display:block">accessories</span>
+<span style="font: italic 100%/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif; display:block;">14 Products</span> </a></span>
+</div>
+<div class="col-sm-12 em-clear-padding">
+<div class="img-banner"><a class="banner-img" title="em-sample-title" href="#"><img class="img-responsive" alt="em_ads_02.jpg" src="{{media url='wysiwyg/em0131/layout_scooter/home/em_ads_02.jpg'}}" /> 
+<span class="desc">
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; margin: 0; color: #fff; display:block;">Scooter</span>
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; color: #fff; display:block;">Parts</span>
+<span style="font: italic 100%/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif; display:block;">25 Products</span></a></span>
+</div>
+</div>
+<div class="col-sm-12 em-clear-padding">
+<div class="img-banner"><a class="banner-img" title="em-sample-title" href="#"><img class="img-responsive" alt="em_ads_03.jpg" src="{{media url='wysiwyg/em0131/layout_scooter/home/em_ads_03.jpg'}}" /> 
+<span class="desc">
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; margin: 0; color: #fff; display:block;">kids</span>
+<span class="em-text-upercase" style="font: 700 285%/1 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif; color: #fff; display:block;">style</span>
+<span style="font: italic 100%/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif; display:block;">29 Products</span></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area Main - Ajax List Products]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area-main-ajax-list-products]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="button-show01 button-hide-text em-wrapper-product-27">{{widget type="minifilterproducts/listajax" category="55" type_filter="5" limit_count="5" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_ajax_grid.phtml" use_click="0" img_lazyload="1" item_width="243" alt_img="thumbnail" cache_lifetime="86400"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area Footer 02 - Social]]></title>
+        <position><![CDATA[em_area_footer02]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area-footer02-social]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-social">
+<p class="em-social"><a class="em-social-icon em-facebook f-left" title="em-sample-title" href="#"><span class="fa fa-facebook">facebook</span></a> <a class="em-social-icon em-twitter f-left" title="em-sample-title" href="#"><span class="fa fa-twitter ">twitter </span></a> <a class="em-social-icon em-pinterest  f-left" title="em-sample-title" href="#"><span class="fa fa-pinterest">pinterest</span></a> <a class="em-social-icon em-google f-left" title="em-sample-title" href="#"><span class="fa fa-google">google</span></a> <a class="em-social-icon em-rss  f-left" title="em-sample-title" href="#"><span class="fa fa-rss">rss</span></a></p>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_scooter]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Scooter Shop - Area Footer 03 - Payment]]></title>
+        <position><![CDATA[em_area_footer03]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-scooter-area-footer03-payment]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-payment f-right"><a class="em-payment-icon em-visa" title="em-sample-title" href="#">visa</a> <a class="em-payment-icon em-master" title="em-sample-title" href="#">master</a> <a class="em-payment-icon em-express " title="em-sample-title" href="#">express</a><a class="em-payment-icon em-paypal" title="em-sample-title" href="#">paypal</a> <a class="em-payment-icon em-other " title="em-sample-title" href="#">other</a></div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+    </flexible_block>
+    <themeframework/>
+    <megamenu/>
+    <minislideshows>
+      <minislideshow id="22">
+        <name><![CDATA[EM0131 Everything - Scooter Shop - Main Slideshow]]></name>
+        <identifier><![CDATA[em0131-scooter-main-slideshow]]></identifier>
+        <images><![CDATA[[{"url":"1447057678_0_sco_slide01.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;padding-bottom:3.4rem;margin-bottom:2.2rem;\"\u003ETop New Free Games\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003Escooter smart\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInRight"}]},{"url":"1447057678_1_sco_slide02.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;padding-bottom:3.4rem;margin-bottom:2.2rem;\"\u003EGet 50% Off For All Orders\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003ESALE OFF ON MONTH\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInDown"}]},{"url":"1447057880_0_sco_slide03.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;padding-bottom:3.4rem;margin-bottom:2.2rem;\"\u003ENew Collection 15\/16\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003Ejump out strikes\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInRight"}]}]]]></images>
+        <slider_params><![CDATA[{"size_width":"","size_height":"742"}]]></slider_params>
+        <appearance><![CDATA[{"auto_play":"true","animation_type":"fade","speed":"","hover_pause":"true","progress_bar":"false","lazy_load":"true"}]]></appearance>
+        <navigation><![CDATA[{"nav_enable":"true","nav_type":["navigation:true","pagination:true"],"arrows_next":"","arrows_pre":"","thumb_width":"","thumb_height":""}]]></navigation>
+        <status><![CDATA[1]]></status>
+      </minislideshow>
+    </minislideshows>
+  </sample_data>
+</theme>

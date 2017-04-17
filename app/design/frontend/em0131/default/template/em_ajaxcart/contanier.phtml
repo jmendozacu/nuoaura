@@ -1,0 +1,16 @@
+<div id="containerDiv" style="display:none">
+	<div class="ajaxcart">
+		<img class='ajax_loading' id="ajax_loading" src='<?php echo $this->getSkinUrl('em/ajaxcart/images/loading.gif')?>' alt="" />
+		<div id="ajax_content" style="display:none">
+			<div class="ajaxcart_row1 row1" >
+				<div id="ajax_image"></div>
+			</div>
+			<div class="row2">
+				<a href="javascript:void(0);" id="closeLink" class="back"><span><?php echo Mage::helper('checkout')->__('Not Now')?></span><span class="emajc_num"></span></a>
+				<a id="viewcart_button" href="javascript:void(0);" class="next" onclick="ajaxaddnext();"><span><?php echo Mage::helper('checkout')->__('Add to Cart')?></span></a>
+				<a id="ajc_btn_checkout" class="next" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK).'checkout/cart/' ?>"><span><?php echo $this->__('View cart & checkout') ?></span></a>
+			</div>
+		</div>
+		<div id="ajax_crosssell" class="ajax_crosssell" style="display:none"></div>
+	</div>
+</div>

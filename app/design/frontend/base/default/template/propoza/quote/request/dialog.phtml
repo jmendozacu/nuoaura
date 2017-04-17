@@ -1,0 +1,89 @@
+<?php if ($this->isEnabled()): ?>
+    <div class="loader-overlay" id="loader-overlay-selector">
+        <div class="cssload-container">
+            <div class="cssload-speeding-wheel"></div>
+        </div>
+    </div>
+    <script>
+        if ((typeof jQuery === 'undefined') && !(window.jQuery && window.jQuery.fn.jquery == '1.10.2')) {
+            var s = document.createElement('script');
+            s.setAttribute('src', '//code.jquery.com/jquery-1.10.2.min.js');
+            s.setAttribute('type', 'text/javascript');
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+
+        var $j = jQuery.noConflict();
+
+        $j.fn.ajaxSubmit = function (url, success, error, complete) {
+            if (!$j(this).is('form')) {
+                throw new Error('element is not a form');
+            }
+
+            var postData = $j(this).serializeArray();
+            postData.push({name: 'form-action', value: $j(this).attr('action')});
+
+            $j.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'html',
+                data: postData,
+                success: success,
+                error: error,
+                complete: complete
+            });
+        };
+
+        $j.fn.registerSubmitListener = function () {
+            if (!$j(this).is('form')) {
+                throw new Error('element is not a form');
+            }
+            $j(this).submit(function (event) {
+                closeDialog();
+                toggleLoader();
+                event.preventDefault();
+                $j(this).ajaxSubmit('<?php echo $this->getRequestQuoteFormSubmitUrl();?>', function (data) {
+                    openDialog(data);
+                    toggleLoader();
+                });
+            });
+        };
+
+        $j.fn.exists = function () {
+            return this.length > 0;
+        };
+
+        function openDialog(html) {
+            var dummyElement = $j('<div></div>').html(html);
+
+            var dialog = Dialog.info(dummyElement.html(), {width: '350px', height: 'auto', destroyOnClose: true});
+            var content = dialog.getContent();
+            $j(content).closest('.dialog').addClass('quote-request-dialog');
+
+            if ($j(content).find('form').exists()) {
+                $j(content).find('form').registerSubmitListener();
+            }
+        }
+
+
+        function ajaxOpenDialog(url) {
+            toggleLoader();
+            $j.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'html',
+                success: function (data) {
+                    openDialog(data);
+                    toggleLoader();
+                }
+            });
+        }
+
+        function closeDialog() {
+            Dialog.closeInfo();
+        }
+
+        function toggleLoader() {
+            $j('#loader-overlay-selector').fadeToggle('fast');
+        }
+    </script>
+<?php endif; ?>

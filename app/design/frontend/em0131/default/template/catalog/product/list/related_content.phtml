@@ -1,0 +1,419 @@
+<?php
+	/**
+	 * Magento
+	 *
+	 * NOTICE OF LICENSE
+	 *
+	 * This source file is subject to the Academic Free License (AFL 3.0)
+	 * that is bundled with this package in the file LICENSE_AFL.txt.
+	 * It is also available through the world-wide-web at this URL:
+	 * http://opensource.org/licenses/afl-3.0.php
+	 * If you did not receive a copy of the license and are unable to
+	 * obtain it through the world-wide-web, please send an email
+	 * to license@magento.com so we can send you a copy immediately.
+	 *
+	 * DISCLAIMER
+	 *
+	 * Do not edit or add to this file if you wish to upgrade Magento to newer
+	 * versions in the future. If you wish to customize Magento for your
+	 * needs please refer to http://www.magento.com for more information.
+	 *
+	 * @category    design
+	 * @package     base_default
+	 * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+	 * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+	 */
+?>
+<?php 
+	$setting = Mage::helper('themeframework/settings');	
+	$width = $setting->getRelated_Width(203);
+	$height = $setting->getRelated_Height(203);
+    $_pageLayout = substr((str_replace(array('page/','.phtml'),'',Mage::app()->getLayout()->getBlock('root')->getTemplate())),0,1);
+?>
+<?php if(($setting->getRelated_Display() == 'dont_replace' || $setting->getRelated_Display() == 'dont_replace') && $this->getItems()->getSize()!=0): ?>
+<div id="em-wrapper-related" class="block box-collateral block-related em-line-01">
+	<div class="em-block-title">
+		<h2><span><?php echo $this->__('Related Products') ?></span></h2>
+    </div>
+    <?php if($setting->getRelated_Position()=='beside_tabs' && $_pageLayout!=3):?>
+        <?php 
+            if($setting->getRelated_EnableSlider()){
+                $_columnCount = $setting->getRelated_SliderItems() ? $setting->getRelated_SliderItems() : 3;
+            }else{
+                $_columnCount=0;
+            }
+            
+        ?>
+        <div id="em-related" class="block-content">
+    		<p class="block-subtitle"><?php echo $this->__('Check items to add to the cart or') ?>&nbsp;<a href="#" onclick="selectAllRelated(this); return false;"><?php echo $this->__('select all') ?></a></p>
+    		<div class="products-grid mini-products-list <?php if($setting->getRelated_EnableSlider()):?>em-related-slider<?php else:?>em-related-noslider<?php if($setting->getRelated_SliderPaginationNumbers()):?> owl-pagination-numbers<?php endif;?><?php endif;?>" id="block-related">
+    			<?php $i=0; foreach($this->getItems() as $_item): ?>
+                <?php if ($_columnCount > 0 && $i%$_columnCount==0 || $_columnCount <= 0 && $i == 0): ?>
+                <div class="em-item-slider">
+                    <div class="products-grid">
+                <?php endif;?>
+            			<div class="item">
+							<div class="product-item">
+								<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-image loading-process">
+									<?php Mage::helper('productlabels')->display($_item);?>	
+									<img class="em-img-lazy img-responsive" src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize($width, $height) ?>" width="<?php echo $width;?>" height="<?php echo $height;?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>	" />									
+								</a>
+								<div class="product-shop">
+									<div class="f-fix">
+										<p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></p>
+										<?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+										<?php if (Mage::helper('catalog')->canApplyMsrp($_item)):?>
+											<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($_item->getName(), null, true) ?>"><?php echo $this->__('Detail') ?></a>
+										<?php else : ?>
+											<?php echo $this->getPriceHtml($_item, true, '-related') ?>
+										<?php endif;?>
+										
+										<?php if(!$_item->isComposite() && $_item->isSaleable()): ?>
+											<?php if (!$_item->getRequiredOptions()): ?>
+											<input type="checkbox" class="checkbox related-checkbox" id="related-checkbox<?php echo $_item->getId() ?>" name="related_products[]" value="<?php echo $_item->getId() ?>" />
+											<?php endif; ?>
+										<?php endif; ?>
+										
+										<?php if ($this->helper('wishlist')->isAllow()) : ?>
+											<a href="<?php echo $this->getAddToWishlistUrl($_item) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Catalog') ?>"><?php echo $this->__('Add to Catalog') ?></a>
+										<?php endif; ?>
+									</div>
+								</div>
+							</div>
+						</div>
+                <?php if ( $_columnCount > 0 && ($i+1)%$_columnCount==0 || $i+1==$this->getItems()->getSize() ): ?>
+        			</div>
+                </div>
+        		<?php endif; ?>
+                <?php $i++;?>
+    			<?php if($i >= $this->getItems()->getSize()) break;?>
+    			<?php endforeach ?>
+    		</div>
+    	</div>
+        <script type="text/javascript">
+		//<![CDATA[    		
+		<?php if($setting->getRelated_EnableSlider()):?>
+            (function($) {
+                var owl = $('#em-related').find('.em-related-slider'); 
+                if(owl.length){ 
+                      owl.owlCarousel({             
+                        // Navigation
+                        navigation : <?php echo $setting->getRelated_SliderNavigation() ? 'true' : 'false'?>,
+                        navigationText : ["<?php echo $this->__('Previous')?>", "<?php echo $this->__('Next')?>"],
+                        pagination : <?php echo $setting->getRelated_SliderPagination() ? 'true' : 'false'?>,
+                        paginationNumbers: <?php echo $setting->getRelated_SliderPaginationNumbers() ? 'true' : 'false'?>,    		               
+                        
+                        <?php if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0):?>
+                        // Responsive 
+                        responsive: true,
+                        items : 1,
+                        <?php else:?>
+                        responsive: false,
+                        items : 1, /*items above 1200px browser width*/
+                        <?php endif;?>
+                        
+                        // CSS Styles
+                        baseClass : "owl-carousel",
+                        theme : "owl-theme", transitionStyle : false,
+                        addClassActive : true,
+                    });
+                }
+            })(jQuery);
+		<?php endif;?>
+		//]]>
+	</script>
+    <?php else:?>
+        <?php /* if enable slider */ ?>
+        <?php if($setting->getRelated_EnableSlider()):?>
+            <div id="em-related" class="block-content">
+        		<p class="block-subtitle"><?php echo $this->__('Check items to add to the cart or') ?>&nbsp;<a href="#" onclick="selectAllRelated(this); return false;"><?php echo $this->__('select all') ?></a></p>
+        		<div class="products-grid mini-products-list em-related-slider <?php if($setting->getRelated_SliderPaginationNumbers()):?> owl-pagination-numbers<?php endif;?>" id="block-related">
+        			<?php foreach($this->getItems() as $_item): ?>
+        			<div class="item">
+						<div class="product-item">
+							<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-image loading-process">
+    							<?php Mage::helper('productlabels')->display($_item);?>	
+    							<img class="em-img-lazy img-responsive" src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize($width, $height) ?>" width="<?php echo $width;?>" height="<?php echo $height;?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>	" />							
+							</a>
+							<div class="product-details product-shop">
+								<p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></p>
+								<?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+								<?php if (Mage::helper('catalog')->canApplyMsrp($_item)):?>
+									<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($_item->getName(), null, true) ?>"><?php echo $this->__('Detail') ?></a>
+								<?php else : ?>
+									<?php echo $this->getPriceHtml($_item, true, '-related') ?>
+								<?php endif;?>
+								
+								<?php if(!$_item->isComposite() && $_item->isSaleable()): ?>
+									<?php if (!$_item->getRequiredOptions()): ?>
+									<input type="checkbox" class="checkbox related-checkbox" id="related-checkbox<?php echo $_item->getId() ?>" name="related_products[]" value="<?php echo $_item->getId() ?>" />
+									<?php endif; ?>
+								<?php endif; ?>
+								
+								<?php if ($this->helper('wishlist')->isAllow()) : ?>
+									<a href="<?php echo $this->getAddToWishlistUrl($_item) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Catalog') ?>"><?php echo $this->__('Add to Catalog') ?></a>
+								<?php endif; ?>
+							</div>
+						</div>
+					</div>
+        			<?php endforeach ?>
+        		</div>
+        	</div>
+            <?php 
+                $_desktop = $setting->getRelated_SliderItemsDesktop();
+                $_desktopSmall =  $setting->getRelated_SliderItemsDesktopSmall();
+                $_tablet = $setting->getRelated_SliderItemsTablet();
+                $_mobile = $setting->getRelated_SliderItemsMobile();
+                switch($_pageLayout){
+                    case 3:            
+                        $_maxItem = $setting->getRelated_SliderItemsThree();                        
+                        if($_desktop>$_maxItem || $_desktop) {$_desktop=$_maxItem;}
+                        if($_desktopSmall>$_maxItem){$_desktopSmall=$_maxItem;}
+                        if($_tablet>$_maxItem){$_tablet=$_maxItem;} 
+                        if($_mobile>$_maxItem){$_mobile=$_maxItem;}                                    
+                        break;
+                    case 2:
+                        $_maxItem = $setting->getRelated_SliderItemsTwo();
+                        if($_desktop>$_maxItem) {$_desktop=$_maxItem;}
+                        if($_desktopSmall>$_maxItem){$_desktopSmall=$_maxItem;}
+                        if($_tablet>$_maxItem){$_tablet=$_maxItem;} 
+                        if($_mobile>$_maxItem){$_mobile=$_maxItem;} 
+                        break;
+                    default:
+                        $_maxItem = $setting->getRelated_SliderItems(); 
+                        if($_desktop>$_maxItem) {$_desktop=$_maxItem;}
+                        if($_desktopSmall>$_maxItem){$_desktopSmall=$_maxItem;}
+                        if($_tablet>$_maxItem){$_tablet=$_maxItem;} 
+                        if($_mobile>$_maxItem){$_mobile=$_maxItem;}          
+                        break;
+                }
+            ?>                
+            <script type="text/javascript">
+    		//<![CDATA[
+                (function($) {
+                    var owl = $('#em-related').find('.em-related-slider'); 
+                    if(owl.length){ 
+                        owl.owlCarousel({             
+                            // Navigation
+                            navigation : <?php echo $setting->getRelated_SliderNavigation() ? 'true' : 'false'?>,
+                            navigationText : ["<?php echo $this->__('Previous')?>", "<?php echo $this->__('Next')?>"],
+                            pagination : <?php echo $setting->getRelated_SliderPagination() ? 'true' : 'false'?>,
+                            paginationNumbers: <?php echo $setting->getRelated_SliderPaginationNumbers() ? 'true' : 'false'?>,    		               
+                            
+                            <?php if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0):?>
+                            // Responsive 
+                            responsive: true,
+                            items : <?php echo $_maxItem ? $_maxItem : 3 ?>, /*items above 1200px browser width*/
+                            itemsDesktop : [1200,<?php echo $_desktop ? $_desktop : ($_maxItem ? $_maxItem : 3) ?>], /*//items between 1199px and 981px*/
+                            itemsDesktopSmall : [992,<?php echo $_desktopSmall ? $_desktopSmall : ($_maxItem ? $_maxItem : 3) ?>],
+                            itemsTablet: [768,<?php echo $_tablet ? $_tablet : ($_maxItem ? $_maxItem : 3) ?>],		                  
+                            itemsMobile : [480,<?php echo $_mobile ? $_mobile : ($_maxItem ? $_maxItem : 3) ?>],
+                            <?php else:?>
+                            responsive: false,
+                            items : <?php echo $_maxItem ? $_maxItem : 3 ?>, /*items above 1200px browser width*/
+                            <?php endif;?>
+                            
+                            // CSS Styles
+                            baseClass : "owl-carousel",
+                            theme : "owl-theme", transitionStyle : false,
+                            addClassActive : true,
+                        });
+                    }
+                })(jQuery);
+    		//]]>
+            </script>
+        <?php /* end if enable slider. start disable slider */ ?>
+        <?php else:?>
+            <?php
+                if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0){
+                    switch($_pageLayout){
+                        case 3:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Threecolumns(3);
+                            $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallThreecolumns(3);
+                            $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletThreecolumns(3);                    
+                            break;
+                        case 1:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Onecolumn(5);
+                            $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallOnecolumn(5);
+                            $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletOnecolumn(5);
+                            break;
+                        default:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Twocolumns(4);
+                            $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallTwocolumns(4);
+                            $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletTwocolumns(4); 
+                            break;
+                    }
+                    $_columnCountMobile = Mage::helper('themeframework/settings')->getProductsGrid_ItemsMobile(3);
+                }else{
+                    switch($_pageLayout){
+                        case 3:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Threecolumns(3);                    
+                            break;
+                        case 1:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Onecolumn(5);
+                            break;
+                        default:
+                            $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Twocolumns(4); 
+                            break;
+                    }               
+                }
+            ?>
+            <div id="em-grid-mode-related" class="block-content">
+        		<p class="block-subtitle"><?php echo $this->__('Check items to add to the cart or') ?>&nbsp;<a href="#" onclick="selectAllRelated(this); return false;"><?php echo $this->__('select all') ?></a></p>
+        		<ul class="em-related-noslider emcatalog-grid-mode products-grid"> 
+        			<?php foreach($this->getItems() as $_item): ?>
+        			<li class="item">
+                        <div class="product-item">                            
+            				<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-image loading-process">
+                				<?php Mage::helper('productlabels')->display($_item);?>	
+                				<img class="em-img-lazy img-responsive" src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize($width, $height) ?>" width="<?php echo $width;?>" height="<?php echo $height;?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>	" />                				
+            				</a>
+            				<div class="product-details product-shop">
+            					<p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></p>
+                                <?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+                                <?php if (Mage::helper('catalog')->canApplyMsrp($_item)):?>
+            						<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($_item->getName(), null, true) ?>"><?php echo $this->__('Detail') ?></a>
+            					<?php else : ?>
+            						<?php echo $this->getPriceHtml($_item, true, '-related') ?>
+            					<?php endif;?>
+            					
+            					<?php if(!$_item->isComposite() && $_item->isSaleable()): ?>
+                					<?php if (!$_item->getRequiredOptions()): ?>
+                					<input type="checkbox" class="checkbox related-checkbox" id="related-checkbox<?php echo $_item->getId() ?>" name="related_products[]" value="<?php echo $_item->getId() ?>" />
+                					<?php endif; ?>
+            					<?php endif; ?>
+                                
+            					<?php if ($this->helper('wishlist')->isAllow()) : ?>
+                                    <a href="<?php echo $this->getAddToWishlistUrl($_item) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Catalog') ?>"><?php echo $this->__('Add to Catalog') ?></a>
+            					<?php endif; ?>
+            				</div>
+                        </div>
+        			</li>
+        			<?php endforeach ?>
+        		</ul>
+        	</div>
+            <script type="text/javascript">
+    		//<![CDATA[	
+                (function($) {
+                    function setColumnCountGridMode(){  
+                        var wWin = $(window).width();
+                        if(EM.SETTING.DISABLE_RESPONSIVE==1){
+                            var sDesktop = 'emcatalog-desktop-';
+                            var sDesktopSmall = 'emcatalog-desktop-small-';
+                            var sTablet = 'emcatalog-tablet-';
+                            var sMobile = 'emcatalog-mobile-';
+                            var sGrid = $('#em-grid-mode-related'); 
+                            if(wWin>1200){
+                                sGrid.removeClass().addClass(sDesktop+'<?php echo $_columnCountDesktop ?>');
+                            }else{
+                                if(wWin<=1200 && wWin>768){                                
+                                    sGrid.removeClass().addClass(sDesktopSmall+'<?php echo $_columnCountDesktopSmall ?>');
+                                }else{
+                                    if(wWin<=768 && wWin>480){
+                                        sGrid.removeClass().addClass(sTablet+'<?php echo $_columnCountTablet ?>');
+                                    }else{
+                                        sGrid.removeClass().addClass(sMobile+'<?php echo $_columnCountMobile ?>');   
+                                    }                                
+                                }
+                            }
+                        }else{
+                            var sDesktop = 'emcatalog-desktop-';
+                            var sGrid = $('#em-grid-mode-related');
+                            sGrid.removeClass().addClass(sDesktop+'<?php echo $_columnCountDesktop ?>');
+                        }
+                        
+                    };
+                    function setEqualHeightItemsCategory() {
+                        var $list = $('#em-grid-mode-related');
+                        var len = $list.length;
+                        if(len){
+                            var gridItemMaxHeight = 0;
+                            var $listItems = $list.children().find('li.item');
+                            var lenLi = $listItems.length;
+                            if(lenLi){
+                                for(var j=0;j<lenLi;j++){
+                                    $listItems.eq(j).css('height', '');
+                                    gridItemMaxHeight = Math.max(gridItemMaxHeight, $listItems.eq(j).height());
+                                }
+                            }
+                            $listItems.css('height', gridItemMaxHeight + 20 + 'px');
+                        }
+                    };
+                    $(document).ready(function() {
+                        setColumnCountGridMode();
+                    });
+                    $(window).bind('load', function() {
+                        if (!isPhone) {
+                            setEqualHeightItemsCategory();
+                        }
+                    });
+                    var tmresize;
+                    $(window).resize(function() {
+                        setColumnCountGridMode();
+                        if (!isPhone) {
+                            setTimeout(function() {
+                                setEqualHeightItemsCategory();
+                            }, 200);
+                        }
+                    });
+                })(jQuery);        		      
+    		//]]>
+    	</script>
+        <?php endif;?>
+        <?php /* endif check slider */ ?>
+        
+    <?php endif;?>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+        $$('.related-checkbox').each(function(elem){
+        	Event.observe(elem, 'click', addRelatedToProduct)
+        });
+        
+        var relatedProductsCheckFlag = false;
+        function selectAllRelated(txt){
+        	if (relatedProductsCheckFlag == false) {
+        		$$('.related-checkbox').each(function(elem){
+        			elem.checked = true;
+        		});
+        		relatedProductsCheckFlag = true;
+        		txt.innerHTML="<?php echo $this->__('unselect all') ?>";
+        	} else {
+        		$$('.related-checkbox').each(function(elem){
+        			elem.checked = false;
+        		});
+        		relatedProductsCheckFlag = false;
+        		txt.innerHTML="<?php echo $this->__('select all') ?>";
+        	}
+        	addRelatedToProduct();
+        };
+        
+        function addRelatedToProduct(){
+        	var checkboxes = $$('.related-checkbox');
+        	var values = [];
+        	for(var i=0;i<checkboxes.length;i++){
+        		if(checkboxes[i].checked) values.push(checkboxes[i].value);
+        	}
+        	if($('related-products-field')){
+        		$('related-products-field').value = values.join(',');
+        	}
+        };
+        (function($) {            
+            $_img = $('#em-wrapper-related').find('img.em-img-lazy');
+            $_img.one("inview", function() {
+                var $this = $(this);
+                $this.attr("src", $this.attr("data-original"));
+                // Remove it from the set of matching elements in order to avoid that the handler gets re-executed
+                $this.removeAttr("data-original");
+                if ($(this).attr("src").indexOf('loading.gif') == -1) {
+                    $(this).removeClass("em-img-lazy").addClass('em-lazy-loaded');
+                    if($(this).parent('.product-image').hasClass('loading-process')){
+                        $(this).parent('.product-image').removeClass('loading-process'); 
+                    }                                         
+                                   
+                }
+            });
+        })(jQuery);  
+	//]]>
+</script>
+<?php endif; ?>

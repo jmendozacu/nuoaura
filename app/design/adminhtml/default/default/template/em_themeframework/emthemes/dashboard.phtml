@@ -1,0 +1,230 @@
+<?php
+/**
+ * EMThemes
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the framework to newer
+ * versions in the future. If you wish to customize the framework for your
+ * needs please refer to http://www.emthemes.com/ for more information.
+ *
+ * @category    EM
+ * @package     EM_ThemeFramework
+ * @copyright   Copyright (c) 2012 CodeSpot JSC. (http://www.emthemes.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<div class="em-content-header">
+    <h1><?php echo $this->__('EMThemes Overview') ?></h1>
+</div>
+
+<div class="em-content-support">
+    <?php echo $this->__('Please') ?> <a href="#" title="<?php echo $this->__('rate') ?>"><?php echo $this->__('rate') ?></a> <?php echo $this->__('for us') ?>
+	<span class="separator">|</span>
+   <a href="#" title="<?php echo $this->__('Tell us') ?>"><?php echo $this->__('Tell us') ?></a> <?php echo $this->__('your suggestions') ?>
+   <span class="separator">|</span>
+    <a href="#" title="<?php echo $this->__('Need help?') ?>"><?php echo $this->__('Need help?') ?></a> <?php echo $this->__('for us') ?>
+	<span class="separator">|</span>
+    <a href="#" title="<?php echo $this->__('Purchase') ?>"><?php echo $this->__('Purchase') ?></a> <?php echo $this->__('another license') ?>
+</div>
+
+<div class="em-content-extension">
+    <ul class="extension-grid">
+        <li class="extension-item">            
+           <div class="extension-item-inner"> 
+			   <a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/themeframework_basetheme/") ?>" title="<?php echo $this->__('Theme Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/theme_magager.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/themeframework_basetheme/") ?>" title="<?php echo $this->__('Theme Manager') ?>"><?php echo $this->__('Theme Manager') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Manage Your Theme') ?></li>
+					<li><?php echo $this->__('Select custom theme for each store view') ?></li>
+					<li><?php echo $this->__('Configure theme settings') ?></li>
+					<li><?php echo $this->__('Create your own child themes and more') ?></li>
+				</ul>
+			</div>
+        </li>
+        
+        <li class="extension-item"> 
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/fblock/") ?>" title="<?php echo $this->__('Block Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/block_magager.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/fblock/") ?>" title="<?php echo $this->__('Block Manager') ?>"><?php echo $this->__('Block Manager') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Manage ')?><span class="black"><?php echo $this->__('content blocks, widgets ')?></span><?php echo $this->__('appear on various areas of each theme') ?></li>
+					<li><?php echo $this->__('You can configure which ')?><span class="black"><?php echo $this->__('pages')?></span><?php echo $this->__(', which ')?><span class="black"><?php echo $this->__('categories')?></span><?php echo $this->__(', which ')?><span class="black"><?php echo $this->__('positions')?></span><?php echo $this->__(' that content ')?><span class="black"><?php echo $this->__('blocks')?></span><?php echo $this->__(' should appear') ?></li>
+					<li><?php echo $this->__('You can ')?><span class="black"><?php echo $this->__('schedule ')?></span><?php echo $this->__('when ')?><span class="black"><?php echo $this->__('blocks')?></span><?php echo $this->__(' should appear and determine ')?><span class="black"><?php echo $this->__('coditions ')?></span><?php echo $this->__('to appear') ?></li>
+				</ul>
+			</div>
+        </li>  
+        
+        <li class="extension-item">
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/megamenupro") ?>" title="<?php echo $this->__('Menu Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/menu_magager.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/megamenupro") ?>" title="<?php echo $this->__('Menu Manager') ?>" title="<?php echo $this->__('Menu Manager') ?>"><?php echo $this->__('Menu Manager') ?></a></h5>
+				<ul class="item-details">
+					<li><span class="black"><?php echo $this->__('Add, edit, delete ')?></span><?php echo $this->__('menu items') ?></li>
+					<li><?php echo $this->__('Build ')?><span class="black"><?php echo $this->__('mega menu ')?></span><?php echo $this->__('with multiple columns, with ')?><span class="black"><?php echo $this->__('rich content, promotions, product lists, custom widgets and static block') ?></span></li>
+									
+				</ul>
+			</div>
+        </li>              
+    </ul>
+    
+    <ul class="extension-grid">
+        <li class="extension-item"> 
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/themeframework_area/index/") ?>" title="<?php echo $this->__('Layout Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/layout_magager.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/themeframework_area/index/") ?>" title="<?php echo $this->__('Layout Manager') ?>"><?php echo $this->__('Layout Manager') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Let you customize your own ')?><span class="black"><?php echo $this->__('page layouts ')?></span><?php echo $this->__('with diffirent ')?><span class="black"><?php echo $this->__('content areas')?></span><?php echo $this->__('. Content area is ')?><span class="black"><?php echo $this->__('potision')?></span><?php echo $this->__(' that contains ')?><span class="black"><?php echo $this->__('blocks and widgets') ?></li>
+					<li><?php echo $this->__('Select custom theme for each store view') ?></li>
+					<li><?php echo $this->__('Proficient ')?><span class="black"><?php echo $this->__('Page Layout')?></span><?php echo $this->__(' allows you to build your store with unique layouts and maximize widget usability') ?></li>
+					<li><?php echo $this->__('If you want to program XML in order to change layout, show/hide blocks widgets on any pages, use ')?><a  href="<?php echo Mage::helper('adminhtml')->getUrl('themeframework_admin/adminhtml_page/index/')?>" title="<?php echo $this->__('XML Layout Updates') ?>"><span class="blue"><?php echo $this->__('XML Layout Updates') ?></span></a></li>
+				</ul>
+			</div>
+        </li>
+        
+        <!--li class="extension-item">
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/themeframework_area/previewBlock/") ?>" title="<?php echo $this->__('Visual Content Editor') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/visual_content_editor.jpg'; ?>" /></a>
+				<h5><a href="#" title="<?php echo $this->__('Visual Content Editor') ?>"><?php echo $this->__('Visual Content Editor') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('This enables content editor visually on the front-end. Let you ')?><span class="black"><?php echo $this->__('edit block contents')?></span><?php echo $this->__(' on front-end easier and time offortless') ?></li>                
+				</ul>
+			</div>
+        </li-->  
+        
+        <li class="extension-item"> 
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/productlabels") ?>" title="<?php echo $this->__('Product Labels') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/product_label.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/productlabels") ?>" title="<?php echo $this->__('Product Labels') ?>"><?php echo $this->__('Product Labels') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Product labels is the image or text indicator that appears on product image thumbnail to let customer know special product, hot product, or discount products...') ?></li>
+					<li><?php echo $this->__('Our Product Label module let you create your own labels like ')?><span class="black"><?php echo $this->__('hot, new, discount')?></span><?php echo $this->__(' ... based on your custom conditions') ?></li>
+					<li><span class="black"><?php echo $this->__('Condition')?></span><?php echo $this->__(' can be combined by product ')?><span class="black"><?php echo $this->__('attributes')?></span><?php echo $this->__(' with AND and OR operations') ?></li>
+					<li><?php echo $this->__('You can program CSS for each label custom CSS by using the ')?><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/csslabel/edit") ?>" title="<?php echo $this->__('Product Labels') ?>"><span class="blue"><?php echo $this->__('CSS Editor')?></span></a></li>
+				</ul>
+			</div>
+        </li>
+        
+        <li class="extension-item">
+			<div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/minislideshow") ?>" title="<?php echo $this->__('Slideshow Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/slideshow_manager.jpg'; ?>" /></a>
+				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/minislideshow") ?>" title="<?php echo $this->__('Slideshow Manager') ?>"><?php echo $this->__('Slideshow Manager') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Manage slideshow instances and images for each stores') ?></li>
+					<li><?php echo $this->__('Our slideshow module supports various ')?><span class="black"><?php echo $this->__('transation effects, videos')?></span><?php echo $this->__(' and various configuration parameters') ?></li>                
+				</ul>
+			</div>
+        </li>              
+    </ul>
+    
+    <ul class="extension-grid">
+        
+        <li class="extension-item">
+			<div class="extension-item-inner">
+                <?php if(Mage::helper('core')->isModuleEnabled('EM_Blog')):?> 		
+    				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/post") ?>" title="<?php echo $this->__('Blog Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/blog_magager.jpg'; ?>" /></a>
+    				<h5><a href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/post") ?>" title="<?php echo $this->__('Blog Manager') ?>"><?php echo $this->__('Blog Manager') ?></a></h5>
+    				<ul class="item-details">
+    					<li><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/post") ?>" title="<?php echo $this->__('Manage post') ?>"><span class="blue"><?php echo $this->__('Manage post') ?></span></a>, 
+    						<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/category/edit") ?>" title="<?php echo $this->__('Manage Categories') ?>"><span class="blue"><?php echo $this->__('Manage Categories') ?></span></a>,
+    						<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/tagblog") ?>" title="<?php echo $this->__('Manage Tags') ?>"><span class="blue"><?php echo $this->__('Manage Tags') ?></span></a>,
+    						<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/comment") ?>" title="<?php echo $this->__('Manage Comments') ?>"><span class="blue"><?php echo $this->__('Manage Comments') ?></span></a>.						
+    					</li>
+    					<li><?php echo $this->__('Our Blog module supports ')?><span class="black"><?php echo $this->__('multi-stores')?></span><?php echo $this->__(' let you create ')?><span class="black"><?php echo $this->__('multipe blog')?></span><?php echo $this->__(' for each ')?><span class="black"><?php echo $this->__('store view')?></span><?php echo $this->__(' in ')?><span class="black"><?php echo $this->__('multi-language') ?></span></li>
+    					<li><?php echo $this->__('You can configure blog appearence in ')?><a  href="<?php echo Mage::helper('adminhtml')->getUrl('adminhtml/system_config/edit/section/blog/') ?>" title="<?php echo $this->__('EM Blog Settings') ?>"><span class="blue"><?php echo $this->__('EM Blog Settings') ?></span></a></li>               
+    				</ul>
+                <?php else:?>
+                    <a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-blog.html" href="javascript:void(0);" title="<?php echo $this->__('Blog Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/blog_magager.jpg'; ?>" /></a>
+    				<h5><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-blog.html" title="<?php echo $this->__('Blog Manager') ?>"><?php echo $this->__('Blog Manager') ?></a></h5>
+                    <ul class="item-details">
+                        <li><strong><?php echo $this->__('This is a commercial extension which is not included by default. You need to purchase it separately ');?><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-blog.html">in this link</a></strong></li>
+                        <li>Blog is a good instrument for everybody to get closer to each other, and so does your business. It keeps you acknowledge of what clients are thinking about your products, and service. Moreover, your sales program, such as promotion, store news, upcoming products and other news come much easier and friendlier. This extension also brings you a win-win situation. Customers have better products and services as your responses, and you gain more and more potential clients through word of mouth.</li>
+                    </ul>    				                    
+                <?php endif;?>
+			</div>
+        </li>  
+        
+        <li class="extension-item">
+			<div class="extension-item-inner">
+                <?php if(Mage::helper('core')->isModuleEnabled('EM_Multidealpro')):?> 		
+    				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/multidealpro/index") ?>" title="<?php echo $this->__('Special Deals Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/deal_magager.jpg'; ?>" /></a>
+    				<h5><a href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/multidealpro/index") ?>" title="<?php echo $this->__('Special Deals Manager') ?>"><?php echo $this->__('Special Deals Manager') ?></a></h5>
+    				<ul class="item-details">
+    					<li><?php echo $this->__('Let you create custom deals for your products like ')?><span class="black"><?php echo $this->__('discounted price')?></span><?php echo $this->__(' when purchase a number of items in a specified time') ?></li>
+    					<li><?php echo $this->__('Support ')?><span class="black"><?php echo $this->__('multi-store view') ?></span></li>
+    					<li><?php echo $this->__('Support ')?><span class="black"><?php echo $this->__('group of products')?></span><?php echo $this->__(' in a deal') ?></li>
+    					<li><?php echo $this->__('You can configure deal appearence in ')?><a  href="<?php echo Mage::helper('adminhtml')->getUrl('adminhtml/system_config/edit/section/multidealpro/') ?>" title="<?php echo $this->__('Multideal Pro Settings') ?>"><span class="blue"><?php echo $this->__('Multideal Pro Settings') ?></span></a></li>
+    				</ul>
+                <?php else:?>
+                    <a  target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-multideal.html" title="<?php echo $this->__('Special Deals Manager') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/deal_magager.jpg'; ?>" /></a>
+    				<h5><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-multideal.html" title="<?php echo $this->__('Special Deals Manager') ?>"><?php echo $this->__('Special Deals Manager') ?></a></h5>
+    				<ul class="item-details">
+                        <li><strong><?php echo $this->__('This is a commercial extension which is not included by default. You need to purchase it separately ');?><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-multideal.html">in this link</a></strong></li>
+    					<li>EM MultiDeal Pro allows showing products on Sales with count-down clock. the extension helps customer to rapidly capture the promotional time of your sales products. This extension also optimizes your management of sales while it is still easy to use. EM MultiDeal Pro can be easily fixed css to fit your theme. It is also able to exploit Magento's complicated features to help boosting your business.</li>                            					    					
+    				</ul>
+                <?php endif;?>
+			</div>
+        </li>
+        <li class="extension-item">            
+            <div class="extension-item-inner"> 
+				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/system_config/edit/section/quickshop/") ?>" title="<?php echo $this->__('Product Quick-View') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/quickshop.jpg'; ?>" /></a>
+				<h5><a   href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/system_config/edit/section/quickshop/") ?>" title="<?php echo $this->__('Product Quick-View') ?>"><?php echo $this->__('Product Quick-View') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Quick view feature let customer ')?><span class="black"><?php echo $this->__('view product details, add to cart')?></span><?php echo $this->__(' syschronizely on a popup without leaving current page') ?></li>                
+				</ul>
+			</div>
+        </li>              
+    </ul>
+    
+    <ul class="extension-grid">
+        
+        
+        <li class="extension-item">            
+            <div class="extension-item-inner">
+                <?php if(Mage::helper('core')->isModuleEnabled('EM_LayeredNavigation')):?> 
+    				<a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/layerednavigation_filter") ?>" title="<?php echo $this->__('Layered Product Navigation') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/layer_navigation.jpg'; ?>" /></a>
+    				<h5><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/layerednavigation_filter") ?>" title="<?php echo $this->__('Layered Product Navigation') ?>"><?php echo $this->__('Layered Product Navigation') ?></a></h5>
+    				<ul class="item-details">
+    					<li><?php echo $this->__('EM Layered Product Navigation enhences the built-in Magento Product navigation') ?></li>
+    					<li><?php echo $this->__('Let you narrow product in ')?><span class="black"><?php echo $this->__('Ajax') ?></span></li>
+    					<li><?php echo $this->__('Support ')?><span class="black"><?php echo $this->__('price slider, color swatches, image swatches, attribute multiple selection, checkboxes, radio boxes')?></span><?php echo $this->__(', and more..') ?></li>
+    					<li><?php echo $this->__('Configure the appearence in ')?><a  href="<?php echo Mage::helper("adminhtml")->getUrl("adminhtml/system_config/edit/section/layerednavigation/") ?>" title="<?php echo $this->__('EM Product Navigation Settings') ?>"><span class="blue"><?php echo $this->__('EM Product Navigation Settings')?></span></a></li>
+    				</ul>
+                <?php else:?>
+                    <a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-advanced-layered-navigation.html" title="<?php echo $this->__('Layered Product Navigation') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/layer_navigation.jpg'; ?>" /></a>
+    				<h5><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-advanced-layered-navigation.html" title="<?php echo $this->__('Layered Product Navigation') ?>"><?php echo $this->__('Layered Product Navigation') ?></a></h5>
+    				<ul class="item-details">
+                        <li><strong><?php echo $this->__('This is a commercial extension which is not included by default. You need to purchase it separately ');?><a target="_blank" href="http://www.emthemes.com/commercial-magento-extensions/em-advanced-layered-navigation.html">in this link</a></strong></li>
+    					<li><?php echo $this->__('EM Layered Product Navigation enhences the built-in Magento Product navigation') ?></li>
+    					<li><?php echo $this->__('Let you narrow product in ')?><span class="black"><?php echo $this->__('Ajax') ?></span></li>
+    					<li><?php echo $this->__('Support ')?><span class="black"><?php echo $this->__('price slider, color swatches, image swatches, attribute multiple selection, checkboxes, radio boxes')?></span><?php echo $this->__(', and more..') ?></li>    					
+    				</ul>
+                <?php endif;?>
+			</div>
+        </li>  
+        
+        <li class="extension-item">            
+            <div class="extension-item-inner"> 
+				<a href="#" title="<?php echo $this->__('Documentation & Support') ?>"><img width="96" height="96" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em/overview/documentation.jpg'; ?>" /></a>
+				<h5><a href="#" title="<?php echo $this->__('Documentation & Support') ?>"><?php echo $this->__('Documentation & Support') ?></a></h5>
+				<ul class="item-details">
+					<li><?php echo $this->__('Read the ')?><a href="#"><span class="blue"><?php echo $this->__('Complete User Guide') ?></span></a></li>
+					<li><?php echo $this->__('Watch the ')?><a target="_blank" href="http://www.youtube.com/user/emthemes"><span class="blue"><?php echo $this->__('Installation Video') ?></span></a></li>
+					<li><a target="_blank" href="http://www.emthemes.com/magento-installation-services"><span class="blue"><?php echo $this->__('Request theme installation') ?></span></a></li>
+					<li><a target="_blank" href="http://www.codespotsupport.com/magento/"><span class="blue"><?php echo $this->__('Technical support')?></span><?php echo $this->__(' via our support helpdesk') ?></a></li>
+					<li><a target="_blank" href="http://www.emthemes.com/contacts"><?php echo $this->__('Our ')?><span class="blue"><?php echo $this->__('contact us')?></span><?php echo $this->__(' via email') ?></a></li>
+				</ul>
+			</div>
+        </li>              
+    </ul>
+</div>

@@ -1,0 +1,204 @@
+<?php
+	$_products = $this->getProductCollection();
+	$_helper = $this->helper('catalog/output');
+	
+	$limitproduct = $this->getLimitCount();
+	$size = $_products->getSize();
+	if($limitproduct == "" || $limitproduct > $size){
+		$limitproduct = $size;
+	}
+	
+	$w = $this->getThumbnailWidth();
+	$h = $this->getThumbnailHeight();
+	$_columnCount = $this->getColumnCount();
+	$alt_img = $this->getAltImg();
+    
+    /* slider config */
+	$idJs = "em_minifilter_products_".md5(uniqid(rand()));    
+	   if ($this->getData('slider_unique_id'))
+		$idJs = $this->getData('slider_unique_id');
+	$this->idJs = $idJs;
+?>
+<div id="<?php echo $idJs;?>" <?php if($this->getCustomClass()): ?>class="<?php echo $this->getCustomClass();?>"<?php endif; ?>>
+	<?php if($this->getFrontendTitle()): ?>
+    	<div class="widget-title em-widget-title">
+    		<h3><span><?php echo $this->getFrontendTitle(); ?></span></h3>
+    	</div>
+	<?php endif; ?>
+    
+	<?php if($this->getFrontendDescription()):?>
+    	<div class="desc"><?php echo $this->getFrontendDescription(); ?></div>
+	<?php endif ?>
+    
+	<?php if ($limitproduct): ?>
+    	<div class="widget em-filterproducts-list row">
+    		<div class="widget-products em-widget-products col-sm-20 col-sm-offset-2">
+    			<?php $i=0; foreach ($_products as $_product): ?>
+    			<?php if ($_columnCount > 0 && $i%$_columnCount==0 || $_columnCount <= 0 && $i == 0): ?>
+    			<div class="products-list row <?php if($this->getData('slider_enable')): ?>owl-carousel owl-theme <?php if($this->getData('slider_pagination_numbers')):?>owl-pagination-numbers<?php endif;?><?php endif;?>">
+    				<?php endif ?>
+    				<div class="<?php if($itemClass = $this->getData('item_class')) echo $itemClass.' '; ?>item<?php echo $_columnCount > 0 && $i%$_columnCount==0 || $_columnCount <= 0 && $i == 0 ?' first':''; ?><?php echo $_columnCount > 0 && ($i+1)%$_columnCount==0 || $i+1 == $limitproduct ?' last':''; ?> <?php echo $i%2!=0 ? "odd" :"even"; ?>"
+    					style="<?php echo $this->getItemWidth() ? 'width:'.$this->getItemWidth().'px;' : '' ?> <?php echo $this->getItemHeight() ? 'height:'.$this->getItemHeight().'px;' : '' ?> <?php echo $this->getItemSpacing() ? 'margin-bottom:'.$this->getItemSpacing().'px;' : '' ?>">
+    					
+                        <div class="col-sm-12 filterproducts-image">
+                            <?php if ($this->getShowFrontend('thumb')): ?>
+                                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>" class="product-image <?php if($this->getData('img_lazyload')): ?>loading-process<?php endif;?>">
+            						<?php if ($this->getShowFrontend('label') && Mage::helper('core')->isModuleEnabled('EM_Productlabels')):?>
+            						<!--show label product - label extension is required-->
+            						<?php Mage::helper('productlabels')->display($_product);?>
+            						<?php endif;?>
+                                    
+            						<?php if ($alt_img): ?>                            
+                                    <img class="em-alt-hover img-responsive <?php if($this->getData('img_lazyload')): ?>em-img-lazy<?php endif;?>" <?php if($this->getData('img_lazyload')): ?>src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_product, $alt_img)->resize($w,$h) ?>"<?php else:?>src="<?php echo $this->helper('catalog/image')->init($_product, $alt_img)->resize($w,$h) ?>"<?php endif;?> width="<?php echo $w; ?>" height="<?php echo $h ;?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
+                					<?php endif ?>
+                					<img id="image_<?php echo $_product->getId() ?>" class="img-responsive <?php if($this->getData('img_lazyload')): ?>em-img-lazy<?php endif;?> <?php if ($alt_img): ?>em-alt-org<?php endif ?>" <?php if($this->getData('img_lazyload')): ?>src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w,$h) ?>"<?php else:?>src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w,$h) ?>"<?php endif;?> width="<?php echo $w; ?>" height="<?php echo $h ;?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
+            					</a>
+        					
+        					<?php else: ?>
+            					<?php if ($this->getShowFrontend('label') && Mage::helper('core')->isModuleEnabled('EM_Productlabels')):?>
+            					<!--show label product - label extension is required-->
+            					<?php Mage::helper('productlabels')->display($_product);?>
+            					<?php endif;?>
+        					<?php endif; ?>
+                        </div>
+                        
+    					<div class="product-shop col-sm-12">
+    						<div class="f-fix">
+    							<!--product name-->
+    							<?php if ($this->getShowFrontend('name')):?>
+    							<h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($_product, $_product->getName() , 'name') ?></a></h3>
+    							<?php endif;?>
+    							<?php if ($this->getShowFrontend('sku')):?>
+    							<p class="sku"><?php echo $_product->getSku(); ?></p>
+    							<?php endif ;?>
+    							
+    							<!--product reviews-->
+    							<?php if ($this->getShowFrontend('review')):?>
+    							<?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+    							<?php endif ; ?>
+    							<!--product price-->
+                                <?php if ($this->getShowFrontend('price')):?>
+                                    <?php if (Mage::helper('catalog')->canApplyMsrp($_product)):?>
+                                        <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $this->__('Detail') ?></a>
+                                    <?php else : ?>
+                                        <?php echo $this->getPriceHtml($_product, true, "-emprice-".md5(uniqid(rand())) ) ?>
+                                    <?php endif;?>
+                                <?php endif;?>
+                                <!--product description-->
+                                <?php if ($this->getShowFrontend('desc')):
+                                    $desc = $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description');
+                                    if(strlen($desc)>80) {
+                                        $strCutTitle = substr($desc, 0, 80);
+                                        $desc = substr($strCutTitle, 0, strrpos($strCutTitle, ' '));
+                                    }
+                                    ?>
+                                <p class="desc"><?php echo $desc; ?></p>
+                                <?php endif ;?>
+                                <?php if($this->getShowFrontend('addtocart') || $this->getShowFrontend('addto')): ?>
+                                    <div class="em-btn-addto">
+            							<!--product add to cart-->
+            							<?php if ($this->getShowFrontend('addtocart')):?>
+            							<?php if ($_product->isSaleable()): ?>
+            							<button type="button" title="<?php echo $this->__('Shop Now') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+            							<?php else: ?>
+            							<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+            							<?php endif; ?>
+            							<?php endif; ?>
+            							<!--product add to compare-wishlist-->
+            							<?php if($this->getShowFrontend('addto')):?>
+            							<ul class="add-to-links">
+            								<?php if ($this->helper('wishlist')->isAllow()) : ?>
+            								<li><a href="<?php echo $this->getAddToWishlistUrl($_product) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Wishlist') ?>"><?php echo $this->__('Add to Wishlist') ?></a></li>
+            								<?php endif; ?>
+            								<?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+            								<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare" title="<?php echo $this->__('Add to Compare') ?>"><?php echo $this->__('Add to Compare') ?></a></li>
+            								<?php endif; ?>
+            							</ul>
+            							<?php endif; ?>
+                                    </div>
+                                <?php endif;?>
+    						</div>
+    					</div>
+    				</div>
+    				<?php if ( $_columnCount > 0 && ($i+1)%$_columnCount==0 || $i+1==$limitproduct ): ?>
+    			</div>
+    			<?php endif; ?>
+    			<?php $i++;?>
+    			<?php if($i >= $limitproduct) break;?>
+    			<?php endforeach; ?>
+    		</div>
+    	</div>    
+	<?php else:?>
+        <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+	<?php endif; ?>
+</div>
+
+<?php if ($limitproduct): ?>
+<script type="text/javascript">
+//<![CDATA[
+    (function($) {
+        <?php if($this->getData('slider_enable')): ?>
+        $(document).ready(function() {
+            var owl = $("#<?php echo $idJs ?>").find('.owl-carousel'); 
+            if(owl.length){            
+                owl.owlCarousel({
+                    //Basic Speeds
+                    slideSpeed : <?php echo $this->getData('slider_speed') ? $this->getData('slider_speed') : '800' ?>,
+                    rewindSpeed : <?php echo $this->getData('slider_rewindspeed') ? $this->getData('slider_rewindspeed') : '800' ?>,
+                 
+                    //Autoplay
+                    autoPlay : <?php echo $this->getData('slider_autoplay') ? 'true' : 'false'?>,
+                    lazyLoad : <?php echo $this->getData('slider_lazyload') ? 'true' : 'false'?>,
+                    stopOnHover : <?php echo $this->getData('slider_stoponhover') ? 'true' : 'false'?>,
+                    mouseDrag : <?php echo $this->getData('slider_mouse_drag') ? 'true' : 'false'?>,
+                    touchDrag : <?php echo $this->getData('slider_touch_drag') ? 'true' : 'false'?>,    
+                 
+                    // Navigation
+                    navigation : <?php echo $this->getData('slider_navigation') ? 'true' : 'false'?>,
+                    navigationText : ["<?php echo $this->__('Previous')?>", "<?php echo $this->__('Next')?>"],
+                    pagination : <?php echo $this->getData('slider_pagination') ? 'true' : 'false'?>,
+                    paginationNumbers: <?php echo $this->getData('slider_pagination_numbers') ? 'true' : 'false'?>,                 
+                    
+                    <?php if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0):?>
+                        // Responsive 
+                        responsive: true,
+                        items : <?php echo $this->getData('slider_items') ? $this->getData('slider_items'): 4 ?>, /*items above 1200px browser width*/
+                        itemsDesktop : [1200,<?php echo $this->getData('slider_items_desktop') ? $this->getData('slider_items_desktop') : ($this->getData('slider_items') ? $this->getData('slider_items'): 4) ?>], /*//items between 1199px and 981px*/
+                        itemsDesktopSmall : [992,<?php echo $this->getData('slider_items_desktop_small') ? $this->getData('slider_items_desktop_small') : ($this->getData('slider_items') ? $this->getData('slider_items'): 4) ?>],
+                        itemsTablet: [768,<?php echo $this->getData('slider_items_tablet') ? $this->getData('slider_items_tablet') : ($this->getData('slider_items') ? $this->getData('slider_items'): 4) ?>],                
+                        itemsMobile : [480,<?php echo $this->getData('slider_items_mobile') ? $this->getData('slider_items_mobile') :  ($this->getData('slider_items') ? $this->getData('slider_items'): 4) ?>],
+                    <?php else:?>
+                        responsive: false,
+                        items : <?php echo $this->getData('slider_items') ? $this->getData('slider_items'): 4 ?>, /*items above 1200px browser width*/
+                    <?php endif;?>
+                 
+                    // CSS Styles
+                    baseClass : "owl-carousel",
+                    theme : "owl-theme", transitionStyle : false,
+                    addClassActive : true,
+                    scrollPerPage : <?php echo $this->getData('slider_scrollperpage') ? 'true' : 'false'?>,
+              });
+            }
+        });
+        <?php endif;?>
+        
+        <?php if($this->getData('img_lazyload')): ?>        
+        var $_img_<?php echo $idJs ?> = $('#<?php echo $idJs ?>').find('img.em-img-lazy');
+        $_img_<?php echo $idJs ?>.one("inview", function() {
+            var $this = $(this);
+            $this.attr("src", $this.attr("data-original"));
+            // Remove it from the set of matching elements in order to avoid that the handler gets re-executed
+            $this.removeAttr("data-original");
+            if ($(this).attr("src").indexOf('loading.gif') == -1) {
+                $(this).removeClass("em-img-lazy").addClass('em-lazy-loaded');
+                if($(this).parent('.product-image').hasClass('loading-process')){
+                    $(this).parent('.product-image').removeClass('loading-process'); 
+                }                                         
+                               
+            }
+        });
+        <?php endif;?>
+    })(jQuery); 
+//]]>
+</script>
+<?php endif;?>

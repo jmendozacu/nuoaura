@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   MF
+ * @package    MF_Flexibleblock
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <MF_Flexibleblock>
+            <version>1.1.0</version>
+        </MF_Flexibleblock>
+    </modules>
+    <frontend>
+        <!--<layout>
+            <updates>
+                <flexibleblock>
+                    <file>mf_flexibleblock.xml</file>
+                </flexibleblock>
+            </updates>
+        </layout>-->
+        <translate>
+            <modules>
+                <MF_Flexibleblock>
+                    <files>
+                        <default>MF_Flexibleblock.csv</default>
+                    </files>
+                </MF_Flexibleblock>
+            </modules>
+        </translate>
+        <events>
+            <controller_action_layout_generate_xml_before>
+                <observers>
+                    <flexibleblock_add_fblock>
+                        <type>singleton</type>
+                        <class>MF_Flexibleblock_Model_Observer</class>
+                        <method>addFBlock</method>
+                    </flexibleblock_add_fblock>
+                </observers>
+            </controller_action_layout_generate_xml_before>
+        </events>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <MF_Flexibleblock>
+                    <files>
+                        <default>MF_Flexibleblock.csv</default>
+                    </files>
+                </MF_Flexibleblock>
+            </modules>
+        </translate>
+        
+        <menu>
+			<emthemes translate="title">
+				<title>EMThemes</title>
+				<sort_order>72</sort_order>
+				<children>
+					<block_manager module="flexibleblock">
+						<title>EM Manage Blocks</title>
+						<sort_order>30</sort_order>
+						<action>adminhtml/fblock</action>
+					</block_manager>
+				</children>
+			</emthemes>
+		</menu>
+
+        <!--menu>
+            <cms module="flexibleblock">
+                <children>
+                    <block_manager module="flexibleblock">
+                        <title>Manage Blocks</title>
+                        <sort_order>30</sort_order>
+                        <action>adminhtml/fblock</action>
+                    </block_manager>
+               </children>
+            </cms>
+        </menu-->
+        
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+						<cms translate="title" module="flexibleblock">
+							<children>
+								<block_manager translate="title">
+									<title>Manage Blocks</title>
+									<sort_order>30</sort_order>
+									<children>
+										<save translate="title">
+											<title>Save Block</title>
+											<sort_order>0</sort_order>
+										</save>
+										<delete translate="title">
+											<title>Delete Block</title>
+											<sort_order>10</sort_order>
+										</delete>
+									</children>
+								</block_manager>
+							</children>
+						</cms>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <flexibleblock>
+                    <file>mf_flexibleblock.xml</file>
+                </flexibleblock>
+            </updates>
+        </layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <flexibleblock>
+                <class>MF_Flexibleblock_Model</class>
+                <resourceModel>flexibleblock_resource</resourceModel>
+				<deprecatedNode>flexibleblock_mysql4</deprecatedNode>
+            </flexibleblock>
+            <flexibleblock_resource>
+                <class>MF_Flexibleblock_Model_Resource</class>
+                <entities>
+                    <fblock>
+                        <table>flexibleblock_entity</table>
+                    </fblock>
+					<fblock_entity_varchar>
+                        <table>flexibleblock_entity_varchar</table>
+                    </fblock_entity_varchar>
+                    <fblock_entity_text>
+                        <table>flexibleblock_entity_text</table>
+                    </fblock_entity_text>
+                    <fblock_entity_int>
+                        <table>flexibleblock_entity_int</table>
+                    </fblock_entity_int>
+					<fblock_entity_datetime>
+                        <table>flexibleblock_entity_datetime</table>
+                    </fblock_entity_datetime>
+					<eav_attribute>
+                        <table>flexibleblock_eav_attribute</table>
+                    </eav_attribute>
+                </entities>
+            </flexibleblock_resource>
+        </models>
+        <resources>
+            <flexibleblock_setup>
+                <setup>
+                    <module>MF_Flexibleblock</module>
+					<class>MF_Flexibleblock_Model_Resource_Setup</class>
+                </setup>
+            </flexibleblock_setup>
+            <flexibleblock_write>
+                <connection>
+                    <use>default_write</use>
+                </connection>
+            </flexibleblock_write>
+            <flexibleblock_read>
+                <connection>
+                    <use>default_read</use>
+                </connection>
+            </flexibleblock_read>
+        </resources>
+        <blocks>
+            <flexibleblock>
+                <class>MF_Flexibleblock_Block</class>
+            </flexibleblock>
+        </blocks>
+        <helpers>
+            <flexibleblock>
+                <class>MF_Flexibleblock_Helper</class>
+            </flexibleblock>
+        </helpers>
+    </global>
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <flexibleblock before="Mage_Adminhtml">MF_Flexibleblock_Adminhtml</flexibleblock>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

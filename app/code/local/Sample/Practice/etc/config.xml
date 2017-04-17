@@ -1,0 +1,37 @@
+<config>
+  <modules>
+  <Sample_Practice>
+     <version>0.1.0</version>
+  
+  </Sample_Practice>
+  </modules>
+  
+   <frontend>
+        <routers>
+            <practice>
+                <use>standard</use>
+                <args>
+                    <module>Sample_Practice</module>
+                    <frontName>practice</frontName>
+                </args>
+            </practice>
+        </routers>
+        
+        <layout>
+          <updates>
+            <practice>
+            
+               <file>practice.xml</file>
+            
+            </practice>
+          
+          </updates>
+        
+        </layout>
+          
+    </frontend>
+  
+  
+  
+  
+</config>

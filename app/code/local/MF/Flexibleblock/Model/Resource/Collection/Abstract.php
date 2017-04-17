@@ -1,0 +1,4 @@
+<?php
+class MF_Flexibleblock_Model_Resource_Collection_Abstract extends Mage_Catalog_Model_Resource_Collection_Abstract
+{
+}

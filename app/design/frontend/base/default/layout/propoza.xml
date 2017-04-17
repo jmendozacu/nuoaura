@@ -1,0 +1,38 @@
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="head">
+            <action method="addJs">
+                <script>mage/adminhtml/tools.js</script>
+            </action>
+            <action method="addJs">
+                <script>prototype/window.js</script>
+            </action>
+            <action method="addItem">
+                <type>js_css</type>
+                <name>prototype/windows/themes/default.css</name>
+            </action>
+        </reference>
+        <reference name="checkout.cart.top_methods">
+            <block type="propoza/quote_request_button" name="propoza.cart.methods.request" as="propoza.top.request.button" template="propoza/quote/request/button.phtml"/>
+        </reference>
+        <reference name="checkout.cart.methods">
+            <block type="propoza/quote_request_button" name="propoza.cart.methods.request" as="propoza.request.button" template="propoza/quote/request/button.phtml" after="checkout.cart.methods.onepage"/>
+        </reference>
+        <reference name="content">
+            <block type="propoza/quote_request_button" name="propoza.dialog" as="propoza.dialog" template="propoza/quote/request/dialog.phtml">
+                <action method="addJQuery">
+                    <script>lib/jquery/jquery-1.10.2.min.js</script>
+                    <cdn>//code.jquery.com/jquery-1.10.2.min.js</cdn>
+                </action>
+                <action method="addPropozaAssets">
+                    <type>css</type>
+                    <path>/css/Quotes/request-form.css</path>
+                </action>
+                <action method="addPropozaAssets">
+                    <type>javascript</type>
+                    <path>/js/Quotes/request-form.js</path>
+                </action>
+            </block>
+        </reference>
+    </checkout_cart_index>
+</layout>

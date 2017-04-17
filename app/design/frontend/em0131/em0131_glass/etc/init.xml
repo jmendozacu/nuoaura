@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <general>
+    <theme_name><![CDATA[EM0131 Everything Glass Store]]></theme_name>
+    <identifier><![CDATA[em0131-glass]]></identifier>
+    <base_theme><![CDATA[em0131]]></base_theme>
+    <package><![CDATA[em0131]]></package>
+    <template><![CDATA[em0131_glass]]></template>
+    <layout><![CDATA[em0131_glass]]></layout>
+    <skin><![CDATA[em0131_glass]]></skin>
+    <default_theme><![CDATA[]]></default_theme>
+    <path><![CDATA[layout-glass.jpg]]></path>
+    <is_clone><![CDATA[0]]></is_clone>
+  </general>
+  <settings>
+    <config_json><![CDATA[{"general_disable_responsive":"1","general_right_to_left":"0","general_right_to_left_preview":"","general_box_wide":"wide","general_box_wide_preview":"","general_sticky_element":"1","general_header_style":"style28","general_footer_style":"style13","general_disable_default_nav":"0","general_disable_hover_login":"1","general_cat_search":"-1","general_show_popup":"2","general_disable_ajaxaddto":"1","general_disable_frontend_variation":"1","general_admin_toolbar":"0","general_disable_collapse":"1","css_additional_css_file":"style_glass.css,theme_glass.less","css_custom_css":"","fonts_google_font_key":"AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI","fonts_google_fonts":["Lato","Lora","Raleway"],"fonts_font_family":"null","fonts_google_fonts_weights":"200,300,400,500,600,700,800","fonts_general_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h1_font":"700 30px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h2_font":"700 20px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h3_font":"700 18px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h4_font":"500 16px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h5_font":"500 14px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h6_font":"600 11px\/1.35 Lato,Helvetica, Arial, sans-serif","typo_general_page_bg_color":"#f2f2f2","typo_general_page_bg_image":"","typo_general_page_bg_file":"bkg-box.jpg","typo_general_page_bg_position":"center 0","typo_general_page_bg_repeat":"no-repeat","typo_general_page_bg_attachment":"inherit","typo_general_box_shadow":"0 0 5px #ffffff","typo_general_rounded_corner":"5px","header_header_bg_color":"#272727","header_header_bg2_color":"transparent","header_header_bg3_color":"#ffffff","header_header_bg4_color":"#ffffff","header_header_bg5_color":"#ffffff","header_header_bg_image":"","header_header_bg_position":"0 0","header_header_bg_repeat":"repeat","header_header_text_color":"#a1a1a1","header_header_text2_color":"#248bd3","header_header_text3_color":"#282828","header_header_text4_color":"#a1a1a1","header_header_line_color":"#e1e1e1","menu_topmenu_bg_color":"transparent","menu_topmenu_hover_bg_color":"#ffffff","menu_topmenu_text_color":"#ffffff","menu_topmenu_hover_text_color":"#248bd3","menu_topmenu_line_color":"#248bd3","menu_topmenu_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_vnav_bg_color":"#ffffff","menu_vnav_hover_bg_color":"#ffffff","menu_vnav_text_color":"#ffffff","menu_vnav_hover_text_color":"#248bd3","menu_vnav_line_color":"#248bd3","menu_vnav_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_dropmenu_bg_color":"#ffffff","menu_dropmenu_text_color":"#a1a1a1","menu_dropmenu_text2_color":"#248bd3","menu_dropmenu_text3_color":"#434343","menu_dropmenu_line_color":"#e9e9e9","menu_dropmenu_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","body_body_bg_color":"#ffffff","body_body_bg2_color":"#ffffff","body_body_bg3_color":"#248bd3","body_body_bg4_color":"#f1f1f1","body_body_tab_bg_color":"#ffffff","body_body_label_bg_color":"#f7d059","body_body_label_bg2_color":"#f83c3c","body_body_label_bg3_color":"#2cbedd","body_body_bg_image":"","body_body_bg_position":"0 0","body_body_bg_repeat":"repeat","body_body_text_color":"#a1a1a1","body_body_text2_color":"#000000","body_body_text3_color":"#434343","body_body_text4_color":"#434343","body_body_text5_color":"#248bd3","body_body_text6_color":"#ffffff","body_body_text7_color":"#248bd3","body_body_line_color":"#e1e1e1","body_body_line2_color":"#248bd3","footer_footer_bg_color":"#272727","footer_footer_bg2_color":"#272727","footer_footer_bg3_color":"#343434","footer_footer_bg_image":"","footer_footer_bg_position":"0 0","footer_footer_bg_repeat":"repeat","footer_footer_text_color":"#ffffff","footer_footer_text2_color":"#ffffff","footer_footer_text3_color":"#248bd3","footer_footer_text4_color":"#ffffff","footer_footer_line_color":"#343434","buttons_btn1_bg_color":"#248bd3","buttons_btn1_text_color":"#ffffff","buttons_btn1_line_color":"#248bd3","buttons_btn1_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn2_bg_color":"#f1f1f1","buttons_btn2_text_color":"#ffffff","buttons_btn2_line_color":"#f1f1f1","buttons_btn2_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn3_bg_color":"#f1f1f1","buttons_btn3_text_color":"#a1a1a1","buttons_btn3_line_color":"#f1f1f1","buttons_btn3_font":"700 12px\/1.15 Lato, Helvetica, Arial, sans-serif","buttons_btn4_bg_color":"#e79f65","buttons_btn4_text_color":"#ffffff","buttons_btn4_line_color":"#e79f65","buttons_btn4_font":"700 1.6rem\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn5_bg_color":"#f1f1f1","buttons_btn5_text_color":"#a1a1a1","buttons_btn5_line_color":"#f1f1f1","buttons_btn5_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn6_bg_color":"#f1f1f1","buttons_btn6_text_color":"#a1a1a1","buttons_btn6_line_color":"#f1f1f1","buttons_btn6_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn7_bg_color":"transparent","buttons_btn7_text_color":"#ffffff","buttons_btn7_line_color":"#ffffff","buttons_btn7_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","products_grid_onecolumn":"5","products_grid_twocolumns":"4","products_grid_threecolumns":"3","products_grid_desktop_small_onecolumn":"4","products_grid_desktop_small_twocolumns":"3","products_grid_desktop_small_threecolumns":"2","products_grid_tablet_onecolumn":"3","products_grid_tablet_twocolumns":"3","products_grid_tablet_threecolumns":"2","products_grid_items_mobile":"2","products_grid_image_ratio":"1","products_grid_custom_width":"1","products_grid_custom_height":"1","products_grid_alt_img":"image","products_grid_config_hover":"mobile","products_grid_align_center":"1","products_grid_show_thumbnail":"1","products_grid_show_label":"1","products_grid_show_product_name":"1","products_grid_auto_product_name":"0","products_grid_show_desc":"2","products_grid_show_price":"1","products_grid_show_reviews":"1","products_grid_show_addtocart":"1","products_list_gutter":"","products_list_image_ratio":"1","products_list_custom_width":"1","products_list_custom_height":"1","products_list_alt_img":"image","products_list_show_product_name":"1","products_list_show_thumbnail":"1","products_list_show_desc":"1","products_list_show_price":"1","products_list_show_reviews":"1","products_list_show_addtocart":"1","products_list_show_addto":"1","products_list_show_label":"1","product_detail_product_view_preview":"","product_detail_primary_column_width":"15","product_detail_base_image_width":"800","product_detail_base_image_height":"800","product_detail_secondary_column_width":"9","product_detail_primary_two_column_width":"12","product_detail_base_two_image_width":"500","product_detail_base_two_image_height":"500","product_detail_secondary_two_column_width":"12","product_detail_primary_three_column_width":"24","product_detail_base_three_image_width":"600","product_detail_base_three_image_height":"600","product_detail_secondary_three_column_width":"24","product_detail_show_sku":"1","product_detail_viewmode":"cloudzoom","product_detail_cloud_zoom_width":"200","product_detail_cloud_zoom_height":"200","product_detail_use_tabs":"1","moreview_width":"100","moreview_height":"100","moreview_enable_slider":"1","moreview_slider_items":"6","moreview_slider_items_desktop":"4","moreview_slider_items_desktop_small":"3","moreview_slider_items_tablet":"3","moreview_slider_items_mobile":"2","moreview_slider_navigation":"1","moreview_slider_pagination":"0","moreview_slider_pagination_numbers":"0","related_display":"dont_replace","related_position":"top_tabs","related_width":"300","related_height":"300","related_enable_slider":"1","related_slider_items":"4","related_slider_items_two":"4","related_slider_items_three":"3","related_slider_items_desktop":"5","related_slider_items_desktop_small":"3","related_slider_items_tablet":"3","related_slider_items_mobile":"2","related_slider_navigation":"1","related_slider_pagination":"0","related_slider_pagination_numbers":"0","upsell_display":"dont_replace","upsell_width":"300","upsell_height":"300","upsell_enable_slider":"1","upsell_slider_items":"4","upsell_slider_items_two":"3","upsell_slider_items_three":"2","upsell_slider_items_desktop":"4","upsell_slider_items_desktop_small":"3","upsell_slider_items_tablet":"3","upsell_slider_items_mobile":"2","upsell_slider_navigation":"1","upsell_slider_pagination":"0","upsell_slider_pagination_numbers":"0","position_catalog_shopby":"left","position_catalog_leftnav":"left","position_catalog_search_layer":"left","position_catalog_related":"right","position_compare":"all","position_poll":"all","position_popular_tags":"left","position_wishlist_sidebar":"all","position_reorder_sidebar":"right","home_position_compare":"0","home_position_poll":"0","home_position_tags":"0","home_position_wishlist":"0","home_position_reorder":"0","crossell_display":"dont_replace","crossell_width":"280","crossell_height":"280","crossell_enable_slider":"1","crossell_slider_items":"4","crossell_slider_items_desktop":"4","crossell_slider_items_desktop_small":"3","crossell_slider_items_tablet":"3","crossell_slider_items_mobile":"2","crossell_slider_navigation":"1","crossell_slider_pagination":"0","crossell_slider_pagination_numbers":"0","image_sidebar_width":"100","image_sidebar_height":"100","related_sidebar_width":"100","related_sidebar_height":"100","image_shopping_cart_width":"100","image_shopping_cart_height":"100","recently_viewed_width":"100","recently_viewed_height":"100","flashtag_enabled":"0","flashtag_count":"100","flashtag_max":"20","flashtag_min":"12","flashtag_maxcolor":"#646464","flashtag_normal":"#646464","flashtag_hover":"#646464","ajaxcart_auto_close":"0","contacts_map_enable":"1","contacts_map_address":"249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh","contacts_map_info":"We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.","contacts_map_height":"500","contacts_map_width":"100%","contacts_map_image":null,"snippets_enable":"1","snippets_review":"1","snippets_price":"1","snippets_breadcrumbs":"1","snippets_description":"1","thumbnail":null,"header_header_bg_file":null,"body_body_bg_file":null,"footer_footer_bg_file":null}]]></config_json>
+    <excluded_blocks><![CDATA[em0131-fashion-area01-home-ads&em0131-fashion-area04-home-banners&em0131-fashion-area02-home-menu&em0131-fashion-area05-home-ads&em0131-fashion-area03-home-slideshow&em0131-fashion-area06-home-banners-slider&em0131-fashion-area-footer01-links&em0131-fashion-area-footer&em0131-fashion-area-footer03-payment&em0131-fashion-area-left01-home-banner&em0131-fashion-area-main01-home-banners&em0131-fashion-area-main02-home-tabs&em0131-fashion-area-left02-home-ads&em0131-fashion-area-main03-home-banner&em0131-fashion-area-left03-home-recent-blog&em0131-fashion-area-main04-home-best-sales&em0131-fashion-area-left04-home-banner&em0131-fashion-area-footer02-payment&em0131-fashion-area06-banners-slider&em0131-fashion-area05-ads&em0131-fashion-area04-banners&em0131-area-left-category-banners&em0131-area-navigation-top-menu&em0131-fashion-area-footer01-links-style09]]></excluded_blocks>
+  </settings>
+  <sample_data>
+    <flexible_block>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area Navigation - Top Menu]]></title>
+        <identifier><![CDATA[em0131-glass-area-navigation-top-menu]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <position><![CDATA[em0131.top.menu]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-menu">{{widget type="megamenupro/megamenupro" menu="4"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 01 - Main Slideshow]]></title>
+        <identifier><![CDATA[em0131-glass-area01-main-slideshow]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area1]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-slideshow">{{widget type="minislideshow/minislideshow" slideshow="5"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 02 - Banners]]></title>
+        <identifier><![CDATA[em0131-glass-area02-banners]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area2]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="em-wrapper-banners">
+<div class="col-sm-8 text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_01.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+<div class="col-sm-8  text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_02.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+<div class="col-sm-8 text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_03.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area03 - New Arrivals]]></title>
+        <identifier><![CDATA[em0131-glass-area03-new-arrivals]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area3]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-20 col-sm-offset-2 em-wrapper-best em-line-01 text-center  button-show01">{{widget type="minifilterproducts/list" category="37" type_filter="3" limit_count="6" order_by="name asc" frontend_title="New Arrivals" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="250" thumbnail_height="250" slider_enable="1" slider_items="3" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_items_desktop="3" slider_items_desktop_small="2" slider_items_tablet="2" slider_items_mobile="2" slider_navigation="1"}}</div>
+</div>
+</div>
+<div class="col-sm-12 em-clear-padding effect-flip-book">
+<div class="banner-img"><a class="effect" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_04.jpg'}}" /> </a></div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 04 - Best Sales]]></title>
+        <identifier><![CDATA[em0131-glass-area04-best-sales]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area4]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+<div class="col-sm-12 em-clear-padding effect-flip-book">
+<div class="banner-img"><a class="effect" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_05.jpg'}}" /> </a></div>
+</div>
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-20 col-sm-offset-2 em-wrapper-best em-line-01 text-center button-show01">{{widget type="minifilterproducts/list" category="37" type_filter="2" limit_count="6" order_by="name asc" frontend_title="Best Sales" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="250" thumbnail_height="250" slider_enable="1" slider_items="3" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_navigation="1" slider_items_desktop="3" slider_items_desktop_small="2" slider_items_tablet="2" slider_items_mobile="2"}}</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 05 - From Our Blogs]]></title>
+        <identifier><![CDATA[em0131-glass-area05-from-our-blog]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area5]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+<div class="col-sm-24">
+<div class="row">
+<div class="col-sm-18 col-sm-offset-3">
+<div class="em-wrapper-ads-10 em-line-01">
+<div class="em-block-title">
+<h2><span>From Our Blog</span></h2>
+</div>
+<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-pagination="false" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_06.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_07.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_07.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_08.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_08.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_09.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_06.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_07.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_07.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_08.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_08.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_09.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 05 - Banners Slider]]></title>
+        <identifier><![CDATA[em0131-glass-area05-banners-slider]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area6]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-brands">
+<div class="container">
+<div class="row">
+<div class=" slider-style02">
+<div class="em-slider em-slider-banners em-slider-navigation-icon" data-emslider-navigation="true" data-emslider-items="6" data-emslider-desktop="5" data-emslider-desktop-small="4" data-emslider-tablet="3" data-emslider-mobile="2">
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_01.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_01.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_02.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_02.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_03.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_03.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_04.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_04.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_05.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_05.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_06.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_06.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_07.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_01.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_01.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_02.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_02.jpg" src="{{media url='wysiwyg/em0131/layout_glass/home/brand/em_brand_03.png'}}" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area Footer 01 - Logo]]></title>
+        <identifier><![CDATA[em0131-glass-area-footer01-logo]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <position><![CDATA[em_area_footer01]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<p class="em-logo-footer"><a href="#"><img class="img-responsive retina-img" alt="EM Everything" src="{{media url='wysiwyg/em0131/layout_glass/home/em_footer_logo.png'}}" /></a></p>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area Footer 01 - Newsletter]]></title>
+        <identifier><![CDATA[em0131-glass-area-footer02-newsletter]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <position><![CDATA[em_area_footer02]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-newsletter">{{block type="newsletter/subscribe" name="em.newsletter.style02" template="newsletter/em_subscribe_style02.phtml"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 05 - From Our Blogs - Code]]></title>
+        <identifier><![CDATA[em0131-glass-area05-from-our-blog-code]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area5]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[0]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+	<div class="col-sm-24">
+		<div class="row">
+			<div class="col-sm-18 col-sm-offset-3">
+				<div class="em-wrapper-ads-10 em-line-01">
+					<div class="em-block-title">
+						<h2><span>From Our Blog</span></h2>
+					</div>
+					<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">
+						{{block type="blog/post_list" name="em.fromblog.style02" template="em_blog/post/list/em_fromblog_style02.phtml"}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_glass]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Glass Store - Area 02 - Banners]]></title>
+        <position><![CDATA[em_area2]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="em-wrapper-banners">
+<div class="col-sm-8 text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_01.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+<div class="col-sm-8  text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_02.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+<div class="col-sm-8 text-center em-clear-padding"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_glass/home/em_ads_03.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+    </flexible_block>
+    <themeframework/>
+    <megamenu/>
+    <minislideshows>
+      <minislideshow id="5">
+        <name><![CDATA[EM0131 Everything - Glass Store - Area 01 - Main Slideshow]]></name>
+        <identifier><![CDATA[em0131-glass-area01-main-slideshow]]></identifier>
+        <images><![CDATA[[{"url":"1441083518_0_glass_slide01.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;padding-bottom:3.4rem;margin-bottom:2.2rem;\"\u003ECollection Gallery Eyewear\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003E\r\nGlamour sunglasses\u003C\/h1\u003E\r\n\u003Ch4 class=\"em-text-upercase\"  style=\"font:500 2rem\/1 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:6rem;\"\u003Esale up to 50% off\u003C\/h4\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInRight"}]},{"url":"1441083518_1_glass_slide02.jpg","link":"","info":[{"text":"\u003Ch4 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 3.5rem;\"\u003ECouple Collection 15\/06\u003C\/h4\u003E\r\n\u003Ch2 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 3rem;\" class=\"em-text-upercase\"\u003Esale up 70% off\u003C\/h2\u003E\r\n\u003Ch4 class=\"em-text-upercase\"  style=\"font:500 2rem\/1 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;\" \u003Eonly over oders on $99.99\u003C\/h4\u003E","animation":"fadeInDown"}]},{"url":"1441083518_2_glass_slide03.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 3rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;padding-bottom:3.4rem;margin-bottom:2.2rem;\"\u003ESee Better & Look Great\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003EGlasses for life\u003C\/h1\u003E\r\n\u003Ch4 class=\"em-text-upercase\"  style=\"font:500 2rem\/1 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:6rem;\"\u003Esale up to 50% off\u003C\/h4\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInRight"}]}]]]></images>
+        <slider_params><![CDATA[{"size_width":"","size_height":"742"}]]></slider_params>
+        <appearance><![CDATA[{"auto_play":"false","animation_type":"fade","speed":"","hover_pause":"true","progress_bar":"false","lazy_load":"true"}]]></appearance>
+        <navigation><![CDATA[{"nav_enable":"true","nav_type":["navigation:true","pagination:true"],"arrows_next":"","arrows_pre":"","thumb_width":"","thumb_height":""}]]></navigation>
+        <status><![CDATA[1]]></status>
+      </minislideshow>
+    </minislideshows>
+  </sample_data>
+</theme>

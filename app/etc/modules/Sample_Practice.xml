@@ -1,0 +1,13 @@
+<config>
+
+   <modules>
+      <Sample_Practice>
+      
+          <active>true</active>
+          <codePool>local</codePool>
+      
+      </Sample_Practice>
+   
+   </modules>
+
+</config>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<adminhtml_minislideshow_index>
+        <reference name="content">
+            <block type="minislideshow/adminhtml_minislideshow" name="minislideshow_slider" />
+        </reference>
+    </adminhtml_minislideshow_index>
+	<adminhtml_minislideshow_edit>
+		<reference name="head">			
+			<action method="addCss"><stylesheet>em/minislideshow/css/em_minislideshow.css</stylesheet></action>
+			<action method="addItem"><type>skin_js</type><name>em/jquery-1.8.3.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em/jquery.form.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em/minislideshow/js/em_minislideshow.js</name></action>
+		</reference>
+	</adminhtml_minislideshow_edit>
+
+	<adminhtml_minislideshow_new>
+		<update handle="adminhtml_minislideshow_edit"/>
+	</adminhtml_minislideshow_new>
+		
+</layout>

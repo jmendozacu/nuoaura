@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   EM
+ * @package    EM_Quickshop
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <EM_Quickshop>
+            <version>0.1.0</version>
+        </EM_Quickshop>
+    </modules>
+    <frontend>
+        <routers>
+            <quickshop>
+                <use>standard</use>
+                <args>
+                    <module>EM_Quickshop</module>
+                    <frontName>quickshop</frontName>
+                </args>
+            </quickshop>
+        </routers>
+        <layout>
+            <updates>
+                <quickshop>
+                    <file>em_quickshop.xml</file>
+                </quickshop>
+            </updates>
+        </layout>
+    </frontend>
+    <!--admin>
+        <routers>
+			<quickshop>
+				<use>admin</use>
+				<args>
+					<module>EM_Quickshop</module>
+					<frontName>quickshop</frontName>
+				</args>
+			</quickshop>
+        </routers>
+    </admin-->
+    <admin>
+		<routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <quickshop before="Mage_Adminhtml">EM_Quickshop_Adminhtml</quickshop>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+		<!--menu>
+			<emthemes module="quickshop" translate="title">
+				<title>EMThemes</title>
+				<sort_order>72</sort_order>
+				<children>
+					<emquickshop module="quickshop" translate="title">
+						<title>EM QuickShop</title>
+						<sort_order>90</sort_order>
+                        <action>adminhtml/system_config/edit/section/quickshop/</action>
+					</emquickshop>
+				</children>
+			</emthemes>
+		</menu-->
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+                            <children>
+                                <config>
+                                    <children>
+                                       <quickshop translate="title" module="quickshop">
+                                            <title>EM quickshop Pro</title>
+                                        </quickshop>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<quickshop>
+					<file>quickshop.xml</file>
+				</quickshop>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <quickshop>
+                <class>EM_Quickshop_Model</class>
+                <resourceModel>quickshop_mysql4</resourceModel>
+            </quickshop>
+            <quickshop_mysql4>
+                <class>EM_Quickshop_Model_Mysql4</class>
+                <entities>
+                    <quickshop>
+                        <table>quickshop</table>
+                    </quickshop>
+                </entities>
+            </quickshop_mysql4>
+        </models>
+        <resources>
+            <quickshop_setup>
+                <setup>
+                    <module>EM_Quickshop</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </quickshop_setup>
+            <quickshop_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </quickshop_write>
+            <quickshop_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </quickshop_read>
+        </resources>
+        <blocks>
+            <quickshop>
+                <class>EM_Quickshop_Block</class>
+            </quickshop>
+			<!--<catalog>
+				<rewrite>
+					<category_view>EM_Quickshop_Block_Category_View</category_view>
+				</rewrite>
+			</catalog>-->
+        </blocks>
+        <helpers>
+            <quickshop>
+                <class>EM_Quickshop_Helper</class>
+            </quickshop>
+        </helpers>
+    </global>
+	<default>
+        <quickshop>
+            <general>
+				<enable>1</enable>
+                <size_type>1</size_type>
+				<frame_width>960</frame_width>
+				<frame_height>650</frame_height>
+				<overlay_close>1</overlay_close>
+				<show_upsell>0</show_upsell>
+            </general>
+            <developer>
+                <item_class>.products-grid li.item, .products-list li.item, li.item .cate_product, .product-upsell-slideshow li.item, .mini-products-list li.item, .products-grid div.item, .products-list div.item</item_class>
+                <a_class>a.product-image</a_class>
+                <img_class>.product-image img</img_class>
+            </developer>
+        </quickshop>
+	</default>
+</config>

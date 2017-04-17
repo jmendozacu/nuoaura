@@ -1,0 +1,18 @@
+<?php $settings = Mage::helper("ajaxcart") ?>
+<?php
+	$value	= 0;
+	$pos = strpos($this->getLayout()->createBlock('page/html')->getBodyClass(), 'checkout-cart-index');
+	if ($pos !== false)	$value = 1;
+?>
+<script type="text/javascript">
+//<![CDATA[
+	var em_ajc_baseurl 		= '<?php echo Mage::getBaseUrl(); ?>';
+	var em_ajc_time 		= '<?php echo Mage::helper('themeframework/settings')->getAjaxcart_AutoClose() ? Mage::helper('themeframework/settings')->getAjaxcart_AutoClose() : 0; ?>';
+	var em_ajc_currentpage	= '<?php echo $value ?>';
+	var em_ajc_enable 		= '<?php echo Mage::getStoreConfig('advanced/modules_disable_output/EM_Ajaxcart');?>';
+	var em_ajc_package_name = '<?php echo Mage::getSingleton('core/design_package')->getPackageName();?>';
+	var em_ajc_layout		= '<?php echo Mage::getSingleton('core/design_package')->getTheme('layout');?>';
+	var em_ajc_template 	= '<?php echo Mage::getSingleton('core/design_package')->getTheme('package');?>';
+	var em_ajc_skin			= '<?php echo Mage::getSingleton('core/design_package')->getTheme('skin');?>';
+//]]>
+</script>

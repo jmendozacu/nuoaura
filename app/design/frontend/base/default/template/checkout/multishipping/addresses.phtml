@@ -1,0 +1,231 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Ship to multiple address template
+ *
+ * @see Mage_Checkout_Block_Multishipping_Addresses
+ */
+?>
+<style>
+
+.data-table tr td {
+    padding: 4px 7px!important;
+    border-width: 1px;
+    border-style: solid;
+}
+
+@media (min-width: 992px)
+#multiship-addresses-table select {
+    max-width: 400px;
+}
+</style>
+
+<?php echo $this->getMessagesBlock()->toHtml() ?>
+<form id="checkout_multishipping_form" action="<?php echo $this->getPostActionUrl() ?>" method="post">
+    <div class="multiple-checkout">
+        <div class="page-title title-buttons">
+            <h1><?php echo $this->__('Ship to Multiple Addresses') ?></h1>
+            <button data-action="add-new-customer-address" type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Enter a New Address')) ?>" class="button" onclick="$('add_new_address_flag').value=1; $('checkout_multishipping_form').submit();"><span><span><?php echo $this->__('Enter a New Address') ?></span></span></button>
+        </div>
+        <input type="hidden" name="continue" value="0" id="can_continue_flag" />
+        <input type="hidden" name="new_address" value="0" id="add_new_address_flag" />
+        <h2><?php echo $this->__('Please select shipping address for applicable items') ?></h2>
+		<span style="font-size: 16px">Select number of Addresses for Shipping</span>
+		<select id="select_address">
+		 <option value="">Select</option>
+	<?php for($i=1; $i<=30; $i++) { ?>
+    <option value="<?php echo $i ?>"><?php echo $i ?></option>
+	<?php } ?>
+</select>
+        <table class="data-table" id="multiship-addresses-table" style="display:none">
+           	<col width="1" />
+            <col />
+            <col width="1" />
+            <col width="1" />
+            <thead>
+                <tr>
+                    <th><?php echo $this->__('Send To') ?></th>
+                    <th><?php echo $this->__('Product') ?></th>
+                    <th class="a-center"><?php echo $this->__('Qty') ?></th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+           <!-- <tfoot>
+                <tr>
+                    <td colspan="100" class="a-right"><button type="submit"
+                          data-multiship-item-update
+                          title="<?php echo Mage::helper('core')->quoteEscape($this->__('Update Qty &amp; Addresses')) ?>"
+                          class="button" onclick="$('can_continue_flag').value=0">
+                            <span><span><?php echo $this->__('Update Qty &amp; Addresses') ?></span></span>
+                        </button>
+                    </td>
+                </tr>
+            </tfoot>-->
+            <script>
+var prod_array = new Array();
+</script>
+			  <?php 
+			  //print_r($this->getAddressOptions());
+			 $options_ = "";
+			 foreach($this->getAddressOptions() as $addresses) 
+			 {
+				$options_ .= '<option value="'.$addresses['value'].'">'.$addresses['label'].'</option>'; 
+			 }
+				//print_r($options_);
+			$arr=array();
+			$j = 0;
+			foreach ($this->getItems() as $_index => $_item): 
+			$item_html = array();
+			$item_all = array();
+			$address_options = $options_;//array();
+			/*for($i=0; $i<100; $i++)
+			{
+				$address_html[$i] = $this->getAddressesHtmlSelect($_item, $i);
+			}*/				
+			$item_sku = $_item->getSku();
+			$quote_item = $_item->getQuoteItem();
+			$quote_item_id = $_item->getQuoteItemId();
+			//$item_html = str_replace("'", "\'", $this->getItemHtml($_item->getQuoteItem()));			
+			$item_html[0] = $this->getItemHtml($_item->getQuoteItem());			
+			$quote_escape = $item_sku;
+			//$quote_escape = $this->jsQuoteEscape($item_sku);			
+			
+			$prod_quantity = $_item->getQty();
+		
+			?>
+			<script>
+			var _products = <?php echo json_encode( $item_html ) ?>;
+			var address_html = <?php echo json_encode( $address_html ) ?>;
+			var product = {ITEM_ID: '<?php echo $quote_item_id ?>', ITEM: _products, QUOTE_ES: '<?php echo $quote_escape ?>', ADD: '<?php echo $address_options ?>', QTY: '<?php echo $prod_quantity ?>'}; 
+			prod_array[prod_array.length] = product;
+			 
+			</script>
+			<?php		
+			endforeach;
+			?>
+			<tbody id="multiship-addresses-tbody">           
+            </tbody>
+        </table>
+        <script type="text/javascript">decorateTable('multiship-addresses-table')</script>
+        <div class="buttons-set">
+            <p class="back-link"><a href="<?php echo $this->getBackUrl() ?>"><small>&laquo; </small><?php echo $this->__('Back to Shopping Cart') ?></a></p>
+            <button id="continue_to_shipping" style="display:none" type="submit" data-action="checkout-continue-shipping" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Continue to Shipping Information')) ?>" class="button<?php if ($this->isContinueDisabled()):?> disabled<?php endif; ?>" onclick="$('can_continue_flag').value=1"<?php if ($this->isContinueDisabled()):?> disabled="disabled"<?php endif; ?>><span><span><?php echo $this->__('Continue to Shipping Information') ?></span></span></button>
+        </div>
+    </div>
+</form>
+<script type="text/javascript"> //<![CDATA[
+	jQuery(document).ready(function(){
+		//var js_data = '<?php echo json_encode($this->getItems()); ?>';
+		//var js_obj_data = JSON.parse(js_data );
+		//var obj = jQuery.parseJSON ( js_data );
+		//console.log(prod_array);
+		var iForAddress = 0;
+					
+		jQuery('body').on('change','#select_address',function(){	
+			var  $_val = jQuery('#select_address').val();
+			jQuery('#multiship-addresses-tbody').html('');
+			jQuery('#multiship-addresses-table').hide();
+			jQuery('#continue_to_shipping').hide(); 
+			tr_html	="";
+			 
+			var address_j=0;
+			for(i=0; i<$_val; i++)
+			{
+				iForAddress = 0;
+				jQuery.each( prod_array, function( key, value ) {
+				
+				
+					//console.log(value);				 
+					//alert( key + ": " + value.ITEM);
+					var total_qty = value.QTY;
+					var qty_per_address = Math.floor(total_qty/$_val);
+					var qty_remaining = total_qty - qty_per_address*$_val;
+					if(i<qty_remaining)
+						qty_per_address++;
+					$address_td = "";
+					name_ = 'ship['+address_j+']['+value.ITEM_ID+'][address]';
+					id_ = 'ship_'+address_j+'_'+value.ITEM_ID+'_address' ;
+											
+					if(iForAddress==0){
+						//$address_td = value.ADD[address_j];	
+						$address_td = '<select name="'+name_+'" id="'+id_+'" class="" title="">';
+						$address_td += value.ADD;
+						$address_td += '</select>';						
+			
+					}
+					else
+					{
+						   
+						 $address_td = '<input type="hidden" value="" name="'+name_+'" id="'+id_+'" class="hiddenAdd hiddenAddress_'+i +'" >';
+					}
+					tr_colr ="";
+					if(i%2==0)
+						tr_colr = "bgcolor='#EDEDED'";
+					
+					tr_html += '<tr '+tr_colr+'>
+						<td>'+$address_td+'</td>
+						<td>'+value.ITEM[0]+'</td>
+							<td><input type="text" data-multiship-item-id="'+value.ITEM_ID+'" name="ship['+address_j+']['+value.ITEM_ID+'][qty]" value="'+qty_per_address+'" size="2" class="input-text qty" /></td>
+						 </tr>';
+						 address_j++;
+						 iForAddress++;
+				});	
+                			
+			}
+			if($_val!=""){
+				jQuery('#multiship-addresses-tbody').html(tr_html);
+				jQuery('#multiship-addresses-table').show(100);
+				jQuery('#continue_to_shipping').show(200);
+				first_val = jQuery("#multiship-addresses-tbody select:first-child").val();
+				jQuery(".hiddenAdd").val(first_val);						
+			}	
+			
+			
+		});	
+		
+		jQuery('body').on('change','#multiship-addresses-tbody select',function(){	
+		
+			this_id = jQuery(this).attr("id");
+			this_val = jQuery(this).val();
+			
+			j_id_arr = this_id.split("_");
+			j_id = parseInt(j_id_arr[1]);
+			
+			
+			i = Math.floor(j_id/iForAddress);
+			
+			//alert(j_id+" "+iForAddress+ " " +i)			
+			
+			jQuery(".hiddenAddress_"+i).val(this_val);
+			
+			
+		
+		})
+
+	});
+//]]> </script>

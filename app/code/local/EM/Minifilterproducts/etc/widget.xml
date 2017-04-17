@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<widgets>
+    <minifilterproducts type="minifilterproducts/list" >
+        <name>EM Mini Filter Products</name>
+        <description type="desc">EM Featured Products in Multi Categories</description>
+        <parameters>
+            <category translate="label">
+                <label>Choose Categories</label>
+                <visible>1</visible>
+                <description>You can choose many categories. Leave empty for selecting all categories</description>
+                <type>multiselect</type>
+                <source_model>minifilterproducts/category</source_model>				
+            </category>
+			<type_filter translate="label">
+                <label>Type Filter</label>
+                <visible>1</visible>				
+                <description>Choose type filter products</description>
+                <type>select</type>
+                <source_model>minifilterproducts/type</source_model>				
+            </type_filter>
+            <featured translate="label">
+                <label>Featured Attribute</label>
+                <visible>1</visible>
+				<description>Effect only when selecting "Special Attribute" as Type Filter. Choose Featured Attribute Will Be Show</description>
+                <type>select</type>
+                <source_model>minifilterproducts/featured</source_model>				
+                <depends><type_filter><value>1</value></type_filter></depends>
+            </featured>
+            <limit_count>
+                <label>Limit Count</label>
+                <description>The numbers of product will be show</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>10</value>				
+            </limit_count>
+			<column_count>
+                <label>Column Count</label>
+                <description>The numbers of products per row. if not specified or 0, ul will hold all li.item</description>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>				
+            </column_count>
+            <order_by>
+                <label>Order by</label>
+                <visible>1</visible>                
+                <type>select</type>
+                <source_model>minifilterproducts/orderby</source_model>				
+                <description><![CDATA[Effect only if <strong>the value of Type Filter</strong> is <span style="color:red">different</span> from <strong>Most Viewed</strong>]]></description>
+            </order_by>
+			<frontend_title>
+				<label>Frontend Title</label>
+				<visible>1</visible>
+				<type>text</type>				
+			</frontend_title>
+			<frontend_description>
+				<label>Frontend Description</label>	
+				<visible>1</visible>
+				<type>text</type>				
+			</frontend_description>
+			<show translate="label">
+                <label>Show frontend :</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>multiselect</type>
+                <source_model>minifilterproducts/showfrontend</source_model>				
+            </show>            
+            <thumbnail_width>
+                <label>Thumbnail Width</label>
+				<visible>1</visible>
+                <required>1</required>
+				<type>text</type>
+				<value>150</value>				
+            </thumbnail_width>
+            <thumbnail_height>
+                <label>Thumbnail Height</label>
+				<visible>1</visible>
+                <required>1</required>
+				<type>text</type>
+				<value>150</value>				
+            </thumbnail_height>
+            <custom_theme>
+				<label>Custom template :</label>
+				<description>Your custom template</description>
+				<visible>1</visible>
+				<type>text</type>				
+			</custom_theme>
+            <slider_enable>
+                <label>Enable Carousel Slider</label>
+                <description></description>
+                <visible>1</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </slider_enable>            
+			<slider_items>
+				<label>Slider Items</label>
+                <description><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width.Default value is 4]]></description>
+                <visible>1</visible>
+                <type>text</type>
+				<value></value>
+                <depends><slider_enable><value>1</value></slider_enable></depends>
+			</slider_items> 
+            
+            <!-- Developer Custom -->   
+            <img_lazyload>
+                <label>Image Lazyload</label>
+                <visible>0</visible>
+                <description><![CDATA[Delays loading of images. Images outside of viewport won't be loaded before user scrolls to them. Great for mobile devices to speed up page loadings. IMG need special markup class="lazyOwl" and data-src="your img path".]]></description>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </img_lazyload>         
+            <custom_class>
+                <label>Custom Wrapper Class</label>
+    			<visible>0</visible>
+    			<type>text</type>       
+                <value></value>         
+            </custom_class>
+            <item_class>
+                <label>Item Class Custom</label>
+                <description>Custom class for li item</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_class>
+            <item_width>
+                <label>Item Width</label>
+				<description>unit: px</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_width>
+            <item_height>
+                <label>Item Height</label>
+				<description>unit: px</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_height>
+			<item_spacing>
+                <label>Item Spacing</label>
+				<description>Spacing between 2 items. unit: px</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_spacing>            
+            <alt_img>
+                <label>Alternative image</label>
+                <description>Image should be displayed when hover to the thumbnail image.</description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>minifilterproducts/config_altimg</source_model>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <value>thumbnail</value>
+            </alt_img>            
+            <cache_lifetime>
+				<label>Cache Lifetime (Seconds)</label>
+				<description>86400 seconds by default, if not set. To refresh instantly, Clear the Blocks HTML Output Cache.</description>
+				<visible>0</visible>
+				<type>text</type>
+				<value>86400</value>
+			</cache_lifetime>                       
+            <slider_items_desktop>
+				<label>Slider Items Desktop</label>
+                <description><![CDATA[This allows you to preset the number of slides visible at between 1200px and 993px browser width. <br/>For example <strong>4</strong> means that if(window<=1200 and window>992){ show 4 slides per page}. Default value = "Slider Items"]]></description>
+                <visible>0</visible>
+                <type>text</type>
+				<value></value>		
+			</slider_items_desktop>            
+            <slider_items_desktop_small>
+				<label>Slider Items Desktop Small</label>
+                <visible>0</visible>
+                <description><![CDATA[This allows you to preset the number of slides visible at between 992px and 769px browser width. <br/>For example <strong>4</strong> means that if(window<=992 and window>767){ show 4 slides per page}. Default value = "Slider Items"]]></description>
+                <type>text</type>
+				<value></value>
+			</slider_items_desktop_small>            
+            <slider_items_tablet>
+				<label>Slider Items Tablet</label>
+                <description><![CDATA[This allows you to preset the number of slides visible at between 768px and 481px browser width. <br/>For example <strong>4</strong> means that if(window<=767 and window>600){ show 4 slides per page}. Default value = "Slider Items"]]></description>
+                <visible>0</visible>
+                <type>text</type>
+				<value></value>
+			</slider_items_tablet>            
+            <slider_items_mobile>
+				<label>Slider Items Mobile</label>
+                <description><![CDATA[This allows you to preset the number of slides visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=320){ show 4 slides per page}. Default value = "Slider Items"]]></description>
+                <visible>0</visible>
+                <type>text</type>
+				<value></value>
+			</slider_items_mobile>            
+            <slider_navigation>
+                <label>Show Navigation</label>
+                <description><![CDATA[Display "next" and "prev" buttons.]]></description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_navigation>            
+            <slider_pagination>
+                <label>Show Pagination</label>
+                <description><![CDATA[Show pagination.]]></description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_pagination>            
+            <slider_pagination_numbers>
+                <label>Show Pagination Numbers</label>
+                <description><![CDATA[Show numbers inside pagination buttons]]></description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_pagination_numbers>            
+            <slider_speed>
+                <label>Slider Speed</label>
+                <description><![CDATA[Slide speed in milliseconds]]></description>                
+                <visible>0</visible>
+                <type>text</type>
+                <value></value>
+            </slider_speed>            
+            <slider_rewindspeed>
+                <label>Slider Rewind Speed</label>
+                <description><![CDATA[Rewind speed in milliseconds]]></description>  
+                <visible>0</visible>
+                <type>text</type>
+                <value></value>
+            </slider_rewindspeed>
+            <slider_autoplay>
+                <label>Slider Auto Play</label>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_autoplay>
+            <slider_stoponhover>
+                <label>Slider Stop On Hover</label>
+                <description><![CDATA[Stop autoplay on mouse hover]]></description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_stoponhover>
+            <slider_mouse_drag>
+                <label>Slider Mouse Drag</label>
+                <description><![CDATA[Turn off/on mouse events.]]></description>
+                <visible>0</visible>
+                <type>select</type>
+				<source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_mouse_drag>            
+            <slider_touch_drag>
+                <label>Slider Touch Drag</label>
+                <description><![CDATA[Turn off/on touch events.]]></description>
+                <visible>0</visible>
+                <type>select</type>
+				<source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+            </slider_touch_drag>            
+            <slider_scrollperpage>
+				<label>Scroll Per Page</label>
+                <description><![CDATA[Scroll per page not per item. This affect next/prev buttons and mouse/touch dragging.]]></description>
+                <visible>0</visible>
+                <type>select</type>
+				<source_model>adminhtml/system_config_source_yesno</source_model>
+                <value></value>
+			</slider_scrollperpage>
+			<slider_unique_id>
+				<label>Slider Unique Id</label>
+                <visible>0</visible>
+                <type>text</type>
+                <frontend_class>option_slider</frontend_class>
+                <value></value>
+			</slider_unique_id>
+        </parameters>
+    </minifilterproducts>
+    
+    <minifilterproducts_ajax type="minifilterproducts/listajax" >
+        <name>EM Ajax Mini Filter Products</name>
+        <description type="desc">EM Featured Products in Multi Categories</description>
+        <parameters>
+            <category translate="label">
+                <label>Choose Categories</label>
+                <visible>1</visible>
+                <description>You can choose many categories. Leave empty for selecting all categories</description>
+                <type>multiselect</type>
+                <source_model>minifilterproducts/category</source_model>				
+            </category>
+			<type_filter translate="label">
+                <label>Type Filter</label>
+                <visible>1</visible>				
+                <description>Choose type filter products</description>
+                <type>select</type>
+                <source_model>minifilterproducts/type</source_model>				
+            </type_filter>
+            <featured translate="label">
+                <label>Featured Attribute</label>
+                <visible>1</visible>
+				<description>Effect only when selecting "Special Attribute" as Type Filter. Choose Featured Attribute Will Be Show</description>
+                <type>select</type>
+                <source_model>minifilterproducts/featured</source_model>				
+                <depends><type_filter><value>1</value></type_filter></depends>
+            </featured>
+            <limit_count>
+                <label>Limit Count</label>
+                <description>The numbers of product will be show</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>10</value>				
+            </limit_count>
+			<column_count>
+                <label>Column Count</label>
+                <description>The numbers of products per row. if not specified or 0, ul will hold all li.item</description>
+                <visible>0</visible>
+                <required>0</required>
+                <type>text</type>				
+            </column_count>
+            <order_by>
+                <label>Order by</label>
+                <visible>1</visible>                
+                <type>select</type>
+                <source_model>minifilterproducts/orderby</source_model>				
+                <description><![CDATA[Effect only if <strong>the value of Type Filter</strong> is <span style="color:red">different</span> from <strong>Most Viewed</strong>]]></description>
+            </order_by>
+			<frontend_title>
+				<label>Frontend Title</label>
+				<visible>1</visible>
+				<type>text</type>				
+			</frontend_title>
+			<frontend_description>
+				<label>Frontend Description</label>	
+				<visible>1</visible>
+				<type>text</type>				
+			</frontend_description>
+			<show translate="label">
+                <label>Show frontend :</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>multiselect</type>
+                <source_model>minifilterproducts/showfrontend</source_model>				
+            </show>            
+            <thumbnail_width>
+                <label>Thumbnail Width</label>
+				<visible>1</visible>
+                <required>1</required>
+				<type>text</type>
+				<value>150</value>				
+            </thumbnail_width>
+            <thumbnail_height>
+                <label>Thumbnail Height</label>
+				<visible>1</visible>
+                <required>1</required>
+				<type>text</type>
+				<value>150</value>				
+            </thumbnail_height>
+            <custom_theme>
+				<label>Custom template :</label>
+				<description>Your custom template</description>
+				<visible>1</visible>
+				<type>text</type>				
+			</custom_theme>
+            
+            <use_click translate="label">
+                <label>Click or scroll to load products</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+				<values>
+                    <scroll translate="label">
+                        <value>0</value>
+                        <label>Scroll</label>
+                    </scroll>
+					<click translate="label">
+                        <value>1</value>
+                        <label>Click</label>
+                    </click>
+                </values>
+            </use_click> 
+            
+            <!-- Developer Custom -->   
+            <img_lazyload>
+                <label>Image Lazyload</label>
+                <visible>0</visible>
+                <description><![CDATA[Delays loading of images. Images outside of viewport won't be loaded before user scrolls to them. Great for mobile devices to speed up page loadings. IMG need special markup class="lazyOwl" and data-src="your img path".]]></description>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </img_lazyload>         
+            <custom_class>
+                <label>Custom Wrapper Class</label>
+    			<visible>0</visible>
+    			<type>text</type>       
+                <value></value>         
+            </custom_class>
+            <item_class>
+                <label>Item Class Custom</label>
+                <description>Custom class for li item</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_class>
+            <item_width>
+                <label>Item Width</label>
+				<description>unit: px</description>
+				<visible>1</visible>
+				<type>text</type>
+                <value></value>
+            </item_width>
+            <item_height>
+                <label>Item Height</label>
+				<description>unit: px</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_height>
+			<item_spacing>
+                <label>Item Spacing</label>
+				<description>Spacing between 2 items. unit: px</description>
+				<visible>0</visible>
+				<type>text</type>
+                <value></value>
+            </item_spacing>            
+            <alt_img>
+                <label>Alternative image</label>
+                <description>Image should be displayed when hover to the thumbnail image.</description>
+                <visible>0</visible>
+                <type>select</type>
+                <source_model>minifilterproducts/config_altimg</source_model>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <value>thumbnail</value>
+            </alt_img>            
+            <cache_lifetime>
+				<label>Cache Lifetime (Seconds)</label>
+				<description>86400 seconds by default, if not set. To refresh instantly, Clear the Blocks HTML Output Cache.</description>
+				<visible>0</visible>
+				<type>text</type>
+				<value>86400</value>
+			</cache_lifetime>   
+			<slider_unique_id>
+				<label>Slider Unique Id</label>
+                <visible>0</visible>
+                <type>text</type>
+                <frontend_class>option_slider</frontend_class>
+                <value></value>
+			</slider_unique_id>
+        </parameters>
+    </minifilterproducts_ajax>
+</widgets>

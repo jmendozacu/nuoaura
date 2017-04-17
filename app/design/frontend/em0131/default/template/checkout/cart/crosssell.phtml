@@ -1,0 +1,315 @@
+<?php
+	/**
+	 * Magento
+	 *
+	 * NOTICE OF LICENSE
+	 *
+	 * This source file is subject to the Academic Free License (AFL 3.0)
+	 * that is bundled with this package in the file LICENSE_AFL.txt.
+	 * It is also available through the world-wide-web at this URL:
+	 * http://opensource.org/licenses/afl-3.0.php
+	 * If you did not receive a copy of the license and are unable to
+	 * obtain it through the world-wide-web, please send an email
+	 * to license@magento.com so we can send you a copy immediately.
+	 *
+	 * DISCLAIMER
+	 *
+	 * Do not edit or add to this file if you wish to upgrade Magento to newer
+	 * versions in the future. If you wish to customize Magento for your
+	 * needs please refer to http://www.magento.com for more information.
+	 *
+	 * @category    design
+	 * @package     base_default
+	 * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+	 * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+	 */
+?>
+<?php
+	/**
+	 * Cart cross sell items template
+	 *
+	 * @see Mage_Checkout_Block_Cart_Crossell
+	 */
+?>
+<?php
+	$setting = Mage::helper('themeframework/settings');
+	$widthImage = $setting->getCrossell_Width(280);
+	$heightImage = $setting->getCrossell_Height(280);
+	$_helper = $this->helper('catalog/output');
+    $_collectionSize = $this->getItemCount();
+?>
+<?php if(($setting->getCrossell_Display() == 'dont_replace' || $setting->getCrossell_Display() == 'dont_replace') && $_collectionSize!=0): ?>
+<div id="em-wrapper-crossell" class="crosssell">
+	<h2><span><?php echo $this->__('Based on your selection, you may be interested in the following items:') ?></span></h2>
+	<div class="crosssell-content">
+        <?php if($setting->getCrossell_EnableSlider()):?>
+        	<div id="crosssell-products-list" class="products-grid em-crosssell-slider<?php if($setting->getCrossell_SliderPaginationNumbers()):?> owl-pagination-numbers<?php endif;?>">
+        		<?php foreach ($this->getItems() as $_item): ?>
+        		<div class="item">
+        			<div class="product-item">
+        				<a class="product-image loading-process" href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>">
+            				<?php Mage::helper('productlabels')->display($_item);?>
+            				<img class="em-img-lazy img-responsive" src="<?php echo $this->getSkinUrl('images/loading.gif') ?>" data-original="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize($widthImage, $heightImage); ?>" width="<?php echo $widthImage ?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>" />    				
+        				</a>
+        				<div class="product-shop">
+        					<div class="f-fix">        						
+        						<h3 class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></h3>
+                                <?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+        						<div class="desc std">
+        							<?php 
+        								$shortdes =  $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description');
+        								if(strlen($shortdes)>100) { //dem ki tu chuoi $str, 80 la chieu dai muon quy dinh
+        								    $strCutTitle = substr($shortdes, 0, 100); //cat 80 ki tu dau
+        								    $shortdes = substr($strCutTitle, 0, strrpos($strCutTitle, ' '));
+        								    $shortdes = substr_replace($shortdes ,"...",-3);
+        								}
+        								?>
+        							<?php echo $shortdes ?>                            
+        						</div>
+                                <?php if (Mage::helper('catalog')->canApplyMsrp($_item)):?>
+            						<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($_item->getName(), null, true) ?>"><?php echo $this->__('Detail') ?></a>
+            					<?php else : ?>
+            						<?php echo $this->getPriceHtml($_item, true) ?>
+            					<?php endif;?>        						
+        						<div class="em-btn-addto">
+    								<?php if($_item->isSaleable()): ?>
+    								<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_item) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>    								    
+    								<?php endif; ?>
+    								<ul class="add-to-links">
+    									<?php if ($this->helper('wishlist')->isAllow()) : ?>
+    									<li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_item) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Wishlist') ?>"><?php echo $this->__('Add to Wishlist') ?></a></li>
+    									<?php endif; ?>
+    									<?php if($_compareUrl=$this->getAddToCompareUrl($_item)): ?>
+    									<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare" title="<?php echo $this->__('Add to Compare') ?>"><?php echo $this->__('Add to Compare') ?></a></li>
+    									<?php endif; ?>
+    								</ul>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<?php endforeach; ?>
+        	</div>
+            <script type="text/javascript">
+        		//<![CDATA[
+                    (function($) {
+                        $(document).ready(function(){            
+                            var owl = $("#crosssell-products-list"); 
+                            if(owl.length){ 
+                              owl.owlCarousel({             
+                                    // Navigation
+                                    navigation : <?php echo $setting->getCrossell_SliderNavigation() ? 'true' : 'false'?>,
+                                    navigationText : ["<?php echo $this->__('Previous')?>", "<?php echo $this->__('Next')?>"],
+                                    pagination : <?php echo $setting->getCrossell_SliderPagination() ? 'true' : 'false'?>,
+                                    paginationNumbers: <?php echo $setting->getCrossell_SliderPaginationNumbers() ? 'true' : 'false'?>,            	                     
+                                    
+                                    <?php if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0):?>
+                                    // Responsive 
+                                    responsive: true,
+                                    items : <?php echo $setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3 ?>, /*items above 1200px browser width*/
+                                    itemsDesktop : [1200,<?php echo $setting->getCrossell_SliderItemsDesktop() ? $setting->getCrossell_SliderItemsDesktop() : ($setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3) ?>], /*//items between 1199px and 981px*/
+                                    itemsDesktopSmall : [992,<?php echo $setting->getCrossell_SliderItemsDesktopSmall() ? $setting->getCrossell_SliderItemsDesktopSmall() : ($setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3) ?>],
+                                    itemsTablet: [768,<?php echo $setting->getCrossell_SliderItemsTablet() ? $setting->getCrossell_SliderItemsTablet() : ($setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3) ?>],		                        
+                                    itemsMobile : [480,<?php echo $setting->getCrossell_SliderItemsMobile() ? $setting->getCrossell_SliderItemsMobile() : ($setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3) ?>],
+                                    <?php else:?>
+                                    responsive: false,
+                                    items : <?php echo $setting->getCrossell_SliderItems() ? $setting->getCrossell_SliderItems() : 3 ?>, /*items above 1200px browser width*/
+                                    <?php endif;?>
+                                 
+                                    // CSS Styles
+                                    baseClass : "owl-carousel",
+                                    theme : "owl-theme", transitionStyle : false,
+                                    addClassActive : true,
+                                    afterMove : function(){
+                                        var $_img = owl.find('img.em-img-lazy');
+                                        if($_img.length){
+                                    		var timeout = setTimeout(function() { 
+                                    		  $_img.trigger("appear");
+                                            }, 200);
+                                    	}
+                                    },
+                              });
+                            }           
+                        });
+                    })(jQuery);
+        		//]]>
+        	</script>
+        <?php else:?>
+        <?php
+            $_pageLayout = substr((str_replace(array('page/','.phtml'),'',Mage::app()->getLayout()->getBlock('root')->getTemplate())),0,1);
+            if(Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(1)!=0){
+                switch($_pageLayout){
+                    case 3:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Threecolumns(3);
+                        $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallThreecolumns(3);
+                        $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletThreecolumns(3);                    
+                        break;
+                    case 1:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Onecolumn(5);
+                        $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallOnecolumn(5);
+                        $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletOnecolumn(5);
+                        break;
+                    default:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Twocolumns(4);
+                        $_columnCountDesktopSmall = Mage::helper('themeframework/settings')->getProductsGrid_DesktopSmallTwocolumns(4);
+                        $_columnCountTablet = Mage::helper('themeframework/settings')->getProductsGrid_TabletTwocolumns(4); 
+                        break;
+                }
+                $_columnCountMobile = Mage::helper('themeframework/settings')->getProductsGrid_ItemsMobile(3);
+            }else{
+                switch($_pageLayout){
+                    case 3:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Threecolumns(3);                    
+                        break;
+                    case 1:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Onecolumn(5);
+                        break;
+                    default:
+                        $_columnCountDesktop = Mage::helper('themeframework/settings')->getProductsGrid_Twocolumns(4); 
+                        break;
+                }               
+            } 
+        ?>
+        <div id="em-grid-mode"> 
+            <ul id="crosssell-products-list" class="em-crosssell-noslider products-grid emcatalog-grid-mode products-grid">
+            	<?php $i=0; foreach ($this->getItems() as $_item): ?>
+        		<li class="item<?php echo $_columnCount > 0 && $i%$_columnCount==0 || $_columnCount <= 0 && $i == 0 ?' first':''; ?><?php echo $_columnCount > 0 && ($i+1)%$_columnCount==0 || $i+1 == $_collectionSize ?' last':''; ?>">
+        			<div class="product-item">
+        				<a class="product-image" href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>">
+        				<?php Mage::helper('productlabels')->display($_item);?>
+        				<img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize($widthImage, $heightImage); ?>" width="<?php echo $widthImage ?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>" />    				
+        				</a>
+        				<div class="product-details product-shop">
+        					<div class="f-fix">
+        						<?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+        						<h3 class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></h3>
+        						<div class="desc std">
+        							<?php 
+        								$shortdes =  $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description');
+        								if(strlen($shortdes)>100) { //dem ki tu chuoi $str, 80 la chieu dai muon quy dinh
+        								    $strCutTitle = substr($shortdes, 0, 100); //cat 80 ki tu dau
+        								    $shortdes = substr($strCutTitle, 0, strrpos($strCutTitle, ' '));
+        								    $shortdes = substr_replace($shortdes ,"...",-3);
+        								}
+        								?>
+        							<?php echo $shortdes ?>                            
+        						</div>
+        						<?php echo $this->getPriceHtml($_item, true) ?>
+        						<div class="actions-cart em-btn-addto">
+        							<div class="add-to-btn actions">
+        								<?php if($_item->isSaleable()): ?>
+        								<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_item) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>    								    
+        								<?php endif; ?>
+        								<ul class="add-to-links">
+        									<?php if ($this->helper('wishlist')->isAllow()) : ?>
+        									<li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_item) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Wishlist') ?>"><?php echo $this->__('Add to Wishlist') ?></a></li>
+        									<?php endif; ?>
+        									<?php if($_compareUrl=$this->getAddToCompareUrl($_item)): ?>
+        									<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare" title="<?php echo $this->__('Add to Compare') ?>"><?php echo $this->__('Add to Compare') ?></a></li>
+        									<?php endif; ?>
+        								</ul>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</li>
+    		<?php $i++;?>
+    		<?php if($i >= $_collectionSize) break;?>
+    		<?php endforeach; ?>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        	//<![CDATA[	
+                (function($) {
+                    function setColumnCountGridMode(){  
+                        var wWin = $(window).width();
+                        if(EM.SETTING.DISABLE_RESPONSIVE==1){
+                            var sDesktop = 'emcatalog-desktop-';
+                            var sDesktopSmall = 'emcatalog-desktop-small-';
+                            var sTablet = 'emcatalog-tablet-';
+                            var sMobile = 'emcatalog-mobile-';
+                            var sGrid = $('#em-grid-mode'); 
+                            if(wWin>1200){
+                                sGrid.removeClass().addClass(sDesktop+'<?php echo $_columnCountDesktop ?>');
+                            }else{
+                                if(wWin<=1200 && wWin>768){                                
+                                    sGrid.removeClass().addClass(sDesktopSmall+'<?php echo $_columnCountDesktopSmall ?>');
+                                }else{
+                                    if(wWin<=768 && wWin>480){
+                                        sGrid.removeClass().addClass(sTablet+'<?php echo $_columnCountTablet ?>');
+                                    }else{
+                                        sGrid.removeClass().addClass(sMobile+'<?php echo $_columnCountMobile ?>');   
+                                    }                                
+                                }
+                            }
+                        }else{
+                            var sDesktop = 'emcatalog-desktop-';
+                            var sGrid = $('#em-grid-mode');
+                            sGrid.removeClass().addClass(sDesktop+'<?php echo $_columnCountDesktop ?>');
+                        }
+                        
+                    };
+                    function setEqualHeightItemsCategory() {
+                        var $list = $('#em-grid-mode');
+                        var len = $list.length;
+                        if(len){
+                            var gridItemMaxHeight = 0;
+                            var $listItems = $list.children().find('li.item');
+                            var lenLi = $listItems.length;
+                            if(lenLi){
+                                for(var j=0;j<lenLi;j++){
+                                    $listItems.eq(j).css('height', '');
+                                    gridItemMaxHeight = Math.max(gridItemMaxHeight, $listItems.eq(j).height());
+                                }
+                            }
+                            $listItems.css('height', gridItemMaxHeight + 'px');
+                        }
+                    };
+                    $(document).ready(function() {
+                        setColumnCountGridMode();
+                    });
+                    $(window).bind('load', function() {
+                        if (!isPhone) {
+                            setEqualHeightItemsCategory();
+                        }
+                    });
+                    var tmresize;
+                    $(window).resize(function() {
+                        setColumnCountGridMode();
+                        if (!isPhone) {
+                            setTimeout(function() {
+                                setEqualHeightItemsCategory();
+                            }, 200);
+                        }
+                    });
+                })(jQuery);        		      
+        	//]]>
+        </script>
+        <?php endif;?>    
+    </div>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+        (function($) {
+            $_img = $('#em-wrapper-crossell').find('img.em-img-lazy');
+            $_img.one("inview", function() {
+                var $this = $(this);
+                $this.attr("src", $this.attr("data-original"));
+                // Remove it from the set of matching elements in order to avoid that the handler gets re-executed
+                $this.removeAttr("data-original");
+                if ($(this).attr("src").indexOf('loading.gif') == -1) {
+                    $(this).removeClass("em-img-lazy").addClass('em-lazy-loaded');
+                    if($(this).parent('.product-image').hasClass('loading-process')){
+                        $(this).parent('.product-image').removeClass('loading-process'); 
+                    }                                         
+                                   
+                }
+            });
+            $(window).load(function(){
+               setEqualElement('#em-wrapper-crossell','.product-name'); 
+            });
+        })(jQuery); 
+	//]]>
+</script>
+<?php endif;?>

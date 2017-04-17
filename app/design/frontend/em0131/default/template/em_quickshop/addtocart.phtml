@@ -1,0 +1,71 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<?php if($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if(!$_product->isGrouped()): ?>
+            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+    		<div class="qty_cart">
+        		<div class="qty-ctl">
+			<button title="decrease" onclick="qs_changeQty(0); return false;" class="decrease">decrease</button>
+        		</div>
+        <input type="text" name="qty" id="qs_qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+        		<div class="qty-ctl">
+			<button title="increase" onclick="qs_changeQty(1); return false;" class="increase">increase</button>
+        		</div>
+    		</div>
+        <?php endif; ?>
+			
+		<?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
+		<ul class="add-to-links">
+		<?php
+			$_compareUrl = $this->helper('quickshop/compare')->getAddUrl($_product);
+		?>
+		<?php if ($this->helper('wishlist')->isAllow()) : ?>
+			<li><a href="<?php echo $_wishlistSubmitUrl ?>" onclick="qs_productAddToCartForm.submitLight(this, '<?php echo $_wishlistSubmitUrl ?>'); return false;" title="<?php echo $this->__('Add to Wishlist') ?>" class="link-wishlist"><span><span><?php echo $this->__('Wishlist') ?></span></span></a></li>
+		<?php endif; ?>
+		<?php if($_compareUrl) : ?>
+			<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" title="<?php echo $this->__('Add to Compare') ?>" class="link-compare"><span><span><?php echo $this->__('Compare') ?></span></span></a></li>
+		<?php endif; ?>
+		</ul>
+        <div class="button_addto">
+            <button type="button" title="<?php echo $this->__('Buy Now') ?>" id="em-buy-now" class="button btn-em-buy-now" onclick="qs_productAddToCartForm.submit(this)"><span><span><?php echo $this->__('Buy Now') ?></span></span></button>
+			<button type="button" title="<?php echo $buttonTitle ?>" id="product-addtocart-button" class="button btn-cart btn-cart-detail"><span><span><?php echo $buttonTitle ?></span></span></button>			
+		</div>
+        <?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+    <script type="text/javascript">
+		function qs_changeQty(increase) {
+			var qty = parseInt($('qs_qty').value);
+			if ( !isNaN(qty) ) {
+				qty = increase ? qty+1 : (qty>1 ? qty-1 : 1);
+				$('qs_qty').value = qty;
+			}
+		}
+    </script>
+<?php endif; ?>

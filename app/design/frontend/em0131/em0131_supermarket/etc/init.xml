@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <general>
+    <theme_name><![CDATA[EM0131 Everything SuperMarket Store]]></theme_name>
+    <identifier><![CDATA[em0131-supermarket]]></identifier>
+    <base_theme><![CDATA[em0131]]></base_theme>
+    <package><![CDATA[em0131]]></package>
+    <template><![CDATA[em0131_supermarket]]></template>
+    <layout><![CDATA[em0131_supermarket]]></layout>
+    <skin><![CDATA[em0131_supermarket]]></skin>
+    <default_theme><![CDATA[]]></default_theme>
+    <path><![CDATA[layout-supermarket.jpg]]></path>
+    <is_clone><![CDATA[0]]></is_clone>
+  </general>
+  <settings>
+    <config_json><![CDATA[{"general_disable_responsive":"1","general_right_to_left":"0","general_right_to_left_preview":"","general_box_wide":"wide","general_box_wide_preview":"","general_sticky_element":"1","general_header_style":"style27","general_footer_style":"style09","general_disable_default_nav":"0","general_disable_hover_login":"1","general_cat_search":"-1","general_show_popup":"2","general_disable_ajaxaddto":"1","general_disable_frontend_variation":"1","general_admin_toolbar":"0","general_disable_collapse":"1","css_additional_css_file":"theme_supermarket.less,style_supermarket.css","css_custom_css":"","fonts_google_font_key":"AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI","fonts_google_fonts":["Lato","Lora","Raleway"],"fonts_font_family":"null","fonts_google_fonts_weights":"200,300,400,500,600,700,800","fonts_general_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h1_font":"500 30px\/1.15 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h2_font":"700 20px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h3_font":"700 18px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h4_font":"500 16px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h5_font":"500 14px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h6_font":"600 11px\/1.35 Lato,Helvetica, Arial, sans-serif","typo_general_page_bg_color":"#ffffff","typo_general_page_bg_image":"","typo_general_page_bg_position":"0 0","typo_general_page_bg_repeat":"repeat","typo_general_page_bg_attachment":"fixed","typo_general_box_shadow":"0 0 5px #ffffff","typo_general_rounded_corner":"5px","header_header_bg_color":"#ffffff","header_header_bg2_color":"#272727","header_header_bg3_color":"#f8c53c","header_header_bg4_color":"#ffffff","header_header_bg5_color":"#ffffff","header_header_bg_image":"","header_header_bg_position":"0 0","header_header_bg_repeat":"repeat","header_header_text_color":"#a1a1a1","header_header_text2_color":"#ffffff","header_header_text3_color":"#282828","header_header_text4_color":"#808080","header_header_line_color":"#e1e1e1","menu_topmenu_bg_color":"#ffffff","menu_topmenu_hover_bg_color":"#f8c53c","menu_topmenu_text_color":"#434343","menu_topmenu_hover_text_color":"#ffffff","menu_topmenu_line_color":"#f8c53c","menu_topmenu_font":"700 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_vnav_bg_color":"#f8f8f8","menu_vnav_hover_bg_color":"#f8c53c","menu_vnav_text_color":"#434343","menu_vnav_hover_text_color":"#ffffff","menu_vnav_line_color":"#e9e9e9","menu_vnav_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_dropmenu_bg_color":"#ffffff","menu_dropmenu_text_color":"#a1a1a1","menu_dropmenu_text2_color":"#f8c53c","menu_dropmenu_text3_color":"#434343","menu_dropmenu_line_color":"#e9e9e9","menu_dropmenu_font":"normal 14px\/1.55 Lato, Helvetica, Arial, sans-serif","body_body_bg_color":"#ffffff","body_body_bg2_color":"#ffffff","body_body_bg3_color":"#f8c53c","body_body_bg4_color":"#464646","body_body_tab_bg_color":"#ffffff","body_body_label_bg_color":"#f7d059","body_body_label_bg2_color":"#f83c3c","body_body_label_bg3_color":"#2cbedd","body_body_bg_image":"","body_body_bg_position":"0 0","body_body_bg_repeat":"repeat","body_body_text_color":"#a1a1a1","body_body_text2_color":"#ffffff","body_body_text3_color":"#434343","body_body_text4_color":"#434343","body_body_text5_color":"rgba(248,197,60,1.00)","body_body_text6_color":"#ffffff","body_body_text7_color":"#f8c53c","body_body_line_color":"#e1e1e1","body_body_line2_color":"#f8c53c","footer_footer_bg_color":"#272727","footer_footer_bg2_color":"#272727","footer_footer_bg3_color":"#ffffff","footer_footer_bg_image":"","footer_footer_bg_position":"0 0","footer_footer_bg_repeat":"repeat","footer_footer_text_color":"#a1a1a1","footer_footer_text2_color":"#ffffff","footer_footer_text3_color":"#f8c53c","footer_footer_text4_color":"#ffffff","footer_footer_line_color":"#343434","buttons_btn1_bg_color":"#f8c53c","buttons_btn1_text_color":"rgba(255,255,255,1.00)","buttons_btn1_line_color":"#f8c53c","buttons_btn1_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn2_bg_color":"#f1f1f1","buttons_btn2_text_color":"#a1a1a1","buttons_btn2_line_color":"#f1f1f1","buttons_btn2_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn3_bg_color":"#f8c53c","buttons_btn3_text_color":"#fffffff","buttons_btn3_line_color":"#f8c53c","buttons_btn3_font":"700 12px\/1.15 Lato, Helvetica, Arial, sans-serif","buttons_btn4_bg_color":"#e79f65","buttons_btn4_text_color":"#ffffff","buttons_btn4_line_color":"#e79f65","buttons_btn4_font":"700 16px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn5_bg_color":"#f1f1f1","buttons_btn5_text_color":"#a1a1a1","buttons_btn5_line_color":"#f1f1f1","buttons_btn5_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn6_bg_color":"rgba(241,241,241,1.00)","buttons_btn6_text_color":"#a1a1a1","buttons_btn6_line_color":"#f1f1f1","buttons_btn6_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn7_bg_color":"transparent","buttons_btn7_text_color":"#ffffff","buttons_btn7_line_color":"#ffffff","buttons_btn7_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","products_grid_onecolumn":"5","products_grid_twocolumns":"4","products_grid_threecolumns":"3","products_grid_desktop_small_onecolumn":"4","products_grid_desktop_small_twocolumns":"3","products_grid_desktop_small_threecolumns":"2","products_grid_tablet_onecolumn":"3","products_grid_tablet_twocolumns":"3","products_grid_tablet_threecolumns":"2","products_grid_items_mobile":"2","products_grid_image_ratio":"1","products_grid_custom_width":"1","products_grid_custom_height":"1","products_grid_alt_img":"image","products_grid_config_hover":"mobile","products_grid_align_center":"1","products_grid_show_thumbnail":"1","products_grid_show_label":"1","products_grid_show_product_name":"1","products_grid_auto_product_name":"0","products_grid_show_desc":"2","products_grid_show_price":"1","products_grid_show_reviews":"1","products_grid_show_addtocart":"1","products_list_gutter":"","products_list_image_ratio":"1","products_list_custom_width":"1","products_list_custom_height":"1","products_list_alt_img":"image","products_list_show_product_name":"1","products_list_show_thumbnail":"1","products_list_show_desc":"1","products_list_show_price":"1","products_list_show_reviews":"1","products_list_show_addtocart":"1","products_list_show_addto":"1","products_list_show_label":"1","product_detail_product_view_preview":"","product_detail_primary_column_width":"15","product_detail_base_image_width":"800","product_detail_base_image_height":"800","product_detail_secondary_column_width":"9","product_detail_primary_two_column_width":"12","product_detail_base_two_image_width":"500","product_detail_base_two_image_height":"500","product_detail_secondary_two_column_width":"12","product_detail_primary_three_column_width":"24","product_detail_base_three_image_width":"600","product_detail_base_three_image_height":"600","product_detail_secondary_three_column_width":"24","product_detail_show_sku":"1","product_detail_viewmode":"cloudzoom","product_detail_cloud_zoom_width":"200","product_detail_cloud_zoom_height":"200","product_detail_use_tabs":"1","moreview_width":"100","moreview_height":"100","moreview_enable_slider":"1","moreview_slider_items":"6","moreview_slider_items_desktop":"4","moreview_slider_items_desktop_small":"3","moreview_slider_items_tablet":"3","moreview_slider_items_mobile":"2","moreview_slider_navigation":"1","moreview_slider_pagination":"0","moreview_slider_pagination_numbers":"0","related_display":"dont_replace","related_position":"top_tabs","related_width":"300","related_height":"300","related_enable_slider":"1","related_slider_items":"4","related_slider_items_two":"4","related_slider_items_three":"3","related_slider_items_desktop":"5","related_slider_items_desktop_small":"3","related_slider_items_tablet":"3","related_slider_items_mobile":"2","related_slider_navigation":"1","related_slider_pagination":"0","related_slider_pagination_numbers":"0","upsell_display":"dont_replace","upsell_width":"300","upsell_height":"300","upsell_enable_slider":"1","upsell_slider_items":"4","upsell_slider_items_two":"3","upsell_slider_items_three":"2","upsell_slider_items_desktop":"4","upsell_slider_items_desktop_small":"3","upsell_slider_items_tablet":"3","upsell_slider_items_mobile":"2","upsell_slider_navigation":"1","upsell_slider_pagination":"0","upsell_slider_pagination_numbers":"0","position_catalog_shopby":"left","position_catalog_leftnav":"left","position_catalog_search_layer":"left","position_catalog_related":"right","position_compare":"all","position_poll":"all","position_popular_tags":"left","position_wishlist_sidebar":"all","position_reorder_sidebar":"right","home_position_compare":"0","home_position_poll":"0","home_position_tags":"0","home_position_wishlist":"0","home_position_reorder":"0","crossell_display":"dont_replace","crossell_width":"280","crossell_height":"280","crossell_enable_slider":"1","crossell_slider_items":"4","crossell_slider_items_desktop":"4","crossell_slider_items_desktop_small":"3","crossell_slider_items_tablet":"3","crossell_slider_items_mobile":"2","crossell_slider_navigation":"1","crossell_slider_pagination":"0","crossell_slider_pagination_numbers":"0","image_sidebar_width":"100","image_sidebar_height":"100","related_sidebar_width":"100","related_sidebar_height":"100","image_shopping_cart_width":"100","image_shopping_cart_height":"100","recently_viewed_width":"100","recently_viewed_height":"100","flashtag_enabled":"0","flashtag_count":"100","flashtag_max":"20","flashtag_min":"12","flashtag_maxcolor":"#646464","flashtag_normal":"#646464","flashtag_hover":"#646464","ajaxcart_auto_close":"0","contacts_map_enable":"1","contacts_map_address":"249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh","contacts_map_info":"We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.","contacts_map_height":"500","contacts_map_width":"100%","contacts_map_image":null,"snippets_enable":"1","snippets_review":"1","snippets_price":"1","snippets_breadcrumbs":"1","snippets_description":"1","thumbnail":null,"typo_general_page_bg_file":null,"header_header_bg_file":null,"body_body_bg_file":null,"footer_footer_bg_file":null}]]></config_json>
+    <excluded_blocks><![CDATA[em0131-fashion-area01-home-ads&em0131-fashion-area04-home-banners&em0131-fashion-area02-home-menu&em0131-fashion-area05-home-ads&em0131-fashion-area03-home-slideshow&em0131-fashion-area06-home-banners-slider&em0131-fashion-area-footer01-links&em0131-fashion-area-footer&em0131-fashion-area-footer03-payment&em0131-fashion-area-left01-home-banner&em0131-fashion-area-main01-home-banners&em0131-fashion-area-main02-home-tabs&em0131-fashion-area-left02-home-ads&em0131-fashion-area-main03-home-banner&em0131-fashion-area-main04-home-best-sales&em0131-fashion-area-left04-home-banner&em0131-fashion-area06-banners-slider&em0131-fashion-area05-ads&em0131-fashion-area04-banners&em0131-area-left-category-banners&em0131-area-navigation-top-menu&em0131-fashion-area-footer02-payment&em0131-fashion-area-left03-home-recent-blog&em0131-fashion-area-left03-home-recent-blog-code&em0131-fashion-area-footer01-links-style09]]></excluded_blocks>
+  </settings>
+  <sample_data>
+    <flexible_block>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Header 01 - Header Style 27]]></title>
+        <position><![CDATA[em_area_header01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-header01-style27]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<p class="em-phone"><i class="fa fa-fw"></i><span>{{config path="general/store_information/phone"}}</span></p>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Navigation - Menu]]></title>
+        <position><![CDATA[em0131.top.menu]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-navigation-menu]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-menu">{{widget type="megamenupro/megamenupro" menu="4"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 01 - Menu Left]]></title>
+        <position><![CDATA[em_area1]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area01-menu-left]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="menu-wrapper hidden-xs">
+<div id="menuleftText" class="all_categories">
+<div class="menuleftText-title">
+<div class="menuleftText"><span class="em-text-upercase">Categories</span></div>
+</div>
+</div>
+<div class="menuleft">
+<div id="menu-default" class="mega-menu em-menu-icon">{{block type="page/html_topmenu" name="em0131.catalog.leftnav" template="page/html/leftmenu.phtml"}}{{widget type="megamenupro/megamenupro" menu="12"}}</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area02 - Main Slideshow]]></title>
+        <position><![CDATA[em_area2]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area02-main-slideshow]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-slideshow">{{widget type="minislideshow/minislideshow" slideshow="15"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 03 - Banners]]></title>
+        <position><![CDATA[em_area3]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area03-banners]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[1]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row em-wrapper-banners hidden-xs">
+<div class="col-sm-12">
+<div class="em-effect06"><a href="#"> <img class="img-responsive" alt="em_ads_01.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_01.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="em-effect06"><a href="#"> <img class="img-responsive" alt="em_ads_02.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_02.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 04 - Banners]]></title>
+        <position><![CDATA[em_area4]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area04-banners]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row em-wrapper-banners hidden-xs">
+<div class="col-sm-24 img-banner-small">
+<div class="em-effect06"><a href="#"><img class="img-responsive retina-img" alt="em_ads_03.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_03.jpg'}}" /></a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+<div class="col-sm-24 img-banner-small">
+<div class="em-effect06"><a href="#"><img class="img-responsive retina-img" alt="em_ads_04.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_04.jpg'}}" /></a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 05 - New Arrivals - Tabs]]></title>
+        <position><![CDATA[em_area5]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area05-new-arrivals-tabs]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[0]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-new-arrivals-tabs">
+<div class="em-new-arrivals-tabs em-line-01">{{widget type="tabs/group" title="New Arrivals" title_1="YTozNDp7aTowO3M6NzoiSmV3ZWxyeSI7aToxO3M6MDoiIjtpOjQ7czowOiIiO2k6NTtzOjA6IiI7aTo2O3M6MDoiIjtpOjc7czowOiIiO2k6ODtzOjA6IiI7aTo5O3M6MDoiIjtpOjExO3M6MDoiIjtpOjEyO3M6MDoiIjtpOjEzO3M6MDoiIjtpOjE0O3M6MDoiIjtpOjE1O3M6MDoiIjtpOjI1O3M6MDoiIjtpOjI3O3M6MDoiIjtpOjMwO3M6MDoiIjtpOjMyO3M6MDoiIjtpOjM7czowOiIiO2k6MTA7czowOiIiO2k6MTY7czowOiIiO2k6MTc7czowOiIiO2k6MTg7czowOiIiO2k6MTk7czowOiIiO2k6MjA7czowOiIiO2k6MjE7czowOiIiO2k6MjI7czowOiIiO2k6MjM7czowOiIiO2k6MjQ7czowOiIiO2k6MjY7czowOiIiO2k6Mjg7czowOiIiO2k6Mjk7czowOiIiO2k6MzE7czowOiIiO2k6MzM7czowOiIiO2k6MjtzOjA6IiI7fQ==" block_1="19" title_2="YTozNDp7aTowO3M6NzoiRmFzaGlvbiI7aToxO3M6MDoiIjtpOjQ7czowOiIiO2k6NTtzOjA6IiI7aTo2O3M6MDoiIjtpOjc7czowOiIiO2k6ODtzOjA6IiI7aTo5O3M6MDoiIjtpOjExO3M6MDoiIjtpOjEyO3M6MDoiIjtpOjEzO3M6MDoiIjtpOjE0O3M6MDoiIjtpOjE1O3M6MDoiIjtpOjI1O3M6MDoiIjtpOjI3O3M6MDoiIjtpOjMwO3M6MDoiIjtpOjMyO3M6MDoiIjtpOjM7czowOiIiO2k6MTA7czowOiIiO2k6MTY7czowOiIiO2k6MTc7czowOiIiO2k6MTg7czowOiIiO2k6MTk7czowOiIiO2k6MjA7czowOiIiO2k6MjE7czowOiIiO2k6MjI7czowOiIiO2k6MjM7czowOiIiO2k6MjQ7czowOiIiO2k6MjY7czowOiIiO2k6Mjg7czowOiIiO2k6Mjk7czowOiIiO2k6MzE7czowOiIiO2k6MzM7czowOiIiO2k6MjtzOjA6IiI7fQ==" block_2="20" title_3="YTozNDp7aTowO3M6NzoiR2xhc3NlcyI7aToxO3M6MDoiIjtpOjQ7czowOiIiO2k6NTtzOjA6IiI7aTo2O3M6MDoiIjtpOjc7czowOiIiO2k6ODtzOjA6IiI7aTo5O3M6MDoiIjtpOjExO3M6MDoiIjtpOjEyO3M6MDoiIjtpOjEzO3M6MDoiIjtpOjE0O3M6MDoiIjtpOjE1O3M6MDoiIjtpOjI1O3M6MDoiIjtpOjI3O3M6MDoiIjtpOjMwO3M6MDoiIjtpOjMyO3M6MDoiIjtpOjM7czowOiIiO2k6MTA7czowOiIiO2k6MTY7czowOiIiO2k6MTc7czowOiIiO2k6MTg7czowOiIiO2k6MTk7czowOiIiO2k6MjA7czowOiIiO2k6MjE7czowOiIiO2k6MjI7czowOiIiO2k6MjM7czowOiIiO2k6MjQ7czowOiIiO2k6MjY7czowOiIiO2k6Mjg7czowOiIiO2k6Mjk7czowOiIiO2k6MzE7czowOiIiO2k6MzM7czowOiIiO2k6MjtzOjA6IiI7fQ==" block_3="21" title_4="YTozNDp7aTowO3M6NjoiQmVhdXR5IjtpOjE7czowOiIiO2k6NDtzOjA6IiI7aTo1O3M6MDoiIjtpOjY7czowOiIiO2k6NztzOjA6IiI7aTo4O3M6MDoiIjtpOjk7czowOiIiO2k6MTE7czowOiIiO2k6MTI7czowOiIiO2k6MTM7czowOiIiO2k6MTQ7czowOiIiO2k6MTU7czowOiIiO2k6MjU7czowOiIiO2k6Mjc7czowOiIiO2k6MzA7czowOiIiO2k6MzI7czowOiIiO2k6MztzOjA6IiI7aToxMDtzOjA6IiI7aToxNjtzOjA6IiI7aToxNztzOjA6IiI7aToxODtzOjA6IiI7aToxOTtzOjA6IiI7aToyMDtzOjA6IiI7aToyMTtzOjA6IiI7aToyMjtzOjA6IiI7aToyMztzOjA6IiI7aToyNDtzOjA6IiI7aToyNjtzOjA6IiI7aToyODtzOjA6IiI7aToyOTtzOjA6IiI7aTozMTtzOjA6IiI7aTozMztzOjA6IiI7aToyO3M6MDoiIjt9" block_4="22" template="emtabs/group.phtml"}}</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 06 - Brands Slider]]></title>
+        <position><![CDATA[em_area6]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area06-brands-slider]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-brands">
+<div class="container">
+<div class="row">
+<div class="slider-style02">
+<div class="em-slider em-slider-banners em-slider-navigation-icon" data-emslider-navigation="true" data-emslider-items="6" data-emslider-desktop="5" data-emslider-desktop-small="4" data-emslider-tablet="3" data-emslider-mobile="2">
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_01.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_01.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_02.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_02.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_03.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_03.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_04.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_04.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_05.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_05.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_06.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_06.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_07.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_01.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_01.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_02.png'}}" /></a></div>
+<div class="em-banners-item"><a href="#"><img class="img-responsive" alt="em_brand_02.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/brand/em_brand_03.png'}}" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 07 - Ads]]></title>
+        <position><![CDATA[em_area7]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area07-ads]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-ads-17">
+<div class="em-wrapper-parallax">
+<div class="em-box-info">
+<h1 class="em-text-upercase" style="font: 700 4rem/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;">Already Loving emeverything? Rate Us Now!</h1>
+<h3 style="font: italic 2.4rem/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif; padding-bottom: 3.4rem; margin-bottom: 2.2rem;">We Make Your Dream Came True</h3>
+<a class="button-link first" href="#"><span>purchase now</span></a></div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Main 01 - Home - Best Slider]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-main01-best-slider]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[1]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-featured-slider  em-line-01 button-show01 button-hide-text">
+<div class="widget-title em-widget-title">
+<h3><span>Best Sellers</span></h3>
+</div>
+<div class="em-featured-slider row">
+<div class="col-sm-6 hidden-xs">
+<div class="em-effect06"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_05.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+<div class="col-sm-18">{{widget type="minifilterproducts/list" category="36,37,38,39,40,41,42" type_filter="2" limit_count="6" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" slider_enable="1" slider_items="4" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_items_desktop="3" slider_items_desktop_small="2" slider_items_tablet="2" slider_items_mobile="2" slider_navigation="1" slider_speed="800" slider_rewindspeed="800"}}</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Main 02 - Banners]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-main02-banners]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[2]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row em-wrapper-banners hidden-xs">
+<div class="col-sm-12">
+<div class="em-effect06"><a href="#"><img class="img-responsive retina-img" alt="em_ads_06.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_06.jpg'}}" /></a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="em-effect06"><a href="#"><img class="img-responsive retina-img" alt="em_ads_07.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_07.jpg'}}" /></a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Main 03 - Grid 18]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-main03-grid18]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[3]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-product-18">
+<div class="col-sm-6 em-clear-padding">
+<div class="em-wrapper-products em-best-products button-show01 button-hide-text">{{widget type="minifilterproducts/list" category="35" type_filter="2" limit_count="1" order_by="name asc" frontend_title="Best Sales" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="275" thumbnail_height="275" custom_theme="em_minifilterproducts/em_grid_05.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+</div>
+<div class="col-sm-12 em-clear-padding em-line">
+<div class="em-featured-products">
+<div class="em-featured-top">{{widget type="minifilterproducts/list" category="35" type_filter="1" featured="em_featured" limit_count="4" column_count="2" order_by="name asc" frontend_title="Featured Products" show="thumb,name,review,price" thumbnail_width="110" thumbnail_height="110" custom_theme="em_minifilterproducts/em_grid_15_custom_list.phtml" img_lazyload="1" custom_class="custom-product-list" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+<div class="row em-featured-bottom hidden-xs">
+<div class="col-sm-24 first text-center">
+<div class="effect-hover-text"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive retina-img em-clear-radius" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_08.jpg'}}" /> </a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 em-clear-padding">
+<div class="em-sale-off">{{widget type="minifilterproducts/list" type_filter="4" limit_count="4" order_by="name asc" frontend_title="Sale Off" show="thumb,name,price" thumbnail_width="80" thumbnail_height="80" custom_theme="em_minifilterproducts/em_list.phtml" img_lazyload="1" custom_class="custom-product-list" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 08 - From Our Blog - Ads10]]></title>
+        <position><![CDATA[em_area8]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area08-from-our-blog-ads10]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+	<div class="col-sm-24">
+		<div class="em-wrapper-ads-10 em-line-01">
+			<div class="em-block-title">
+				<h2><span>From Our Blog</span></h2>
+			</div>
+			<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_09.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_09.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_10.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_10.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_11.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_11.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_09.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_09.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_10.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_10.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+				<div class="em-blog-item em-effect-13">
+					<div class="em-blog-content bkg-top">
+						<a href="#"><img class="img-responsive" alt="em_ads_11.jpg" src="{{media url='wysiwyg/em0131/layout_supermarket/home/em_ads_11.jpg'}}" /></a>
+						<div class="em-blog-time">
+							<p class="em-blog-date">28</p>
+							<p class="em-blog-month">aug</p>
+						</div>
+						<div class="hov">&nbsp;</div>
+					</div>
+					<div class="em-box bkg-bottom">
+						<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+						<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+						<p><a class="link-more" href="#">Read more</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 08 - From Our Blog - Ads10 - Code]]></title>
+        <position><![CDATA[em_area8]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area08-from-our-blog-ads10-code]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[0]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+<div class="col-sm-24">
+<div class="em-wrapper-ads-10 em-line-01">
+<div class="em-block-title">
+<h2><span>From Our Blog</span></h2>
+</div>
+<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">{{block type="blog/post_list" name="em.fromblog.style02" template="em_blog/post/list/em_fromblog_style02.phtml"}}</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 09 - Ads 13]]></title>
+        <position><![CDATA[em_area9]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area09-ads13]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row em-wrapper-ads-13 hidden-xs">
+<div class="text-box col-sm-8"><a class="icon-banner-left pull-left" title="Tech Support 247" href="#"><em class="fa fa-fw"></em></a>
+<div class="em-banner-right">
+<h5><a title="Tech Support 247" href="#">RETURN &amp; EXCHANGE</a></h5>
+<p>Vintage pastel tucked t-shirt leather cami</p>
+</div>
+</div>
+<div class="text-box col-sm-8"><a class="icon-banner-left pull-left" title="Free shipping all order" href="#"><em class="fa fa-fw"></em></a>
+<div class="em-banner-right">
+<h5><a title="Free shipping all order" href="#">Free shipping</a></h5>
+<p>Get Free Shipping on all orders</p>
+</div>
+</div>
+<div class="text-box col-sm-8"><a class="icon-banner-left pull-left" title="30 days return" href="#"><em class="fa fa-fw"></em></a>
+<div class="em-banner-right">
+<h5><a title="30 days return" href="#">MEMBER DISCOUNT</a></h5>
+<p>The total billed is discount for member</p>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Footer 01 - Footer Style 09]]></title>
+        <position><![CDATA[em_area_footer01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-footer01-style09]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-footer-info">
+<div class="row">
+<div class="col-sm-4 first text-center">
+<div class="em-block-title" data-collapse-target="#collapse01">
+<p class="h4 em-text-upercase"><span>What's hot</span></p>
+</div>
+<ul id="collapse01" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Discount Voucher</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Spring Collection</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Trending</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Best Sellers</span></a></li>
+</ul>
+</div>
+<div class="col-sm-4 text-center">
+<div class="em-block-title" data-collapse-target="#collapse02">
+<p class="h4 em-text-upercase"><span>Brands</span></p>
+</div>
+<ul id="collapse02" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Jack &amp; Jones</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Calvin Klein</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Ray Ban</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>River Island</span></a></li>
+</ul>
+</div>
+<div class="col-sm-4 text-center">
+<div class="em-block-title" data-collapse-target="#collapse03">
+<p class="h4 em-text-upercase"><span>Men shop</span></p>
+</div>
+<ul id="collapse03" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Top</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Bottoms</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Accessories</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Shoes</span></a></li>
+</ul>
+</div>
+<div class="col-sm-4 text-center">
+<div class="em-block-title" data-collapse-target="#collapse04">
+<p class="h4 em-text-upercase"><span>Women shop</span></p>
+</div>
+<ul id="collapse04" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Jeans</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Dresses</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Other</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Shoes</span></a></li>
+</ul>
+</div>
+<div class="col-sm-4 text-center">
+<div class="em-block-title" data-collapse-target="#collapse05">
+<p class="h4 em-text-upercase"><span>Help</span></p>
+</div>
+<ul id="collapse05" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>F.A.Q.</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Shipping</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="{{store direct_url='contacts'}}"><span>Contact Us</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Privacy Policy</span></a></li>
+</ul>
+</div>
+<div class="col-sm-4 last text-center">
+<div class="em-block-title" data-collapse-target="#collapse06">
+<p class="h4 em-text-upercase"><span>Nation Apps</span></p>
+</div>
+<ul id="collapse06" class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>iPhone</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>iPad</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Android</span></a></li>
+</ul>
+</div>
+</div>
+<div class="em-footer-info-bottom">
+<div class="row">
+<div class="col-sm-15 first">
+<div class="em-wrapper-newsletter">
+<div class="em-block-title" data-collapse-target="#collapse07">
+<p class="h4 em-text-upercase"><span>Sign Up For Newsletter</span></p>
+</div>
+<div id="collapse07" class="em-block-content em-newsletter">{{block type="newsletter/subscribe" name="em.newsletter.style05" template="newsletter/em_subscribe_style05.phtml"}}</div>
+</div>
+</div>
+<div class="col-sm-9 last">
+<div class="em-wrapper-social f-right">
+<div class="em-block-title" data-collapse-target="#collapse08">
+<p class="h4 em-text-upercase"><span>Follow Us</span></p>
+</div>
+<div id="collapse08" class="em-block-content">
+<p class="em-social"><a class="em-social-icon em-facebook f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-twitter f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-pinterest  f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-google f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-rss  f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_supermarket]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area Footer 02 - Payment]]></title>
+        <position><![CDATA[em_area_footer02]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-supermarket-area-footer02-payment]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-payment f-right"><a class="em-payment-icon em-visa" title="em-sample-title" href="#">visa</a> <a class="em-payment-icon em-master" title="em-sample-title" href="#">master</a> <a class="em-payment-icon em-express " title="em-sample-title" href="#">express</a><a class="em-payment-icon em-paypal" title="em-sample-title" href="#">paypal</a> <a class="em-payment-icon em-other " title="em-sample-title" href="#">other</a></div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+    </flexible_block>
+    <themeframework/>
+    <staticblock>
+      <block id="19">
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 05 - New Arrivals - Tab01]]></title>
+        <identifier><![CDATA[em0131-supermarket-area05-new-arrivals-tab01]]></identifier>
+        <content><![CDATA[<div class="em-wrapper-products em-line-01 em-wrapper-product-23 button-show01 button-hide-text">{{widget type="minifilterproducts/list" category="41" type_filter="3" limit_count="7" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="480" thumbnail_height="480" custom_theme="em_minifilterproducts/em_grid_21.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em-games-new-arrivals-tab01"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="20">
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 05 - New Arrivals - Tab02]]></title>
+        <identifier><![CDATA[em0131-supermarket-area05-new-arrivals-tab02]]></identifier>
+        <content><![CDATA[<div class="em-wrapper-products em-line-01 em-wrapper-product-23 button-show01 button-hide-text">{{widget type="minifilterproducts/list" category="35" type_filter="3" limit_count="7" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="480" thumbnail_height="480" custom_theme="em_minifilterproducts/em_grid_21.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em-games-new-arrivals-tab02"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="21">
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 05 - New Arrivals - Tab03]]></title>
+        <identifier><![CDATA[em0131-supermarket-area05-new-arrivals-tab03]]></identifier>
+        <content><![CDATA[<div class="em-wrapper-products em-line-01 em-wrapper-product-23 button-show01 button-hide-text">{{widget type="minifilterproducts/list" category="37" type_filter="3" limit_count="7" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="480" thumbnail_height="480" custom_theme="em_minifilterproducts/em_grid_21.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em-games-new-arrivals-tab03"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="22">
+        <title><![CDATA[EM0131 Everything - Supermarket Store - Area 05 - New Arrivals - Tab04]]></title>
+        <identifier><![CDATA[em0131-supermarket-area05-new-arrivals-tab04]]></identifier>
+        <content><![CDATA[<div class="em-wrapper-products em-line-01 em-wrapper-product-23 button-show01 button-hide-text">{{widget type="minifilterproducts/list" category="44" type_filter="3" limit_count="7" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="480" thumbnail_height="480" custom_theme="em_minifilterproducts/em_grid_21.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em-games-new-arrivals-tab04"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+    </staticblock>
+    <megamenu>
+      <menu id="12">
+        <name><![CDATA[EM0131 Everything - Supermarket Store - Menu Left]]></name>
+        <identifier><![CDATA[em0131-supermarket-menu-left]]></identifier>
+        <description><![CDATA[EM0131 Everything - Supermarket Store - Menu Left]]></description>
+        <type><![CDATA[1]]></type>
+        <status><![CDATA[1]]></status>
+        <content><![CDATA[[{"type":"link","label":"Fashion","sublabel":"","icon_url":"","url":"{{store url='fashion.html'}}","target":"","css_class":"fa fa-automobile hidden-sm","container_css":"background-image:url(http:\/\/farm8.staticflickr.com\/7632\/16644541718_a9bf09d186_b.jpg); background-repeat:no-repeat; background-position:right bottom;","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"","container_css":"","depth":"2"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-24","container_css":"","depth":"4"},{"type":"text","text":"PHAgc3R5bGU9Im1hcmdpbi1ib3R0b206MjBweCI+VGhlcmUgaXMgYW4gZXhhbXBsZSBvZiBhIGxhcmdlIGNvbnRhaW5lciB3aXRoIDYgY29sdW1uczwvcD4=","css_class":"","container_css":"","depth":"5"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"4"},{"type":"text","text":"PGg0PkphY2tldHMgJiBjb2F0czwvaDQ+CiA8dWwgY2xhc3M9Imxpc3QtdGV4dCI+CjxsaT48YSBocmVmPSIjIj5CYXRodGltZSBHb29kczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+QmVkZGluZzwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+QmxhbmtldHM8L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPlNob3dlciBDdXJ0YWluczwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"4"},{"type":"text","text":"PGg0PkhhbmRiYWc8L2g0PgogPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+RGF5YmVkczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+SW5mYW50IENoYWlyczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+U2VjdGlvbmFsczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+U2xlZXBlciBTb2ZhczwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"4"},{"type":"text","text":"PGg0PkNsb3RoaW5nPC9oND4KPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+NyBGb3IgQWxsIE1hbmtpbmQ8L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPkFmZmxpY3Rpb248L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPkFubmEgU3VpPC9hPjwvbGk+CjxsaT48YSBocmVmPSIjIj5BcmFiZWxsYTwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"4"},{"type":"text","text":"PGg0PlNob2VzPC9oND4KPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+VmVyc2FjZTwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+VGhhbGlhPC9hPjwvbGk+CjxsaT48YSBocmVmPSIjIj5Ub21teSBIaWxmaWdlcjwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+VG9yeSBCdXJjaDwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"5"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-24","container_css":"","depth":"4"},{"type":"text","text":"PHAgc3R5bGU9Im1hcmdpbjozMnB4IDAgMTVweCI+SGVyZSBpcyBzb21lIGNvbnRlbnRzIHdpdGggc2lkZSBpbWFnZXM8L3A+","css_class":"","container_css":"","depth":"5"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-9","container_css":"","depth":"4"},{"type":"text","text":"PGRpdiBjbGFzcz0ibWVudS1jYXRlIGVmZmVjdDAzIHpvb20taW1nIj48YSB0aXRsZT0iZW0tc2FtcGxlLXRpdGxlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jyd9fWZ1cm5pdHVyZS5odG1sIj48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvbWVkaWEvaG9tZS9tZW51L21lbnUtaW1nMDEuanBnJ319IiBhbHQ9ImVtLXNhbXBsZS1hbHQiIC8+PC9hPjwvZGl2Pg==","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-11","container_css":"","depth":"4"},{"type":"text","text":"PHA+RXNwZWNpYWxseSBkZXNpZ25lZCB0byBzZXJ2ZSBmb3Igb25saW5lIHN1cGVybWFya2V0IGJ1c2luZXNzZXMsIDxzdHJvbmc+TXkgTWFya2V0PC9zdHJvbmc+IHRoZW1lIGhhcyBhIG5lYXQgYW5kIGNsZWFuIGxheW91dCB3aXRoIGJsb2NrcyBhcmUgYWxpZ25lZCBzbWFydGx5IGFuZCBtYW55IDxzdHJvbmc+RGVhbHMgbW9kdWxlczwvc3Ryb25nPiBhcmUgaW5jbHVkZWQgdG8gbW9zdCBjb21mb3J0IHZpc2l0b3JzLiBTaW1wbGUgd2hpdGUgYmFja2dyb3VuZCBpcyBlbm91Z2ggdG8gbWFrZSBwcm9kdWN0IGRpc3BsYXlzIHN0YW5kIG91dCwgYSBsb2dpY2FsIGNvbWJpbmF0aW9uIG9mIGNvbG9ycyBhbmQgdGV4dHVyZSwgdG9nZXRoZXIgd2l0aCByZWFzb25hYmxlIGFuaW1hdGlvbiBlZmZlY3QgaW1wcmVzcyB2aXNpdG9ycy4gCiAgICAgICAgQnV0IHRoZSBtb3N0IHJlbWFya2FibGUgdGhpbmcgYWJvdXQgTXkgTWFya2V0IGlzIGl0cyBwb3dlcmZ1bCBhbmQgdXNlZnVsIGZlYXR1cmVzLgogICAgICAgIDwvcD4=","css_class":"","container_css":"","depth":"5"},{"type":"link","label":"Shoes","sublabel":"","icon_url":"","url":"{{store url='shoe.html'}}","target":"","css_class":"fa fa-desktop hidden-sm","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col10  fix-top","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-12 alpha","container_css":"","depth":"2"},{"type":"text","text":"PGg0PlF1aXNxdWUgY29uZGltZW50dW08L2g0Pgp7e3dpZGdldCB0eXBlPSJtZWdhbWVudXByby9jYXRhbG9nbmF2aWdhdGlvbiIgY2F0ZWdvcnlfaWQ9ImNhdGVnb3J5LzEwIiBkaXJlY3Rpb249InZlcnRpY2FsIn19CjxkaXYgY2xhc3M9InBhZGRpbmctdG9wMjAiPgo8aDQ+UGVsbGVudGVzcXVlIG51bGxhPC9oND4Ke3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8xNSIgZGlyZWN0aW9uPSJ2ZXJ0aWNhbCJ9fQo8L2Rpdj4=","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-12","container_css":"","depth":"2"},{"type":"text","text":"PGg0PlF1aXNxdWUgZ3JhdmlkYTwvaDQ+CjxkaXY+e3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8xMCIgZGlyZWN0aW9uPSJ2ZXJ0aWNhbCJ9fTwvZGl2Pgo8ZGl2IGNsYXNzPSJwYWRkaW5nLXRvcDIwIj4KPGg0PlBlbGxlbnRlc3F1ZSBudWxsYTwvaDQ+Cnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMTUiIGRpcmVjdGlvbj0idmVydGljYWwifX0KPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Glasses","sublabel":"","icon_url":"","url":"{{store url='glass.html'}}","target":"","css_class":"fa fa-camera","container_css":"background-image:url(http:\/\/farm9.staticflickr.com\/8704\/16212167333_1dfb4ccb4d_b.jpg); background-repeat:no-repeat; background-position:right bottom;","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"2"},{"type":"text","text":"PGg0PkphY2tldHMgJiBjb2F0czwvaDQ+CiA8dWwgY2xhc3M9Imxpc3QtdGV4dCI+CjxsaT48YSBocmVmPSIjIj5CYXRodGltZSBHb29kczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+QmVkZGluZzwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+QmxhbmtldHM8L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPlNob3dlciBDdXJ0YWluczwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"2"},{"type":"text","text":"PGg0PkhhbmRiYWc8L2g0PgogPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+RGF5YmVkczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+SW5mYW50IENoYWlyczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+U2VjdGlvbmFsczwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+U2xlZXBlciBTb2ZhczwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"2"},{"type":"text","text":"PGg0PkNsb3RoaW5nPC9oND4KPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+NyBGb3IgQWxsIE1hbmtpbmQ8L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPkFmZmxpY3Rpb248L2E+PC9saT4KPGxpPjxhIGhyZWY9IiMiPkFubmEgU3VpPC9hPjwvbGk+CjxsaT48YSBocmVmPSIjIj5BcmFiZWxsYTwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-5","container_css":"","depth":"2"},{"type":"text","text":"PGg0PlNob2VzPC9oND4KPHVsIGNsYXNzPSJsaXN0LXRleHQiPgo8bGk+PGEgaHJlZj0iIyI+VmVyc2FjZTwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+VGhhbGlhPC9hPjwvbGk+CjxsaT48YSBocmVmPSIjIj5Ub21teSBIaWxmaWdlcjwvYT48L2xpPgo8bGk+PGEgaHJlZj0iIyI+VG9yeSBCdXJjaDwvYT48L2xpPgo8L3VsPg==","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Baby","sublabel":"","icon_url":"","url":"{{store url='baby.html'}}","target":"{{store direct_url=''}}apparel.html","css_class":"fa fa-video-camera","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col5  fix-top","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-24 alpha","container_css":"","depth":"2"},{"type":"text","text":"PGg0PkphY2tldHMgJmFtcDsgY29hdHM8L2g0Pgo8dWwgY2xhc3M9Im1lbnUtY29udGFpbmVyIj4KPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSBmaXJzdCI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0iIyI+PHNwYW4+TGFuZGluZyBQYWdlPC9zcGFuPiA8L2E+PC9saT4KPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSAiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7Y29uZmlnIHBhdGg9J3dlYi91bnNlY3VyZS9iYXNlX3VybCd9fWVtMDEzMS10eXBvZ3JhcGh5Ij48c3Bhbj5UeXBvZ3JhcGh5IFBhZ2U8L3NwYW4+IDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tjb25maWcgcGF0aD0nd2ViL3Vuc2VjdXJlL2Jhc2VfdXJsLyd9fWVtMDEzMS13aWRnZXRzIj48c3Bhbj5XaWRnZXRzIFBhZ2U8L3NwYW4+IDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIGxhYmVsLW5ldy1tZW51ICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tjb25maWcgcGF0aD0nd2ViL3Vuc2VjdXJlL2Jhc2VfdXJsLyd9fWNvbnRhY3RzIj48c3Bhbj5Db250YWN0IFBhZ2U8L3NwYW4+IDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIGxhc3QgIj48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e2NvbmZpZyBwYXRoPSd3ZWIvdW5zZWN1cmUvYmFzZV91cmwvJ319bXlldmVyeXRoaW5nIj48c3Bhbj40MDQgUGFnZTwvc3Bhbj4gPC9hPjwvbGk+CjwvdWw+","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Sport & Outdoor","sublabel":"","icon_url":"","url":"{{store url='sport-outdoor.html'}}","target":"","css_class":"fa fa-university","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":" fix-top","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"","container_css":"","depth":"2"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col18 grid_18 bkg-menu01","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-12","container_css":"","depth":"4"},{"type":"text","text":"PHAgY2xhc3M9ImltZy1jZW50ZXIiPjxhIGhyZWY9IiMiIHRpdGxlPSJlbS1zYW1wbGUtdGl0bGUiPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9ImltYWdlcy9tZWRpYS9ob21lL21lbnUvbG9nby1tZW51LmpwZyJ9fSIgYWx0PSJlbS1zYW1wbGUtYWx0IiAvPjwvYT48L3A+CjxwPk5vIGNvZGluZyBuZWVkZWQsIGFsbCBjYW4gYmUgZWRpdGVkIGRpcmVjdGx5IGluIGFkbWluIHBhbmVsLiBTZWxlY3QgY29sb3JzIG9mIGRvemVucyBvZiBlbGVtZW50cyB1c2luZyBjb2xvciBwaWNrZXJzLCBzZXQgaHVuZHJlZHMgb2Ygb3B0aW9ucywgYXBwbHkgdGV4dHVyZXMgZm9yIGhlYWRlciwgZm9vdGVyIGFuZCBmb3IgdGhlIGVudGlyZSBwYWdlLCB1cGxvYWQgYmFja2dyb3VuZCBpbWFnZSBhbmQgY29uZmlndXJlIGl0cyBwcm9wZXJ0aWVzIChwb3NpdGlvbiwgcmVwZWF0aW5nLCBhdHRhY2htZW50KSwgY2hhbmdlIGZvbnQgYW5kIGZvbnQtc2l6ZSwgYW5kIG1hbnkgbWFueSBtb3Jl4oCmPC9wPg==","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"4"},{"type":"text","text":"PGg0PkphY2tldHMgJiBjb2F0czwvaDQ+Cjx1bCBjbGFzcz0ibWVudS1jb250YWluZXIiPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIGZpcnN0IGxhYmVsLWhvdC1tZW51Ij48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9J3Qtc2hpcnQtc2VxdWluLWZyaW5nZS1kcmVzcy5odG1sJ319Ij5TaW1wbGUgcHJvZHVjdDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIj48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9J3ZpcnR1YWwtcHJvZHVjdC5odG1sJ319Ij5WaXJ0dWFsIFByb2R1Y3Q8L2E+PC9saT4KPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdkb3dubG9hZGFibGUtcHJvZHVjdC5odG1sJ319Ij5Eb3dubG9hZGFibGUgUHJvZHVjdDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIj48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9J2luay1lYXRlci1rcnlsb24tYm9tYmVhci1kZXN0cm95ZWQtdGVlLTEyNi5odG1sJ319Ij5Db25maWd1cmFibGUgUHJvZHVjdDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xIj48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9J21hZ2VudG8tcmVkLWZ1cm5pdHVyZS1zZXQuaHRtbCd9fSI+R3JvdXBlZCBQcm9kdWN0PC9hPjwvbGk+CjxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFzdCI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdnYW1pbmctY29tcHV0ZXIuaHRtbCd9fSI+QnVuZGxlIFByb2R1Y3Q8L2E+PC9saT4KPC91bD4=","css_class":"","container_css":"","depth":"5"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"4"},{"type":"text","text":"PGg0PkNsb3RoaW5nPC9oND4KPHVsIGNsYXNzPSJtZW51LWNvbnRhaW5lciI+CjxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgZmlyc3QiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nbWV0YWxsaWMtbWlkaS1jdXQtb3V0LW1pZGktZHJlc3MuaHRtbCd9fSI+MSBDb2x1bW48L2E+PC9saT4KPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSAiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nbW9ua2ktbWV0YWxsaWMtdC1zaGlydC5odG1sJ319Ij4yIENvbHVtbnMgTGVmdDwvYT48L2xpPgo8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdyaXZlci1pc2xhbmQtdmVzdC5odG1sJ319Ij4yIENvbHVtbnMgUmlnaHQ8L2E+PC9saT4KPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSAiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nbW9tbXktcy1saXR0bGUtc3Vuc2hpbmUuaHRtbCd9fSI+MyBDb2x1bW5zPC9hPjwvbGk+CjxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgIj48YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9J2RyYXBlLWJhY2stcGxheXN1aXQuaHRtbCd9fSI+VXBzZWxsPC9hPjwvbGk+CjxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFzdCI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSd0LXNoaXJ0LXNlcXVpbi1mcmluZ2UtZHJlc3MuaHRtbCd9fSI+UmVsYXRlZCBQcm9kdWN0PC9hPjwvbGk+CjwvdWw+","css_class":"","container_css":"","depth":"5"},{"type":"link","label":"Swatch","sublabel":"","icon_url":"","url":"{{store url='swatch.html'}}","target":"","css_class":"fa fa-leaf","container_css":"","depth":"0"},{"type":"link","label":"Jewelry","sublabel":"","icon_url":"","url":"{{store url='jewelry.html'}}","target":"","css_class":"fa fa-tachometer hidden-sm hidden-md","container_css":"","depth":"0"},{"type":"link","label":"Home Garden","sublabel":"","icon_url":"","url":"{{store url='home-garden.html'}}","target":"","css_class":"fa fa-glass hidden-md hidden-sm","container_css":"","depth":"0"},{"type":"link","label":"Beauty","sublabel":"","icon_url":"","url":"{{store url='beauty.html'}}","target":"","css_class":"em-more-menu fa fa-tags last","container_css":"","depth":"0"}]]]></content>
+        <css_class><![CDATA[em-menu-icon effect-menu em-menu-long]]></css_class>
+      </menu>
+    </megamenu>
+    <minislideshows>
+      <minislideshow id="15">
+        <name><![CDATA[EM0131 Everything - Supermarket Store - Main Slideshow]]></name>
+        <identifier><![CDATA[em0131-supermarket-main-slideshow]]></identifier>
+        <images><![CDATA[[{"url":"1438593545_0_fa_slidshow1.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:1.7rem;\"\u003EHigh Fashion Collection\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 3rem;\" class=\"em-text-upercase\"\u003Eem stores\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInLeft"}]},{"url":"1438593545_1_fa_slidshow2.jpg","link":"","info":[{"text":"\u003Ch4 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 2.3rem;\"\u003EHot discounts of the week\u003C\/h4\u003E\r\n\u003Ch2 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 2rem;\" class=\"em-text-upercase\"\u003Esale off\u003C\/h2\u003E\r\n\u003Ch4 class=\"em-text-upercase\"  style=\"font:500 2rem\/1 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;\" \u003Eonly on $99.99\u003C\/h4\u003E","animation":"fadeInLeft"}]},{"url":"1438593545_2_fa_slidshow3.jpg","link":"","info":[{"text":"\u003Ch3 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:1.7rem;\"\u003ENew Headphone 2015\u003C\/h3\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 3rem;\" class=\"em-text-upercase\"\u003EMUSIC LIFE\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003Epurchase now\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link\"\u003E\u003Cspan\u003Eshop now\u003C\/span\u003E\u003C\/a\u003E","animation":"fadeInLeft"}]}]]]></images>
+        <slider_params><![CDATA[{"size_width":"","size_height":"342"}]]></slider_params>
+        <appearance><![CDATA[{"auto_play":"true","animation_type":"fade","speed":"","hover_pause":"true","progress_bar":"false","lazy_load":"true"}]]></appearance>
+        <navigation><![CDATA[{"nav_enable":"true","nav_type":["navigation:true","pagination:true"],"arrows_next":"","arrows_pre":"","thumb_width":"","thumb_height":""}]]></navigation>
+        <status><![CDATA[1]]></status>
+      </minislideshow>
+    </minislideshows>
+  </sample_data>
+</theme>

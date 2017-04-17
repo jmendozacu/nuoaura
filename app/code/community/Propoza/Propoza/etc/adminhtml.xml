@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales translate="title" module="sales">
+            <children>
+                <quotes translate="title" module="sales">
+                    <title>Quotes</title>
+                    <action>adminhtml/quotes</action>
+                    <sort_order>15</sort_order>
+                    <depends>
+                        <config>propoza/general/enabled</config>
+                    </depends>
+                </quotes>
+            </children>
+        </sales>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <propoza translate="title">
+                                        <title>Propoza</title>
+                                        <sort_order>100</sort_order>
+                                    </propoza>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

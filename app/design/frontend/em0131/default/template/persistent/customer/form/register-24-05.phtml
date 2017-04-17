@@ -1,0 +1,496 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @see app/design/frontend/base/default/template/customer/form/register.phtml
+ */
+/** @var $this Mage_Customer_Block_Form_Register */
+?>
+<div class="account-create">
+    <div class="page-title">
+        <h1><?php echo $this->__('Create an Account') ?></h1>
+    </div>
+    <?php echo $this->getChildHtml('form_fields_before')?>
+    <?php echo $this->getMessagesBlock()->toHtml() ?>
+    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate" enctype="multipart/form-data">
+        
+    <?php if($this->getShowAddressFields()): ?>
+        <div class="fieldset">
+            <input type="hidden" name="create_address" value="1" />
+            <h2 class="legend"><?php echo $this->__('Address Information') ?></h2>
+            <ul class="form-list">
+			
+				<li class="fields">
+                    <div class="field">
+                        <label for="feature_account_type"><?php echo $this->__('Account Type') ?></label>
+                        <div class="input-box">
+							<select id="feature_account_type" name="feature_account_type" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Account Type')) ?>" class="validate-select">
+                            <option value=""><?php echo $this->__('Please select account type') ?></option>                            
+							<option value="1">Standard</option>
+                            <option value="2">Premium</option>
+                            </select>
+                            <script type="text/javascript">
+                            //<![CDATA[
+                                $('feature_account_type').setAttribute('defaultValue', "<?php echo $this->getFormData()->getFeatureAccountType() ?>");
+                            //]]> 
+							</script>                           
+                        </div>
+                    </div>
+                    <div class="field">
+                        &nbsp;
+                    </div>
+                </li>
+				
+				
+                <li class="fields">
+                    <div class="field">
+                        <label for="company"><?php echo $this->__('Company') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="company" id="company" value="<?php echo $this->escapeHtml($this->getFormData()->getCompany()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Company')) ?>" class="input-text required-entry <?php echo $this->helper('customer/address')->getAttributeValidationClass('company') ?>" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="telephone" class="required"><em>*</em><?php echo $this->__('STD code') ?><span style="margin-left: 100px"><em>*</em><?php echo $this->__('Phone Number') ?></span</label>
+                        <div class="input-box">
+							<input type="text" name="telephone_code" id="telephone_code" value="" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Telephone Code')) ?>" class="input-text required-entry numbersOnly" pattern="[0-9]{3,5}" style="float: left; width: 25%"/>
+							
+                            <input type="text" name="telephone_no" id="telephone_no" value="" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Telephone')) ?>" class="input-text required-entry numbersOnly" pattern="[0-9]{4,10}" style="float: right; width: 70%" />
+							
+							<input type="hidden" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="" class="input-text required-entry" style="float: right; width: 70%" />
+                        </div>
+                    </div>
+                </li>
+            <?php $_streetValidationClass = $this->helper('customer/address')->getAttributeValidationClass('street'); ?>
+                <li class="wide">
+                    <label for="street_1" class="required"><em>*</em><?php echo $this->__('Street Address') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="street[]" value="<?php echo $this->escapeHtml($this->getFormData()->getStreet(1)) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Street Address')) ?>" id="street_1" class="input-text <?php echo $_streetValidationClass ?>" />
+                    </div>
+                </li>
+            <?php $_streetValidationClass = trim(str_replace('required-entry', '', $_streetValidationClass)); ?>
+            <?php for ($_i = 2, $_n = $this->helper('customer/address')->getStreetLines(); $_i <= $_n; $_i++): ?>
+                <li class="wide">
+                    <div class="input-box">
+                        <input type="text" name="street[]" value="<?php echo $this->escapeHtml($this->getFormData()->getStreet($_i)) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Street Address %s', $_i)) ?>" id="street_<?php echo $_i ?>" class="input-text <?php echo $_streetValidationClass ?>" />
+                    </div>
+                </li>
+            <?php endfor; ?>
+                <li class="fields">
+                    <div class="field">
+                        <label for="city" class="required"><em>*</em><?php echo $this->__('City') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="city" value="<?php echo $this->escapeHtml($this->getFormData()->getCity()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('City')) ?>" class="input-text <?php echo $this->helper('customer/address')->getAttributeValidationClass('city') ?> alphaOnly" id="city" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="region_id" class="required"><em>*</em><?php echo $this->__('State/Province') ?></label>
+                        <div class="input-box">
+                            <select id="region_id" name="region_id" title="<?php echo Mage::helper('core')->quoteEscape($this->__('State/Province')) ?>" class="validate-select">
+                                <option value=""><?php echo $this->__('Please select region, state or province') ?></option>
+                            </select>
+                            <script type="text/javascript">
+                            //<![CDATA[
+                                $('region_id').setAttribute('defaultValue', "<?php echo $this->getFormData()->getRegionId() ?>");
+                            //]]>
+                            </script>
+                            <select id="region" name="region" title="<?php echo Mage::helper('core')->quoteEscape($this->__('State/Province')) ?>" class="validate-select">
+                                <option value=""><?php echo $this->__('Please select state') ?></option>				
+								
+								<option value="Andaman & Nicobar"  >Andaman & Nicobar</option><option value="Andhra Pradesh"  >Andhra Pradesh</option><option value="Arunachal Pradesh"  >Arunachal Pradesh</option><option value="Assam"  >Assam</option><option value="Bihar"  >Bihar</option><option value="Chandigarh"  >Chandigarh</option><option value="Chattisgarh"  >Chattisgarh</option><option value="Dadra & Nagar"  >Dadra & Nagar</option><option value="Daman & Diu"  >Daman & Diu</option><option value="Delhi"  >Delhi</option><option value="Goa"  >Goa</option><option value="Gujrat"  >Gujrat</option><option value="Haryana"  >Haryana</option><option value="Himachal Pradesh"  >Himachal Pradesh</option><option value="Jammu & Kashmir"  >Jammu & Kashmir</option><option value="Jharkhand"  >Jharkhand</option><option value="Karnataka"  >Karnataka</option><option value="Kerala"  >Kerala</option><option value="Lakshdweep"  >Lakshdweep</option><option value="Madhya Pradesh"  >Madhya Pradesh</option><option value="Maharashtra"  >Maharashtra</option><option value="Manipur"  >Manipur</option><option value="Meghalaya"  >Meghalaya</option><option value="Mizoram"  >Mizoram</option><option value="Nagaland"  >Nagaland</option><option value="Orissa"  >Orissa</option><option value="Pondichery"  >Pondichery</option><option value="Punjab"  >Punjab</option><option value="Rajasthan"  >Rajasthan</option><option value="Sikkim"  >Sikkim</option><option value="Tamil Nadu"  >Tamil Nadu</option><option value="Tripura"  >Tripura</option><option value="Uttar Pradesh"  >Uttar Pradesh</option><option value="Uttaranchal"  >Uttaranchal</option><option value="West Bengal"  >West Bengal</option>				
+								
+                            </select>
+                            
+                        </div>	
+						
+						
+						
+                    
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field">
+                        <label for="zip" class="required"><em>*</em><?php echo $this->__('Zip/Postal Code') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="postcode" value="<?php echo $this->escapeHtml($this->getFormData()->getPostcode()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Zip/Postal Code')) ?>" id="zip" class="input-text validate-zip-international <?php echo $this->helper('customer/address')->getAttributeValidationClass('postcode') ?> numbersOnly" pattern="[0-9]{6}" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="country" class="required"><em>*</em><?php echo $this->__('Country') ?></label>
+                        <div class="input-box">
+                            <?php echo $this->getCountryHtmlSelect() ?>
+                        </div>
+                    </div>
+                </li>
+            
+			
+			
+				<li class="fields">
+                    <div class="field">
+                        <label for="company"><?php echo $this->__('No. of Employees') ?></label>
+                        <div class="input-box">
+                            <select id="no_of_employees" name="no_of_employees" title="<?php echo Mage::helper('core')->quoteEscape($this->__('No of Employees')) ?>" class="validate-select">
+                                <option value="1-10">1-10</option>
+								<option value="11-100">11-100</option>
+								<option value="101-500">101-500</option>
+								<option value="501-1000">501-1000</option>
+								<option value="1001-10000">1001-10000</option>
+								<option value="More than 10000">More than 10000</option>
+                            </select>
+							
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="company_type" class="required"><em>*</em><?php echo $this->__('Company Type') ?></label>
+                        <div class="input-box">
+							<!--<?php echo $this->getCompanyTypeHtmlSelect() ?>-->                            
+							<select id="company_type" name="company_type" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Company Type')) ?>" class="validate-select">
+                                <option value="1">Private Limited</option>
+								<option value="2">Limited</option>
+								<option value="3">Government</option>
+								<option value="4">NGO</option>
+								<option value="5">Partnership</option>								
+								<option value="6">Sole Proprietorship</option>
+                            </select>							
+							<script type="text/javascript">
+                            //<![CDATA[
+                                $('company_type').setAttribute('defaultValue', "<?php echo $this->getFormData()->getCompanyType() ?>");
+                            //]]>
+							</script>
+                            
+                        </div>
+                    </div>
+                </li>
+				<!--<li class="fields">
+                    <div class="field">
+                        <label for="company_pan_card"><?php echo $this->__('Company Pan Card') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="company_pan_card" id="company_pan_card" value="<?php echo $this->escapeHtml($this->getFormData()->getCompanyPanCard()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Company Pan Card')) ?>" class="input-text" />
+                    	</div>
+                    </div> 
+                    <div class="field">
+                        <label for="incorporation_certificate"><?php echo $this->__('Incorporation Certificate') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="incorporation_certificate" id="incorporation_certificate" value="<?php echo $this->escapeHtml($this->getFormData()->getIncorporationCertificate()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Incorporation Certificate')) ?>" class="input-text" />
+                    	</div>
+                    </div> 
+                </li>
+				
+				<li class="fields">
+                    <div class="field">
+                        <label for="aoa" class=""><?php echo $this->__('AoA') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="aoa" id="aoa" value="<?php echo $this->escapeHtml($this->getFormData()->getAoa()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('AoA')) ?>" class="input-text" />
+                    	</div>
+                    </div> 
+                    <div class="field">
+                        <label for="moa" class=""><?php echo $this->__('MoA') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="moa" id="moa" value="<?php echo $this->escapeHtml($this->getFormData()->getMoa()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('MoA')) ?>" class="input-text" />
+                    	</div>
+                    </div> 
+                </li>
+				
+				<li class="fields">
+                    <div class="field">
+                        <label for="vendor_doc" ><?php echo $this->__('Orchid16 - Your Authorized Vendor') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="vendor_doc" id="vendor_doc" value="<?php echo $this->escapeHtml($this->getFormData()->getVendorDoc()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Orchid16 - Your Authorized Vendor')) ?>" class="input-text" />
+                    	</div>
+						<p style="color: #993300">(Please upload a document for us to fill up and email back to you)</p>
+                    </div> 
+                    <div class="field">
+                        &nbsp;
+                    </div> 
+                </li>-->
+
+			</ul>
+            <input type="hidden" name="default_billing" value="1" />
+            <input type="hidden" name="default_shipping" value="1" />	
+        </div>
+    <?php endif; ?>
+	
+	
+	<div class="fieldset">
+            <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
+            <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
+            <input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+           <h2 class="legend"><?php echo $this->__('Contact Personal Information') ?></h2>
+            <ul class="form-list">
+				<li class="fields">
+                  <div class="field">
+                    <label for="key_contact_person" class=""><?php echo $this->__('Key Contact Person') ?></label>
+                    <div class="input-box">
+							<!--<?php echo $this->getKeyContactPersonHtmlSelect() ?>-->                            
+							<select id="key_contact_person" name="key_contact_person" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Key Contact Person')) ?>" class="validate-select-2">
+                                <option value="">Select</option>
+								<option value="1">Admin</option>
+								<option value="2">HR</option>
+								<option value="3">Purchase</option>
+                            </select>							
+							<script type="text/javascript">
+                            //<![CDATA[
+                                $('key_contact_person').setAttribute('defaultValue', "<?php echo $this->getFormData()->getKeyContactPerson() ?>");
+                            //]]>
+							</script>
+                      </div>     
+                      </div>
+                </li>
+				
+                <li class="fields">
+                    <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
+                </li>
+				
+				<li class="fields">
+                    <div class="field">
+                        <label for="contact_person_designation" class=""><?php echo $this->__('Designation') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="contact_person_designation" value="<?php echo $this->escapeHtml($this->getFormData()->getContactPersonDesignation()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Designation')) ?>" id="contact_person_designation" class="input-text" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        &nbsp;
+                    </div>
+                </li>
+				
+				<li class="fields">
+                    <div class="field">
+                        <label for="email_address" class="required"><em>*</em><?php echo $this->__('Email Address') ?></label>
+                    	<div class="input-box">
+                       		<input type="text" name="email" id="email_address" value="<?php echo $this->escapeHtml($this->getFormData()->getEmail()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Email Address')) ?>" class="input-text validate-email required-entry" />
+                   		 </div>
+                    </div>
+                    <div class="field">
+                        <label for="contact_person_phone" class="required"><em>*</em><?php echo $this->__('Mobile') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="contact_person_phone" value="<?php echo $this->escapeHtml($this->getFormData()->getContactPersonPhone()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Mobile')) ?>" id="contact_person_phone" class="input-text required-entry numbersOnly" pattern="[0-9]{10}"  />
+                        </div>
+                    </div>
+                </li>
+				
+				
+                <?php if ($this->isNewsletterEnabled()): ?>
+                <li class="control">
+                    <div class="input-box">
+                        <input type="checkbox" name="is_subscribed" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign Up for Newsletter')) ?>" value="1" id="is_subscribed"<?php if($this->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif; ?> class="checkbox" />
+                    </div>
+                    <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter') ?></label>
+                </li>
+				
+				<!--<li class='fields'>
+					<div class="field">
+                        <label for="Document" class="required"><em>*</em><?php echo $this->__('DocumentUpload') ?></label>
+                        <div class="input-box">
+                            <input type="file" name="document_upload" id="document_upload" value="<?php echo $this->escapeHtml($this->getFormData()->getDocumentUpload()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('DocumentUpload')) ?>" class="input-text " />
+                    	</div>
+                    </div>                  
+                </li>-->				
+                <?php endif ?>
+				
+            <?php $_dob = $this->getLayout()->createBlock('customer/widget_dob') ?>
+            <?php if ($_dob->isEnabled()): ?>
+                <li><?php echo $_dob->setDate($this->getFormData()->getDob())->toHtml() ?></li>
+            <?php endif ?>
+            <?php $_taxvat = $this->getLayout()->createBlock('customer/widget_taxvat') ?>
+            <?php if ($_taxvat->isEnabled()): ?>
+                <li><?php echo $_taxvat->setTaxvat($this->getFormData()->getTaxvat())->toHtml() ?></li>
+            <?php endif ?>
+            <?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
+            <?php if ($_gender->isEnabled()): ?>
+                <li><?php echo $_gender->setGender($this->getFormData()->getGender())->toHtml() ?></li>
+            <?php endif ?>
+            </ul>
+        </div>
+	
+	
+	
+	
+	
+	<!--<div class="fieldset">
+            <h2 class="legend"><?php echo $this->__('Signing Authority Information') ?></h2>
+            <ul class="form-list">
+				<li class="fields">
+                    <div class="field">
+                    <label for="signing_authority" class=""><?php echo $this->__('Signing Authority') ?></label>
+                    <div class="input-box">
+							<?php //echo $this->getSigningAuthorityHtmlSelect() 
+							?>                            
+							<select id="signing_authority" name="signing_authority" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Key Contact Person')) ?>" class="validate-select-2">
+                                <option value=""><?php echo $this->__('Please select Signing Authority') ?></option>
+								<option value="1">Finance Controller</option>
+								<option value="2">CFO</option>
+								<option value="3">MD</option>
+                            </select>							
+							<script type="text/javascript">
+                            //<![CDATA[
+                                $('signing_authority').setAttribute('defaultValue', "<?php echo $this->getFormData()->getKeyContactPerson() ?>");
+                            //]]>
+							</script>
+                       </div>     
+                      </div>
+                </li>
+				
+                
+				<li class="fields">
+                    <div class="field">
+                        <label for="signing_authority_name" class=""><?php echo $this->__('Full Name') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="signing_authority_name" value="<?php echo $this->escapeHtml($this->getFormData()->getSigningAuthorityName()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Full Name')) ?>" id="signing_authority_name" class="input-text" />
+                        </div>
+                    </div>
+					<div class="field">
+                        <label for="signing_authority_designation" class=""><?php echo $this->__('Designation') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="signing_authority_designation" value="<?php echo $this->escapeHtml($this->getFormData()->getSigningAuthorityDesignation()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Designation')) ?>" id="signing_authority_designation" class="input-text" />
+                        </div>
+                    </div>
+                    
+                </li>
+				
+				<li class="fields">
+                    <div class="field">
+                        <label for="signing_authority_email" class=""><?php echo $this->__('Email Address') ?></label>
+                    	<div class="input-box">
+                       		<input type="text" name="signing_authority_email" id="signing_authority_email" value="<?php echo $this->escapeHtml($this->getFormData()->getSigningAuthorityEmail()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Email Address')) ?>" class="input-text validate-email" />
+                   		 </div>
+                    </div>
+                    <div class="field">
+                        <label for="signing_authority_phone" class=""><?php echo $this->__('Mobile') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="signing_authority_phone" value="<?php echo $this->escapeHtml($this->getFormData()->getSigningAuthorityPhone()) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Mobile')) ?>" id="signing_authority_phone" class="input-text numbersOnly" pattern="[0-9]{10}"  />
+                        </div>
+                    </div>
+                </li>
+				
+				
+                
+            </ul>
+        </div>
+	
+	-->
+	
+	
+	
+	
+	
+	
+	
+        <div class="fieldset">
+            <h2 class="legend"><?php echo $this->__('Login Information') ?></h2>
+            <ul class="form-list">
+                <li class="fields">
+                    <div class="field">
+                        <label for="password" class="required"><em>*</em><?php echo $this->__('Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="input-text required-entry validate-password" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="confirmation" class="required"><em>*</em><?php echo $this->__('Confirm Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="input-text required-entry validate-cpassword" />
+                        </div>
+                    </div>
+                </li>
+                <?php echo $this->getChildHtml('form.additional.info'); ?>
+                <?php //echo $this->getChildHtml('persistent.remember.me'); ?>
+            </ul>
+            <?php //echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
+            <div class="buttons-set">
+                <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>" class="back-link"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+                <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Submit')) ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+				<p class="required"><?php echo $this->__('* Required Fields') ?></p>
+            </div>
+        </div>
+        <?php if (Mage::helper('checkout')->isContextCheckout()): ?>
+            <input name="context" type="hidden" value="checkout" />
+        <?php endif; ?>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('form-validate', true);
+        <?php if($this->getShowAddressFields()): ?>
+        new RegionUpdater('country', 'region', 'region_id', <?php echo $this->helper('directory')->getRegionJson() ?>, undefined, 'zip');
+        <?php endif; ?>
+		
+		function addToPhone(){
+			phone_code = jQuery("#telephone_code").val();
+			phone_no = jQuery("#telephone_no").val();
+			
+			//alert(phone_code + "" + phone_no);
+			
+			jQuery("#telephone").val(phone_code + "" + phone_no);
+			
+			/*phone = jQuery("#telephone").val();
+			
+			if(phone.length>12)
+				alert(phone);*/
+		}
+		
+		jQuery('.numbersOnly').keyup(function () { 
+			this.value = this.value.replace(/[^0-9]/g,'');
+			//number_length = 10;
+			if(jQuery(this).attr("id")=="zip")
+				number_length = 6;
+			else if(jQuery(this).attr("id")=="telephone_code")
+				number_length = 5;
+			else	
+				number_length = 10;
+			
+			if(this.value.length>number_length)
+			{
+				this_value = this.value.split("");
+				
+				for(i=number_length; i<this_value.length; i++)
+					this_value.pop(this_value[i]);
+				this.value = this_value.join("");	
+			}
+			if(jQuery(this).attr("id")=="telephone_code" || jQuery(this).attr("id")=="telephone_no")
+			{
+				addToPhone();
+			}
+			
+
+
+				
+		});
+		
+		jQuery('.alphaOnly').keyup(function () { 
+			this.value = this.value.replace(/[^a-zA-Z\.]/g,'');
+						
+		});
+		
+		jQuery('#telephone_code, #telephone_no').change(function () { 
+			
+			
+			addToPhone();
+			
+		});
+    //]]>
+    </script>
+</div>

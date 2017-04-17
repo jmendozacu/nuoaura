@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <general>
+    <theme_name><![CDATA[EM0131 Everything Mello Sneakers]]></theme_name>
+    <identifier><![CDATA[em0131-mello]]></identifier>
+    <base_theme><![CDATA[em0131]]></base_theme>
+    <package><![CDATA[em0131]]></package>
+    <template><![CDATA[em0131_mello]]></template>
+    <layout><![CDATA[em0131_mello]]></layout>
+    <skin><![CDATA[em0131_mello]]></skin>
+    <default_theme><![CDATA[]]></default_theme>
+    <path><![CDATA[mello.jpg]]></path>
+    <is_clone><![CDATA[0]]></is_clone>
+  </general>
+  <settings>
+    <config_json><![CDATA[{"general_disable_responsive":"1","general_right_to_left":"0","general_right_to_left_preview":"","general_box_wide":"wide","general_box_wide_preview":"","general_wideslide_full":"1","general_wideslide_full_preview":"","general_sticky_element":"1","general_header_style":"style28","general_footer_style":"style07","general_disable_default_nav":"0","general_disable_hover_login":"1","general_cat_search":"-1","general_show_popup":"2","general_disable_ajaxaddto":"1","general_disable_frontend_variation":"1","general_admin_toolbar":"0","general_disable_collapse":"1","css_additional_css_file":"style_mello.css,theme_mello.less","css_custom_css":"","fonts_google_font_key":"AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI","fonts_google_fonts":["Lato","Lora","Raleway"],"fonts_font_family":"null","fonts_google_fonts_weights":"200,300,400,500,600,700,800","fonts_general_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h1_font":"700 30px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h2_font":"700 20px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h3_font":"700 18px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h4_font":"500 16px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h5_font":"500 14px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h6_font":"600 11px\/1.35 Lato,Helvetica, Arial, sans-serif","typo_general_page_bg_color":"#f2f2f2","typo_general_page_bg_image":"","typo_general_page_bg_file":"bkg-box.jpg","typo_general_page_bg_position":"center 0","typo_general_page_bg_repeat":"no-repeat","typo_general_page_bg_attachment":"inherit","typo_general_box_shadow":"0 0 5px #ffffff","typo_general_rounded_corner":"5px","header_header_bg_color":"#ffffff","header_header_bg2_color":"#ffffff","header_header_bg3_color":"#6bd0de","header_header_bg4_color":"#ffffff","header_header_bg5_color":"#ffffff","header_header_bg_image":"","header_header_bg_position":"0 0","header_header_bg_repeat":"repeat","header_header_text_color":"#333333","header_header_text2_color":"rgba(0,0,0,1.00)","header_header_text3_color":"#282828","header_header_text4_color":"#333333","header_header_line_color":"#e4e4e4","menu_topmenu_bg_color":"#ffffff","menu_topmenu_hover_bg_color":"#ffffff","menu_topmenu_text_color":"#000000","menu_topmenu_hover_text_color":"#6bd0de","menu_topmenu_line_color":"#6bd0de","menu_topmenu_font":"500 18px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_vnav_bg_color":"#ffffff","menu_vnav_hover_bg_color":"#ffffff","menu_vnav_text_color":"#000000","menu_vnav_hover_text_color":"#6bd0de","menu_vnav_line_color":"#6bd0de","menu_vnav_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_dropmenu_bg_color":"#ffffff","menu_dropmenu_text_color":"#a1a1a1","menu_dropmenu_text2_color":"#6bd0de","menu_dropmenu_text3_color":"#434343","menu_dropmenu_line_color":"#e9e9e9","menu_dropmenu_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","body_body_bg_color":"#ffffff","body_body_bg2_color":"#ffffff","body_body_bg3_color":"#6bd0de","body_body_bg4_color":"#f1f1f1","body_body_tab_bg_color":"#ffffff","body_body_label_bg_color":"#f7d059","body_body_label_bg2_color":"#f83c3c","body_body_label_bg3_color":"#6bd0de","body_body_bg_image":"","body_body_bg_position":"0 0","body_body_bg_repeat":"repeat","body_body_text_color":"#a1a1a1","body_body_text2_color":"#000000","body_body_text3_color":"#333333","body_body_text4_color":"#333333","body_body_text5_color":"#6bd0de","body_body_text6_color":"#ffffff","body_body_text7_color":"#6bd0de","body_body_line_color":"#e1e1e1","body_body_line2_color":"#6bd0de","footer_footer_bg_color":"#ffffff","footer_footer_bg2_color":"#ffffff","footer_footer_bg3_color":"#ffffff","footer_footer_bg_image":"","footer_footer_bg_position":"0 0","footer_footer_bg_repeat":"repeat","footer_footer_text_color":"#000000","footer_footer_text2_color":"#000000","footer_footer_text3_color":"#6bd0de","footer_footer_text4_color":"#6bd0de","footer_footer_line_color":"#dfdfdf","buttons_btn1_bg_color":"#6bd0de","buttons_btn1_text_color":"#ffffff","buttons_btn1_line_color":"#6bd0de","buttons_btn1_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn2_bg_color":"#f1f1f1","buttons_btn2_text_color":"#ffffff","buttons_btn2_line_color":"#f1f1f1","buttons_btn2_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn3_bg_color":"#f1f1f1","buttons_btn3_text_color":"#a1a1a1","buttons_btn3_line_color":"#f1f1f1","buttons_btn3_font":"700 12px\/1.15 Lato, Helvetica, Arial, sans-serif","buttons_btn4_bg_color":"#e79f65","buttons_btn4_text_color":"#ffffff","buttons_btn4_line_color":"#e79f65","buttons_btn4_font":"700 1.6rem\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn5_bg_color":"#f1f1f1","buttons_btn5_text_color":"#a1a1a1","buttons_btn5_line_color":"#f1f1f1","buttons_btn5_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn6_bg_color":"#f1f1f1","buttons_btn6_text_color":"#a1a1a1","buttons_btn6_line_color":"#f1f1f1","buttons_btn6_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn7_bg_color":"transparent","buttons_btn7_text_color":"#ffffff","buttons_btn7_line_color":"#ffffff","buttons_btn7_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","products_grid_onecolumn":"5","products_grid_twocolumns":"4","products_grid_threecolumns":"3","products_grid_desktop_small_onecolumn":"4","products_grid_desktop_small_twocolumns":"3","products_grid_desktop_small_threecolumns":"2","products_grid_tablet_onecolumn":"3","products_grid_tablet_twocolumns":"3","products_grid_tablet_threecolumns":"2","products_grid_items_mobile":"2","products_grid_image_ratio":"1","products_grid_custom_width":"1","products_grid_custom_height":"1","products_grid_alt_img":"image","products_grid_config_hover":"mobile","products_grid_align_center":"1","products_grid_show_thumbnail":"1","products_grid_show_label":"1","products_grid_show_product_name":"1","products_grid_auto_product_name":"0","products_grid_show_desc":"2","products_grid_show_price":"1","products_grid_show_reviews":"1","products_grid_show_addtocart":"1","products_list_gutter":"","products_list_image_ratio":"1","products_list_custom_width":"1","products_list_custom_height":"1","products_list_alt_img":"image","products_list_show_product_name":"1","products_list_show_thumbnail":"1","products_list_show_desc":"1","products_list_show_price":"1","products_list_show_reviews":"1","products_list_show_addtocart":"1","products_list_show_addto":"1","products_list_show_label":"1","product_detail_product_view_preview":"","product_detail_primary_column_width":"15","product_detail_base_image_width":"800","product_detail_base_image_height":"800","product_detail_secondary_column_width":"9","product_detail_primary_two_column_width":"12","product_detail_base_two_image_width":"500","product_detail_base_two_image_height":"500","product_detail_secondary_two_column_width":"12","product_detail_primary_three_column_width":"24","product_detail_base_three_image_width":"600","product_detail_base_three_image_height":"600","product_detail_secondary_three_column_width":"24","product_detail_show_sku":"1","product_detail_viewmode":"cloudzoom","product_detail_cloud_zoom_width":"150","product_detail_cloud_zoom_height":"150","product_detail_use_tabs":"1","moreview_width":"150","moreview_height":"150","moreview_enable_slider":"1","moreview_slider_items":"6","moreview_slider_items_desktop":"4","moreview_slider_items_desktop_small":"3","moreview_slider_items_tablet":"3","moreview_slider_items_mobile":"2","moreview_slider_navigation":"1","moreview_slider_pagination":"0","moreview_slider_pagination_numbers":"0","related_display":"dont_replace","related_position":"top_tabs","related_width":"350","related_height":"350","related_enable_slider":"1","related_slider_items":"4","related_slider_items_two":"4","related_slider_items_three":"3","related_slider_items_desktop":"5","related_slider_items_desktop_small":"3","related_slider_items_tablet":"3","related_slider_items_mobile":"2","related_slider_navigation":"1","related_slider_pagination":"0","related_slider_pagination_numbers":"0","upsell_display":"dont_replace","upsell_width":"350","upsell_height":"350","upsell_enable_slider":"1","upsell_slider_items":"4","upsell_slider_items_two":"3","upsell_slider_items_three":"2","upsell_slider_items_desktop":"4","upsell_slider_items_desktop_small":"3","upsell_slider_items_tablet":"3","upsell_slider_items_mobile":"2","upsell_slider_navigation":"1","upsell_slider_pagination":"0","upsell_slider_pagination_numbers":"0","position_catalog_shopby":"left","position_catalog_leftnav":"left","position_catalog_search_layer":"left","position_catalog_related":"right","position_compare":"all","position_poll":"all","position_popular_tags":"left","position_wishlist_sidebar":"all","position_reorder_sidebar":"right","home_position_compare":"0","home_position_poll":"0","home_position_tags":"0","home_position_wishlist":"0","home_position_reorder":"0","crossell_display":"dont_replace","crossell_width":"280","crossell_height":"280","crossell_enable_slider":"1","crossell_slider_items":"4","crossell_slider_items_desktop":"4","crossell_slider_items_desktop_small":"3","crossell_slider_items_tablet":"3","crossell_slider_items_mobile":"2","crossell_slider_navigation":"1","crossell_slider_pagination":"0","crossell_slider_pagination_numbers":"0","image_sidebar_width":"100","image_sidebar_height":"100","related_sidebar_width":"100","related_sidebar_height":"100","image_shopping_cart_width":"100","image_shopping_cart_height":"100","recently_viewed_width":"100","recently_viewed_height":"100","flashtag_enabled":"0","flashtag_count":"100","flashtag_max":"20","flashtag_min":"12","flashtag_maxcolor":"#646464","flashtag_normal":"#646464","flashtag_hover":"#646464","ajaxcart_auto_close":"0","contacts_map_enable":"1","contacts_map_address":"249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh","contacts_map_info":"We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.","contacts_map_height":"500","contacts_map_width":"100%","contacts_map_image":null,"snippets_enable":"1","snippets_review":"1","snippets_price":"1","snippets_breadcrumbs":"1","snippets_description":"1","header_header_bg_file":null,"body_body_bg_file":null,"footer_footer_bg_file":null}]]></config_json>
+    <excluded_blocks><![CDATA[em0131-fashion-area01-home-ads&em0131-fashion-area04-home-banners&em0131-fashion-area02-home-menu&em0131-fashion-area05-home-ads&em0131-fashion-area03-home-slideshow&em0131-fashion-area06-home-banners-slider&em0131-fashion-area-footer01-links&em0131-fashion-area-footer&em0131-fashion-area-footer03-payment&em0131-fashion-area-left01-home-banner&em0131-fashion-area-main01-home-banners&em0131-fashion-area-main02-home-tabs&em0131-fashion-area-left02-home-ads&em0131-fashion-area-main03-home-banner&em0131-fashion-area-left03-home-recent-blog&em0131-fashion-area-main04-home-best-sales&em0131-fashion-area-left04-home-banner&em0131-fashion-area-footer02-payment&em0131-fashion-area06-banners-slider&em0131-fashion-area05-ads&em0131-fashion-area04-banners&em0131-area-left-category-banners&em0131-area-navigation-top-menu&em0131-fashion-area-footer01-links-style09]]></excluded_blocks>
+  </settings>
+  <sample_data>
+    <flexible_block>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area Navigation - Top Menu Left]]></title>
+        <position><![CDATA[em0131.top.menu]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area-navigatioin-top-menu-left]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-menu em-menu-left">{{widget type="megamenupro/megamenupro" menu="14"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area Navigation - Top Menu Right]]></title>
+        <position><![CDATA[em_area_header01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area-navigatioin-top-menu-right]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-menu em-menu-right">{{widget type="megamenupro/megamenupro" menu="15"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area01 - Main Slideshow]]></title>
+        <position><![CDATA[em_area1]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area01-main-slideshow]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-slideshow">{{widget type="minislideshow/minislideshow" slideshow="23"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area Main 01 - Ads]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area-main01-ads]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<section class="text-center em-introduction-block">
+<div class="em-introduction-wrapper col-sm-20 col-sm-push-2">
+<div class="em-introduction-content">
+<h1 class="page-title em-text-upercase"><span>Mello snearkers</span></h1>
+<p class="em-introduction-desc">Policymakers reduce child mortality Kickstarter fighting poverty change international development Rockefeller. Fairness; proper resources, grantees philanthropy assistance, process combat malaria. Activist; challenges of our times global network tackling pathway to a better life.</p>
+</div>
+</div>
+</section>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area 02 - Banners]]></title>
+        <position><![CDATA[em_area2]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area02-banners]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="container  hidden-xs">
+<div class="row">
+<div class="col-sm-8">
+<div class="img-banner"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em_ads_01" src="{{media url='wysiwyg/em0131/layout_mello/home/em_ads_01.jpg'}}" /><span class="effect-line">&nbsp;</span> </a></div>
+</div>
+<div class="col-sm-8">
+<div class="img-banner"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em_ads_02" src="{{media url='wysiwyg/em0131/layout_mello/home/em_ads_02.jpg'}}" /><span class="effect-line">&nbsp;</span> </a></div>
+</div>
+<div class="col-sm-8">
+<div class="img-banner"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em_ads_03" src="{{media url='wysiwyg/em0131/layout_mello/home/em_ads_03.jpg'}}" /><span class="effect-line">&nbsp;</span> </a></div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area Footer 01 - Social]]></title>
+        <position><![CDATA[em_area_footer01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area-footer01-social]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-social">
+<div class="container">
+<div class="row">
+<div class="col-sm-24">
+<div class="em-social-inner">
+<div class="em-social"><a class="em-social-icon em-facebook f-left" title="Facebook" href="#"><span class="fa fa-facebook">Facebook</span></a> <a class="em-social-icon em-twitter f-left" title="Twitter" href="#"><span class="fa fa-twitter">Twitter</span></a> <a class="em-social-icon em-linkedin  f-left" title="linkedin" href="#"><span class="fa fa-linkedin">linkedin</span></a> <a class="em-social-icon em-pinterest f-left" title="Pinterest" href="#"><span class="fa fa-pinterest">Pinterest</span></a> <a class="em-social-icon em-instagram  f-left" title="Instagram" href="#"><span class="fa fa-instagram">Instagram</span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_mello]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Mello Sneakers - Area Footer 02 - Info - Footer07]]></title>
+        <position><![CDATA[em_area_footer02]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-mello-area-footer02-info-footer07]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<section class="em-footer-information-block">
+<div class="em-footer-info-wrapper">
+<div class="container">
+<div class="row">
+<div class="em-footer-info-inner">
+<div class="em-footer-info-left col-sm-12">
+<div class="row">
+<div class="col-sm-8 first ">
+<ul class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>My Account</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Login</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>My Cart</span></a></li>
+</ul>
+</div>
+<div class="col-sm-8 ">
+<ul class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>About Us</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Checkout</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Privacy Policy</span></a></li>
+</ul>
+</div>
+<div class="col-sm-8 ">
+<ul class="em-links em-block-content block-info">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Search Advanced</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Order History</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Accessories</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Help &amp; FAQs</span></a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-24 em-payment"><a class="em-payment-icon em-visa" title="em-sample-title" href="#">visa</a> <a class="em-payment-icon em-master" title="em-sample-title" href="#">master</a> <a class="em-payment-icon em-express " title="em-sample-title" href="#">express</a><a class="em-payment-icon em-paypal" title="em-sample-title" href="#">paypal</a> <a class="em-payment-icon em-other " title="em-sample-title" href="#">other</a></div>
+</div>
+</div>
+<div class="em-footer-info-right em-footer-newsletter col-sm-12 ">
+<div class="em-wrapper-newsletter">
+<div class="em-block-title">
+<p class="h2"><span>Mello Newsletter</span></p>
+</div>
+<div class="em-block-content em-newsletter">{{block type="newsletter/subscribe" name="em.newsletter.style05" template="newsletter/em_subscribe_style05.phtml"}}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+    </flexible_block>
+    <themeframework/>
+    <megamenu>
+      <menu id="14">
+        <name><![CDATA[EM0131 Everything - Mello Sneakers Left - Menu]]></name>
+        <identifier><![CDATA[em0131-mello-menu-left]]></identifier>
+        <description><![CDATA[EM0131 Everything - Mello Sneakers - Menu Left]]></description>
+        <type><![CDATA[0]]></type>
+        <status><![CDATA[1]]></status>
+        <content><![CDATA[[{"type":"link","label":"Home","sublabel":"","icon_url":"","url":"","target":"","css_class":"","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col24 grid_24","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-24","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0ic3RvcmUtdmlldyI+Cgk8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CgkJPGRpdiBjbGFzcz0iZWZmZWN0MDMiPjxkaXY+PGEgdGl0bGU9IkZhc2hpb24gQ2xlYW4gU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWZhc2hpb25jbGVhbl9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvZmFzaGlvbl9jbGVhbl9zdHlsZV8tX21pbGFuX3N0b3JlLmpwZyd9fSIgYWx0PSJGYXNoaW9uIENsZWFuIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWZhc2hpb25jbGVhbl9lbmcnfX0iPkZhc2hpb24gQ2xlYW4gU3RvcmU8L2E+PC9wPgoJPC9kaXY+Cgk8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CgkJPGRpdiBjbGFzcz0iZWZmZWN0MDMiPjxkaXY+PGEgdGl0bGU9IlN1cGVyTWFya2V0ICYgRGVhbCBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9bWFya2V0ZGVhbF9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvc3VwZXJtYXJrZXRfZGVhbC5qcGcnfX0iIGFsdD0iU3VwZXJNYXJrZXQgJiBEZWFsIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPW1hcmtldGRlYWxfZW5nJ319Ij5TdXBlck1hcmtldCAmIERlYWwgU3RvcmU8L2E+PC9wPgoJPC9kaXY+Cgk8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CgkJPGRpdiBjbGFzcz0iZWZmZWN0MDMiPjxkaXY+PGEgdGl0bGU9IkdhbWVXb3JsZCBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9Z2FtZXdvcmxkX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9nYW1ld29ybGRfc3RvcmUuanBnJ319IiBhbHQ9IkdhbWVXb3JsZCBTdG9yZSIgLz48L2E+PC9kaXY+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1nYW1ld29ybGRfZW5nJ319Ij5HYW1lV29ybGQgU3RvcmU8L2E+PC9wPgoJPC9kaXY+Cgk8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CgkJPGRpdiBjbGFzcz0iZWZmZWN0MDMiPjxkaXY+PGEgdGl0bGU9IkhlYWx0aCBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9aGVhbHRoX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9oZWFsdGhfcGVyc29uYWxfY2FyZS5qcGcnfX0iIGFsdD0iSGVhbHRoIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWhlYWx0aF9lbmcnfX0iPkhlYWx0aCBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iQ2xvdGhpbmcgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWNsb3RoaW5nX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9jbG90aGluZ19zdG9yZS5qcGcnfX0iIGFsdD0iQ2xvdGhpbmcgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9Y2xvdGhpbmdfZW5nJ319Ij5DbG90aGluZyBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iR2FyZGVuIFN0b3JlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1nYXJkZW5fZW5nJ319Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvc3RvcmV2aWV3L2dhcmRlbl9zdG9yZS5qcGcnfX0iIGFsdD0iR2FyZGVuIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWdhcmRlbl9lbmcnfX0iPkdhcmRlbiBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9InN0b3JlLXZpZXciIHN0eWxlPSJwYWRkaW5nLXRvcDoxNXB4Ij4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iQ29tcHV0ZXIgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWNvbXB1dGVyX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9jb21wdXRlcl9zdG9yZS5qcGcnfX0iIGFsdD0iQ29tcHV0ZXIgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9Y29tcHV0ZXJfZW5nJ319Ij5Db21wdXRlciBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iSmV3ZWxyeSBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9amV3ZWxyeV9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvamV3ZWxyeV9zdG9yZS5qcGcnfX0iIGFsdD0iSmV3ZWxyeSBTdG9yZSIgLz48L2E+PC9kaXY+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1qZXdlbHJ5X2VuZyd9fSI+SmV3ZWxyeSBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iU2hvZXMgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPXNob2VzX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9zaG9lc19zdG9yZS5qcGcnfX0iIGFsdD0iU2hvZXMgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9c2hvZXNfZW5nJ319Ij5TaG9lcyBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iTGluZ2VyaWUgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWxpbmdlcmllX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9saW5nZXJpZV9zdG9yZS5qcGcnfX0iIGFsdD0iTGluZ2VyaWUgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9bGluZ2VyaWVfZW5nJ319Ij5MaW5nZXJpZSBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iU3BvcnQgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPXNwb3J0X2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9zcG9ydF9zdG9yZS5qcGcnfX0iIGFsdD0iU3BvcnQgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9c3BvcnRfZW5nJ319Ij5TcG9ydCBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iU3dhdGNoIFN0b3JlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1zd2F0Y2hfZW5nJ319Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvc3RvcmV2aWV3L3N3YXRjaF9zdG9yZS5qcGcnfX0iIGFsdD0iU3dhdGNoIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPXN3YXRjaF9lbmcnfX0iPlN3YXRjaCBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9InN0b3JlLXZpZXciIHN0eWxlPSJwYWRkaW5nLXRvcDoxNXB4Ij4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iU3VwZXJtYXJrZXQgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPXN1cGVybWFya2V0X2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9zdXBlcm1hcmtldF9zdG9yZS5qcGcnfX0iIGFsdD0iU3VwZXJtYXJrZXQgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9c3VwZXJtYXJrZXRfZW5nJ319Ij5TdXBlcm1hcmtldCBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iU21hcnRwaG9uZSBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9c21hcnRwaG9uZV9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvc21hcnRwaG9uZV9zdG9yZS5qcGcnfX0iIGFsdD0iU21hcnRwaG9uZSBTdG9yZSIgLz48L2E+PC9kaXY+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1zbWFydHBob25lX2VuZyd9fSI+U21hcnRwaG9uZSBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iR2xhc3MgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWdsYXNzX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9nbGFzc19zdG9yZS5qcGcnfX0iIGFsdD0iR2xhc3MgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9Z2xhc3NfZW5nJ319Ij5HbGFzcyBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iR2xhc3MgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPW5vdmFfZW5nJ319Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvc3RvcmV2aWV3L2Zhc2hpb25ub3ZhX3N0b3JlLmpwZyd9fSIgYWx0PSJHbGFzcyBTdG9yZSIgLz48L2E+PC9kaXY+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1ub3ZhX2VuZyd9fSI+RmFzaGlvbk5vdmEgU3RvcmU8L2E+PC9wPgoJPC9kaXY+CgkKCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iRmFzaGlvbiBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9ZGVmYXVsdCd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9tYWluX2Zhc2hpb25fc3RvcmUuanBnJ319IiBhbHQ9IkZhc2hpb24gU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9ZGVmYXVsdCd9fSI+RmFzaGlvbiBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KCTxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KCQk8ZGl2IGNsYXNzPSJlZmZlY3QwMyI+PGRpdj48YSB0aXRsZT0iRnVybml0dXJlIFN0b3JlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1mdXJuaXR1cmVfZW5nJ319Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvc3RvcmV2aWV3L2Z1cm5pdHVyZV9zdG9yZS5qcGcnfX0iIGFsdD0iRnVybml0dXJlIFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWZ1cm5pdHVyZV9lbmcnfX0iPkZ1cm5pdHVyZSBTdG9yZTwvYT48L3A+Cgk8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9InN0b3JlLXZpZXciIHN0eWxlPSJwYWRkaW5nLXRvcDoxNXB4Ij4KCQoJPGRpdiBjbGFzcz0iY29sLXNtLTQiPgoJCTxkaXYgY2xhc3M9ImVmZmVjdDAzIj48ZGl2PjxhIHRpdGxlPSJCYWJ5IFN0b3JlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1iYWJ5X2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9iYWJ5X3N0b3JlLmpwZyd9fSIgYWx0PSJCYWJ5IFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWJhYnlfZW5nJ319Ij5CYWJ5IFN0b3JlPC9hPjwvcD4KCTwvZGl2PgoJPGRpdiBjbGFzcz0iY29sLXNtLTQiPgoJCTxkaXYgY2xhc3M9ImVmZmVjdDAzIj48ZGl2PjxhIHRpdGxlPSJCZWF1dHkgU3RvcmUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWJlYXV0eV9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvYmVhdXR5X3N0b3JlLmpwZyd9fSIgYWx0PSJCZWF1dHkgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9YmVhdXR5X2VuZyd9fSI+QmVhdXR5IFN0b3JlPC9hPjwvcD4KCTwvZGl2PgoJPGRpdiBjbGFzcz0iY29sLXNtLTQiPgoJCTxkaXYgY2xhc3M9ImVmZmVjdDAzIj48ZGl2PjxhIHRpdGxlPSJCaWN5Y2xlIFN0b3JlIiBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jz9fX19zdG9yZT1iaWN5Y2xlX2VuZyd9fSI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL3N0b3Jldmlldy9iaWN5Y2xlX3N0b3JlLmpwZyd9fSIgYWx0PSJCYWJ5IFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPWJpY3ljbGVfZW5nJ319Ij5CaWN5Y2xlIFN0b3JlPC9hPjwvcD4KCTwvZGl2PgoJPGRpdiBjbGFzcz0iY29sLXNtLTQiPgoJCTxkaXYgY2xhc3M9ImVmZmVjdDAzIj48ZGl2PjxhIHRpdGxlPSJNZWxsbyBTdG9yZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9bWVsbG9fZW5nJ319Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvc3RvcmV2aWV3L21lbGxvX3NuZWFrZXJzLmpwZyd9fSIgYWx0PSJCZWF1dHkgU3RvcmUiIC8+PC9hPjwvZGl2PjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9bWVsbG9fZW5nJ319Ij5NZWxsbyBTdG9yZTwvYT48L3A+Cgk8L2Rpdj48ZGl2IGNsYXNzPSJjb2wtc20tNCI+CgkJPGRpdiBjbGFzcz0iZWZmZWN0MDMiPjxkaXY+PGEgdGl0bGU9IlNjb290ZXIgU2hvcCIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSc\/X19fc3RvcmU9c2Nvb3Rlcl9lbmcnfX0iPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9zdG9yZXZpZXcvc2Nvb3Rlcl9zaG9wLmpwZyd9fSIgYWx0PSJCYWJ5IFN0b3JlIiAvPjwvYT48L2Rpdj48L2Rpdj48cCBjbGFzcz0iaDUiPjxhIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nP19fX3N0b3JlPXNjb290ZXJfZW5nJ319Ij5TY29vdGVyIFNob3A8L2E+PC9wPgoJPC9kaXY+CjwvZGl2Pg==","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Products","sublabel":"","icon_url":"","url":"{{store url='fashion.html'}}","target":"","css_class":"","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col24 grid_24","container_css":"padding:0 10px","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6 grid_6 alpha","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPlByb2R1Y3QgVHlwZXM8L2g1Pgo8ZGl2PgogICAgPHVsIGNsYXNzPSJtZW51LWNvbnRhaW5lciI+CiAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgZmlyc3QgbGFiZWwtaG90LW1lbnUiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0ndC1zaGlydC1zZXF1aW4tZnJpbmdlLWRyZXNzLmh0bWwnfX0iPlNpbXBsZSBwcm9kdWN0PC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSd2aXJ0dWFsLXByb2R1Y3QuaHRtbCd9fSI+VmlydHVhbCBQcm9kdWN0PC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdkb3dubG9hZGFibGUtcHJvZHVjdC5odG1sJ319Ij5Eb3dubG9hZGFibGUgUHJvZHVjdDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0naW5rLWVhdGVyLWtyeWxvbi1ib21iZWFyLWRlc3Ryb3llZC10ZWUtMTI2Lmh0bWwnfX0iPkNvbmZpZ3VyYWJsZSBQcm9kdWN0PC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdtYWdlbnRvLXJlZC1mdXJuaXR1cmUtc2V0Lmh0bWwnfX0iPkdyb3VwZWQgUHJvZHVjdDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFzdCI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdnYW1pbmctY29tcHV0ZXIuaHRtbCd9fSI+QnVuZGxlIFByb2R1Y3Q8L2E+CiAgICAgICAgPC9saT4KICAgIDwvdWw+CjwvZGl2Pgo8L2Rpdj4=","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6 grid_6 ","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPlBST0RVQ1QgQ09MVU1OUzwvaDU+CjxkaXY+CiAgICAgICAgPHVsIGNsYXNzPSJtZW51LWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgZmlyc3QiPjxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nbWV0YWxsaWMtbWlkaS1jdXQtb3V0LW1pZGktZHJlc3MuaHRtbCd9fSI+MSBDb2x1bW48L2E+CiAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgIj48YSAgY2xhc3M9ImVtLW1lbnUtbGluayIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPSdtb25raS1tZXRhbGxpYy10LXNoaXJ0Lmh0bWwnfX0iPjIgQ29sdW1ucyBMZWZ0PC9hPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgICA8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0ncml2ZXItaXNsYW5kLXZlc3QuaHRtbCd9fSI+MiBDb2x1bW5zIFJpZ2h0PC9hPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgICA8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nbW9tbXktcy1saXR0bGUtc3Vuc2hpbmUuaHRtbCd9fSI+MyBDb2x1bW5zPC9hPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgICA8bGkgY2xhc3M9Im1lbnUtaXRlbS1saW5rIG1lbnUtaXRlbS1kZXB0aC0xICI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nZHJhcGUtYmFjay1wbGF5c3VpdC5odG1sJ319Ij5VcHNlbGw8L2E+CiAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFzdCI+PGEgY2xhc3M9ImVtLW1lbnUtbGluayIgIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0ndC1zaGlydC1zZXF1aW4tZnJpbmdlLWRyZXNzLmh0bWwnfX0iPlJlbGF0ZWQgUHJvZHVjdDwvYT4KICAgICAgICAgICAgPC9saT4KICAgICAgICA8L3VsPgogICAgPC9kaXY+PC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-12 grid_12 omega","container_css":"","depth":"2"},{"type":"text","text":"PHAgY2xhc3M9ImltZy1iYW5uZXItbWVudSBwdWxsLXJpZ2h0Ij48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e21lZGlhIHVybD0id3lzaXd5Zy9lbV9hZHMwMS5qcGcifX0iIGFsdD0ibWVudV9hZHYiIC8+PC9wPg==","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Page","sublabel":"","icon_url":"","url":"{{store url='fashion.html'}}","target":"","css_class":"","container_css":"dropdown-menu","depth":"0"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col5 grid_6","container_css":"","depth":"1"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc3NlIj5BSkFYQ0FSVDwvaDU+CjxkaXY+PHVsIGNsYXNzPSJtZW51LWNvbnRhaW5lciIgc3R5bGU9IiI+CiAgCTxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgZmlyc3QiPgogICAgICAgIDxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9IiMiPjxzcGFuPkxhbmRpbmcgUGFnZTwvc3Bhbj4gPC9hPgogICAgPC9saT4KICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgIj4KICAgICAgICA8YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e2NvbmZpZyBwYXRoPSd3ZWIvdW5zZWN1cmUvYmFzZV91cmwnfX1lbTAxMzEtdHlwb2dyYXBoeSI+PHNwYW4+VHlwb2dyYXBoeSBQYWdlPC9zcGFuPiA8L2E+CiAgICA8L2xpPgogICAgPGxpIGNsYXNzPSJtZW51LWl0ZW0tbGluayBtZW51LWl0ZW0tZGVwdGgtMSAiPgogICAgICAgIDxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7Y29uZmlnIHBhdGg9J3dlYi91bnNlY3VyZS9iYXNlX3VybC8nfX1lbTAxMzEtd2lkZ2V0cyI+PHNwYW4+V2lkZ2V0cyBQYWdlPC9zcGFuPiA8L2E+CiAgICA8L2xpPiAgICAKICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFiZWwtbmV3LW1lbnUgIj4KICAgICAgICA8YSBjbGFzcz0iZW0tbWVudS1saW5rIiBocmVmPSJ7e2NvbmZpZyBwYXRoPSd3ZWIvdW5zZWN1cmUvYmFzZV91cmwvJ319Y29udGFjdHMiPjxzcGFuPkNvbnRhY3QgUGFnZTwvc3Bhbj4gPC9hPgogICAgPC9saT4KICAgIDxsaSBjbGFzcz0ibWVudS1pdGVtLWxpbmsgbWVudS1pdGVtLWRlcHRoLTEgbGFzdCAiPgogICAgICAgIDxhIGNsYXNzPSJlbS1tZW51LWxpbmsiIGhyZWY9Int7Y29uZmlnIHBhdGg9J3dlYi91bnNlY3VyZS9iYXNlX3VybC8nfX1teWV2ZXJ5dGhpbmciPjxzcGFuPjQwNCBQYWdlPC9zcGFuPiA8L2E+CiAgICA8L2xpPgo8L3VsPjwvZGl2Pgo8L2Rpdj4=","css_class":" col-md-24","container_css":"","depth":"2"}]]]></content>
+        <css_class><![CDATA[em_hoz_menu effect-menu]]></css_class>
+      </menu>
+      <menu id="15">
+        <name><![CDATA[EM0131 Everything - Mello Sneakers Right - Menu]]></name>
+        <identifier><![CDATA[em0131-mello-menu-right]]></identifier>
+        <description><![CDATA[EM0131 Everything - Mello Sneakers - Menu Right]]></description>
+        <type><![CDATA[0]]></type>
+        <status><![CDATA[1]]></status>
+        <content><![CDATA[[{"type":"link","label":"Category","sublabel":"","icon_url":"","url":"{{store url='fashion.html'}}","target":"","css_class":"","container_css":"","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col24 grid_24","container_css":"","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0ibWVudS1jYXRlIGVmZmVjdDAzIHpvb20taW1nIj48ZGl2PjxhIHRpdGxlPSJlbS1zYW1wbGUtdGl0bGUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nJ319c2hvZS5odG1sIj48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvbWVkaWEvaG9tZS9tZW51L2ltZy1jYXRlMS5qcGcnfX0iIGFsdD0iZW0tc2FtcGxlLWFsdCIgLz48L2E+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jyd9fXNob2UuaHRtbCI+T25lIENvbHVtbjwvYT48L3A+PC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0ibWVudS1jYXRlIGVmZmVjdDAzIHpvb20taW1nIj4KCTxkaXY+PGEgdGl0bGU9ImVtLXNhbXBsZS10aXRsZSIgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPScnfX1mYXNoaW9uLmh0bWwiPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9J2ltYWdlcy9tZWRpYS9ob21lL21lbnUvaW1nLWNhdGUyLmpwZyd9fSIgYWx0PSJlbS1zYW1wbGUtYWx0IiAvPjwvYT48L2Rpdj4KCTxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPScnfX1mYXNoaW9uLmh0bWwiPlR3byBDb2x1bW5zIExlZnQ8L2E+PC9wPgkKPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0ibWVudS1jYXRlIGVmZmVjdDAzIHpvb20taW1nIj48ZGl2PjxhIHRpdGxlPSJlbS1zYW1wbGUtdGl0bGUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nJ319Z2xhc3MuaHRtbCI+PGltZyBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHNyYz0ie3tza2luIHVybD0naW1hZ2VzL21lZGlhL2hvbWUvbWVudS9pbWctY2F0ZTMuanBnJ319IiBhbHQ9ImVtLXNhbXBsZS1hbHQiIC8+PC9hPjwvZGl2PjxwIGNsYXNzPSJoNSI+PGEgaHJlZj0ie3tzdG9yZSBkaXJlY3RfdXJsPScnfX1nbGFzcy5odG1sIj5Ud28gQ29sdW1ucyBSaWdodDwvYT48L3A+PC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-6","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0ibWVudS1jYXRlIGVmZmVjdDAzIHpvb20taW1nIj48ZGl2PjxhIHRpdGxlPSJlbS1zYW1wbGUtdGl0bGUiIGhyZWY9Int7c3RvcmUgZGlyZWN0X3VybD0nJ319YmFieS5odG1sIj48aW1nIGNsYXNzPSJpbWctcmVzcG9uc2l2ZSIgc3JjPSJ7e3NraW4gdXJsPSdpbWFnZXMvbWVkaWEvaG9tZS9tZW51L2ltZy1jYXRlNC5qcGcnfX0iIGFsdD0iZW0tc2FtcGxlLWFsdCIgLz48L2E+PC9kaXY+PHAgY2xhc3M9Img1Ij48YSBocmVmPSJ7e3N0b3JlIGRpcmVjdF91cmw9Jyd9fWJhYnkuaHRtbCI+VGhyZWUgQ29sdW1uczwvYT48L3A+PC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Shoes","sublabel":"","icon_url":"","url":"{{store url='fashion.html'}}","target":"","css_class":"","container_css":"background-image:url(https:\/\/lh3.googleusercontent.com\/-h13lUeNSbvA\/VZ-BScfJQZI\/AAAAAAAAAEU\/GHb7KAkCTkY\/s1180-Ic42\/bkg-menu.jpg); background-repeat:no-repeat; background-position: right bottom","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col24 grid_24","container_css":"padding:0 10px","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-8","container_css":"","depth":"2"},{"type":"text","text":"PHAgY2xhc3M9ImltZy1jZW50ZXIiPjxhIGhyZWY9IiMiIHRpdGxlPSJlbS1zYW1wbGUtdGl0bGUiPjxpbWcgY2xhc3M9ImltZy1yZXNwb25zaXZlIiBzcmM9Int7c2tpbiB1cmw9ImltYWdlcy9tZWRpYS9ob21lL21lbnUvZW1fbWVudTExLnBuZyJ9fSIgYWx0PSJlbS1zYW1wbGUtYWx0IiAvPjwvYT48L3A+CjxwPlRoaXMgdGhlbWUgbG9va3MgZ3JlYXQgbm90IG9ubHkgb24gZGVza3RvcHMgYnV0IGFsc28gb24gZGV2aWNlcy4gV2hhdCBtZWFucyB0aGF0IHRoZXJlIGFyZSBubyBzcGVjaWFsIHJlcXVpcmVtZW50cyBmb3IgeW91ciBjbGllbnRzIHRvIGJyb3dzZSB5b3VyIHdlYnNpdGUuIFdpdGggRU0gT3N3YWQsIHlvdSBjYW4gZWFzaWx5IGNoYW5nZSB0aGUgb3ZlcmFsbCBhcHBlYXJhbmNlIG9mIHlvdXIgc2l0ZSBieSBlZGl0aW5nIHlvdXIgc2l0ZeKAmXMgbGF5b3V0LCB0aGVtZXMsIGNvbG9ycywgYW5kIGZvbnRzLiBNYWtlIHlvdXIgd2Vic3RvcmUgbG9vayBzcGVjaWFsISBZb3UgY2FuIGNyZWF0ZSBhcyBtYW55IGN1c3RvbSBjb2xvciBzY2hlbWVzIGFzIHlvdSBuZWVkIGFuZCBlYXNpbHkgYXBwbHkgdG8geW91ciB3ZWJzdG9yZSA8L3A+CjxwPkVNIE9zd2FkIGlzIG9wdGltaXplZCBmb3IgYWxsIHNjcmVlbiByZXNvbHV0aW9ucy4gSWYgeW91IHJlc2l6ZSB3ZWIgYnJvd3NlciB3aW5kb3csIHRoZW1lIGVsZW1lbnRzIHdpbGwgYmUgdHJhbnNmb3JtZWQgc21vb3RobHkgb24gZWFjaCBicmVha3BvaW50IChmcm9tIDMyMCB0byAxMjgwIHBpeGVscykgaW4gb3JkZXIgdG8gYWRhcHQgdG8gdGhlIGN1cnJlbnQgc2NyZWVuIHNpemUuPC9wPg==","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+Cgk8aDUgY2xhc3M9InRleHQtdXBwZXJjYXNlIj5VbmxpbWl0ZWQgQ29sb3JzPC9oNT4KCTxkaXY+e3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8xNSJ9fTwvZGl2Pgo8L2Rpdj4=","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+Cgk8aDUgY2xhc3M9InRleHQtdXBwZXJjYXNlIj5DdXN0b20gd2lkZ2V0czwvaDU+Cgk8ZGl2Pnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMTUifX08L2Rpdj4KPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+Cgk8aDUgY2xhc3M9InRleHQtdXBwZXJjYXNlIj5Qb3dlcmZ1bCBhZG1pbjwvaDU+Cgk8ZGl2Pnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMTUifX08L2Rpdj4KPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"link","label":"Blog","sublabel":"","icon_url":"","url":"{{config path='web\/unsecure\/base_url'}}blog","target":"","css_class":"last","container_css":"background-image:url(https:\/\/lh3.googleusercontent.com\/-a-0VoIpuJcA\/VaiJcLajC1I\/AAAAAAAAAFA\/3VXwvMCacl0\/s719-Ic42\/banner-menu01.jpg); background-repeat:no-repeat; background-position: right bottom","depth":"0"},{"type":"hbox","width":"","height":"","spacing":"","css_class":"col-menu menu_col24 grid_24","container_css":"padding:0 10px","depth":"1"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4 grid_4 alpha","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPlJldGluYSBSZWFkeTwvaDU+CjxkaXY+e3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8xNSJ9fTwvZGl2Pgo8L2Rpdj4=","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4 grid_4","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPkZ1bGx5IFJlc3BvbnNpdmU8L2g1Pgo8ZGl2Pnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMTUiIGRpcmVjdGlvbj0idmVydGljYWwifX08L2Rpdj4KPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4 grid_4","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPlVubGltaXRlZCBDb2xvcnM8L2g1Pgo8ZGl2Pnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMTUifX08L2Rpdj4KPC9kaXY+","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-4 grid_4 omega","container_css":"","depth":"2"},{"type":"text","text":"PGRpdiBjbGFzcz0iZW0tbGluZS0wMSI+CjxoNSBjbGFzcz0idGV4dC11cHBlcmNhc2UiPkN1c3RvbSB3aWRnZXRzPC9oNT4KPGRpdj57e3dpZGdldCB0eXBlPSJtZWdhbWVudXByby9jYXRhbG9nbmF2aWdhdGlvbiIgY2F0ZWdvcnlfaWQ9ImNhdGVnb3J5LzE1In19PC9kaXY+CjwvZGl2Pg==","css_class":"","container_css":"","depth":"3"},{"type":"vbox","width":"","height":"","spacing":"","css_class":"col-sm-24","container_css":"","depth":"2"}]]]></content>
+        <css_class><![CDATA[em_hoz_menu effect-menu]]></css_class>
+      </menu>
+    </megamenu>
+    <minislideshows>
+      <minislideshow id="23">
+        <name><![CDATA[EM0131 Everything - Mello Sneakers - Main Slideshow]]></name>
+        <identifier><![CDATA[em0131-mello-main-slideshow]]></identifier>
+        <images><![CDATA[[{"url":"1447231033_0_mel_slide01.jpg","link":"","info":[{"text":"","animation":"fadeInRight"}]},{"url":"1447231033_1_mel_slide02.jpg","link":"","info":[{"text":"","animation":"fadeInDown"}]},{"url":"1447231033_2_mel_slide03.jpg","link":"","info":[{"text":"","animation":"fadeInRight"}]}]]]></images>
+        <slider_params><![CDATA[{"size_width":"","size_height":"742"}]]></slider_params>
+        <appearance><![CDATA[{"auto_play":"true","animation_type":"fade","speed":"","hover_pause":"true","progress_bar":"false","lazy_load":"true"}]]></appearance>
+        <navigation><![CDATA[{"nav_enable":"true","nav_type":["navigation:true","pagination:true"],"arrows_next":"","arrows_pre":"","thumb_width":"","thumb_height":""}]]></navigation>
+        <status><![CDATA[1]]></status>
+      </minislideshow>
+    </minislideshows>
+  </sample_data>
+</theme>

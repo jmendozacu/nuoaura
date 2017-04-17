@@ -1,0 +1,296 @@
+<?php
+	/**
+	 * Magento
+	 *
+	 * NOTICE OF LICENSE
+	 *
+	 * This source file is subject to the Academic Free License (AFL 3.0)
+	 * that is bundled with this package in the file LICENSE_AFL.txt.
+	 * It is also available through the world-wide-web at this URL:
+	 * http://opensource.org/licenses/afl-3.0.php
+	 * If you did not receive a copy of the license and are unable to
+	 * obtain it through the world-wide-web, please send an email
+	 * to license@magento.com so we can send you a copy immediately.
+	 *
+	 * DISCLAIMER
+	 *
+	 * Do not edit or add to this file if you wish to upgrade Magento to newer
+	 * versions in the future. If you wish to customize Magento for your
+	 * needs please refer to http://www.magento.com for more information.
+	 *
+	 * @category    design
+	 * @package     base_default
+	 * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+	 * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+	 */
+	
+	/**
+	 * Product view template
+	 *
+	 * @see Mage_Catalog_Block_Product_View
+	 * @see Mage_Review_Block_Product_View
+	 */
+?>
+<?php 
+	$_helper = $this->helper('catalog/output');	
+    $_displayRelated = Mage::helper('themeframework/settings')->getRelated_Display();
+    $_positionRelated = Mage::helper('themeframework/settings')->getRelated_Position();
+    $_displayUpsell = Mage::helper('themeframework/settings')->getUpsell_Display();
+    $_product = $this->getProduct();    
+    $_pageLayout = substr((str_replace(array('page/','.phtml'),'',Mage::app()->getLayout()->getBlock('root')->getTemplate())),0,1);
+    switch($_pageLayout){
+        case 3:            
+            $_PrimaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_PrimaryThreeColumnWidth(12);
+            $_SecondaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_SecondaryThreeColumnWidth(12);            
+            break;
+        case 2:
+            $_PrimaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_PrimaryTwoColumnWidth(9);
+            $_SecondaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_SecondaryTwoColumnWidth(9);
+            break;
+        default:
+            $_PrimaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_PrimaryColumnWidth(9);
+            $_SecondaryColumnWidth = Mage::helper('themeframework/settings')->getProductDetail_SecondaryColumnWidth(9);
+            break;
+    }    
+?>
+<script type="text/javascript">
+	var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+<div class="product-view" <?php if(Mage::helper('themeframework/settings')->getSnippets_Enable()): ?>itemscope itemtype="http://schema.org/Product"<?php endif;?>>
+	<div class="product-essential">
+		<form action="<?php echo $this->getSubmitUrl($_product, array('_secure' => $this->_isSecure())) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+			<?php echo $this->getBlockHtml('formkey') ?>
+			<div class="no-display">
+				<input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+				<input type="hidden" name="related_product" id="related-products-field" value="" />
+			</div>
+			<div class="product-view-detail">
+				<div class="em-product-view row">
+                    <div class="col-sm-24 product-view-top">
+                        <div class="product-name">
+							<h1 <?php if(Mage::helper('themeframework/settings')->getSnippets_Enable()): ?>itemprop="name"<?php endif;?>><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+						</div>
+                        <div class="em-review-email">
+                            <?php echo $this->getReviewsSummaryHtml($_product, 'aggregate', true)?>
+                            <?php if ($this->canEmailToFriend()): ?>
+                                <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+                			<?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="em-product-view-primary em-product-img-box col-sm-<?php echo $_PrimaryColumnWidth ?> first">                        
+						<div class="product-img-box">
+							<?php echo $this->getChildHtml('media') ?>
+						</div>
+                    </div>
+					<div class="em-product-view-secondary em-product-shop col-sm-<?php echo $_SecondaryColumnWidth ?>">                                            
+						<div class="product-shop">
+                            <?php echo $this->getChildHtml('staticblock') ?>
+							<div class="em-sku-availability">
+                        		<?php if(Mage::helper('themeframework/settings')->getProductDetail_ShowSku()): ?>
+                                    <p class="sku"><?php echo $this->__('SKU:') ?> <?php echo $_product->getSKU()?></p>
+                        		<?php endif; ?>
+                                
+                                <?php if ($this->displayProductStockStatus()): ?>
+                                    <?php if ($_product->isAvailable()): ?>
+                                        <p class="availability in-stock">
+                                            <?php echo $this->helper('catalog')->__('Availability:') ?>
+                                            <span class="value"><?php echo $this->helper('catalog')->__('In stock') ?></span>
+                                        </p>   
+                                    <?php else: ?>
+                                        <p class="availability out-of-stock">
+                                            <?php echo $this->helper('catalog')->__('Availability:') ?>
+                                            <span class="value"><?php echo $this->helper('catalog')->__('Out of stock') ?></span>
+                                        </p>   
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+                                                   
+							<?php echo $this->getChildHtml('alert_urls') ?>
+                            
+							<?php if ($_product->getShortDescription()):?>
+							<div class="short-description">
+								<h2><?php echo $this->__('Quick Overview') ?></h2>
+								<div class="std" <?php if(Mage::helper('themeframework/settings')->getSnippets_Enable() && Mage::helper('themeframework/settings')->getSnippets_Description()): ?>itemprop="description"<?php endif;?>><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+							</div>
+							<?php endif;?>
+                            
+							<?php echo $this->getChildHtml('short_des_after'); ?>
+                            
+                            <?php if(Mage::helper('themeframework/settings')->getSnippets_Enable() && Mage::helper('themeframework/settings')->getSnippets_Price()): ?>
+                                <?php if($_product->getTypeId() == "bundle"): ?>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+                                        <meta itemprop="priceCurrency" content="<?php echo $currency_code = Mage::app()->getStore()->getCurrentCurrencyCode(); ?>"/>
+                                        <?php echo $this->getChildHtml('product_type_data') ?>
+                                        <?php echo $this->getTierPriceHtml() ?>
+                                    </div>
+                                <?php else: ?>
+                                	<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="<?php echo $currency_code = Mage::app()->getStore()->getCurrentCurrencyCode(); ?>"/>
+                                        <?php echo $this->getChildHtml('product_type_data') ?>
+                                        <?php echo $this->getTierPriceHtml() ?>
+                                    </div>
+                                <?php endif; ?>
+                            <?php else:?>
+                                <?php echo $this->getChildHtml('product_type_data') ?>
+                            	<?php echo $this->getTierPriceHtml() ?>
+                            <?php endif;?>
+                            
+							<!--product saleoff-->								
+							<?php // clock countdown code : ?>
+							<?php if(Mage::helper('core')->isModuleEnabled('EM_Multidealpro')): ?>
+                                <?php if(Mage::helper("multidealpro")->getHtmlClock($_product)):?>
+                                    <?php $saleoff	=	Mage::helper('themeframework/settings')->getPercentOff($_product) ?>
+    								<?php if($saleoff !== 0): ?>
+    								<?php echo $saleoff ?>
+    								<?php endif ?>                                    
+								    <?php echo Mage::helper("multidealpro")->getHtmlClock($_product); ?>
+                                <?php endif;?>
+							<?php endif ?>
+                            
+							<?php if (!$this->hasOptions()):?>
+							<div class="add-to-box">
+								<?php if($_product->isSaleable()): ?>
+								<?php echo $this->getChildHtml('addtocart') ?>
+								<?php endif;?>
+							</div>
+							<?php echo $this->getChildHtml('extra_buttons') ?>
+							<?php elseif (!$_product->isSaleable()): ?>
+							<div class="add-to-box">
+								<?php echo $this->getChildHtml('addto') ?>
+							</div>
+							<?php endif; ?>
+                            
+                            <?php echo $this->getChildHtml('sizechart') ?>
+                            <div class="em-addthis">
+								<a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=<?php echo $_helper->productAttribute($_product, $_product->getProductUrl(), 'product_url'); ?>&amp;title=<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" target="_blank">
+									<span class="icon-facebook fa fa-facebook"></span>
+								</a> 
+								<a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=<?php echo $_helper->productAttribute($_product, $_product->getProductUrl(), 'product_url'); ?>&amp;title=<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" target="_blank">
+									<span class="icon-twitter fa fa-twitter"></span>
+								</a>
+                                <a href="https://api.addthis.com/oexchange/0.8/forward/pinterest/offer?url=<?php echo $_helper->productAttribute($_product, $_product->getProductUrl(), 'product_url'); ?>&amp;title=<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" target="_blank">
+									<span class="icon-pinterest fa fa-pinterest-square"></span>
+								</a> 
+								<a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=<?php echo $_helper->productAttribute($_product, $_product->getProductUrl(), 'product_url'); ?>&amp;title=<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" target="_blank">
+									<span class="icon-google fa fa-google-plus"></span>
+								</a> 
+                            </div>  
+                            
+							<?php echo $this->getChildHtml('other');?>
+							<?php echo $this->getChildHtml('extrahint') ?>               
+							<?php if ($_product->isSaleable() && $this->hasOptions()):?>
+							<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+							<?php endif;?>               
+						</div>
+					</div>                    
+				</div>					
+				<div class="clearer"></div>
+				<?php if ($_product->isSaleable() && $this->hasOptions()):?>
+				<?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+				<?php endif;?>            
+			</div>
+		</form>
+		<script type="text/javascript">
+			//<![CDATA[
+			    var productAddToCartForm = new VarienForm('product_addtocart_form');
+			    productAddToCartForm.submit = function(button, url) {
+			        if (this.validator.validate()) {
+			            var form = this.form;
+			            var oldUrl = form.action;
+			
+			            if (url) {
+			               form.action = url;
+			            }
+			            var e = null;
+			            try {
+			                this.form.submit();
+			            } catch (e) {
+			            }
+			            this.form.action = oldUrl;
+			            if (e) {
+			                throw e;
+			            }
+			
+			            if (button && button != 'undefined') {
+			                button.disabled = true;
+			            }
+			        }
+			    }.bind(productAddToCartForm);
+			
+			    productAddToCartForm.submitLight = function(button, url){				    
+			        if(this.validator) {
+			            var nv = Validation.methods;
+			            delete Validation.methods['required-entry'];
+			            delete Validation.methods['validate-one-required'];
+			            delete Validation.methods['validate-one-required-by-name'];
+			            // Remove custom datetime validators
+			            for (var methodName in Validation.methods) {
+			                if (methodName.match(/^validate-datetime-.*/i)) {
+			                    delete Validation.methods[methodName];
+			                }
+			            }
+			
+			            if (this.validator.validate()) {
+			                if (url) {
+			                    this.form.action = url;
+			                }
+			                this.form.submit();
+			            }
+			            Object.extend(Validation.methods, nv);
+			        }
+			    }.bind(productAddToCartForm);
+			//]]>
+		</script>
+	</div>
+            
+	<div class="em-product-info <?php if($_positionRelated=='beside_tabs' && $_displayRelated!='disable' && $_pageLayout!=3):?>row<?php endif;?>">
+		<div class="em-product-details <?php if($_positionRelated=='beside_tabs' && $_displayRelated!='disable' && $_pageLayout!=3):?>col-sm-18 first<?php endif;?>">
+            
+			<div class="emtabs-below-image em-line-01 em-details-tabs product-collateral">
+				<div class="em-details-tabs-content">
+					<?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+					<div class="box-collateral em-line-01 <?php echo "box-{$alias}"?>">
+						<?php if ($title = $this->getChildData($alias, 'title')):?>
+						<h2><?php echo $this->escapeHtml($title); ?></h2>
+						<?php endif;?>
+						<?php echo $html; ?>
+					</div>
+					<?php endforeach;?>
+					<?php echo $this->getChildHtml('product_additional_data') ?>
+					<?php echo $this->getChildHtml('product_additional_collateral') ?> 
+				</div>
+			</div>
+            
+            <?php if($_positionRelated=='top_tabs'):?>
+    		<?php if($_displayRelated!='disable'):?>
+        		<?php if($_displayRelated=='replace' || ( $_displayRelated=='dont_replace' && !($this->getChildHtml('catalog.product.related.content'))) ):?>
+    			     <?php echo $this->getChildHtml('replace.related') ?>
+    			<?php else:?>
+    			     <?php echo $this->getChildHtml('catalog.product.related.content') ?>
+    			<?php endif;?>
+    		<?php endif;?>
+    	<?php endif;?>     			
+			            
+            <?php if($_displayUpsell!='disable'):?>
+    			<?php if($_displayUpsell=='replace' || ( $_displayUpsell=='dont_replace' && !($this->getChildHtml('upsell_products'))) ):?>
+    			     <?php echo $this->getChildHtml('replace.upsell') ?>
+    			<?php else:?>
+    			     <?php echo $this->getChildHtml('upsell_products') ?>
+    			<?php endif;?>
+    		<?php endif;?>
+            
+            <?php echo $this->getChildHtml('review_list') ?>
+		</div>
+        
+		<?php if($_positionRelated=='beside_tabs' && $_displayRelated!='disable' && $_pageLayout!=3):?>
+    		<div class="em-product-info-right col-sm-6 last">
+    			<?php if($_displayRelated=='replace' || ( $_displayRelated=='dont_replace' && !($this->getChildHtml('catalog.product.related.content'))) ):?>
+    			     <?php echo $this->getChildHtml('replace.related') ?>
+    			<?php else:?>
+    			     <?php echo $this->getChildHtml('catalog.product.related.content') ?>
+    			<?php endif;?>
+    		</div>
+		<?php endif;?>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_system_config_edit>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>propoza/propoza.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>propoza/test_connection.js</name>
+            </action>
+        </reference>
+    </adminhtml_system_config_edit>
+    <adminhtml_quotes_index>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>propoza/propoza.css</name>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="propoza/adminhtml_quotes_grid" name="quotesgrid" template="propoza/quotes/grid.phtml" />
+        </reference>
+    </adminhtml_quotes_index>
+    <propoza_ajax_index>
+        <block type="propoza/adminhtml_system_config_buttons_testconnection" name="testconnection"/>
+    </propoza_ajax_index>
+</layout>

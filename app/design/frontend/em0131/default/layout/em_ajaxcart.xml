@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="head">
+			<action method="addCss"><stylesheet>em/ajaxcart/css/em_ajaxcart.css</stylesheet></action>
+
+			<action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/configurable.js</script></action>
+            <action method="addJs"><script>calendar/calendar.js</script></action>
+            <action method="addJs"><script>calendar/calendar-setup.js</script></action>
+			<action method="addItem"><type>skin_js</type><name>js/bundle.js</name></action>
+
+			<action method="addJs"><script>em/jquery-1.11.3.min.js</script></action>
+            <action method="addJs"><script>em/jquery-noconflict.js</script></action>
+			<action method="addItem"><type>skin_js</type><name>em/jquery.form.js</name></action>
+
+			<action method="addItem"><type>skin_js</type><name>em/ajaxcart/js/lightbox.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em/ajaxcart/js/em_ajaxcart.js</name></action>			
+			<block type="core/template" name="em_ajaxcart_head" template="em_ajaxcart/em_head.phtml" />
+		</reference>
+
+		<reference name="before_body_end">
+            <block type="core/template" name="ajax.cart" template="em_ajaxcart/contanier.phtml"/>
+        </reference>
+    </default>
+	
+	<ajaxcart_cart_add>
+		<update handle="ajaxcart_opt_index"/>
+	</ajaxcart_cart_add>
+
+	<ajaxcart_opt_index>
+		<update handle="catalog_product_view"/>
+
+		<remove name="head" />
+		<remove name="footer" />
+
+		<reference name="product.info">
+			<action method="setTemplate"><template>em_ajaxcart/view_options.phtml</template></action>
+			<remove name="product.info.addto"/>
+        </reference>
+
+		<reference name="product.info.options">
+			<action method="setTemplate"><template>em_ajaxcart/product_type/options.phtml</template></action>
+        </reference>
+
+		<reference name="product.info.addtocart">
+			<action method="setTemplate"><template>em_ajaxcart/addtocart.phtml</template></action>
+        </reference>
+
+        <reference name="content">
+			<remove name="product.info.upsell"/>
+			<remove name="product.info.additional"/>
+			<remove name="product.description"/>
+			<remove name="product.attributes"/>
+        </reference>
+
+	</ajaxcart_opt_index>
+
+	<AJC_PRODUCT_TYPE_simple>
+        <!--
+        <reference name="product.info.additional">
+
+            <block type="bundle/catalog_product_list_partof" before="-" name="product.info.partof" as="partof_products" template="bundle/catalog/product/list/partof.phtml">
+                <action method="addPriceBlockType"><type>bundle</type><block>bundle/catalog_product_price</block><template>bundle/catalog/product/price.phtml</template></action>
+            </block>
+        -->
+    </AJC_PRODUCT_TYPE_simple>
+	
+	<AJC_PRODUCT_TYPE_bundle translate="label" module="bundle">
+        <label>Catalog Product View (Bundle)</label>
+
+        <reference name="product.info">
+            <block type="bundle/catalog_product_view_type_bundle" name="product.info.bundle" as="product_type_data" template="em_ajaxcart/product_type/bundle.phtml">
+                <action method="addPriceBlockType"><type>bundle</type><block>bundle/catalog_product_price</block><template>bundle/catalog/product/price.phtml</template></action>
+                <block type="bundle/catalog_product_price" name="bundle.prices" as="bundle_prices" template="bundle/catalog/product/view/price.phtml">
+                    <action method="setMAPTemplate"><tmpl>catalog/product/price_msrp_item.phtml</tmpl></action>
+                </block>
+            </block>
+        </reference>
+        <reference name="product.info.options.wrapper">
+            <block type="bundle/catalog_product_view_type_bundle" name="product.info.bundle.options" as="type_bundle_options" template="bundle/catalog/product/view/type/bundle/options.phtml">
+                <action method="addRenderer"><type>select</type><block>bundle/catalog_product_view_type_bundle_option_select</block></action>
+                <action method="addRenderer"><type>multi</type><block>bundle/catalog_product_view_type_bundle_option_multi</block></action>
+                <action method="addRenderer"><type>radio</type><block>bundle/catalog_product_view_type_bundle_option_radio</block></action>
+                <action method="addRenderer"><type>checkbox</type><block>bundle/catalog_product_view_type_bundle_option_checkbox</block></action>
+            </block>
+            <action method="insert"><block>product.info.bundle.options</block></action>
+        </reference>
+        <reference name="product.info.options.wrapper.bottom">
+            <remove name="product.tierprices" />
+            <block type="bundle/catalog_product_view" name="bundle.tierprices" as="tierprices" before="-" template="bundle/catalog/product/view/tierprices.phtml"/>
+            <block type="cataloginventory/qtyincrements" name="product.info.qtyincrements" before="-" template="cataloginventory/qtyincrements.phtml"/>
+        </reference>
+        <reference name="product.clone_prices">
+            <action method="addPriceBlockType"><type>bundle</type><block>bundle/catalog_product_price</block><template>bundle/catalog/product/view/price.phtml</template></action>
+        </reference>
+    </AJC_PRODUCT_TYPE_bundle>
+
+	 <AJC_PRODUCT_TYPE_configurable translate="label" module="catalog">
+        <label>Catalog Product View (Configurable)</label>
+        <reference name="product.info">
+            <block type="catalog/product_view_type_configurable" name="product.info.configurable" as="product_type_data" template="catalog/product/view/type/default.phtml">
+                <block type="core/text_list" name="product.info.configurable.extra" as="product_type_data_extra" translate="label">
+                    <label>Product Extra Info</label>
+                </block>
+            </block>
+        </reference>
+        <reference name="product.info.options.wrapper">
+            <block type="catalog/product_view_type_configurable" name="product.info.options.configurable" as="options_configurable" before="-" template="catalog/product/view/type/options/ajax_configurable.phtml"/>
+        </reference>
+    </AJC_PRODUCT_TYPE_configurable>
+
+	<AJC_PRODUCT_TYPE_grouped translate="label" module="catalog">
+        <label>Catalog Product View (Grouped)</label>
+        <reference name="product.info">
+            <block type="catalog/product_view_type_grouped" name="product.info.grouped" as="product_type_data" template="catalog/product/view/type/grouped.phtml">
+                <block type="core/text_list" name="product.info.grouped.extra" as="product_type_data_extra" translate="label">
+                    <label>Product Extra Info</label>
+                </block>
+            </block>
+        </reference>
+    </AJC_PRODUCT_TYPE_grouped>
+
+	<AJC_PRODUCT_TYPE_virtual translate="label" module="catalog">
+        <label>Catalog Product View (Virtual)</label>
+        <reference name="product.info">
+            <block type="catalog/product_view_type_virtual" name="product.info.virtual" as="product_type_data" template="catalog/product/view/type/default.phtml">
+                <block type="core/text_list" name="product.info.virtual.extra" as="product_type_data_extra" translate="label">
+                    <label>Product Extra Info</label>
+                </block>
+            </block>
+        </reference>
+    </AJC_PRODUCT_TYPE_virtual>
+	
+	<AJC_PRODUCT_TYPE_downloadable translate="label" module="downloadable">
+        <label>Catalog Product View (Downloadable)</label>
+        <reference name="product.info">
+            <block type="downloadable/catalog_product_view_type" name="product.info.downloadable" as="product_type_data" template="downloadable/catalog/product/type.phtml">
+                 <block type="downloadable/catalog_product_samples" name="product.info.downloadable.samples" as="samples" template="downloadable/catalog/product/samples.phtml"/>
+                 <block type="cataloginventory/stockqty_default" name="product.info.downloadable.extra" as="product_type_data_extra" template="cataloginventory/stockqty/default.phtml"/>
+            </block>
+        </reference>
+        <reference name="product.info.options.wrapper">
+            <block type="downloadable/catalog_product_links" name="product.info.downloadable.options" as="type_downloadable_options" before="-" template="em_ajaxcart/product_type/downloadable_links.phtml"/>
+            <action method="insert"><block>product.info.downloadable.options</block></action>
+        </reference>
+    </AJC_PRODUCT_TYPE_downloadable>
+
+</layout> 

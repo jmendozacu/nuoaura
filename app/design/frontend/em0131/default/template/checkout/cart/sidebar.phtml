@@ -1,0 +1,145 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Shoping cart sidebar
+ *
+ * @see Mage_Checkout_Block_Cart_Sidebar
+ */
+
+?>
+<div class="em-wrapper-js-topcart em-wrapper-topcart em-no-quickshop">
+	<div class="em-container-topcart">
+    	<?php 
+    		$_cartQty = $this->getSummaryCount(); 
+    		if($_cartQty == null) $_cartQty = 0;    		
+        ?>
+    	<div class="em-summary-topcart">            
+			<a class="em-amount-js-topcart em-amount-topcart" title="<?php echo $this->__('Shopping Cart');?>" href="<?php echo $this->getUrl('checkout/cart') ?>">
+                <span class="em-topcart-text"><?php echo $this->__('My Cart'),':' ?></span>
+                <span class="em-topcart-qty"><?php echo $_cartQty ?></span>
+            </a>
+		</div>
+
+		<div class="em-container-js-topcart topcart-popup" style="display:none">
+			<div class="topcart-popup-content">
+				<p class="em-block-subtitle"><?php echo $this->__('Shopping Cart');?></p>
+				<div class="topcart-content">
+					<p class="amount-content ">
+						<?php if ($_cartQty==0): ?>
+							<?php echo $this->__('You have no items in your shopping cart.') ?>
+						<?php elseif ($_cartQty==1): ?>
+							<?php echo $this->__('There is <a href="%s">1 item</a> in your shopping cart.', $this->getUrl('checkout/cart')) ?>
+						<?php else: ?>
+							<?php echo $this->__('There are <a href="%s">%s items</a> in your shopping cart.', $this->getUrl('checkout/cart'), $_cartQty) ?>
+						<?php endif ?>
+					</p>
+					<?php if ($_cartQty > 0): ?>
+						<?php $_items = $this->getRecentItems() ?>
+						<?php if(count($_items)): ?>								
+							<ol class="em-topcart-list">
+							<?php foreach($_items as $_item): ?>
+								<?php echo $this->getItemHtml($_item) ?>
+							<?php endforeach; ?>
+							</ol>
+						<?php endif ?>
+					<?php endif ?>
+				</div>
+				<?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+				<div class="actions">
+					<p class="subtotal">
+						<?php if ($this->canApplyMsrp()): ?>
+							<span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
+						<?php else: ?>
+							<span class="label"><?php echo $this->__('Cart Subtotal') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+							<?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
+								<br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
+							<?php endif; ?>
+						<?php endif; ?>
+					</p>
+					<div class="wrapper_bottom_button">
+						<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Checkout')) ?>" class="button button-checkout" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
+						<a href="<?php echo $this->getUrl('checkout/cart') ?>" class="goto-cart"><span><span><?php echo $this->__('My Cart') ?></span></span></a>
+					</div>
+					<?php echo $this->getChildHtml('extra_actions') ?>						
+				</div>
+				<?php endif ?>
+			
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(function($) {        
+        if (isMobile == true) {
+            var sLink = $('.em-amount-js-topcart');
+            var sCartContent = $(".em-wrapper-js-topcart");            
+            sLink.attr('href', 'javascript:void(0)');
+            sCartContent.click(function(event) {
+                var $_this = $(this);
+                var $_container = $_this.children().find('.em-container-js-topcart');
+                $_container.slideToggle();
+                $_this.toggleClass('em-click-topcart');
+            });
+        } else {
+            // Hide Cart
+            var timeout = null;    
+            function hideCart(e) {
+                var $_container = e.children().find('.em-container-js-topcart');
+                if (timeout) clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = null;
+                    $_container.hide(300, function() {
+                        $(this).css('overflow', 'inherit');
+                    });
+                }, 200);
+            }
+            // Show Cart    
+            function showCart(e) {
+                var $_container = e.children().find('.em-container-js-topcart');
+                if (timeout) clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = null;
+                    $_container.show(300, function() {
+                        $(this).css('overflow', 'inherit');
+                    });
+                }, 200);
+            }
+            var sCartContent = $(".em-wrapper-js-topcart");
+            sCartContent.bind('mouseover', function(e){
+                e.preventDefault();
+                var $_this = $(this);
+                showCart($_this);
+            }).bind('mouseout',function(e){
+                e.preventDefault();
+                var $_this = $(this);
+                hideCart($_this);
+            });
+        }
+    });	
+//]]>
+</script>

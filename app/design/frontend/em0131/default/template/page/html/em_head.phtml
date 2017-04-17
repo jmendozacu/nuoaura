@@ -1,0 +1,84 @@
+<?php   
+    $_checkLayout = str_replace(array('page/','.phtml'),'',Mage::app()->getLayout()->getBlock('root')->getTemplate());
+?>
+
+<script type="text/javascript">
+//<![CDATA[    
+    var isMobile = /iPhone|iPod|iPad|Phone|Mobile|Android|hpwos/i.test(navigator.userAgent);
+    var isPhone = /iPhone|iPod|Phone|Android/i.test(navigator.userAgent);
+    var isWindowPhone = '<?php echo Mage::helper('themeframework/settings')->checkWindowsMobileOS()?>';
+    var language = '<?php echo $this->getSkinUrl('images/media/home/language/') ?>';
+    var urlsite = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>';
+    var layout = '<?php echo $_checkLayout ?>';        
+    var product_zoom = null;   
+
+    if (typeof EM == 'undefined') EM = {};
+	EM.SETTING = {		
+        USE_TAB : '<?php echo Mage::helper('themeframework/settings')->getProductDetail_UseTabs() ?>',
+        DISABLE_VARIATION : '<?php echo Mage::helper('themeframework/settings')->getGeneral_DisableFrontendVariation() ?>',
+        DISABLE_RESPONSIVE : '<?php echo Mage::helper('themeframework/settings')->getGeneral_DisableResponsive(); ?>',
+        AJAXCART_AUTOCLOSE : '<?php echo Mage::helper('themeframework/settings')->getAjaxcart_AutoClose() ? Mage::helper('themeframework/settings')->getAjaxcart_AutoClose() : 0; ?>',                
+        DISABLE_AJAX_ADDTO : '<?php echo Mage::helper('themeframework/settings')->getGeneral_DisableAjaxaddto() ?>',         
+        DISABLE_COLLAPSE :  '<?php echo Mage::helper('themeframework/settings')->getGeneral_DisableCollapse() ?>', 
+        STICKY_MENU_SEARCH_CART : '<?php echo Mage::helper('themeframework/settings')->getGeneral_StickyElement() ?>',
+        RIGHT_TO_LEFT : '<?php echo Mage::helper('themeframework/settings')->getGeneral_RightToLeft() ?>',
+        COLOR_SWATCHES : '<?php echo Mage::getStoreConfig('configswatches/general/enabled') ?>',
+	};
+    
+    var urlSkinsite = '<?php echo $this->getSKinUrl(); ?>';
+    LightboxOptions = Object.extend({
+        fileLoadingImage:        urlSkinsite+'images/loading.gif',     
+        fileBottomNavCloseImage: urlSkinsite+'images/closelabel.png',    
+        overlayOpacity: 0.8,   /* controls transparency of shadow overlay    */
+        animate: true,         /* toggles resizing animations*/
+        resizeSpeed: 7,        /* controls the speed of the image resizing animations (1=slowest and 10=fastest)    */
+        borderSize: 10,         /*if you adjust the padding in the CSS, you will need to update this variable    */
+    	/* When grouping images this is used to write: Image # of #.*/
+    	/* Change it for non-english localization*/
+    	labelImage: "Image",
+    	labelOf: "of"
+    }, window.LightboxOptions || {});	
+    
+//]]>
+</script>
+<?php if (Mage::helper('themeframework/settings')->getFonts_GoogleFonts()): ?>
+<?php 
+	if(!is_array(Mage::helper('themeframework/settings')->getFonts_GoogleFonts())){
+		$fontArray = explode(',',Mage::helper('themeframework/settings')->getFonts_GoogleFonts());
+	}else{
+		$fontArray = Mage::helper('themeframework/settings')->getFonts_GoogleFonts();
+	}
+	if ($fontWeights = str_replace(' ','', Mage::helper('themeframework/settings')->getFonts_GoogleFontsWeights()))
+		$fontWeights = ':'.$fontWeights;
+	else 
+		$fontWeights = ':200,200italic,300,300italic,400,400italic,500,500italic,600italic,600italic,700,700italic,800,800italic,900,900italic';
+    if(Mage::app()->getStore()->isCurrentlySecure())
+        $href = "https://fonts.googleapis.com/css";
+    else
+        $href = "http://fonts.googleapis.com/css";
+	foreach($fontArray as $font){
+		echo  "<link href='".$href."?family=".str_replace(' ','+',$font)."$fontWeights&amp;subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext' rel='stylesheet' type='text/css'/>";
+	}
+?>
+<?php endif ?>
+
+<!-- Add Css File -->
+<?php    
+    if($additionalCssFilesString = explode(',', Mage::helper('themeframework/managetheme')->getConfigTheme('css_additional_css_file'))){
+        $i=0;
+        foreach($additionalCssFilesString as $add){
+            if (preg_match("/.css/",$add)) {
+                $linkadd[$i] = Mage::getDesign()->getSkinUrl('css/').$add;
+                echo "<link rel='stylesheet' type='text/css' media='all' href='".$linkadd[$i]."'/>";
+            }
+            $i++;
+        }
+    }
+?>
+
+<!-- Add Custom Css -->
+<?php if(Mage::helper('themeframework/managetheme')->getConfigTheme('css_custom_css')):?>
+<style type="text/css">
+    <?php echo Mage::helper('themeframework/managetheme')->getConfigTheme('css_custom_css'); ?>
+</style>
+<?php endif;?>

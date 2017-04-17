@@ -1,0 +1,100 @@
+<?php
+    $model	=	Mage::getModel("core/email_template_filter");
+    $data = $this->getMegamenupro();
+    $menu	=	$data['content'];
+    $container_css = '';
+    $menuid = $this->getData('menu');
+    $setId	=	$menuid.'_'.rand(1,9999);
+    
+?>
+<?php if (!empty($menu)): ?>
+<div class="megamenu-wrapper wrapper-<?php echo $setId;?>">   
+   <div class="em_nav" id="toogle_menu_<?php echo $setId;?>">
+      <ul class="<?php echo $data['type'] == 1 ? 'vnav' : 'hnav' ?> <?php echo $data['css_class'] ?>">
+         <?php $close_tags = array() ?>
+         <?php foreach ($menu as $i => $item): ?>
+         <?php $is_parent = ($i < count($menu) - 1) && $menu[$i+1]['depth'] > $item['depth'] ?>
+         <?php echo $this->open_tag($close_tags, $item['depth'], $container_css) ?>
+         <?php echo $this->close_tags($close_tags, $item['depth']) ?>
+         <?php /* ---------- Menu Item: LINK ---------- */ ?>
+         <?php if ($item['type'] == 'link'): ?>
+         <li class="menu-item-link menu-item-depth-<?php echo $item['depth'] ?> <?php echo $item['css_class'] ?> <?php echo $is_parent ? 'menu-item-parent' : '' ?>">
+            <a class="em-menu-link" href="<?php echo $model->filter($item['url']) ?>" 
+               <?php if ($item['target']): ?>
+               target="<?php echo htmlspecialchars($item['target']) ?>"
+               <?php endif ?>
+				>
+				<span>
+				<?php if(isset($item['icon_url']) && $item['icon_url'] != ""): ?>
+					<span class="emmegamenu_icon"><img src="<?php echo $this->getIconImage($item['icon_url']); ?>" alt=""  /></span>
+				<?php endif ?>
+				<?php echo $item['label'] ?>
+				</span>
+            <?php if ($item['sublabel']): ?>
+            <small><?php echo $item['sublabel'] ?></small>
+            <?php endif ?>
+            </a>
+            <?php $close_tags[ $item['depth'] ] = "</li>" ?>
+            <?php endif ?>
+            <?php /* ---------- Menu Item: TEXT ---------- */ ?>
+            <?php if ($item['type'] == 'text'): ?>
+         <li class="menu-item-text menu-item-depth-<?php echo $item['depth'] ?> <?php echo $item['css_class'] ?> <?php echo $is_parent ? 'menu-item-parent' : '' ?>">
+            <?php echo $item['text'] ?>
+            <?php $close_tags[ $item['depth'] ] = "</li>" ?>
+            <?php endif ?>
+            <?php /* ---------- Menu Item: HBOX ---------- */ ?>
+            <?php if ($item['type'] == 'hbox'): ?>
+         <li class="menu-item-hbox menu-item-depth-<?php echo $item['depth'] ?> <?php echo $item['css_class'] ?> <?php echo $is_parent ? 'menu-item-parent' : '' ?>" style="<?php 
+            echo $item['width'] ? 'width:'.$item['width'].'px;' : '';
+            echo $item['height'] ? 'height:'.$item['height'].'px;' : '';
+            echo $item['spacing'] ? 'padding:'.$item['spacing'].'px;' : '';
+            ?>">
+            <?php $close_tags[ $item['depth'] ] = "</li>" ?>
+            <?php endif ?>
+            <?php /* ---------- Menu Item: VBOX ---------- */ ?>
+            <?php if ($item['type'] == 'vbox'): ?>
+         <li class="menu-item-vbox menu-item-depth-<?php echo $item['depth'] ?> <?php echo $item['css_class'] ?> <?php echo $is_parent ? 'menu-item-parent' : '' ?>" style="<?php 
+            echo $item['width'] ? 'width:'.$item['width'].'px;' : '';
+            echo $item['height'] ? 'height:'.$item['height'].'px;' : '';
+            echo $item['spacing'] ? 'padding:'.$item['spacing'].'px;' : '';
+            ?>">
+            <?php $close_tags[ $item['depth'] ] = "</li>" ?>
+            <?php endif ?>
+            <?php $container_css = $item['container_css'] ?>
+            <?php endforeach ?>
+            <?php echo $this->close_tags($close_tags, 0); ?>
+      </ul>
+   </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+   function toogleMenuPro_<?php echo $setId;?>(){
+       var $=jQuery;
+       var wi = $(window).width();
+       var wrapperMenu = $(".wrapper-<?php echo $setId;?>");
+        var container = $("#toogle_menu_<?php echo $setId;?>");
+       if (EM.SETTING.DISABLE_RESPONSIVE != 0) {
+           if( (wi <= 767 || isPhone == true) ){
+               wrapperMenu.addClass('em-menu-mobile');
+           }else{
+               wrapperMenu.removeClass('em-menu-mobile');
+               container.show();
+           }
+       }else{
+            wrapperMenu.removeClass('em-menu-mobile');
+            container.show();
+       }
+   };
+   
+   jQuery(document).ready(function(){
+        toogleMenuPro_<?php echo $setId;?>();
+   });
+   
+   jQuery(window).bind('resize orientationchange', function() {
+       if (EM.SETTING.DISABLE_RESPONSIVE != 0) {
+            toogleMenuPro_<?php echo $setId;?>();
+       }
+   });
+//]]>
+</script>
+<?php endif ?>

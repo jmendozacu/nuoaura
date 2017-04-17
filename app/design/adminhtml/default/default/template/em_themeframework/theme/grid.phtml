@@ -1,0 +1,299 @@
+<?php
+/**
+ * EMThemes
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the framework to newer
+ * versions in the future. If you wish to customize the framework for your
+ * needs please refer to http://www.emthemes.com/ for more information.
+ *
+ * @category    EM
+ * @package     EM_ThemeFramework
+ * @copyright   Copyright (c) 2012 CodeSpot JSC. (http://www.emthemes.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Adminhtml_Block_Widget_Grid
+ *
+ *  getId()
+ *  getCollection()
+ *  getColumns()
+ *  getPagerVisibility()
+ *  getVarNamePage()
+ */
+$numColumns = sizeof($this->getColumns());
+$parent_theme = $this->getParentTheme();
+$helper = Mage::helper('themeframework/managetheme');
+$themeCollection = $this->getCollection();
+$themeActive = $this->getActiveTheme();
+?>
+<?php if($themeCollection): ?>
+    <?php if(($themeActive != false && $themeActive->getBaseTheme()==$parent_theme) || ($themeCollection->getSize()>0)): ?>                                   
+        <?php if($this->canDisplayContainer()): ?>
+            <?php if($this->getGridHeader()): ?>
+                <div class="content-header">
+                    <table cellspacing="0">
+                        <tr>
+                            <td style="width:50%;"><h2><?php echo $this->getGridHeader(); ?></h2></td>                            
+                        </tr>
+                    </table>
+                </div>
+            <?php endif ?>
+        <?php else: ?>
+            <?php echo $this->getMessagesBlock()->toHtml() ?>
+        <?php endif; ?>
+            <div class="em-admin-comment">
+                <p><strong><?php echo $this->__('NOTE:');?></strong></p>
+                <ol style="list-style: disc inside;">
+                    <li><?php echo $this->__('If this is the first time you use this theme, you please click on "Install theme" button to install it into your Magento.')?></li>
+                    <li><?php echo $this->__('If you have more than one store view in your Magento, please select store view at "Current Scope To Activate" before clicking on "Active" link. Clicking on "Active" link of them which you want to active or "Deactive" link of theme which is activating.'); ?> </li>
+                    <li><?php echo $this->__('When you edit a theme, you can also active (or deactive if this theme is activating) it.');?></li>
+                    <li><?php echo $this->__('Click on "Prreview Block" or "Preview Area" button to preview block and area in the active theme. You can see its positions, its name and you can directly edit it contents by click on its name');?></li>
+					<li><?php echo $this->__('To update a new layout of this theme, you can install it at here');?>
+						<?php
+							$url ="";
+							if($this->getParentTheme())
+							   $url =  Mage::helper("adminhtml")->getUrl("*/themeframework_theme/update",array("theme"=>$this->getParentTheme()));
+						?>            
+						<a class="button-link" href="<?php echo $url?>">
+							<span>
+								<span>
+									<?php echo $this->__('Update New Layout'); ?>
+								</span>
+							</span>
+						</a>
+                        
+                    </li>
+                </ol>
+                <p>&nbsp;</p>
+            </div>
+        
+            <div class="active">
+                <?php if($themeActive != false):?>
+                        <a class="theme-image" href="<?php if($themeActive->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$themeActive->getThemeId()));else echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/new',array('theme' => Mage::helper('themeframework/managetheme')->urlencode($themeActive->getBaseTheme())))?>">
+                            <?php if($themeActive->getPath()!=''): ?>                                
+                                <span class="image-wrap move-long" style="background-image: url('<?php echo $helper->resizeImage($themeActive->getBaseTheme(),null,null,$themeActive->getPath(),'thumbnail');?>');"></span>
+                            <?php else: ?>                                
+                                <span class="image-wrap move-long" style="background-image: url('<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'em_themeframework' . '/' .'default.jpg';?>');"></span>
+                            <?php endif; ?>
+                        </a>
+						     <div class="info">
+                                <span class="theme-name"><?php echo $themeActive->getThemeName();?></span>
+                            </div>
+                        <?php if($this->getScope() != 'default'):?>
+                            <?php if($this->getUseDefault()):?>
+                                <label class="inherit" title=""><?php echo $this->getUseDefaultLabel()?></label>
+                                <a class="button" href="<?php echo $this->getActiveUrl($themeActive->getThemeId());?>">
+                                    <span>
+                                        <span><?php echo $this->__('Activate')?></span>
+                                    </span>
+                                </a>
+                            <?php else : ?>
+                                <a class="button" href="<?php echo $this->getDeactivateUrl($themeActive->getThemeId());?>">
+                                    <span>
+                                        <span><?php echo $this->__('Deactivate')?></span>
+                                    </span>
+                                </a>
+                            <?php endif ?>
+                        <?php else :?>
+                            <a class="button" href="<?php echo $this->getDeactivateUrl($themeActive->getThemeId());?>">
+                                <span>
+                                    <span><?php echo $this->__('Deactivate')?></span>
+                                </span>
+                            </a>
+                        <?php endif ?>
+                        <div class="actions">
+                       
+                            <div class="buttons">
+                                <a class="button first" href="<?php if($themeActive->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$themeActive->getThemeId()));else echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/new',array('theme' => Mage::helper('themeframework/managetheme')->urlencode($themeActive->getBaseTheme())))?>">
+                                    <span>
+                                        <span><?php echo $this->__('Customize')?></span>
+                                    </span>
+                                </a>
+                                <a class="button" href="<?php if($themeActive->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$themeActive->getThemeId(),'type'=>'clone'));?>">
+                                    <span>
+                                        <span><?php echo $this->__('Clone')?></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                <?php else :?>
+                    <label><?php echo $this->__('You aren\'t using our themes.')?></label>
+                <?php endif;?>
+            </div>
+           
+        <?php if($themeCollection->getSize()>0): ?>
+        <div class="list-theme">
+            <?php if($this->getPagerVisibility() || $this->getExportTypes() || $this->getFilterVisibility()): ?>
+            <table cellspacing="0" class="actions">
+                <tr>
+                    <?php if($this->getPagerVisibility()): ?>
+                        <td class="pager">
+                            <span class="sum"><?php echo $this->__('There are %d themes found', $themeCollection->getSize()) ?></span>
+                            <?php echo $this->__('Display') ?>
+                            <select name="<?php echo $this->getVarNameLimit() ?>" onchange="<?php echo $this->getJsObjectName() ?>.loadByElement(this)">
+                                <option value="4"<?php if($themeCollection->getPageSize()==4): ?> selected="selected"<?php endif; ?>>4</option>
+                                <option value="8"<?php if($themeCollection->getPageSize()==8): ?> selected="selected"<?php endif; ?>>8</option>
+                                <option value="12"<?php if($themeCollection->getPageSize()==12): ?> selected="selected"<?php endif; ?>>12</option>
+                                <option value="16"<?php if($themeCollection->getPageSize()==16): ?> selected="selected"<?php endif; ?>>16</option>
+                                <option value="20"<?php if($themeCollection->getPageSize()==20): ?> selected="selected"<?php endif; ?>>20</option>
+                                <option value="24"<?php if($themeCollection->getPageSize()==24): ?> selected="selected"<?php endif; ?>>24</option>
+                            </select>
+                            <?php echo $this->__('themes per page') ?>
+                            <span class="separator">|</span>
+                            <?php echo $this->__('Page') ?>
+
+                            <?php $_curPage  = $themeCollection->getCurPage() ?>
+                            <?php $_lastPage = $themeCollection->getLastPageNumber() ?>
+                            <?php if($_curPage>1): ?>
+                                <a href="#" title="<?php echo $this->__('Previous page') ?>" onclick="<?php echo $this->getJsObjectName() ?>.setPage('<?php echo ($_curPage-1) ?>');return false;"><img src="<?php echo $this->getSkinUrl('images/pager_arrow_left.gif') ?>" alt="Go to Previous page" class="arrow"/></a>
+                            <?php else: ?>
+                                <img src="<?php echo $this->getSkinUrl('images/pager_arrow_left_off.gif') ?>" alt="Go to Previous page" class="arrow"/>
+                            <?php endif; ?>
+
+                            <input type="text" name="<?php echo $this->getVarNamePage() ?>" value="<?php echo $_curPage ?>" class="input-text page" onkeypress="<?php echo $this->getJsObjectName() ?>.inputPage(event, '<?php echo $_lastPage ?>')"/>
+
+                            <?php if($_curPage < $_lastPage): ?>
+                                <a href="#" title="<?php echo $this->__('Next page') ?>" onclick="<?php echo $this->getJsObjectName() ?>.setPage('<?php echo ($_curPage+1) ?>');return false;"><img src="<?php echo $this->getSkinUrl('images/pager_arrow_right.gif') ?>" alt="Go to Next page" class="arrow"/></a>
+                            <?php else: ?>
+                                <img src="<?php echo $this->getSkinUrl('images/pager_arrow_right_off.gif') ?>" alt="Go to Previous page" class="arrow"/>
+                            <?php endif; ?>
+
+                            <?php echo $this->__('of %s pages', $themeCollection->getLastPageNumber()) ?>
+
+                            <span id="<?php echo $this->getHtmlId() ?>-total-count" class="no-display"><?php echo $themeCollection->getSize() ?></span>
+                            <?php if($this->getRssLists()): ?>
+                                <?php foreach ($this->getRssLists() as $_rss): ?>
+                                    <span class="separator">|</span><a href="<?php echo $_rss->getUrl() ?>" class="link-feed"><?php echo $_rss->getLabel() ?></a>
+                                <?php endforeach ?>
+                            <?php endif; ?>
+                        </td>
+                    <?php endif ?>
+                    
+                </tr>
+            </table>
+            <?php endif; ?>
+            <?php if($this->getMassactionBlock()->isAvailable()): ?>
+                <?php echo $this->getMassactionBlockHtml() ?>
+            <?php endif ?>
+            <div class="grid">
+                <div class="hor-scroll">
+                    <?php if($themeCollection->getSize()>0):?>
+                        <?php $_collectionSize = $themeCollection->getSize();$_columnCount = $this->getColumnCount();?>
+                        <ul class="themes-grid">
+                            <?php $i=0;foreach ($themeCollection as $_index=>$_item):?>
+                                <li class="theme-item">
+                                    <a class="theme-image" href="<?php if($_item->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$_item->getThemeId()));else echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/new',array('theme' => Mage::helper('themeframework/managetheme')->urlencode($_item->getBaseTheme())))?>">
+                                        <?php if($_item->getPath()!=''): ?>
+                                            <!-- <img src="<?php echo $helper->resizeImage($_item->getBaseTheme(),220,300,$_item->getPath(),'thumbnail');?>" width="220" height="300"/> -->
+                                            <span class="image-wrap move-long" style="background-image: url('<?php echo $helper->resizeImage($_item->getBaseTheme(),null,null,$_item->getPath(),'thumbnail');?>');"></span>
+                                        <?php else: ?>
+                                            <!-- <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'em_themeframework' . '/' .'default.jpg';?>" width="220" height="300"/> -->
+                                            <span class="image-wrap move-long" style="background-image: url('<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'em_themeframework' . '/' .'default.jpg';?>');"></span>
+                                        <?php endif; ?>
+                                    </a>
+                                    <div class="actions">
+                                        <div class="info">
+                                            <span class="theme-name"><?php echo $_item->getThemeName();?></span>
+                                        </div>
+                                        <div class="buttons">										
+                                            <a class="button btn-active" href="<?php if($_item->getThemeId()) echo $this->getActiveUrl($_item->getThemeId()); else echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/active',array('theme_id'=>$_item->getThemeId(),'website'=>$this->getRequest()->getParam('website', 0)));?>">
+                                                <span>
+                                                    <span><?php echo $this->__('Activate')?></span>
+                                                </span>
+                                            </a>
+                                            <a class="button btn-customize first" href="<?php if($_item->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$_item->getThemeId()));else echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('type'=>'clone','theme' => Mage::helper('themeframework/managetheme')->urlencode($_item->getBaseTheme())))?>">
+                                                <span>
+                                                    <span><?php echo $this->__('Customize')?></span>
+                                                </span>
+                                            </a>
+                                            <a class="button btn-clone" href="<?php if($_item->getThemeId()) echo Mage::helper('adminhtml')->getUrl('*/themeframework_theme/edit',array('theme_id'=>$_item->getThemeId(),'type'=>'clone'));?>">
+                                                <span>
+                                                    <span><?php echo $this->__('Clone')?></span>
+                                                </span>
+                                            </a>
+    										
+    										
+    										
+                                            <!--<a class="button last" onclick="popWin('<?php //if($_item->getThemeId()) echo $this->getUrl('*/*/quickview',array('id'=>$_item->getThemeId(),'store'=>$storeId));else echo Mage::helper('adminhtml')->getUrl('*/*/quickview',array('theme_slug' => Mage::helper('designer')->urlencode($_item->getThemeSlug()),'store'=>$storeId))*/?>','windowName','width=1036,height=1024,resizable=yes,scrollbars=yes')" href="javascript:void(0);">-->
+                                <span>
+                                    <!--<span><?php /*echo $this->__('Preview');*/?></span>-->
+                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            <?php endforeach;?>
+                        </ul>
+                    <?php endif;?>
+                        <table cellspacing="0" class="data" id="<?php echo $this->getId() ?>_table" style="display:none;"><tbody><tr class="even"><td>&nbsp;</td></tr></tbody></table>
+                </div>
+            </div>
+
+        </div>
+            <?php if($this->canDisplayContainer()): ?>
+                <script type="text/javascript">
+                //<![CDATA[
+                    <?php echo $this->getJsObjectName() ?> = new varienGrid('<?php echo $this->getId() ?>', '<?php echo $this->getGridUrl() ?>', '<?php echo $this->getVarNamePage() ?>', '<?php echo $this->getVarNameSort() ?>', '<?php echo $this->getVarNameDir() ?>', '<?php echo $this->getVarNameFilter() ?>');
+                    <?php echo $this->getJsObjectName() ?>.useAjax = '<?php echo $this->getUseAjax() ?>';
+                    <?php if($this->getRowClickCallback()): ?>
+                        <?php echo $this->getJsObjectName() ?>.rowClickCallback = <?php echo $this->getRowClickCallback() ?>;
+                    <?php endif; ?>
+                    <?php if($this->getCheckboxCheckCallback()): ?>
+                        <?php echo $this->getJsObjectName() ?>.checkboxCheckCallback = <?php echo $this->getCheckboxCheckCallback() ?>;
+                    <?php endif; ?>
+                    <?php if($this->getRowInitCallback()): ?>
+                        <?php echo $this->getJsObjectName() ?>.initRowCallback = <?php echo $this->getRowInitCallback() ?>;
+                        <?php echo $this->getJsObjectName() ?>.initGridRows();
+                    <?php endif; ?>
+                    <?php if($this->getMassactionBlock()->isAvailable()): ?>
+                    <?php echo $this->getMassactionBlock()->getJavaScript() ?>
+                    <?php endif ?>
+                    <?php echo $this->getAdditionalJavaScript(); ?>
+                //]]>
+                </script>
+            <?php endif; ?>
+        <?php endif; ?>
+        
+    <?php else: ?>
+        <div class="buttons">
+            <?php 
+                $url ="";
+                if($this->getParentTheme())
+                   $url =  Mage::helper("adminhtml")->getUrl("*/themeframework_theme/install",array("theme"=>$this->getParentTheme()));
+            ?>            
+			<a class="button button-install" href="javascript:void(0)" onclick="installEMTheme('<?php echo $url ?>')">
+				<span>
+					<span>
+						<?php echo $this->__('Install Theme'); ?>
+					</span>
+				</span>
+			</a>
+        </div>
+		<script type="text/javascript">
+		//<![CDATA[
+			function installEMTheme($url){
+				var loaderArea = $$('#html-body .wrapper')[0]; // Blocks all page
+				Position.clone($(loaderArea), $('loading-mask'), {offsetLeft:-2});
+				toggleSelectsUnderBlock($('loading-mask'), false);
+				Element.show('loading-mask');
+				setLocation($url);
+			};                  
+		//]]>
+		</script>
+    <?php endif; ?>
+<?php endif ?>

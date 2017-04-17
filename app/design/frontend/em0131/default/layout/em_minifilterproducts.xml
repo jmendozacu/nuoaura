@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+-->
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+			<action method="addCss"><stylesheet>em/owlcarousel/owl.carousel.css</stylesheet></action>            
+            <action method="addJs"><script>em/jquery-1.11.3.min.js</script></action>
+            <action method="addJs"><script>em/jquery.ba-throttle-debounce.min.js</script></action>
+            <action method="addJs"><script>em/jquery.inview.min.js</script></action>                        
+            <action method="addEMItem"><type>skin_js</type><name>em/owlcarousel/owl.carousel.rtl.js</name><params/><if>general_right_to_left</if><condition>1</condition></action>            
+            <action method="addEMItem"><type>skin_js</type><name>em/owlcarousel/owl.carousel.js</name><params/><if>general_right_to_left</if><condition>0</condition></action>
+            <action method="addItem"><type>skin_js</type><name>em/ajaxfilter/isotope.pkgd.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em/ajaxfilter/jquery.infinitescroll.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>em/ajaxfilter/behaviors/manual-trigger.js</name></action>
+		</reference>
+	</default>
+</layout>

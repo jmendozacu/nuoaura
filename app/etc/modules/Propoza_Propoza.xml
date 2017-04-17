@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Propoza_Propoza>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Adminhtml/>
+            </depends>
+        </Propoza_Propoza>
+    </modules>
+</config>

@@ -1,0 +1,37 @@
+<?php if(Mage::helper('themeframework/settings')->checkMobilePhp()==false):?>
+    <p id="back-top" style="display: none;"><a title="<?php echo $this->__('Top')?>" href="#top"><?php echo $this->__('Top')?></a></p>
+    <script type="text/javascript">
+    //<![CDATA[
+        (function($) {
+            function backToTop() {
+                // hide #back-top first
+                var sBackTop = $('#back-top');
+                if(sBackTop.length){
+                    //var sClickBackTop = $('#back-top a');
+                    sBackTop.hide();
+                    // fade in #back-top
+                    if (!isMobile) {
+                        $(window).scroll(function() {
+                            if ($(this).scrollTop() > 100) {
+                                sBackTop.fadeIn();
+                            } else {
+                                sBackTop.fadeOut();
+                            }
+                        });
+                        // scroll body to 0px on click
+                        $('a', sBackTop).click(function() {
+                            $('body,html').animate({
+                                scrollTop: 0
+                            }, 800);
+                            return false;
+                        });
+                    }
+                }
+            };
+            $(document).ready(function(){            
+                backToTop();            
+            });
+        })(jQuery);
+    //]]>
+    </script>
+<?php endif;?>

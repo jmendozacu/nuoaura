@@ -1,0 +1,2512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<manifest module="themeframework">
+		<name>em0131</name>
+		<label>EM0131 Everything</label>
+	</manifest>
+	<configuration>
+		<general>
+			<label>General Settings</label> 
+            <comment>
+                In this tab you will be able to configure general settings such as: 
+                Responsive Layout, Right to Left Layout, Fluid Width Layout, Box/Wide Layout, Full Slideshow, Header Style, 
+                Currency Style, Language Style, Sticky Menu, Sticky Top Cart, Sticky Top Search, Animate Effects...
+            </comment>           
+			<fieldset>
+				<general>
+                    <label>General Settings</label>                    					
+					<fields>
+                        <layout_label translate="label">
+							<label>Layout Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</layout_label>
+						<disable_responsive translate="label">
+							<label>Responsive Layout</label>
+                            <comment><![CDATA[<strong>Responsive Layout: </strong>detect the visitor's screen size and orientation and change the layout accordingly. Your websites work well and look great no matter what device you're being viewed on. Small + Medium + Large screen. One site for every screen!]]></comment>                            
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>1</value>
+						</disable_responsive>
+                        <right_to_left>
+                            <label>Right to Left Layout</label>
+							<frontend_type>select</frontend_type>
+                            <comment><![CDATA[<strong>Right to Left Layout: </strong>most of the user interface will appear mirrored automatically for you. The text direction changes to right-to-left with the exception of phone numbers and country codes which are always left-to-right. <strong class="em-preview-label">Click on this image to preview.</strong>]]></comment>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>0</value>
+                        </right_to_left>
+                        <right_to_left_preview>
+                            <comment>Preview Right To Left Layout</comment>
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_righttoleft</frontend_model>
+							<source_model>themeframework/config_preview_righttoleft</source_model>
+						</right_to_left_preview>
+                        
+                        <box_wide>
+							<label>Box/Wide Layout</label>
+							<comment><![CDATA[<strong> Box/Wide Layout: </strong>You can use this theme in wide or boxed layout variants. Wide layout is perfect for you, if you like airy websites, with no visible borders or page edges. Boxed layout comes with different ready-to-use background patterns & images, or you can define any color you would like to use by simply picking it with colorpicker. This theme comes with a lot of pre-defined patterns to choose from. <strong class="em-preview-label">Click on these images to preview.</strong>]]>
+                            </comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_boxwide</source_model>
+							<value>wide</value>
+						</box_wide>
+                        <box_wide_preview>
+							<frontend_type>hidden</frontend_type>
+                            <comment>Preview Box/Wide Layout</comment>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_boxwide</frontend_model>
+							<source_model>themeframework/config_preview_boxwide</source_model>
+						</box_wide_preview>
+                        
+                        <wideslide_full>
+							<label>Full Slideshow</label>
+                            <comment><![CDATA[<strong>Full Slideshow: </strong>This is a supersized slideshow that automatically expands to fill up the container it's in to let you display a slideshow that either covers a certain section inside the page. <strong class="em-preview-label">Click on this image to preview.</strong>]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>1</value>
+						</wideslide_full>
+                        <wideslide_full_preview>
+							<frontend_type>hidden</frontend_type>
+                            <comment>Preview Full Slideshow</comment>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_fullslideshow</frontend_model>
+							<source_model>themeframework/config_preview_fullslideshow</source_model>
+						</wideslide_full_preview>
+                        
+                        <sticky_element>
+                            <label>Sticky Menu Search Cart On Scroll</label>
+                            <comment><![CDATA[<strong>Sticky Top Cart: </strong>gives your shopping cart users an easy sliding cart, which sticks to the position on page if web pages scrolls down too down, so cart users get better user experience to your site.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>1</value>
+                        </sticky_element>
+                        
+                        <!--header_label>
+							<label>Header Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</header_label-->
+                        <header_style><frontend_class>em-hide</frontend_class>
+                            <label>Header Style</label>
+							<frontend_type>select</frontend_type>
+							<source_model>em0131settings/config_headerstyle</source_model>
+							<value>style14</value>
+                        </header_style>
+                        <!--header_style_preview>
+							<frontend_type>hidden</frontend_type>
+                            <comment>Preview Header Style</comment>
+							<frontend_model>em0131settings/adminhtml_system_config_form_field_headerstyle</frontend_model>
+							<source_model>em0131settings/config_headerstyle</source_model>
+						</header_style_preview-->
+                        
+                        <!--footer_label>
+							<label>Footer Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</footer_label-->
+                        <footer_style><frontend_class>em-hide</frontend_class>
+                            <label>Footer Style</label>
+							<frontend_type>select</frontend_type>
+							<source_model>em0131settings/config_footerstyle</source_model>
+							<value>style07</value>
+                        </footer_style>
+                        <!--footer_style_preview>
+							<frontend_type>hidden</frontend_type>
+                            <comment>Preview Footer Style</comment>
+							<frontend_model>em0131settings/adminhtml_system_config_form_field_footerstyle</frontend_model>
+							<source_model>em0131settings/config_footerstyle</source_model>
+						</footer_style_preview-->
+                        
+                        <menu_setting>
+                            <label>Menu Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                        </menu_setting>
+                        <disable_default_nav>
+							<label>Default Navigation</label>
+							<comment><![CDATA[If using EM MegaMenuPro, default catalog navigation should be disabled. If EM MageMenuPro isn't install, default catalog navigation is always enable]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>0</value>
+						</disable_default_nav>
+                                                
+                        <general_label>
+                            <label>General Blocks Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                        </general_label>
+                        <disable_hover_login>
+                        	<label>Showing Login Form</label>
+                        	<comment>Showing Login Form When Having An Action On Top Login Link</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_loginform</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+                        </disable_hover_login>
+                        <cat_search>
+							<label>Maximal Depth Of Category On Search Form</label>
+							<comment><![CDATA[<strong>Show search by category with search form.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_categorylevel</source_model>
+							<value>2</value>
+							<frontend_class>em-hide</frontend_class>
+						</cat_search>
+						<show_popup>
+							<label>Show Popup When Loading</label>
+							<comment><![CDATA[<strong>Show a popup block when your site is loaded</strong><br/> If you choose "Flexible Block", it will show flexible block (EMThemes > EM Manage Blocks) with ID em0131-popup-advertising-block.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_popupoptions</source_model>
+							<value>2</value>
+						</show_popup>
+						<disable_ajaxaddto>
+							<label>Ajax Addto (Add to wishlist, Add to compare)</label>	
+                            <comment>Allows customers to add products in wishlist or compare without page reload which add better user interface for the customers.</comment>						
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>1</value>
+						</disable_ajaxaddto>
+						<disable_frontend_variation>
+							<label>Variation Block On Frontend</label>
+							<comment><![CDATA[<strong>Display the variation module on frontend.</strong> For theme demonstration purpose.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>0</value>
+						</disable_frontend_variation>
+                        <admin_toolbar>
+                            <label>Admin Toolbar On Frontend</label>
+							<comment><![CDATA[Show/Hide Admin Toolbar for users according to logged in user roles]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>0</value>
+                            <frontend_class>em-hide</frontend_class>
+                        </admin_toolbar>
+                        
+                        <disable_collapse>
+                            <label>Collapsible Elements On Mobile</label>
+							<comment><![CDATA[Collapsibles allow you to hide or show content, which is useful for storing parts of information.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>	
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+                        </disable_collapse>                  
+					</fields>
+				</general>
+			</fieldset>
+		</general>
+		<typography>
+			<label>Theme Design</label>
+            <comment>
+                In this tab, you can configure basic colors, background pattern, fonts. 
+                You may set your site to a color, font or background pattern combination that suits you the best. 
+            </comment> 
+			<fieldset>
+				<default>
+					<label>Default Configuration</label>
+					<show>0</show>
+					<fields>
+						<screen-large-desktop>
+							<frontend_type>hidden</frontend_type>
+							<value><![CDATA[1200px]]></value>
+						</screen-large-desktop>
+						<screen-desktop>
+							<frontend_type>hidden</frontend_type>
+							<value><![CDATA[992px]]></value>
+						</screen-desktop>
+						<screen-tablet>
+							<frontend_type>hidden</frontend_type>
+							<value><![CDATA[768px]]></value>
+						</screen-tablet>
+						<desktop>
+							<frontend_type>hidden</frontend_type>
+							<value><![CDATA[(max-width: 767px)]]></value>
+						</desktop>
+						<tablet>
+							<frontend_type>hidden</frontend_type>
+							<value><![CDATA[only screen and (min-width: 720px) and (max-width: 959px)]]></value>
+						</tablet>
+					</fields>
+				</default>
+				<css>
+					<label>Custom CSS</label>
+					<fields>
+						<additional_css_file>
+							<label>Additional CSS File(s)</label>
+							<comment><![CDATA[<strong>Upload your custom css file into skin/frontend/default/em0131/css directory. Then add custom css file name to this field.</strong><br/>Multiple files separated by a comma (,).<br/>You can create your own file as well. <br/><strong>Note: Less Css File must always be first.</strong><br/>E.g.: custom1.less<br/>E.g.: custom2.css<br/>E.g.: <strong>custom1.less</strong>,custom2.css]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>0</required>
+                            <value>theme_jewelry.less,style_jewelry.css</value>
+						</additional_css_file>
+						<custom_css>
+							<label>Your Custom CSS</label>
+							<comment>
+                                <![CDATA[If you have coding knowledge and want to customize your site beyond the styling options in the default theme settings, you can add custom CSS code to here. <br/>If you do decide to apply custom CSS to your site, it should be used sparingly. Customer Care doesn't offer assistance or troubleshooting for CSS modifications. We also can't provide you with code or support for any third-party code modification. <br/>Here are a few popular and credible websites we like to recommend for CSS tutorials, troubleshooting, and reference guides:<br/>
+                                <ul>
+                                	<li><a target="_blank" href="http://www.w3schools.com/">W3Schools</a></li>
+                                	<li><a target="_blank" href="http://www.codecademy.com/">CodeAcademy</a></li>
+                                	<li><a target="_blank" href="http://stackoverflow.com/">Stack Overflow</a></li>
+                                	<li><a target="_blank" href="http://learn.shayhowe.com/html-css/">Shay Howe</a></li>
+                                	<li><a target="_blank" href="http://www.sitepoint.com/css/">SitePoint</a></li>
+                                </ul><br/>If you're ready to apply custom CSS to your site, we have guide on the documentation <a href="#">here</a><br/>E.g: .header{background-color:red}]]>
+                            </comment>
+							<frontend_type>textarea</frontend_type>
+                            <value></value>
+							<required>0</required>
+						</custom_css>
+					</fields>
+				</css>
+				<fonts>
+					<label>Fonts</label>
+					<fields>
+                        <google_font_key>
+                            <label>Google Font API Key</label>
+                            <comment><![CDATA[You will need a Google API key to make use of google fonts. Your key is free and easy to get. However, many people get confused on this. It's really quite simple:<br/>
+                                <ul>
+                                <li>1) Logged in to your Gmail account;</li> 
+                                <li>2) Go to the <a target="_blank" href="https://console.developers.google.com/">Google Developers Console</a>.</li> 
+                                <li>3) Create a project (example: "my google fonts");</li>
+                                <li>4) Select a project.</li>
+                                <li>5) In the sidebar on the left, select <b>APIs &amp; auth</b> In the list of APIs, make sure the status is <b>ON</b> for the Google Fonts Developer API.;</li>
+                                <li>6) In the sidebar on the left, select <b>APIs &amp; auth</b>, In the list of <b>Credentials</b> click on <b>Create new key</b>, then choose <b>Browser key</b>, end click on <b>Create</b> button</li>
+                                <li>7) Copy the API key under "Key for browser applications", that's it.</li>
+                                </ul>Click on this link <a target="_blank" href="http://vimeo.com/83986921">http://vimeo.com/83986921</a> to view demo how to create new google font api key.
+                                ]]>
+                            </comment>
+							<frontend_type>text</frontend_type>
+							<value>AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI</value>	
+                        </google_font_key>
+						<google_fonts>
+							<label>Import Google Fonts</label>
+							<comment><![CDATA[Font preview is available on <a target="_blank" href="http://www.google.com/webfonts">Google Web Fonts</a> <br/>Google Fonts makes it quick and easy for everyone to use web fonts, including professional designers and developers.<br/>
+                                You can even customize them for your own use, or collaborate with the original designer to improve them. And you can use them in every way you want.<br/>
+                                <strong>Select which google fonts should be imported to your site.</strong> Hold SHIFT + left click a font to multiple select.]]>
+                            </comment>
+							<frontend_type>multiselect</frontend_type>
+							<frontend_model>em0131settings/adminhtml_system_config_form_field_font</frontend_model>
+							<source_model>em0131settings/config_font</source_model>
+                            <value>Lato,Lora,Raleway</value>
+						</google_fonts>
+                        
+                        <font_family>
+                            <label>General Font Family</label>
+                            <!--comment><![CDATA[The font-family property specifies the font for an element.<br/>
+                                The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.<br/>
+                                There are two types of font family names:
+                                <ul>
+                                <li>1. family-name - The name of a font-family, like "times", "courier", "arial", etc.</li>
+                                <li>2. generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy", "monospace".</li>
+                                </ul>
+                                Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.<br/>
+                                Note: Separate each value with a comma.<br/>
+                                Eg: Helvetica Neue, Helvetica, Arial, sans-serif.
+                            ]]></comment-->
+							<frontend_type>text</frontend_type>
+                            <frontend_class>em-hide</frontend_class>
+							<value>null</value>							
+                        </font_family>
+                        
+						<google_fonts_weights>
+							<label>Google Fonts' Weights</label>
+							<comment><![CDATA[<strong class="em-preview-label">Important</strong>: most of the fonts from Google are not available in all weights. Make sure that you specified correct weight for selected font. Otherwise font will not be displayed. Refer to <a target="_blank" href="http://www.google.com/webfonts">Google Web Fonts</a> to check if the selected weight is available for your font. <br/>Eg: 200,400,321,800.Leave empty to use default weight.]]></comment>
+							<frontend_type>text</frontend_type>
+                            <value>200,300,400,500,600,700,800</value>
+						</google_fonts_weights>
+						<general_font>
+							<label>General Font</label>
+							<comment><![CDATA[<strong>Font for body, content, text...</strong><br/>Default: <span style="500 14px/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif">500 14px/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>500 14px/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif</value>
+							<required>1</required>
+						</general_font>
+						<h1_font>
+							<label>H1 Font</label>
+							<comment><![CDATA[<strong>Font of H1 element and other similar h1 heading.</strong><br/>Default: <span style="500 30px/1.15 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif">500 30px/1.15 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>500 30px/1.15 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</value>
+							<required>1</required>
+						</h1_font>
+						<h2_font>
+							<label>H2 Font</label>
+							<comment><![CDATA[<strong>Font of H2 element and other similar h2 heading.</strong><br/>Default: <span style="700 20px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif">700 20px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>700 20px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</value>
+							<required>1</required>
+						</h2_font>
+						<h3_font>
+							<label>H3 Font</label>
+							<comment><![CDATA[<strong>Font of H3 element and other similar h3 heading.</strong><br/>Default: <span style="700 18px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif">700 18px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 18px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</value>
+						</h3_font>
+						<h4_font>
+							<label>H4 Font</label>
+							<comment><![CDATA[<strong>Font of H4 element and other similar h4 heading.</strong><br/>Default: <span style="500 16px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif">500 16px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>500 16px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</value>
+						</h4_font>
+						<h5_font>
+							<label>H5 Font</label>
+							<comment><![CDATA[<strong>Font of H5 element and other similar h5 heading.</strong><br/>Default: <span style="500 14px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif">500 14px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>500 14px/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif</value>
+						</h5_font>
+						<h6_font>
+							<label>H6 Font</label>
+							<comment><![CDATA[<strong>Font of H6 element and other similar h6 heading.</strong><br/>Default: <span style="600 11px/1.35 Lato,Helvetica, Arial, sans-serif">600 11px/1.35 Lato,Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>600 11px/1.35 Lato,Helvetica, Arial, sans-serif</value>
+						</h6_font>
+					</fields>
+				</fonts>
+				<!-- General -->
+				<typo_general>
+					<label>Page</label>
+					<fields>
+						<page_bg_color>
+							<label>Page Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</page_bg_color>
+						<page_bg_image>
+							<label>Page Background Pattern</label>
+							<comment><![CDATA[<strong>Specify background pattern image.</strong>]]></comment>
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_stripes</frontend_model>
+							<source_model>themeframework/config_stripes</source_model>
+							<frontend_class>stripes</frontend_class>
+						</page_bg_image>
+						<page_bg_file>
+							<label>Upload Page Background Image</label>
+							<comment><![CDATA[<strong>Upload your custom page background image</strong> instead of selecting above background pattern]]></comment>
+							<frontend_type>image</frontend_type>
+						</page_bg_file>
+						<page_bg_position>
+							<label>Page Background Position</label>
+							<comment><![CDATA[<strong>Property Values: left top, left center, left bottom,right top, right center, right bottom,center top,center center,center bottom,x% y%, xpos ypos, inherit</strong><br/>Default: 0 0]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>0 0</value>
+						</page_bg_position>
+						<page_bg_repeat>
+							<label>Page Background Repeat</label>
+							<comment><![CDATA[<strong>Property Values: repeat, repeat-x, repeat-y, no-repeat, inherit</strong><br/>Default: repeat]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>repeat</value>
+						</page_bg_repeat>
+						<page_bg_attachment>
+							<label>Page Background Attachment</label>
+							<comment><![CDATA[<strong>Property Values: fixed, scroll, inherit</strong><br/>Default: fixed]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>fixed</value>
+						</page_bg_attachment>
+						<box_shadow>
+							<label>Box Shadow</label>
+							<comment><![CDATA[<strong>Configure box shadow for hover product</strong><br/> Default: none.<br/>E.g. <span style="0 0 5px #ffffff">0 0 5px #ffffff</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>0 0 5px #ffffff</value>
+						</box_shadow>
+						<rounded_corner>
+							<label>Rounded Corner</label>
+							<comment><![CDATA[<strong>Configure rounded corner for box, widgets, slider.</strong><br/> Default: none.<br/>E.g. <span style="border:1px solid #333333; padding:5px; display:inline-block; border-radius:5px">5px</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>5px</value>
+						</rounded_corner>
+					</fields>
+				</typo_general>
+				<!-- Header -->
+				<header>
+					<label>Header</label>
+                    <comment>In this tab, you can configure the header section of the page located at the top.</comment>
+					<fields>
+                        <background_label>
+                            <label>Background</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </background_label>
+						<header_bg_color>
+							<label>Header Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_bg_color>
+						<header_bg2_color>
+							<label>Header Top Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #272727 <span class="color_pattern" style="background-color:#272727"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#272727</value>
+						</header_bg2_color>
+						<header_bg3_color>
+							<label>Header Background Cart Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</header_bg3_color>
+						<header_bg4_color>
+							<label>Header Background Search Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_bg4_color>
+						<header_bg5_color>
+							<label>Header Background Dropdown Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_bg5_color>
+						<header_bg_image>
+							<label>Header Background Image</label>
+							<comment><![CDATA[<strong>Specify background pattern image.</strong>]]></comment>
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_stripes</frontend_model>
+							<source_model>themeframework/config_stripes</source_model>
+						</header_bg_image>
+						<header_bg_file>
+							<label>Upload Header Background Pattern</label>
+							<comment><![CDATA[<strong>Upload your custom page background image</strong> instead of selecting above background header]]></comment>
+							<frontend_type>image</frontend_type>
+						</header_bg_file>
+						<header_bg_position>
+							<label>Header Background Position</label>
+							<comment><![CDATA[Property Values: left top, left center, left bottom,right top, right center, right bottom,center top,center center,center bottom,x% y%, xpos ypos, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>0 0</value>
+						</header_bg_position>
+						<header_bg_repeat>
+							<label>Header Background Repeat</label>
+							<comment><![CDATA[Property Values: repeat, repeat-x, repeat-y, no-repeat, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>repeat</value>
+						</header_bg_repeat>
+                        <color_label>
+                            <label>General Color</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </color_label>
+						<header_text_color>
+							<label>Header Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_text_color>
+						<header_text2_color>
+							<label>Header Text Cart Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_text2_color>
+						<header_text3_color>
+							<label>Header Text Dropdown Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #282828 <span class="color_pattern" style="background-color:#282828"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#282828</value>
+						</header_text3_color>
+						<header_text4_color>
+							<label>Header Text Search Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</header_text4_color>
+						<header_line_color>
+							<label>Header Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</header_line_color>
+					</fields>
+				</header>
+				<!-- Menu -->
+				<menu>
+					<label>Menu</label>
+                    <comment>In this tab, you can configure the Menu</comment>
+					<fields>
+                        <topmenu_label>
+							<label>Top Menu Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</topmenu_label>
+						<topmenu_bg_color>
+							<label>Top Menu Background</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</topmenu_bg_color>
+						<topmenu_hover_bg_color>
+							<label>Top Menu Hover Background</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</topmenu_hover_bg_color>
+						<topmenu_text_color>
+							<label>Top Menu Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #434343 <span class="color_pattern" style="background-color:#434343"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#434343</value>
+						</topmenu_text_color>
+						<topmenu_hover_text_color>
+							<label>Top Menu Hover Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</topmenu_hover_text_color>
+						<topmenu_line_color>
+							<label>Top Menu Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</topmenu_line_color>
+						<topmenu_font>
+							<label>Top Menu Font</label>
+							<comment><![CDATA[Default: 500 14px/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>500 14px/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif</value>
+						</topmenu_font>
+                        <vnav_label>
+							<label>Vertical Menu Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</vnav_label>
+						<vnav_bg_color>
+							<label>Vertical Menu Background</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</vnav_bg_color>
+						<vnav_hover_bg_color>
+							<label>Vertical Menu Hover Background</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</vnav_hover_bg_color>
+						<vnav_text_color>
+							<label>Vertical Menu Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #434343 <span class="color_pattern" style="background-color:#434343"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#434343</value>
+						</vnav_text_color>
+						<vnav_hover_text_color>
+							<label>Vertical Menu Hover Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</vnav_hover_text_color>
+						<vnav_line_color>
+							<label>Vertical Menu Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #d3d3d3 <span class="color_pattern" style="background-color:#d3d3d3"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#d3d3d3</value>
+						</vnav_line_color>
+						<vnav_font>
+							<label>Vertical Menu Font</label>
+							<comment><![CDATA[Default: 500 14px/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>500 14px/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif</value>
+						</vnav_font>
+                        <dropmenu_label>
+							<label>Dropdown Menu Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</dropmenu_label>
+						<dropmenu_bg_color>
+							<label>Dropdown Menu Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</dropmenu_bg_color>
+						<dropmenu_text_color>
+							<label>Dropdown Menu Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</dropmenu_text_color>
+						<dropmenu_text2_color>
+							<label>Dropdown Menu Hover/Active Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</dropmenu_text2_color>
+						<dropmenu_text3_color>
+							<label>Dropdown Menu Title Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #434343 <span class="color_pattern" style="background-color:#434343"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#434343</value>
+						</dropmenu_text3_color>
+						<dropmenu_line_color>
+							<label>Dropdown Menu Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #e9e9e9 <span class="color_pattern" style="background-color:#e9e9e9"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#e9e9e9</value>
+						</dropmenu_line_color>
+						<dropmenu_font>
+							<label>Dropdown Menu Font</label>
+							<comment><![CDATA[Default: normal 14px/1.35 Lato, Helvetica, Arial, sans-serif]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>normal 14px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</dropmenu_font>
+					</fields>
+				</menu>
+				<!-- Body -->
+				<body>
+					<label>Body</label>
+					<fields>
+                        <background_label>
+                            <label>Background</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </background_label>
+						<body_bg_color>
+							<label>Body Wrapper Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #fbfbfb <span class="color_pattern" style="background-color:#fbfbfb"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#fbfbfb</value>
+						</body_bg_color>
+						<body_bg2_color>
+							<label>Body Container Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</body_bg2_color>
+						<body_bg3_color>
+							<label>Body Background Brands Color, Title Block</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</body_bg3_color>
+						<body_bg4_color>
+							<label>Body Background Title Block sidebar Color </label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</body_bg4_color>
+						<body_tab_bg_color>
+							<label>Body Tab Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #fbfbfb <span class="color_pattern" style="background-color:#fbfbfb"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#fbfbfb</value>
+						</body_tab_bg_color>
+						<body_label_bg_color>
+							<label>Body Label New Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f7d059 <span class="color_pattern" style="background-color:#f7d059"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f7d059</value>
+						</body_label_bg_color>
+						<body_label_bg2_color>
+							<label>Body Label Hot Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f83c3c <span class="color_pattern" style="background-color:#f83c3c"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f83c3c</value>
+						</body_label_bg2_color>
+						<body_label_bg3_color>
+							<label>Body Label Special Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #2cbedd <span class="color_pattern" style="background-color:#2cbedd"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#2cbedd</value>
+						</body_label_bg3_color>
+						
+						<body_bg_image>
+							<label>Body Background Image</label>
+							<comment><![CDATA[<strong>Specify background pattern image.</strong>]]></comment>
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_stripes</frontend_model>
+							<source_model>themeframework/config_stripes</source_model>
+						</body_bg_image>
+						<body_bg_file>
+							<label>Upload Body Background Pattern</label>
+							<comment><![CDATA[<strong>Upload your custom page background image</strong> instead of selecting above background header]]></comment>
+							<frontend_type>image</frontend_type>
+						</body_bg_file>
+						<body_bg_position>
+							<label>Body Background Position</label>
+							<comment><![CDATA[Property Values: left top, left center, left bottom,right top, right center, right bottom,center top,center center,center bottom,x% y%, xpos ypos, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<value>0 0</value>
+						</body_bg_position>
+						<body_bg_repeat>
+							<label>Body Background Repeat</label>
+							<comment><![CDATA[Property Values: repeat, repeat-x, repeat-y, no-repeat, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>repeat</value>
+						</body_bg_repeat>
+                        <color_label>
+                            <label>General Color</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </color_label>
+						<body_text_color>
+							<label>Body Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</body_text_color>
+						<body_text2_color>
+							<label>Body Text Title Block Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #000000 <span class="color_pattern" style="background-color:#000000"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#000000</value>
+						</body_text2_color>
+						<body_text3_color>
+							<label>Body Text Product Name, Title Page Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #434343 <span class="color_pattern" style="background-color:#434343"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#434343</value>
+						</body_text3_color>
+						<body_text4_color>
+							<label>Body Text Price Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #434343 <span class="color_pattern" style="background-color:#434343"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#434343</value>
+						</body_text4_color>
+						<body_text5_color>
+							<label>Body Text Title Tab Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</body_text5_color>
+						<body_text6_color>
+							<label>Body Text Label Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</body_text6_color>
+						<body_text7_color>
+							<label>Body Text Readmore Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</body_text7_color>
+						
+						<body_line_color>
+							<label>Body Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #e1e1e1 <span class="color_pattern" style="background-color:#e1e1e1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#e1e1e1</value>
+						</body_line_color>
+						<body_line2_color>
+							<label>Body Line Title Block</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</body_line2_color>
+					</fields>
+				</body>
+				<!-- Footer -->
+				<footer>
+					<label>Footer</label>
+					<fields>
+                        <background_label>
+                            <label>Background</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </background_label>
+						<footer_bg_color>
+							<label>Footer Wrapper Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #272727 <span class="color_pattern" style="background-color:#272727"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#272727</value>
+						</footer_bg_color>
+						<footer_bg2_color>
+							<label>Footer Container Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #272727 <span class="color_pattern" style="background-color:#272727"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#272727</value>
+						</footer_bg2_color>
+						<footer_bg3_color>
+							<label>Footer Newletter, Hover tags Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #343434 <span class="color_pattern" style="background-color:#343434"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#343434</value>
+						</footer_bg3_color>
+						<footer_bg_image>
+							<label>Footer Background Image</label>
+							<comment><![CDATA[<strong>Specify background pattern image.</strong>]]></comment>
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_stripes</frontend_model>
+							<source_model>themeframework/config_stripes</source_model>
+						</footer_bg_image>
+						<footer_bg_file>
+							<label>Upload Footer Background Pattern</label>
+							<comment><![CDATA[<strong>Upload your custom page background image</strong> instead of selecting above background header]]></comment>
+							<frontend_type>image</frontend_type>
+						</footer_bg_file>
+						<footer_bg_position>
+							<label>Footer Background Position</label>
+							<comment><![CDATA[Property Values: left top, left center, left bottom,right top, right center, right bottom,center top,center center,center bottom,x% y%, xpos ypos, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>0 0</value>
+						</footer_bg_position>
+						<footer_bg_repeat>
+							<label>Footer Background Repeat</label>
+							<comment><![CDATA[Property Values: repeat, repeat-x, repeat-y, no-repeat, inherit]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>repeat</value>
+						</footer_bg_repeat>
+                        <color_label>
+                            <label>General Color</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                            
+                        </color_label>
+						<footer_text_color>
+							<label>Footer Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</footer_text_color>
+						<footer_text2_color>
+							<label>Footer Title Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</footer_text2_color>
+						<footer_text3_color>
+							<label>Footer Link Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</footer_text3_color>
+						<footer_text4_color>
+							<label>Footer Social hover Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</footer_text4_color>
+						<footer_line_color>
+							<label>Footer Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #343434 <span class="color_pattern" style="background-color:#343434"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#343434</value>
+						</footer_line_color>
+					</fields>
+				</footer>
+
+				<!-- Button 1 -->
+				<buttons>
+					<label>Button</label>
+					<fields>
+                        <button1_label>
+							<label>Button 1 (Button Default)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button1_label>
+						<btn1_bg_color>
+							<label>Button 1 Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f  <span class="color_pattern" style="background-color:#7a6f6f "/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f </value>
+						</btn1_bg_color>
+						<btn1_text_color>
+							<label>Button 1 Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</btn1_text_color>
+						<btn1_line_color>
+							<label>Button 1 Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f  <span class="color_pattern" style="background-color:#7a6f6f "/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f </value>
+						</btn1_line_color>
+						<btn1_font>
+							<label>Button 1 Font</label>
+							<comment><![CDATA[Default: <span style="700 12px/1.35 Lato, Helvetica, Arial, sans-serif">700 12px/1.35 Lato, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn1_font>
+						<!-- Button 2 -->
+                        <button2_label>
+							<label>Button 2 (Button sidebar)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button2_label>
+						<btn2_bg_color>
+							<label>Button 2 Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn2_bg_color>
+						<btn2_text_color>
+							<label>Button 2 Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</btn2_text_color>
+						<btn2_line_color>
+							<label>Button 2 Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn2_line_color>
+						<btn2_font>
+							<label>Button 2 Font</label>
+							<comment><![CDATA[Default: <span style="700 12px/1.35 Lato, Helvetica, Arial, sans-serif">700 12px/1.35 Lato, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn2_font>
+						<!-- Button 3 -->
+                        <button3_label>
+							<label>Button 3 (Button Add To Cart)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button3_label>
+						<btn3_bg_color>
+							<label>Button 3 Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</btn3_bg_color>
+						<btn3_text_color>
+							<label>Button 3 Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</btn3_text_color>
+						<btn3_line_color>
+							<label>Button 3 Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #7a6f6f <span class="color_pattern" style="background-color:#7a6f6f"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#7a6f6f</value>
+						</btn3_line_color>
+						<btn3_font>
+							<label>Button 3 Font</label>
+							<comment><![CDATA[Default: <span style="700 12px/1.15 Lato, Helvetica, Arial, sans-serif">700 12px/1.15 Lato, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.15 Lato, Helvetica, Arial, sans-serif</value>
+						</btn3_font>
+						<!-- Button 4 -->
+                        <button4_label>
+							<label>Button 4 (Button Proceed to Checkout)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button4_label>
+						<btn4_bg_color>
+							<label>Button 4 Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #403838 <span class="color_pattern" style="background-color:#403838"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#403838</value>
+						</btn4_bg_color>
+						<btn4_text_color>
+							<label>Button 4 Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</btn4_text_color>
+						<btn4_line_color>
+							<label>Button 4 Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #403838 <span class="color_pattern" style="background-color:#403838"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#403838</value>
+						</btn4_line_color>
+						<btn4_font>
+							<label>Button 4 Font</label>
+							<comment><![CDATA[Default: <span style="700 16px/1.35 Lato, Helvetica, Arial, sans-serif">700 16px/1.35 Lato, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 16px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn4_font>
+						<!-- Button 5 -->
+                        <button5_label>
+							<label>Button 5 (Button Add To Wishlist)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button5_label>
+						<btn5_bg_color>
+							<label>Button Add To Wishlist Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn5_bg_color>
+						<btn5_text_color>
+							<label>Button Add To Wishlist Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</btn5_text_color>
+						<btn5_line_color>
+							<label>Button Add To Wishlist Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn5_line_color>
+						<btn5_font>
+							<label>Button Add To Wishlist Font</label>
+							<comment><![CDATA[Default: <span style="700 11px/1.35 Open Sans, Helvetica, Arial, sans-serif">700 11px/1.35 Open Sans, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn5_font>
+						<!-- Button 6 -->
+                        <button6_label>
+							<label>Button 6 (Button Add To Compare)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button6_label>
+						<btn6_bg_color>
+							<label>Button Add To Compare Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn6_bg_color>
+						<btn6_text_color>
+							<label>Button Add To Compare Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #a1a1a1 <span class="color_pattern" style="background-color:#a1a1a1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#a1a1a1</value>
+						</btn6_text_color>
+						<btn6_line_color>
+							<label>Button Add To Compare Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #f1f1f1 <span class="color_pattern" style="background-color:#f1f1f1"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#f1f1f1</value>
+						</btn6_line_color>
+						<btn6_font>
+							<label>Button Add To Compare Font</label>
+							<comment><![CDATA[Default: <span style="700 11px/1.35 Open Sans, Helvetica, Arial, sans-serif">700 11px/1.35 Open Sans, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn6_font>
+						<!-- Button 7 -->
+                        <button7_label>
+							<label>Button 7 Add to cart, Wishlist, Compare on top product</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</button7_label>
+						<btn7_bg_color>
+							<label>Button Background Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: transparent <span class="color_pattern" style="background-color:transparent"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>transparent</value>
+						</btn7_bg_color>
+						<btn7_text_color>
+							<label>Button Text Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</btn7_text_color>
+						<btn7_line_color>
+							<label>Button Line Color</label>
+							<comment><![CDATA[Syntax: #number or rgba(...)<br/>Default: #ffffff <span class="color_pattern" style="background-color:#ffffff"/>]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+							<required>1</required>
+							<value>#ffffff</value>
+						</btn7_line_color>
+						<btn7_font>
+							<label>Button Font</label>
+							<comment><![CDATA[Default: <span style="700 12px/1.35 Lato, Helvetica, Arial, sans-serif">700 12px/1.35 Lato, Helvetica, Arial, sans-serif</span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<value>700 12px/1.35 Lato, Helvetica, Arial, sans-serif</value>
+						</btn7_font>
+					</fields>
+				</buttons>
+			</fieldset>
+		</typography>
+		<products_grid>
+			<label>Category View (Grid Mode)</label>
+            <comment>In this tab, you can configure elements in category view grid mode: product column count on desktop/tablet/mobile; show/hide elements...</comment>
+			<fieldset>
+				<products_grid>
+					<label>Products Grid</label>
+					<fields>
+                        <desktop_label>
+							<label>Product Columns On Desktop</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</desktop_label>
+						<onecolumn>
+							<label>Product Columns - One column Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>5</value>
+						</onecolumn>
+						<twocolumns>
+							<label>Product Columns - Two columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>4</value>
+						</twocolumns>
+						<threecolumns>
+							<label>Product Columns - Three columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>3</value>
+						</threecolumns>
+                        <desktop_small_label>
+							<label>Product Columns On Desktop Small</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</desktop_small_label>
+						<desktop_small_onecolumn>
+							<label>Product Columns - One column Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>4</value>
+						</desktop_small_onecolumn>
+						<desktop_small_twocolumns>
+							<label>Product Columns - Two columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>3</value>
+						</desktop_small_twocolumns>
+						<desktop_small_threecolumns>
+							<label>Product Columns - Three columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscount</source_model>
+							<value>2</value>
+						</desktop_small_threecolumns>
+                        <tablet_label>
+							<label>Product Columns On Tablet</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</tablet_label>
+						<tablet_onecolumn>
+							<label>Product Columns - One column Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscounttablet</source_model>
+							<value>3</value>
+						</tablet_onecolumn>
+						<tablet_twocolumns>
+							<label>Product Columns - Two columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscounttablet</source_model>
+							<value>3</value>
+						</tablet_twocolumns>
+						<tablet_threecolumns>
+							<label>Product Columns - Three columns Layout</label>							
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscounttablet</source_model>
+							<value>2</value>
+						</tablet_threecolumns>
+                        <mobile_label>
+							<label>Product Columns On Mobile</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</mobile_label>
+						<items_mobile>
+							<label>Items Mobile</label>
+							<comment><![CDATA[This allows you to preset the number of items visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=480){ show 4 items per row}]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_columnscountmobile</source_model>
+							<value>2</value>
+						</items_mobile>
+                        <element_label>
+							<label>General Element Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</element_label>
+						<image_ratio>
+							<label>Image Aspect Ratio</label>
+							<comment><![CDATA[<strong>Ratio of Width to Height</strong>. Calculate the new image size based on the original image size ratio]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_ratio</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>
+						</image_ratio>
+                        <custom_width>
+                            <label>Custom Ratio of Width</label>
+                            <frontend_class>validate-number em-invisible</frontend_class>						
+							<frontend_type>text</frontend_type>
+							<value>1</value>
+                        </custom_width>
+                        <custom_height>
+                            <label>Custom Ratio of Height</label>							
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number em-invisible</frontend_class>
+							<value>1</value>
+                        </custom_height>
+						<alt_img>
+							<label>Alternative Image</label>
+							<comment><![CDATA[Image should be displayed when hover to the thumbnail image.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_altimg</source_model>
+							<value>thumbnail</value>
+                            <frontend_class>em-hide</frontend_class>
+						</alt_img>
+						<config_hover>
+							<label>Product Hover Effect</label>
+							<comment><![CDATA[product hover]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_hovereffect</source_model>
+							<value>mobile</value>
+                            <frontend_class>em-hide</frontend_class>
+						</config_hover>
+						<align_center>
+							<label>Element Align Center</label>
+							<comment><![CDATA[If yes, align center elements of the grid item: product name, price, ...]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</align_center>						
+						<show_thumbnail>
+							<label>Show Thumbnail</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_thumbnail>
+						<show_label>
+							<label>Show EM Label</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_label>
+						<show_product_name>
+							<label>Show Product's Name</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_displayelement</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_product_name>
+                        <auto_product_name>
+							<label>Product Name On Single Line</label>
+							<comment><![CDATA[Enable product name on single line when it overflow]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<value>0</value>
+                            <frontend_class>em-hide</frontend_class>
+						</auto_product_name>
+						<show_desc>
+							<label>Show Product's Description</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_displayelement</source_model>
+							<value>2</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_desc>
+						<show_price>
+							<label>Show Product's Price</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_displayelement</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_price>
+						<show_reviews>
+							<label>Show Product's Reviews</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_displayelement</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_reviews>
+						<show_addtocart>
+							<label>Show Addto Button (Add to cart &amp; Add to wishlist-compare)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_displayelement</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_addtocart>
+					</fields>
+				</products_grid>
+			</fieldset>
+		</products_grid>
+		<products_list>
+			<label>Category View (List Mode)</label>
+            <comment>In this tab, you can configure elements in category view list mode</comment>            
+			<fieldset>
+				<products_list>
+					<label>Products List</label>
+					<fields>
+                        <gutter>
+							<label>Gutter Between 2 Items</label>
+							<comment><![CDATA[E.g. <em>0</em>]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value></value>
+                            <frontend_class>em-hide</frontend_class>
+						</gutter>
+						<image_ratio>
+							<label>Image Aspect Ratio</label>
+							<comment><![CDATA[<strong>Width:Height</strong>. Calculate the new image size based on the original image size ratio]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_ratio</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>                            
+						</image_ratio>
+                        <custom_width>
+                            <label>Custom Ratio of Width</label>
+                            <frontend_class>validate-number em-invisible</frontend_class>                            						
+							<frontend_type>text</frontend_type>
+							<value>1</value>                            
+                        </custom_width>
+                        <custom_height>
+                            <label>Custom Ratio of Height</label>							
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number em-invisible</frontend_class>                            
+							<value>1</value>
+                        </custom_height>						
+						<alt_img>
+							<label>Alternative Image</label>
+							<comment><![CDATA[Image should be displayed when hover to the thumbnail image.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_altimg</source_model>
+                            <value>image</value>
+                            <frontend_class>em-hide</frontend_class>
+						</alt_img>
+						<show_product_name>
+							<label>Show Product's Name</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_product_name>
+						<show_thumbnail>
+							<label>Show Thumbnail</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_thumbnail>
+						<show_desc>
+							<label>Show Product's Description</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_desc>
+						<show_price>
+							<label>Show Product's Price</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_price>
+						<show_reviews>
+							<label>Show Product's Reviews</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_reviews>
+						<show_addtocart>
+							<label>Show Add to cart button</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_addtocart>
+						<show_addto>
+							<label>Show Add to wishlist-compare button</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_addto>
+						<show_label>
+							<label>Show EM Label</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<value>1</value>
+                            <frontend_class>em-hide</frontend_class>
+						</show_label>
+					</fields>
+				</products_list>
+			</fieldset>
+		</products_list>
+		<image_product>
+			<label>Product View Page</label>
+            <comment><![CDATA[In this tab, you can configure the product page (in Magento also called "product view"). <strong>Width of the product page columns (Primary Column, Secondary Column) is specified in <span style="color:red">24 grid units</span>.</strong>]]></comment>         
+			<fieldset>
+				<product_detail translate="label">
+					<label>General Settings</label>
+					<fields>
+                        <product_view_preview>                            
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_form_field_product_view</frontend_model>							
+						</product_view_preview>
+                        <one_label>
+							<label>Product View One Column</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</one_label>
+                        <primary_column_width>
+							<label>Primary Column Width</label>                            
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <comment><![CDATA[<strong>Base Image Column.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+                            <value>16</value>
+						</primary_column_width>
+                        <base_image_width>
+							<label>Base Image Width</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>800</value>
+						</base_image_width>
+						<base_image_height>
+							<label>Base Image Height</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>800</value>
+						</base_image_height>
+                        <secondary_column_width>
+							<label>Secondary Column Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <comment><![CDATA[<strong>Product details.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+                            <value>8</value>
+						</secondary_column_width>
+                        
+                        <two_label>
+							<label>Product View Two Columns</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</two_label>
+                        <primary_two_column_width>
+							<label>Primary Column (Base Image Column) Width</label>
+                            <comment><![CDATA[<strong>Base Image Column.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <value>12</value>                            
+						</primary_two_column_width>
+                        <base_two_image_width>
+							<label>Base Image Width</label>
+							<frontend_type>text</frontend_type>                            
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>500</value>
+						</base_two_image_width>
+						<base_two_image_height>
+							<label>Base Image Height</label>
+							<frontend_type>text</frontend_type>                            
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>500</value>
+						</base_two_image_height>
+                        <secondary_two_column_width>
+							<label>Secondary Column Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <comment><![CDATA[<strong>Product details.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+                            <value>12</value>
+						</secondary_two_column_width>
+                        
+                        <three_label>
+							<label>Product View Three Columns</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</three_label>
+                        <primary_three_column_width>
+							<label>Primary Column (Base Image Column) Width</label>
+                            <comment></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <comment><![CDATA[<strong>Base Image Column.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+                            <value>24</value>
+						</primary_three_column_width>
+                        <base_three_image_width>
+							<label>Base Image Width</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>600</value>
+						</base_three_image_width>
+						<base_three_image_height>
+							<label>Base Image Height</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Value in pixels. E.g: 400</comment>
+                            <value>600</value>
+						</base_three_image_height>
+                        <secondary_three_column_width>
+							<label>Secondary Column Width</label>
+                            <frontend_class>validate-number validate-number-range number-range-6-24</frontend_class>
+                            <comment><![CDATA[<strong>Product details.</strong> Specify value in 24 grid units (between 6 and 24)]]></comment>
+							<frontend_type>text</frontend_type>
+                            <value>24</value>
+						</secondary_three_column_width>
+                        
+                        <element_label>
+							<label>Elements Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</element_label>												
+						<show_sku>
+							<label>Show Product's SKU</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <value>1</value>
+						</show_sku>
+						<viewmode>
+							<label>View mode</label>
+							<comment><![CDATA[Set view mode in detail page: cloudzoom, lightbox, default]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_product_view</source_model>
+                            <value>cloudzoom</value>
+						</viewmode>
+						<cloud_zoom_width>
+							<label>Cloud-Zoom Width</label>
+							<frontend_type>text</frontend_type>
+                            <value>200</value>
+						</cloud_zoom_width>
+						<cloud_zoom_height>
+							<label>Cloud-Zoom Height</label>
+							<frontend_type>text</frontend_type>
+                            <value>200</value>
+						</cloud_zoom_height>
+						<use_tabs>
+							<label>Details Tabs</label>
+							<comment><![CDATA[Use tabs to display product collaterals]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <value>1</value>
+						</use_tabs>
+					</fields>
+				</product_detail>
+                <moreview>
+                    <label>More View Images</label>
+                    <fields>
+                        <images_label>
+							<label>Images</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</images_label>
+                        <width>
+							<label>Thumbnail Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment>Value in pixels.</comment>
+                            <value>100</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment><![CDATA[Value in pixels]]></comment>
+                            <value>100</value>
+						</height>
+                        <slider_label>
+							<label>Images Slider</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</slider_label>
+                        <enable_slider>
+                            <label>Slider</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>
+                        </enable_slider>
+                        <slider_items>
+            				<label>Max Slider Items</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>7</value>
+            			</slider_items>
+                        
+                        <slider_items_desktop>
+            				<label>Slider Items Desktop</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 1200px and 993px browser width. <br/>For example <strong>4</strong> means that if(window<=1200 and window>992){ show 4 slides per page}]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>5</value>
+            			</slider_items_desktop>
+                        
+                        <slider_items_desktop_small>
+            				<label>Slider Items Desktop Small</label>
+                            <visible>1</visible>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 992px and 769px browser width. <br/>For example <strong>4</strong> means that if(window<=992 and window>767){ show 4 slides per page}]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>
+            			</slider_items_desktop_small>
+                        
+                        <slider_items_tablet>
+            				<label>Slider Items Tablet</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 768px and 481px browser width. <br/>For example <strong>4</strong> means that if(window<=767 and window>481 ){ show 4 slides per page}]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>
+            			</slider_items_tablet>
+                        
+                        <slider_items_mobile>
+            				<label>Slider Items Mobile</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=480){ show 4 slides per page}]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>2</value>
+            			</slider_items_mobile>
+                        
+                        <slider_navigation>
+                            <label>Show Navigation</label>
+                            <comment><![CDATA[Display "next" and "prev" buttons.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>1</value>
+                        </slider_navigation>
+                        
+                        <slider_pagination>
+                            <label>Show Pagination</label>
+                            <comment><![CDATA[Show pagination.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination>
+                        
+                        <slider_pagination_numbers>
+                            <label>Show Pagination Numbers</label>
+                            <comment><![CDATA[Show numbers inside pagination buttons]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination_numbers>
+                    </fields>
+                </moreview>
+				<related>
+					<label>Related Products (Only In Main Content)</label>
+					<fields>
+                        <general_label>
+							<label>General Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</general_label>
+						<display>
+							<label>Related Products</label>
+							<comment><![CDATA[Related Products is replaced first enable flexible block with Identifier em0131-area-static-replace-with-related-details-page]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_blockreplace</source_model>
+							<value>dont_replace</value>
+						</display>
+						<position>
+							<label>Position of Related Products</label>
+							<comment><![CDATA[Position of related products block when it display in main content. If current layout is three columns and this position is setted <strong>Below The Brand Logo Block</strong> or <strong>At The Side Of Tabs</strong> or <strong>Below The Static Block Custom</strong>, Related Block is moved to sidebar.<br/> If this position is setted <strong>At The Sidebar</strong>, please go to section <strong>Config Sidebar Block &gt; Related products</strong> to config]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_positionrelated</source_model>
+							<value>top_tabs</value>
+                            <frontend_class>em-hide</frontend_class>
+						</position>
+                        <images_label>
+							<label>Images</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</images_label>
+						<width>
+							<label>Thumbnail Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment>Value in pixels.</comment>
+                            <value>180</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment><![CDATA[Value in pixels]]></comment>
+                            <value>180</value>
+						</height>
+                        <slider_label>
+							<label>Carousel Slider</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</slider_label>
+                        <enable_slider>
+                            <label>Slider</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-visible</frontend_class>                            
+                            <value>1</value>
+                        </enable_slider>
+                        
+                        <slider_items>
+            				<label>Max Slider Items One Column</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with one column layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>                            
+            			</slider_items>
+                        
+                        <slider_items_two>
+            				<label>Max Slider Items Two Columns</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with two columns layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>                            
+            			</slider_items_two>
+                        
+                        <slider_items_three>
+            				<label>Max Slider Items Three Columns</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with three columns layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>                            
+            			</slider_items_three>
+                        
+                        <slider_items_desktop>
+            				<label>Slider Items Desktop</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 1200px and 993px browser width. <br/>For example <strong>4</strong> means that if(window<=1200 and window>992){ show 4 slides per page}.<br/>Slider Items Desktop<=Max Slider Items]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>
+            			</slider_items_desktop>
+                        
+                        <slider_items_desktop_small>
+            				<label>Slider Items Desktop Small</label>
+                            <visible>1</visible>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 992px and 769px browser width. <br/>For example <strong>4</strong> means that if(window<=992 and window>767){ show 4 slides per page}.<br/>Slider Items Desktop Small<=Max Slider Items]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_desktop_small>
+                        
+                        <slider_items_tablet>
+            				<label>Slider Items Tablet</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 768px and 481px browser width. <br/>For example <strong>4</strong> means that if(window<=767 and window>481 ){ show 4 slides per page}.<br/>Slider Items Tablet<=Max Slider Items]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_tablet>
+                        
+                        <slider_items_mobile>
+            				<label>Slider Items Mobile</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=480){ show 4 slides per page}.<br/>Slider Items Mobile<=Max Slider Items]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>2</value>
+            			</slider_items_mobile>
+                        
+                        <slider_navigation>
+                            <label>Show Navigation</label>
+                            <comment><![CDATA[Display "next" and "prev" buttons.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>1</value>
+                        </slider_navigation>
+                        
+                        <slider_pagination>
+                            <label>Show Pagination</label>
+                            <comment><![CDATA[Show pagination.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination>
+                        
+                        <slider_pagination_numbers>
+                            <label>Show Pagination Numbers</label>
+                            <comment><![CDATA[Show numbers inside pagination buttons]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination_numbers>
+					</fields>
+				</related>
+				<upsell>
+					<label>Upsell Products</label>
+					<fields>
+						<display>
+							<label>Upsell Products</label>
+							<comment><![CDATA[Upsell Products is replaced first enable flexible block with Identifier em0131-area-static-block-replace-with-upsell-details-page]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_blockreplace</source_model>
+							<value>dont_replace</value>
+                            <frontend_class>em-hide</frontend_class>
+						</display>
+                        <images_label>
+							<label>Images</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</images_label>
+						<width>
+							<label>Thumbnail Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment>Value in pixels.</comment>
+                            <value>180</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment><![CDATA[Value in pixels]]></comment>
+                            <value>180</value>
+						</height>
+                        <slider_label>
+							<label>Images Slider</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</slider_label>
+                        <enable_slider>
+                            <label>Slider</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>
+                        </enable_slider>
+                        <slider_items>
+            				<label>Max Slider Items One Column</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with one column layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>                            
+            			</slider_items>
+                        
+                        <slider_items_two>
+            				<label>Max Slider Items Two Columns</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with two columns layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>                            
+            			</slider_items_two>
+                        
+                        <slider_items_three>
+            				<label>Max Slider Items Three Columns</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width and product with three columns layout]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>2</value>                            
+            			</slider_items_three>
+                        
+                        <slider_items_desktop>
+            				<label>Slider Items Desktop</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 1200px and 993px browser width. <br/>For example <strong>4</strong> means that if(window<=1200 and window>992){ show 4 slides per page}.<br/>Slider Items Desktop<=Max Slider Items]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>
+            			</slider_items_desktop>
+                        
+                        <slider_items_desktop_small>
+            				<label>Slider Items Desktop Small</label>
+                            <visible>1</visible>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 992px and 769px browser width. <br/>For example <strong>4</strong> means that if(window<=992 and window>767){ show 4 slides per page}.<br/>Slider Items Desktop Small<=Max Slider Items]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_desktop_small>
+                        
+                        <slider_items_tablet>
+            				<label>Slider Items Tablet</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 768px and 481px browser width. <br/>For example <strong>4</strong> means that if(window<=767 and window>481 ){ show 4 slides per page. <br/>Slider Items Tablet<=Max Slider Items}]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_tablet>
+                        
+                        <slider_items_mobile>
+            				<label>Slider Items Mobile</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=480){ show 4 slides per page. <br/>Slider Items Mobile<=Max Slider Items}]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>2</value>
+            			</slider_items_mobile>
+                        
+                        <slider_navigation>
+                            <label>Show Navigation</label>
+                            <comment><![CDATA[Display "next" and "prev" buttons.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>1</value>
+                        </slider_navigation>
+                        
+                        <slider_pagination>
+                            <label>Show Pagination</label>
+                            <comment><![CDATA[Show pagination.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination>
+                        
+                        <slider_pagination_numbers>
+                            <label>Show Pagination Numbers</label>
+                            <comment><![CDATA[Show numbers inside pagination buttons]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination_numbers>
+					</fields>
+				</upsell>
+			</fieldset>
+		</image_product>
+		<position>
+			<label>Config Sidebar Block</label>
+            <comment>In this section you can enable/disable and configure position of default Magento blocks.</comment>
+			<fieldset>
+				<position>
+					<label>Config Sidebar Block</label>
+					<fields>
+						<catalog_shopby>
+							<label>Catalog layer navigation (Anchor )</label>
+							<source_model>themeframework/config_sidebar_shopby</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>left</value>
+						</catalog_shopby>
+						<catalog_leftnav>
+							<label>Catalog navigation (Non-anchor )</label>
+							<source_model>themeframework/config_sidebar_shopby</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>left</value>
+						</catalog_leftnav>
+						<catalog_search_layer>
+							<label>Catalog search layer</label>
+							<source_model>themeframework/config_sidebar_shopby</source_model>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[This block is only showed at catalog search result page]]></comment>
+                            <value>left</value>
+						</catalog_search_layer>
+                        <catalog_related translate="label">
+							<label>Related products</label>
+                            <comment><![CDATA[This block is shown as <strong style="color:red">list view mode</strong> on sidebar and it has <strong style="color:red">no slider</strong>]]></comment>
+							<source_model>themeframework/config_sidebar</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>right</value>
+						</catalog_related>                           
+						<compare>
+							<label>Compare products</label>
+							<source_model>themeframework/config_sidebar</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>all</value>
+						</compare>
+						<poll>
+							<label>Community poll</label>
+							<source_model>themeframework/config_sidebar</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>all</value>
+						</poll>
+						<popular_tags>
+							<label>Popular tags</label>
+							<source_model>themeframework/config_sidebar</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>left</value>
+						</popular_tags>
+						<wishlist_sidebar>
+							<label>Wishlist sidebar products</label>
+							<source_model>themeframework/config_sidebar</source_model>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[This block is only showed if user logged in.]]></comment>
+                            <value>all</value>
+						</wishlist_sidebar>
+						<reorder_sidebar>
+							<label>Reorder sidebar products</label>
+							<source_model>themeframework/config_sidebar_shopby</source_model>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[This block is only showed if user logged in.]]></comment>
+                            <value>right</value>
+						</reorder_sidebar>
+					</fields>
+				</position>
+                <home_position>
+					<label>Config Sidebar Block On Homepage</label>
+					<fields>                         
+						<compare>
+							<label>Compare products</label>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>0</value>
+						</compare>
+						<poll>
+							<label>Community poll</label>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>0</value>
+						</poll>
+						<tags>
+							<label>Popular tags</label>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<frontend_type>select</frontend_type>
+                            <value>0</value>
+						</tags>
+						<wishlist>
+							<label>Wishlist sidebar products</label>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[This block is only showed if user logged in.]]></comment>
+                            <value>0</value>
+						</wishlist>
+						<reorder>
+							<label>Reorder sidebar products</label>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[This block is only showed if user logged in.]]></comment>
+                            <value>0</value>
+						</reorder>
+					</fields>
+				</home_position>
+			</fieldset>
+		</position>
+		<crosssell>
+			<label>Crossell Products</label>
+			<fieldset>
+				<crossell>
+					<label>Crossell Products</label>
+					<fields>
+						<display>
+							<label>Crossell Products</label>
+							<comment><![CDATA[Crosssell Products is replaced first enable flexible block with Identifier em0131-area-static-replace-with-crosll-cart-page]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/config_blockreplace</source_model>
+							<value>dont_replace</value>
+                            <frontend_class>em-hide</frontend_class>
+						</display>
+                        <images_label>
+							<label>Images</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <comment>Value in pixels.</comment>
+						</images_label>
+                        <width>
+							<label>Thumbnail Width</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>280</value>                            
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <comment><![CDATA[Value in pixels]]></comment>
+                            <value>280</value>
+						</height>
+                        <slider_label>
+							<label>Carousel Slider</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+						</slider_label>
+						<enable_slider>
+                            <label>Slider</label>
+							<frontend_type>select</frontend_type>
+                            <frontend_class>em-visible</frontend_class>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <value>1</value>
+                        </enable_slider>
+                        <slider_items>
+            				<label>Max Slider Items</label>
+                            <comment><![CDATA[This variable allows you to set the maximum amount of items displayed at a time with the widest browser width]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>                            
+            			</slider_items>
+                        
+                        <slider_items_desktop>
+            				<label>Slider Items Desktop</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 1200px and 993px browser width. <br/>For example <strong>4</strong> means that if(window<=1200 and window>992){ show 4 slides per page}]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>4</value>
+            			</slider_items_desktop>
+                        
+                        <slider_items_desktop_small>
+            				<label>Slider Items Desktop Small</label>
+                            <visible>1</visible>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 992px and 769px browser width. <br/>For example <strong>4</strong> means that if(window<=992 and window>767){ show 4 slides per page}]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_desktop_small>
+                        
+                        <slider_items_tablet>
+            				<label>Slider Items Tablet</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 768px and 481px browser width. <br/>For example <strong>4</strong> means that if(window<=767 and window>481 ){ show 4 slides per page}]]></comment>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>3</value>
+            			</slider_items_tablet>
+                        
+                        <slider_items_mobile>
+            				<label>Slider Items Mobile</label>
+                            <comment><![CDATA[This allows you to preset the number of slides visible at between 480px and 0px browser width. <br/>For example <strong>4</strong> means that if(window<=480){ show 4 slides per page}]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-hide validate-number validate-number-range number-range-1-100</frontend_class>
+                            <value>2</value>
+            			</slider_items_mobile>
+                        
+                        <slider_navigation>
+                            <label>Show Navigation</label>
+                            <comment><![CDATA[Display "next" and "prev" buttons.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>1</value>
+                        </slider_navigation>
+                        
+                        <slider_pagination>
+                            <label>Show Pagination</label>
+                            <comment><![CDATA[Show pagination.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination>
+                        
+                        <slider_pagination_numbers>
+                            <label>Show Pagination Numbers</label>
+                            <comment><![CDATA[Show numbers inside pagination buttons]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <frontend_class>em-hide</frontend_class>
+                            <value>0</value>
+                        </slider_pagination_numbers>
+					</fields>
+				</crossell>
+			</fieldset>
+		</crosssell>
+		<image_size>
+			<label>Other Image Size</label>
+			<fieldset>
+				<image_sidebar>
+					<label>Image on Sidebar Product (Compare Products, My Wishlist Products)</label>
+					<fields>
+						<width>
+							<label>Thumbnail Width</label>
+                            <comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+                            <comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</height>
+					</fields>
+				</image_sidebar>
+                
+                <related_sidebar>
+					<label>Image on Sidebar Related Product</label>
+					<fields>
+						<width>
+							<label>Thumbnail Width</label>
+                            <comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+                            <comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</height>
+					</fields>
+				</related_sidebar>
+                
+				<image_shopping_cart>
+					<label>Image on Shopping Cart</label>
+					<fields>
+						<width>
+							<label>Thumbnail Width</label>
+							<comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</height>
+					</fields>
+				</image_shopping_cart>
+                
+                <recently_viewed>
+					<label>Image on Recently Viewed Products</label>
+					<fields>
+						<width>
+							<label>Thumbnail Width</label>
+							<comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</width>
+						<height>
+							<label>Thumbnail Height</label>
+							<comment><![CDATA[Value in pixels]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>100</value>
+						</height>
+					</fields>
+				</recently_viewed>
+			</fieldset>
+		</image_size>		
+		<flashtag>
+			<label>Config Flash Tag</label>
+			<fieldset>
+				<flashtag>
+					<label>Config Flash Tag</label>
+					<fields>
+						<enabled>
+							<label>Flash Tag</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <value>0</value>
+						</enabled>
+						<count>
+							<label>Tags count view</label>
+							<frontend_type>text</frontend_type>
+                            <value>100</value>
+						</count>
+						<max>
+							<label>Max font size</label>
+							<frontend_type>text</frontend_type>
+                            <value>20</value>
+                            <frontend_class>validate-number</frontend_class>
+						</max>
+						<min>
+							<label>Min font size</label>
+							<frontend_type>text</frontend_type>
+                            <value>12</value>
+                            <frontend_class>validate-number</frontend_class>
+						</min>
+						<maxcolor>
+							<label>Max text color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+                            <value>#646464</value>
+						</maxcolor>
+						<normal>
+							<label>Text normal color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+                            <value>#646464</value>
+						</normal>
+						<hover>
+							<label>Text hover color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_class>colour</frontend_class>
+                            <value>#646464</value>
+						</hover>
+					</fields>
+				</flashtag>
+			</fieldset>
+		</flashtag>
+		<ajaxcart>
+			<label>Ajax Auto Close</label>
+			<fieldset>
+				<ajaxcart>
+					<label>Ajax Auto Close</label>
+					<fields>
+						<auto_close>
+							<label>Ajax Auto Close</label>
+							<comment><![CDATA[Specify the second for ajax cart, add to wishlist, add to compare to auto-close.]]></comment>
+							<frontend_type>text</frontend_type>
+                            <frontend_class>validate-number</frontend_class>
+                            <value>0</value>
+						</auto_close>
+					</fields>
+				</ajaxcart>
+			</fieldset>
+		</ajaxcart>
+        <contacts>
+            <label>Contacts Form Google Map</label>
+            <fieldset>
+                <contacts>
+                    <label>Contacts Form Google Map</label>
+                    <fields>
+                        <map_enable>
+                            <label>Show Google Map</label>
+                            <comment><![CDATA[Enable/disable google map]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>
+                        </map_enable>
+                        <map_address>
+                            <label>Map Address</label>
+                            <comment><![CDATA[Put your store address here. Like: ]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh</value>
+                        </map_address>
+                        <map_info>
+                            <label>Map Information</label>
+                            <comment><![CDATA[Put your store information here. Like: ]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.</value>
+                        </map_info>
+                        <map_height>
+                            <label>Map Height</label>
+                            <comment><![CDATA[Map height: ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>500</value>
+                        </map_height>
+                        <map_width>
+                            <label>Map Width</label>
+                            <comment><![CDATA[Map Width: ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>100%</value>                            
+                        </map_width>
+                        <map_image>
+                            <label>Upload Map Image</label>
+                            <comment><![CDATA[Upload Map Image Icon ]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>em0131/variations/gmap_icon.png</value>
+                        </map_image>
+                    </fields>
+                </contacts>
+            </fieldset>
+        </contacts>
+        <structured_data>
+            <label>Rich Snippets</label>
+            <fieldset>
+                <snippets>
+                    <label>Config Rich Snippet On Products Page</label>
+                    <fields>
+                        <enable>
+                            <label>Enable Rich Snippet</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-visible</frontend_class>
+                            <value>1</value>
+                        </enable>
+                        <review>
+                            <label>Reviews And Rating</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>1</value>
+                        </review>
+                        <price>
+                            <label>Price And Instock</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>1</value>
+                        </price>
+                        <breadcrumbs>
+                            <label>Breadcrumbs</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>1</value>
+                        </breadcrumbs>
+                        <description>
+                            <label>Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <frontend_class>em-invisible</frontend_class>
+                            <value>1</value>
+                        </description>                        
+                    </fields>
+                </snippets>
+            </fieldset>
+        </structured_data>
+	</configuration>
+</theme>

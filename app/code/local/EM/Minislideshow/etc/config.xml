@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   EM
+ * @package    EM_Minislideshow
+ * @author     Emthemes <emthemes.com>
+ */
+ -->
+<config>
+    <modules>
+        <EM_Minislideshow>
+            <version>0.1.0</version>
+        </EM_Minislideshow>
+    </modules>
+    <frontend>
+        <routers>
+            <minislideshow>
+                <use>standard</use>
+                <args>
+                    <module>EM_Minislideshow</module>
+                    <frontName>minislideshow</frontName>
+                </args>
+            </minislideshow>
+        </routers>
+        <layout>
+            <updates>
+                <minislideshow>
+                    <file>em_minislideshow.xml</file>
+                </minislideshow>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <minislideshow before="Mage_Adminhtml">EM_Minislideshow_Adminhtml</minislideshow>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<emthemes translate="title">
+				<title>EMThemes</title>
+				<sort_order>72</sort_order>
+				<children>
+					<minislideshow module="minislideshow">
+						<title>EM Slideshow Compact</title>
+						<sort_order>21</sort_order>
+						<action>adminhtml/minislideshow</action>
+					</minislideshow>
+				</children>
+			</emthemes>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<emthemes>
+							<title>EM Themes Menu</title>
+							<sort_order>72</sort_order>
+							<children>
+								<minislideshow module="minislideshow">
+									<title>EM Slideshow Compact</title>
+									<sort_order>130</sort_order>
+									<children>
+										<save translate="title">
+											<title>Save Slide</title>
+											<sort_order>0</sort_order>
+										</save>
+										<delete translate="title">
+											<title>Delete Slide</title>
+											<sort_order>10</sort_order>
+										</delete>
+									</children>
+								</minislideshow>
+							</children>
+						</emthemes>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<minislideshow>
+					<file>em_minislideshow.xml</file>
+				</minislideshow>
+			</updates>
+		</layout>
+    </adminhtml>
+    <global>
+        <models>
+            <minislideshow>
+                <class>EM_Minislideshow_Model</class>
+                <resourceModel>minislideshow_mysql4</resourceModel>
+            </minislideshow>
+            <minislideshow_mysql4>
+                <class>EM_Minislideshow_Model_Mysql4</class>
+                <entities>
+                    <media>
+                        <table>em_minislideshow_media</table>
+                    </media>
+					<slider>
+                        <table>em_minislideshow_slider</table>
+                    </slider>
+                </entities>
+            </minislideshow_mysql4>
+        </models>
+        <resources>
+            <minislideshow_setup>
+                <setup>
+                    <module>EM_Minislideshow</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </minislideshow_setup>
+            <minislideshow_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </minislideshow_write>
+            <minislideshow_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </minislideshow_read>
+        </resources>
+        <blocks>
+            <minislideshow>
+                <class>EM_Minislideshow_Block</class>
+            </minislideshow>
+        </blocks>
+        <helpers>
+            <minislideshow>
+                <class>EM_Minislideshow_Helper</class>
+            </minislideshow>
+        </helpers>
+    </global>
+</config>

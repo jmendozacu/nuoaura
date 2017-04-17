@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hackathon_PromoCodeMessages>
+            <version>0.2.0</version>
+        </Hackathon_PromoCodeMessages>
+    </modules>
+
+    <global>
+        <models>
+            <hackathon_promocodemessages>
+                <class>Hackathon_PromoCodeMessages_Model</class>
+                <resourceModel>hackathon_promocodemessages_resource</resourceModel>
+            </hackathon_promocodemessages>
+            <hackathon_promocodemessages_resource>
+                <class>Hackathon_PromoCodeMessages_Model_Resource</class>
+            </hackathon_promocodemessages_resource>
+        </models>
+
+        <helpers>
+            <hackathon_promocodemessages>
+                <class>Hackathon_PromoCodeMessages_Helper</class>
+            </hackathon_promocodemessages>
+        </helpers>
+    </global>
+
+    <frontend>
+        <events>
+            <sales_quote_collect_totals_after>
+                <observers>
+                    <hackathon_promocodemessages>
+                        <type>singleton</type>
+                        <class>hackathon_promocodemessages/observer</class>
+                        <method>validateCode</method>
+                    </hackathon_promocodemessages>
+                </observers>
+            </sales_quote_collect_totals_after>
+        </events>
+
+        <translate>
+            <modules>
+                <Hackathon_PromoCodeMessages>
+                    <files>
+                        <default>Hackathon_PromoCodeMessages.csv</default>
+                    </files>
+                </Hackathon_PromoCodeMessages>
+            </modules>
+        </translate>
+
+        <layout>
+            <updates>
+                <hackathon_promocodemessages>
+                    <file>hackathon/promocodemessages.xml</file>
+                </hackathon_promocodemessages>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <checkout>
+            <promocodemessages>
+                <enabled>0</enabled>
+                <add_additional_info_on_frontend>0</add_additional_info_on_frontend>
+                <include_conditions>0</include_conditions>
+            </promocodemessages>
+        </checkout>
+    </default>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Hackathon_PromoCodeMessages />
+            </modules>
+        </suite>
+    </phpunit>
+</config>

@@ -1,0 +1,419 @@
+<?php if(Mage::helper('themeframework/settings')->checkDevice()!='mobile'):?>
+<div class="visible-sm visible-md visible-lg em-variation">
+    <a href="javascript:void(0)" title="<?php echo $this->__('Theme Variants') ?>" class="em-variation-btn">+ open/close</a>
+    <div class="em-variation-wrapper hidden" id="em-variation-demo">
+        <div id="em-variation-top">
+            <div class="em-variation-tabscontent">
+    			<div class="em-wrapper-variation">
+    				<h1 class="title-custom text-center"><?php echo $this->__('Main Color') ?></h1>
+    				<div id="em-variation-color">
+    					<?php $imgDir = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em0131/color/'; ?>
+    					<?php foreach (Mage::getModel('em0131settings/config_maincolor')->toOptionArray() as $row):?>
+    						<?php $img_url = $imgDir . $row['value']; ?>
+    						<a class="em-color" href="javascript:void(0)" data-em-color="<?php echo $row['value'] ?>">
+    							<span class="<?php echo $row['value'] ?>"><?php echo $row['value'] ?></span>
+    						</a>
+    					<?php endforeach ?>
+    				</div>
+    				<p class="label">Custom Primary Color</p>
+    				<input type="text" name="customColor01" value="" readonly="readonly" class="custom-color-01 color-picker input-lg" />
+    			</div>
+    			<div class="em-wrapper-variation">
+    				<h1 class="title-custom text-center"><?php echo $this->__('Main Font') ?></h1>
+    				<div id="em-variation-font">
+    					<?php $imgDir = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'em0131/font/'; ?>
+    					<?php foreach (Mage::getModel('em0131settings/config_mainfont')->toOptionArray() as $_font): ?>                                                    
+    						<?php $img_url = $imgDir . $_font['value']; ?>
+    						<a class="em-font-family <?php echo @in_array($_font['value'], Mage::helper('themeframework/settings')->getFonts_GoogleFonts()) ? 'selected' : '' ?>" href="javascript:void(0)" data-em-font-family="<?php echo htmlspecialchars($_font['value']) ?>">
+    							<span class="<?php echo strtolower(str_replace(' ','',$_font['value'])) ?>"><?php echo htmlspecialchars($_font['value']) ?></span>
+    						</a>                                
+    					<?php endforeach;?>
+    				</div>
+    			</div>
+    		</div>
+            <a href="#" title="<?php echo $this->__('Reset Setting') ?>" class="reset-button"><?php echo $this->__('Reset Setting') ?></a>
+        </div>	
+		<div id="em-variation-store">
+            <?php echo $this->getChildHtml('store_switcher') ?>
+        </div>	
+    </div>
+</div>
+<script type="text/javascript">
+	//<![CDATA[	    
+        (function($) {
+            function emVariationPanel() {
+                var btnPanel = $('a.em-variation-btn');
+                var divPanel = $('#em-variation-demo');   
+                var $_topContent = $('#em-variation-top');  
+                var $_listStore = $('#em-list-store');
+                btnPanel.click(function() {
+                    if (!(divPanel.is(':visible'))) {
+                        divPanel.removeClass('hidden').addClass('show');
+                        var $_storeHeight = $(window).height() - $_topContent.height() + 50;
+                        $_listStore.height($_storeHeight);                        
+                    } else {
+                        divPanel.addClass('hidden').removeClass('show');
+                    }
+                });
+            };
+        
+            var settingsFontBg = {};    
+            var settingsColor = {};
+            var variables = {};
+            changeVariation = function(key, value) {
+                var key = key || null;
+                var value = value || null;        
+                if (key) {
+                    if (String(value).indexOf(',') != -1 || String(value).indexOf('.') != -1 || String(value).indexOf('/') != -1 || String(value).indexOf(' ') != -1) 
+                        settingsFontBg[key] = '~"' + String(value.replace(/"/g, "'")) + '"';
+                    else
+                        settingsFontBg[key] = String(value);
+                }
+                variables = $.extend( {}, settingsColor, settingsFontBg );
+                less.modifyVars(variables);
+                variables = {};
+            };
+            /*return default value when input value is null*/
+            returnDefault = function(key) {
+                if (settingsFontBg[key]) delete(settingsFontBg[key]);
+                less.modifyVars(settingsFontBg);
+            };
+            
+            resetCustomColor = function(){
+                var $customColor = $('#em-variation-demo').find('color-picker');
+                if($customColor.length){
+                    $customColor.val('');
+                    $customColor.css('background-color','');
+                }
+            };
+            
+            resetColor = function(){
+                var sColor = $('#em-variation-color').find('a.em-color');                
+                if(sColor.length){
+                    sColor.removeClass('selected');
+                }                
+                settingsColor = {};      
+            };
+            
+            resetFont = function(){
+                var sFont = $('#em-variation-font').find('a.em-font-family');
+                if(sFont.length){
+                    sFont.removeClass('selected');
+                }                                       
+            };
+            
+            /*reset Variation*/
+            resetVariation = function() {
+                resetCustomColor();
+                resetColor();
+                resetFont();
+                settingsFontBg = {}; 
+                variables = {};
+                less.refresh();
+            };
+            
+            /* Color */
+            var emColorStyle04 = {
+                customColor01 :{
+					header_bg3_color: '#aa916a',
+					topmenu_hover_text_color: '#aa916a',
+					topmenu_line_color: '#aa916a',
+					vnav_hover_text_color: '#aa916a',
+					dropmenu_text2_color: '#aa916a',
+					body_bg3_color: '#aa916a',
+					body_label_bg3_color: '#aa916a',
+					body_line2_color: '#aa916a',
+					body_text5_color: '#aa916a',
+					body_text7_color: '#aa916a',			
+					footer_text3_color: '#aa916a',			
+					
+					
+					btn1_bg_color: '#aa916a',
+					btn1_line_color: '#aa916a',
+			
+                },
+                customColor02 :{
+					header_bg_color: '#4b1f11',
+                    footer_bg_color:'#4b1f11',
+
+                },
+                customColor03:{
+                    header_bg2_color:'#3A1B11',
+                    footer_bg3_color:'#3A1B11',
+                    footer_line_color:'#3A1B11',
+                    header_line_color:'#3A1B11',
+                },
+            };
+            var emColorStyle02 = {
+                customColor01 :{
+					header_bg3_color: '#f6a723',
+					topmenu_hover_text_color: '#f6a723',
+					topmenu_line_color: '#f6a723',
+					vnav_hover_text_color: '#f6a723',
+					dropmenu_text2_color: '#f6a723',
+					body_bg3_color: '#f6a723',
+					body_label_bg3_color: '#f6a723',
+					body_line2_color: '#f6a723',
+					body_text5_color: '#f6a723',
+					body_text7_color: '#f6a723',			
+					footer_text3_color: '#f6a723',			
+					
+					
+					btn1_bg_color: '#f6a723',
+					btn1_line_color: '#f6a723',
+			
+                },
+                customColor02 :{
+					header_bg_color: '#313959',
+					footer_bg_color: '#313959',
+
+                },
+                customColor03:{
+					header_bg2_color:'#252B44',
+                    footer_bg3_color:'#252B44',
+                    footer_line_color:'#252B44',
+                    header_line_color:'#252B44',
+                },
+            };
+            var emColorStyle03 = {
+                customColor01 :{
+					header_bg3_color: '#6db088',
+					topmenu_hover_text_color: '#6db088',
+					topmenu_line_color: '#6db088',
+					vnav_hover_text_color: '#6db088',
+					dropmenu_text2_color: '#6db088',
+					body_bg3_color: '#6db088',
+					body_label_bg3_color: '#6db088',
+					body_line2_color: '#6db088',
+					body_text5_color: '#6db088',
+					body_text7_color: '#6db088',			
+					footer_text3_color: '#6db088',			
+					
+					
+					btn1_bg_color: '#6db088',
+					btn1_line_color: '#6db088',
+			
+                },
+                customColor02 :{
+					header_bg_color: '#46674c',
+
+                },
+                customColor03:{
+                    header_bg2_color:'#344D39',
+                    header_line_color:'#344D39',
+                },
+            };
+            var emColorStyle01 = {
+                customColor01 :{
+					header_bg3_color: '#be5960',
+					topmenu_hover_text_color: '#be5960',
+					topmenu_line_color: '#be5960',
+					vnav_hover_text_color: '#be5960',
+					dropmenu_text2_color: '#be5960',
+					body_bg3_color: '#be5960',
+					body_label_bg3_color: '#be5960',
+					body_line2_color: '#be5960',
+					body_text5_color: '#be5960',
+					body_text7_color: '#be5960',			
+					footer_text3_color: '#be5960',			
+					
+					
+					btn1_bg_color: '#be5960',
+					btn1_line_color: '#be5960',
+			
+                },
+                customColor02 :{
+					header_bg_color: '#322923',
+                    footer_bg_color:'#322923',
+
+                },
+                customColor03:{
+                    header_bg2_color:'#251d18',
+                    footer_bg3_color:'#251d18',
+                    footer_line_color:'#251d18',
+                    header_line_color:'#251d18',
+                },                   	
+            };
+            
+            function emColor() {
+                var sColor = $('#em-variation-color').find('a.em-color');
+                if(sColor.length){
+                    sColor.click(function() {
+                        resetCustomColor();
+                        sColor.removeClass('selected');
+                        $(this).addClass('selected');
+                        var vPattern = $(this).data('em-color');
+                        settingsColor = {};
+                        switch (vPattern) {
+                            case 'emColorStyle01':
+                                settingsColor = $.extend( {}, settingsFontBg, emColorStyle01.customColor01,emColorStyle01.customColor02,emColorStyle01.customColor03 );
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle02':                    
+                                settingsColor = $.extend( {}, settingsFontBg, emColorStyle02.customColor01,emColorStyle02.customColor02,emColorStyle02.customColor03);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle03':
+                                settingsColor = $.extend( {}, settingsFontBg, emColorStyle03.customColor01,emColorStyle03.customColor02,emColorStyle03.customColor03);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle04':
+                                settingsColor = $.extend( {}, settingsFontBg, emColorStyle04.customColor01,emColorStyle04.customColor02,emColorStyle04.customColor03);
+                                less.modifyVars(settingsColor);
+                                break;
+                        }
+                        return false;
+                    });   
+                }
+            };
+            
+            function setColourPicker(){
+                function newColor(templess,newlessvalue,style_color){
+                    jQuery.each(style_color,function(index,value){
+                        templess[index]=newlessvalue;
+                    });                  
+                };
+                function defaultColor(templess,style_color){
+                    jQuery.each(style_color,function(index,value){
+                        templess[index]=value;
+                    });
+                };
+                var $colorPicker = $('#em-variation-demo').find('.color-picker'); 
+                var $color01 = $('#em-variation-demo .custom-color-01');                             
+                var temp = {};
+                settingsColor = {};
+                $colorPicker.ColorPicker({
+            		onChange: $.debounce(300, function(hsb, hex) {      		            
+            			var el = this.data('colorpicker').el;
+            			$(el).val('#' + hex);
+                        $(el).attr('value','#' + hex);
+            			$(el).css('backgroundColor', '#' + hex);
+                        var $customColor = $(el).attr('name');
+                        var $color = $('#em-variation-demo .em-color.selected');
+                        if($color.length){
+                            var $selectedColor = $color.data('em-color');
+                        }else{
+                            var $selectedColor = 'emColorStyle01';
+                        }                        
+                        //var $value = $(el).val(); 
+                        switch($selectedColor){
+                            case 'emColorStyle01':
+                                if($customColor=='customColor01' || $color01.val()!=''){newColor(temp,$color01.val(),emColorStyle01.customColor01);}else{defaultColor(temp,emColorStyle01.customColor01);}
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle02':
+                                if($customColor=='customColor01' || $color01.val()!=''){newColor(temp,$color01.val(),emColorStyle02.customColor01);}else{defaultColor(temp,emColorStyle02.customColor01);}
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle03':
+                                if($customColor=='customColor01' || $color01.val()!=''){newColor(temp,$color01.val(),emColorStyle03.customColor01);}else{defaultColor(temp,emColorStyle03.customColor01);}
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle04':
+                                if($customColor=='customColor01' || $color01.val()!=''){newColor(temp,$color01.val(),emColorStyle04.customColor01);}else{defaultColor(temp,emColorStyle04.customColor01);}
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                        }        			
+            		}),
+            		onBeforeShow: function() {
+            			$(this).ColorPickerSetColor(this.value);
+            		}
+            	}).bind('keyup', $.debounce(300, function() {
+            	    $(this).ColorPickerSetColor(this.value);
+            		if ($(this).val() == '') {
+            			$(this).attr('value','');
+                        $(this).css('backgroundColor', '');
+                        var $customColor = $(this).attr('name');
+                        var $color = $('.em-color.selected');
+                        if($color.length){
+                            var $selectedColor = $color.data('em-color');
+                        }else{
+                            var $selectedColor = 'emColorStyle01';
+                        } 
+                        //console.log($color01.val());
+                        switch($selectedColor){
+                            case 'emColorStyle01':
+                                if($customColor=='customColor01'){defaultColor(temp,emColorStyle01.customColor01);} 
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle02':
+                                if($customColor=='customColor01'){defaultColor(temp,emColorStyle02.customColor01);} 
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle03':
+                                if($customColor=='customColor01'){defaultColor(temp,emColorStyle03.customColor01);}  
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                            case 'emColorStyle04':
+                                if($customColor=='customColor01'){defaultColor(temp,emColorStyle04.customColor01);}
+                                settingsColor = $.extend( {}, settingsFontBg,temp);
+                                less.modifyVars(settingsColor);
+                                break;
+                        }  
+        		    }
+            	}));
+                var $submitColor = $('#em-variation-demo').find('.colorpicker_submit');
+            	$submitColor.click(function() {
+            		var btn = $(this);
+            		var tm;
+            		clearTimeout(tm);
+            		btn.button('loading');
+            		tm = setTimeout(function() {
+            			btn.button('reset');
+            		}, 1000);
+            	});
+            };
+        
+            /* Font */
+            var fontLoaded = {};
+        
+            function emFont() {
+                var sFont = $('#em-variation-font').find('a.em-font-family');
+                if(sFont.length){
+                    sFont.click(function() {
+                        sFont.removeClass('selected');
+                        $(this).addClass('selected');
+                        var vFont = $(this).data('em-font-family');
+                        if (typeof fontLoaded[vFont] == 'undefined') {
+                            $('head').append('<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + encodeURIComponent(vFont) + ':400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext"></link>');
+                        }
+                        changeVariation('@font_family', vFont);
+                        //less.modifyVars({'@font_family' : vFont});
+                        fontLoaded[vFont] = vFont;
+                        return false;
+                    });
+                }
+            };
+        
+            /* Reset */
+            function emReset() {
+                var sClick = $('#em-variation-demo').find('a.reset-button');
+                if(sClick.length){
+                    sClick.click(function() {
+                        resetVariation();
+                        return false;
+                    });
+                }
+            };            
+            			
+            $(document).ready(function() {                
+                var wWindow = $(window).width();
+                if(!isMobile && wWindow>767){                    
+                    emVariationPanel();
+                    setColourPicker();
+                    emColor();
+                    emFont();
+                    emReset();
+                }
+            });
+        })(jQuery);
+	//]]>
+</script>
+<?php endif;?>

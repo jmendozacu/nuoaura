@@ -1,0 +1,30 @@
+<div class="popup-subscribe">
+	<div class="em-wrapper-newsletter">
+		<div class="em-block-title">
+			<h2><span><?php echo $this->__('newsletter') ?></span></h2>
+		</div>
+		<p><?php echo $this->__('Sign up to our email newsletter to be the first to hear about great offers and more') ?></p>
+		<div class="em-newsletter-style05">
+			<div class="block block-subscribe">
+				<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="em-popup-newsletter-validate-detail">
+					<div class="block-content">
+						<div class="form-subscribe-content">
+							<div class="input-box">
+							   <input type="text" name="email" id="popup-newsletter" title="<?php echo $this->__('Sign up for our newsletter') ?>" class="input-text required-entry validate-email" />
+							</div>
+							<div class="actions">
+								<button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+							</div>
+						</div>
+					</div>
+				</form>				 
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//<![CDATA[
+			var searchFormPopup = new Varien.searchForm('em-popup-newsletter-validate-detail', 'popup-newsletter', '<?php echo $this->__('Sign up for your email ...') ?>'); 
+			var newsletterSubscriberFormDetailPopup = new VarienForm('em-popup-newsletter-validate-detail');
+		//]]>
+	</script>
+</div>

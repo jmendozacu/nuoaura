@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <general>
+    <theme_name><![CDATA[EM0131 Everything Fashion Clean Style - Milan]]></theme_name>
+    <identifier><![CDATA[em0131-fashionclean]]></identifier>
+    <base_theme><![CDATA[em0131]]></base_theme>
+    <package><![CDATA[em0131]]></package>
+    <template><![CDATA[em0131_fashionclean]]></template>
+    <layout><![CDATA[em0131_fashionclean]]></layout>
+    <skin><![CDATA[em0131_fashionclean]]></skin>
+    <default_theme><![CDATA[]]></default_theme>
+    <path><![CDATA[layout_magento_emeverything_homepage_17_slide1.jpg]]></path>
+    <is_clone><![CDATA[0]]></is_clone>
+  </general>
+  <settings>
+    <config_json><![CDATA[{"general_disable_responsive":"1","general_right_to_left":"0","general_right_to_left_preview":"","general_box_wide":"wide","general_box_wide_preview":"","general_wideslide_full":"0","general_wideslide_full_preview":"","general_sticky_element":"1","general_header_style":"style27","general_footer_style":"style08","general_disable_default_nav":"0","general_disable_hover_login":"1","general_cat_search":"-1","general_show_popup":"2","general_disable_ajaxaddto":"1","general_disable_frontend_variation":"1","general_admin_toolbar":"0","general_disable_collapse":"1","css_additional_css_file":"style_fashionclean.css,theme_fashionclean.less","css_custom_css":"","fonts_google_font_key":"AIzaSyCZ6wqklkyJFXWvoxvA5Zv0SGzHTd6JbbI","fonts_google_fonts":["Lato","Lora","Raleway"],"fonts_font_family":"null","fonts_google_fonts_weights":"200,300,400,500,600,700,800","fonts_general_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h1_font":"700 30px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h2_font":"700 20px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h3_font":"700 18px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h4_font":"500 16px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h5_font":"500 14px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","fonts_h6_font":"500 12px\/1.35 Raleway, Helvetica Neue, Helvetica, Arial, sans-serif","typo_general_page_bg_color":"#ffffff","typo_general_page_bg_image":"","typo_general_page_bg_position":"0 0","typo_general_page_bg_repeat":"repeat","typo_general_page_bg_attachment":"fixed","typo_general_box_shadow":"0 0 5px #ffffff","typo_general_rounded_corner":"5px","header_header_bg_color":"rgba(255,255,255,1.00)","header_header_bg2_color":"#fcfcfc","header_header_bg3_color":"#82889f","header_header_bg4_color":"#ffffff","header_header_bg5_color":"#ffffff","header_header_bg_image":"","header_header_bg_position":"0 0","header_header_bg_repeat":"repeat","header_header_text_color":"#a1a1a1","header_header_text2_color":"#ffffff","header_header_text3_color":"#434343","header_header_text4_color":"#808080","header_header_line_color":"#f2f2f2","menu_topmenu_bg_color":"#272727","menu_topmenu_hover_bg_color":"#82889f","menu_topmenu_text_color":"#ffffff","menu_topmenu_hover_text_color":"#ffffff","menu_topmenu_line_color":"#82889f","menu_topmenu_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_vnav_bg_color":"#ffffff","menu_vnav_hover_bg_color":"#ffffff","menu_vnav_text_color":"rgba(255,255,255,1.00)","menu_vnav_hover_text_color":"#82889f","menu_vnav_line_color":"#82889f","menu_vnav_font":"500 14px\/1.35 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","menu_dropmenu_bg_color":"#ffffff","menu_dropmenu_text_color":"#a1a1a1","menu_dropmenu_text2_color":"#82889f","menu_dropmenu_text3_color":"#434343","menu_dropmenu_line_color":"#e9e9e9","menu_dropmenu_font":"500 14px\/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif","body_body_bg_color":"#ffffff","body_body_bg2_color":"#ffffff","body_body_bg3_color":"#82889f","body_body_bg4_color":"rgba(241,241,241,1.00)","body_body_tab_bg_color":"#ffffff","body_body_label_bg_color":"rgba(0,0,0,1.00)","body_body_label_bg2_color":"#f83c3c","body_body_label_bg3_color":"#82889f","body_body_bg_image":"","body_body_bg_position":"0 0","body_body_bg_repeat":"repeat","body_body_text_color":"#808080","body_body_text2_color":"#000000","body_body_text3_color":"#434343","body_body_text4_color":"#434343","body_body_text5_color":"#82889f","body_body_text6_color":"#ffffff","body_body_text7_color":"#82889f","body_body_line_color":"rgba(225,225,225,1.00)","body_body_line2_color":"#82889f","footer_footer_bg_color":"#272727","footer_footer_bg2_color":"transparent","footer_footer_bg3_color":"#343434","footer_footer_bg_image":"","footer_footer_bg_position":"0 0","footer_footer_bg_repeat":"repeat","footer_footer_text_color":"#a1a1a1","footer_footer_text2_color":"#c2c2c2","footer_footer_text3_color":"#82889f","footer_footer_text4_color":"#ffffff","footer_footer_line_color":"#343434","buttons_btn1_bg_color":"#82889f","buttons_btn1_text_color":"#ffffff","buttons_btn1_line_color":"#82889f","buttons_btn1_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn2_bg_color":"#f1f1f1","buttons_btn2_text_color":"#a1a1a1","buttons_btn2_line_color":"#f1f1f1","buttons_btn2_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn3_bg_color":"#ffffff","buttons_btn3_text_color":"#a1a1a1","buttons_btn3_line_color":"#e1e1e1","buttons_btn3_font":"700 12px\/1.15 Lato, Helvetica, Arial, sans-serif","buttons_btn4_bg_color":"#e79f65","buttons_btn4_text_color":"#ffffff","buttons_btn4_line_color":"#e79f65","buttons_btn4_font":"700 1.6rem\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn5_bg_color":"#ffffff","buttons_btn5_text_color":"#a1a1a1","buttons_btn5_line_color":"#e1e1e1","buttons_btn5_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn6_bg_color":"#ffffff","buttons_btn6_text_color":"#a1a1a1","buttons_btn6_line_color":"#e1e1e1","buttons_btn6_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","buttons_btn7_bg_color":"transparent","buttons_btn7_text_color":"#ffffff","buttons_btn7_line_color":"rgba(255,255,255,1.00)","buttons_btn7_font":"700 12px\/1.35 Lato, Helvetica, Arial, sans-serif","products_grid_onecolumn":"5","products_grid_twocolumns":"4","products_grid_threecolumns":"3","products_grid_desktop_small_onecolumn":"4","products_grid_desktop_small_twocolumns":"3","products_grid_desktop_small_threecolumns":"2","products_grid_tablet_onecolumn":"3","products_grid_tablet_twocolumns":"3","products_grid_tablet_threecolumns":"2","products_grid_items_mobile":"2","products_grid_image_ratio":"1","products_grid_custom_width":"1","products_grid_custom_height":"1","products_grid_alt_img":"image","products_grid_config_hover":"mobile","products_grid_align_center":"1","products_grid_show_thumbnail":"1","products_grid_show_label":"1","products_grid_show_product_name":"1","products_grid_auto_product_name":"0","products_grid_show_desc":"2","products_grid_show_price":"1","products_grid_show_reviews":"1","products_grid_show_addtocart":"1","products_list_gutter":"","products_list_image_ratio":"1","products_list_custom_width":"1","products_list_custom_height":"1","products_list_alt_img":"image","products_list_show_product_name":"1","products_list_show_thumbnail":"1","products_list_show_desc":"1","products_list_show_price":"1","products_list_show_reviews":"1","products_list_show_addtocart":"1","products_list_show_addto":"1","products_list_show_label":"1","product_detail_product_view_preview":"","product_detail_primary_column_width":"15","product_detail_base_image_width":"800","product_detail_base_image_height":"800","product_detail_secondary_column_width":"9","product_detail_primary_two_column_width":"12","product_detail_base_two_image_width":"500","product_detail_base_two_image_height":"500","product_detail_secondary_two_column_width":"12","product_detail_primary_three_column_width":"24","product_detail_base_three_image_width":"600","product_detail_base_three_image_height":"600","product_detail_secondary_three_column_width":"24","product_detail_show_sku":"1","product_detail_viewmode":"cloudzoom","product_detail_cloud_zoom_width":"200","product_detail_cloud_zoom_height":"200","product_detail_use_tabs":"1","moreview_width":"100","moreview_height":"100","moreview_enable_slider":"1","moreview_slider_items":"6","moreview_slider_items_desktop":"4","moreview_slider_items_desktop_small":"3","moreview_slider_items_tablet":"3","moreview_slider_items_mobile":"2","moreview_slider_navigation":"1","moreview_slider_pagination":"0","moreview_slider_pagination_numbers":"0","related_display":"dont_replace","related_position":"top_tabs","related_width":"300","related_height":"300","related_enable_slider":"1","related_slider_items":"4","related_slider_items_two":"4","related_slider_items_three":"3","related_slider_items_desktop":"5","related_slider_items_desktop_small":"3","related_slider_items_tablet":"3","related_slider_items_mobile":"2","related_slider_navigation":"1","related_slider_pagination":"0","related_slider_pagination_numbers":"0","upsell_display":"dont_replace","upsell_width":"300","upsell_height":"300","upsell_enable_slider":"1","upsell_slider_items":"4","upsell_slider_items_two":"3","upsell_slider_items_three":"2","upsell_slider_items_desktop":"4","upsell_slider_items_desktop_small":"3","upsell_slider_items_tablet":"3","upsell_slider_items_mobile":"2","upsell_slider_navigation":"1","upsell_slider_pagination":"0","upsell_slider_pagination_numbers":"0","position_catalog_shopby":"left","position_catalog_leftnav":"left","position_catalog_search_layer":"left","position_catalog_related":"right","position_compare":"all","position_poll":"all","position_popular_tags":"left","position_wishlist_sidebar":"all","position_reorder_sidebar":"right","home_position_compare":"0","home_position_poll":"0","home_position_tags":"0","home_position_wishlist":"0","home_position_reorder":"0","crossell_display":"dont_replace","crossell_width":"280","crossell_height":"280","crossell_enable_slider":"1","crossell_slider_items":"4","crossell_slider_items_desktop":"4","crossell_slider_items_desktop_small":"3","crossell_slider_items_tablet":"3","crossell_slider_items_mobile":"2","crossell_slider_navigation":"1","crossell_slider_pagination":"0","crossell_slider_pagination_numbers":"0","image_sidebar_width":"100","image_sidebar_height":"100","related_sidebar_width":"100","related_sidebar_height":"100","image_shopping_cart_width":"100","image_shopping_cart_height":"100","recently_viewed_width":"100","recently_viewed_height":"100","flashtag_enabled":"0","flashtag_count":"100","flashtag_max":"20","flashtag_min":"12","flashtag_maxcolor":"#646464","flashtag_normal":"#646464","flashtag_hover":"#646464","ajaxcart_auto_close":"0","contacts_map_enable":"1","contacts_map_address":"249 Ung Van Khiem, Phuong 25, Binh Thanh, Ho Chi Minh","contacts_map_info":"We really care about you and your website as much as you do. Purchasing EM0131 Everything or any other theme from us you get 100% free support.","contacts_map_height":"500","contacts_map_width":"100%","contacts_map_image":null,"snippets_enable":"0","snippets_review":"0","snippets_price":"0","snippets_breadcrumbs":"0","snippets_description":"0","thumbnail":null,"typo_general_page_bg_file":null,"header_header_bg_file":null,"body_body_bg_file":null,"footer_footer_bg_file":null}]]></config_json>
+    <excluded_blocks><![CDATA[em0131-fashion-area01-home-ads&em0131-fashion-area04-home-banners&em0131-fashion-area02-home-menu&em0131-fashion-area05-home-ads&em0131-fashion-area03-home-slideshow&em0131-fashion-area06-home-banners-slider&em0131-fashion-area-footer01-links&em0131-fashion-area-footer&em0131-fashion-area-footer03-payment&em0131-fashion-area-left01-home-banner&em0131-fashion-area-main01-home-banners&em0131-fashion-area-main02-home-tabs&em0131-fashion-area-left02-home-ads&em0131-fashion-area-main03-home-banner&em0131-fashion-area-left03-home-recent-blog&em0131-fashion-area-main04-home-best-sales&em0131-fashion-area-left04-home-banner&em0131-fashion-area04-banners&em0131-fashion-area06-banners-slider&em0131-fashion-area05-ads&em0131-fashion-area-footer01-links-style09&em0131-fashion-area-footer02-payment]]></excluded_blocks>
+  </settings>
+  <sample_data>
+    <flexible_block>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area01 - Home - Main Slideshow]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area01-home-main-slideshow]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area1]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-slideshow">{{widget type="minislideshow/minislideshow" slideshow="17"}}</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 02 - Home - Ads 09]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-02-home-banner]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area2]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="col-sm-8 text-center em-wrapper-ads-item">
+<div class="em-ads-item em-box-bkg">
+<p><em class="fa fa-fw fa-2x"></em></p>
+<div class="em-ads-content">
+<h5 class="em-text-upercase">RETURN &amp; EXCHANGE</h5>
+<p>Vintage pastel tucked t-shirt leather cami</p>
+</div>
+</div>
+</div>
+<div class="col-sm-8 text-center em-wrapper-ads-item">
+<div class="em-ads-item em-box-bkg">
+<p><em class="fa fa-fw fa-2x"></em></p>
+<div class="em-ads-content">
+<h5 class="em-text-upercase">free shipping</h5>
+<p>Loafer Jil Sander Vasari oversized boots</p>
+</div>
+</div>
+</div>
+<div class="col-sm-8 text-center  em-wrapper-ads-item">
+<div class="em-ads-item em-box-bkg">
+<p><em class="fa fa-fw fa-2x"></em></p>
+<div class="em-ads-content">
+<h5 class="em-text-upercase">MEMBER DISCOUNT</h5>
+<p>Flats Cara D. dress knitwear leather luxe</p>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan- Area Main 00 - Home - New Arrivals - Tabs]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main00-home-new-arrivals]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[content]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[0]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-new-arrivals-tabs">
+<div class="em-new-arrivals-tabs em-line-01">{{widget type="tabs/group" title="New Arrivals" title_1="YTozODp7aTowO3M6NToiU2hpcnQiO2k6MTtzOjA6IiI7aTo0O3M6MDoiIjtpOjU7czowOiIiO2k6NjtzOjA6IiI7aTo3O3M6MDoiIjtpOjg7czowOiIiO2k6OTtzOjA6IiI7aToxMTtzOjA6IiI7aToxMjtzOjA6IiI7aToxMztzOjA6IiI7aToxNDtzOjA6IiI7aToxNTtzOjA6IiI7aToyNTtzOjA6IiI7aToyNztzOjA6IiI7aTozMDtzOjA6IiI7aTozMjtzOjA6IiI7aTozNjtzOjA6IiI7aTozO3M6MDoiIjtpOjEwO3M6MDoiIjtpOjE2O3M6MDoiIjtpOjE3O3M6MDoiIjtpOjE4O3M6MDoiIjtpOjE5O3M6MDoiIjtpOjIwO3M6MDoiIjtpOjIxO3M6MDoiIjtpOjIyO3M6MDoiIjtpOjIzO3M6MDoiIjtpOjI0O3M6MDoiIjtpOjI2O3M6MDoiIjtpOjI4O3M6MDoiIjtpOjI5O3M6MDoiIjtpOjMxO3M6MDoiIjtpOjMzO3M6MDoiIjtpOjM3O3M6MDoiIjtpOjI7czowOiIiO2k6MzQ7czowOiIiO2k6MzU7czowOiIiO30=" block_1="23" title_2="YTozODp7aTowO3M6NToiU2tpcnQiO2k6MTtzOjA6IiI7aTo0O3M6MDoiIjtpOjU7czowOiIiO2k6NjtzOjA6IiI7aTo3O3M6MDoiIjtpOjg7czowOiIiO2k6OTtzOjA6IiI7aToxMTtzOjA6IiI7aToxMjtzOjA6IiI7aToxMztzOjA6IiI7aToxNDtzOjA6IiI7aToxNTtzOjA6IiI7aToyNTtzOjA6IiI7aToyNztzOjA6IiI7aTozMDtzOjA6IiI7aTozMjtzOjA6IiI7aTozNjtzOjA6IiI7aTozO3M6MDoiIjtpOjEwO3M6MDoiIjtpOjE2O3M6MDoiIjtpOjE3O3M6MDoiIjtpOjE4O3M6MDoiIjtpOjE5O3M6MDoiIjtpOjIwO3M6MDoiIjtpOjIxO3M6MDoiIjtpOjIyO3M6MDoiIjtpOjIzO3M6MDoiIjtpOjI0O3M6MDoiIjtpOjI2O3M6MDoiIjtpOjI4O3M6MDoiIjtpOjI5O3M6MDoiIjtpOjMxO3M6MDoiIjtpOjMzO3M6MDoiIjtpOjM3O3M6MDoiIjtpOjI7czowOiIiO2k6MzQ7czowOiIiO2k6MzU7czowOiIiO30=" block_2="24" title_3="YTozODp7aTowO3M6NzoiRHJlc3NlcyI7aToxO3M6MDoiIjtpOjQ7czowOiIiO2k6NTtzOjA6IiI7aTo2O3M6MDoiIjtpOjc7czowOiIiO2k6ODtzOjA6IiI7aTo5O3M6MDoiIjtpOjExO3M6MDoiIjtpOjEyO3M6MDoiIjtpOjEzO3M6MDoiIjtpOjE0O3M6MDoiIjtpOjE1O3M6MDoiIjtpOjI1O3M6MDoiIjtpOjI3O3M6MDoiIjtpOjMwO3M6MDoiIjtpOjMyO3M6MDoiIjtpOjM2O3M6MDoiIjtpOjM7czowOiIiO2k6MTA7czowOiIiO2k6MTY7czowOiIiO2k6MTc7czowOiIiO2k6MTg7czowOiIiO2k6MTk7czowOiIiO2k6MjA7czowOiIiO2k6MjE7czowOiIiO2k6MjI7czowOiIiO2k6MjM7czowOiIiO2k6MjQ7czowOiIiO2k6MjY7czowOiIiO2k6Mjg7czowOiIiO2k6Mjk7czowOiIiO2k6MzE7czowOiIiO2k6MzM7czowOiIiO2k6Mzc7czowOiIiO2k6MjtzOjA6IiI7aTozNDtzOjA6IiI7aTozNTtzOjA6IiI7fQ==" block_3="25" title_4="YTozODp7aTowO3M6OToiT3V0ZXJ3ZWFyIjtpOjE7czowOiIiO2k6NDtzOjA6IiI7aTo1O3M6MDoiIjtpOjY7czowOiIiO2k6NztzOjA6IiI7aTo4O3M6MDoiIjtpOjk7czowOiIiO2k6MTE7czowOiIiO2k6MTI7czowOiIiO2k6MTM7czowOiIiO2k6MTQ7czowOiIiO2k6MTU7czowOiIiO2k6MjU7czowOiIiO2k6Mjc7czowOiIiO2k6MzA7czowOiIiO2k6MzI7czowOiIiO2k6MzY7czowOiIiO2k6MztzOjA6IiI7aToxMDtzOjA6IiI7aToxNjtzOjA6IiI7aToxNztzOjA6IiI7aToxODtzOjA6IiI7aToxOTtzOjA6IiI7aToyMDtzOjA6IiI7aToyMTtzOjA6IiI7aToyMjtzOjA6IiI7aToyMztzOjA6IiI7aToyNDtzOjA6IiI7aToyNjtzOjA6IiI7aToyODtzOjA6IiI7aToyOTtzOjA6IiI7aTozMTtzOjA6IiI7aTozMztzOjA6IiI7aTozNztzOjA6IiI7aToyO3M6MDoiIjtpOjM0O3M6MDoiIjtpOjM1O3M6MDoiIjt9" block_4="26" template="emtabs/group.phtml"}}</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 06- Ads10]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area06-from-our-blog]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area6]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row">
+<div class="col-sm-24">
+<div class="em-wrapper-ads-10 em-line-01">
+<div class="em-block-title">
+<h2><span>From Our Blog</span></h2>
+</div>
+<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_07.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_07.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_08.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_08.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_09.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_09.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_07.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_07.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_08.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_08.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+<div class="em-blog-item em-effect-13">
+<div class="em-blog-content bkg-top"><a href="#"><img class="img-responsive" alt="em_ads_09.jpg" src="{{media url='wysiwyg/em0131/layout_01/home/em_ads_09.jpg'}}" /></a>
+<div class="em-blog-time">
+<p class="em-blog-date">28</p>
+<p class="em-blog-month">aug</p>
+</div>
+<div class="hov">&nbsp;</div>
+</div>
+<div class="em-box bkg-bottom">
+<h4 class="em-blog-title"><a href="#">Unlimited Colors</a></h4>
+<p class="em-blog-des">You can change the visual appearance of almost every element of the theme. You can change colors using color pickers, apply patterns/textures (predefined or custom) for header...</p>
+<p><a class="link-more" href="#">Read more</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area Footer 01 - Information - Footer Style08]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-footer01-information-footer-style08]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <position><![CDATA[em_area_footer01]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-footer-info">
+<div class="row em-footer-info-top">
+<div class="col-sm-16 col-sm-push-4 a-center">
+<div class="em-block-title" data-collapse-target="#collapse01">
+<p class="h4 em-text-upercase"><span>Sign Up For Newsletter</span></p>
+</div>
+<div id="collapse01" class="em-block-content em-newsletter">{{block type="newsletter/subscribe" name="em.newsletter.style02" template="newsletter/em_subscribe_style02.phtml"}}</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-24">
+<div class=" four-block-middle">
+<div class="row">
+<div class="col-sm-6">
+<div class="em-block-title" data-collapse-target="#collapse02">
+<p class="h4 em-text-upercase"><span>About Us</span></p>
+</div>
+<div id="collapse02" class="em-block-content block-info">
+<p class="em-info">Skort Maison Martin Margiela knot ponytail cami texture as tucked t-shirt. <em>Black skirt razor pleats plaited gold collar</em>. Crop 90s spearmint indigo seam luxe washed out.</p>
+<p class="em-address"><i class="fa fa-fw"></i><span>{{config path="general/store_information/address"}}</span></p>
+<p class="em-email"><i class="fa fa-fw"></i><span>{{config path="trans_email/ident_general/email"}}</span></p>
+<p class="em-phone"><i class="fa fa-fw"></i><span>{{config path="general/store_information/phone"}}</span></p>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="em-block-title" data-collapse-target="#collapse03">
+<p class="h4 em-text-upercase"><span>Useful Links</span></p>
+</div>
+<div id="collapse03" class="em-block-content">
+<div class="row">
+<div class="col-sm-12">
+<ul class="em-links">
+<li class="em-links-item"><a title="em-sample-title" href="{{store url='contacts'}}"><span>Contact Us</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>About Us</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Sitemap</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>Term &amp; Conditions</span></a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="em-links">
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>My Orders</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>My Credit Slips</span></a></li>
+<li class="em-links-item"><a title="em-sample-title" href="#"><span>My Addresses</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="em-block-title" data-collapse-target="#collapse04">
+<p class="h4 em-text-upercase"><span>from our blog</span></p>
+</div>
+<div id="collapse04" class="em-block-content em-from-our-blog">
+<div class="em-container-ads row">
+<div class="box-date"><span class="em-blog-date">20</span> <span class="em-blog-month">Jan</span></div>
+<div class="em-detail">
+<h5 class="em-blog-title"><a href="#">Donec gravida euismod</a></h5>
+<span class="em-blog-comment"><span>20 Comments</span></span></div>
+</div>
+<div class="em-container-ads row">
+<div class="box-date"><span class="em-blog-date">20</span> <span class="em-blog-month">Jan</span></div>
+<div class="em-detail">
+<h5 class="em-blog-title"><a href="#">Donec gravida euismod</a></h5>
+<span class="em-blog-comment"><span>20 Comments</span></span></div>
+</div>
+<div class="em-container-ads row">
+<div class="box-date"><span class="em-blog-date">20</span> <span class="em-blog-month">Jan</span></div>
+<div class="em-detail">
+<h5 class="em-blog-title"><a href="#">Donec gravida euismod</a></h5>
+<span class="em-blog-comment"><span>20 Comments</span></span></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="em-block-title" data-collapse-target="#collapse05">
+<p class="h4 em-text-upercase"><span>Follow Us</span></p>
+</div>
+<div id="collapse05" class="em-block-content">
+<p class="em-social"><a class="em-social-icon em-facebook f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-twitter f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-pinterest  f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-google f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a> <a class="em-social-icon em-rss  f-left" title="em-sample-title" href="#"><span class="fa fa-fw"></span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 06 - Ads10 - Code]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area06-from-our-blog-code]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[em_area6]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[0]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="col-sm-24">
+<div class="em-wrapper-ads-10 em-line-01">
+<div class="em-block-title">
+<h2><span>From Our Blog</span></h2>
+</div>
+<div class="em-slider em-slider-from-our-blog" data-emslider-navigation="true" data-emslider-items="3" data-emslider-desktop="3" data-emslider-desktop-small="2" data-emslider-tablet="2" data-emslider-mobile="1">{{block type="blog/post_list" name="em.fromblog.style02" template="em_blog/post/list/em_fromblog_style02.phtml"}}</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area Main 02 - Home - Best Seller]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main02-home-best-sellers]]></identifier>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <position><![CDATA[content]]></position>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <custom_position><![CDATA[]]></custom_position>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[2]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-new-arrivals-tabs">
+<div class="em-new-arrivals-tabs em-line-01">{{widget type="tabs/group" title="Best Sellers" title_1="YTozODp7aTowO3M6NToiU2hpcnQiO2k6MTtzOjA6IiI7aTo0O3M6MDoiIjtpOjU7czowOiIiO2k6NjtzOjA6IiI7aTo3O3M6MDoiIjtpOjg7czowOiIiO2k6OTtzOjA6IiI7aToxMTtzOjA6IiI7aToxMjtzOjA6IiI7aToxMztzOjA6IiI7aToxNDtzOjA6IiI7aToxNTtzOjA6IiI7aToyNTtzOjA6IiI7aToyNztzOjA6IiI7aTozMDtzOjA6IiI7aTozMjtzOjA6IiI7aTozNjtzOjA6IiI7aTozO3M6MDoiIjtpOjEwO3M6MDoiIjtpOjE2O3M6MDoiIjtpOjE3O3M6MDoiIjtpOjE4O3M6MDoiIjtpOjE5O3M6MDoiIjtpOjIwO3M6MDoiIjtpOjIxO3M6MDoiIjtpOjIyO3M6MDoiIjtpOjIzO3M6MDoiIjtpOjI0O3M6MDoiIjtpOjI2O3M6MDoiIjtpOjI4O3M6MDoiIjtpOjI5O3M6MDoiIjtpOjMxO3M6MDoiIjtpOjMzO3M6MDoiIjtpOjM3O3M6MDoiIjtpOjI7czowOiIiO2k6MzQ7czowOiIiO2k6MzU7czowOiIiO30=" block_1="27" title_2="YTozODp7aTowO3M6NToiU2tpcnQiO2k6MTtzOjA6IiI7aTo0O3M6MDoiIjtpOjU7czowOiIiO2k6NjtzOjA6IiI7aTo3O3M6MDoiIjtpOjg7czowOiIiO2k6OTtzOjA6IiI7aToxMTtzOjA6IiI7aToxMjtzOjA6IiI7aToxMztzOjA6IiI7aToxNDtzOjA6IiI7aToxNTtzOjA6IiI7aToyNTtzOjA6IiI7aToyNztzOjA6IiI7aTozMDtzOjA6IiI7aTozMjtzOjA6IiI7aTozNjtzOjA6IiI7aTozO3M6MDoiIjtpOjEwO3M6MDoiIjtpOjE2O3M6MDoiIjtpOjE3O3M6MDoiIjtpOjE4O3M6MDoiIjtpOjE5O3M6MDoiIjtpOjIwO3M6MDoiIjtpOjIxO3M6MDoiIjtpOjIyO3M6MDoiIjtpOjIzO3M6MDoiIjtpOjI0O3M6MDoiIjtpOjI2O3M6MDoiIjtpOjI4O3M6MDoiIjtpOjI5O3M6MDoiIjtpOjMxO3M6MDoiIjtpOjMzO3M6MDoiIjtpOjM3O3M6MDoiIjtpOjI7czowOiIiO2k6MzQ7czowOiIiO2k6MzU7czowOiIiO30=" block_2="28" title_3="YTozODp7aTowO3M6NzoiRHJlc3NlcyI7aToxO3M6MDoiIjtpOjQ7czowOiIiO2k6NTtzOjA6IiI7aTo2O3M6MDoiIjtpOjc7czowOiIiO2k6ODtzOjA6IiI7aTo5O3M6MDoiIjtpOjExO3M6MDoiIjtpOjEyO3M6MDoiIjtpOjEzO3M6MDoiIjtpOjE0O3M6MDoiIjtpOjE1O3M6MDoiIjtpOjI1O3M6MDoiIjtpOjI3O3M6MDoiIjtpOjMwO3M6MDoiIjtpOjMyO3M6MDoiIjtpOjM2O3M6MDoiIjtpOjM7czowOiIiO2k6MTA7czowOiIiO2k6MTY7czowOiIiO2k6MTc7czowOiIiO2k6MTg7czowOiIiO2k6MTk7czowOiIiO2k6MjA7czowOiIiO2k6MjE7czowOiIiO2k6MjI7czowOiIiO2k6MjM7czowOiIiO2k6MjQ7czowOiIiO2k6MjY7czowOiIiO2k6Mjg7czowOiIiO2k6Mjk7czowOiIiO2k6MzE7czowOiIiO2k6MzM7czowOiIiO2k6Mzc7czowOiIiO2k6MjtzOjA6IiI7aTozNDtzOjA6IiI7aTozNTtzOjA6IiI7fQ==" block_3="29" title_4="YTozODp7aTowO3M6OToiT3V0ZXJ3ZWFyIjtpOjE7czowOiIiO2k6NDtzOjA6IiI7aTo1O3M6MDoiIjtpOjY7czowOiIiO2k6NztzOjA6IiI7aTo4O3M6MDoiIjtpOjk7czowOiIiO2k6MTE7czowOiIiO2k6MTI7czowOiIiO2k6MTM7czowOiIiO2k6MTQ7czowOiIiO2k6MTU7czowOiIiO2k6MjU7czowOiIiO2k6Mjc7czowOiIiO2k6MzA7czowOiIiO2k6MzI7czowOiIiO2k6MzY7czowOiIiO2k6MztzOjA6IiI7aToxMDtzOjA6IiI7aToxNjtzOjA6IiI7aToxNztzOjA6IiI7aToxODtzOjA6IiI7aToxOTtzOjA6IiI7aToyMDtzOjA6IiI7aToyMTtzOjA6IiI7aToyMjtzOjA6IiI7aToyMztzOjA6IiI7aToyNDtzOjA6IiI7aToyNjtzOjA6IiI7aToyODtzOjA6IiI7aToyOTtzOjA6IiI7aTozMTtzOjA6IiI7aTozMztzOjA6IiI7aTozNztzOjA6IiI7aToyO3M6MDoiIjtpOjM0O3M6MDoiIjtpOjM1O3M6MDoiIjt9" block_4="30" template="emtabs/group.phtml"}}</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 03 - Home - Ads 17]]></title>
+        <position><![CDATA[em_area3]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-fashionclean-area-03-home-banner]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="em-wrapper-ads-17 hidden-xs">
+<div class="em-wrapper-parallax">
+<div class="em-box-info">
+<h1 class="em-text-upercase" style="font: 700 4.2rem/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;">Already Loving emeverything? Rate Us Now!</h1>
+<h3 style="font: italic 2.5rem/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif; padding-bottom: 3.4rem; margin-bottom: 2.2rem;">We Make Your Dream Came True</h3>
+<a class="button-link first" href="#"><span>purchase now</span></a></div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area Main 01 - Home - Banner]]></title>
+        <position><![CDATA[content]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-fashionclean-area-main01-home-banner]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[1]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="em-wrapper-banners">
+<div class="col-sm-12 img-banner text-center">
+<div class="em-effect06"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_01.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+<div class="col-sm-12 img-banner text-center">
+<div class="em-effect06"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_02.jpg'}}" /> </a>
+<div class="effect-line">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 04 - Home - Sale Featured Toprated]]></title>
+        <position><![CDATA[em_area4]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-fashionclean-area04-home-salefeaturedtoprated]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row em-line-01 custom-product-list hidden-xs">
+<div class="col-sm-8">{{widget type="minifilterproducts/list" category="35" type_filter="4" limit_count="3" order_by="name asc" frontend_title="SALE OFF" show="thumb,name,review,price,addtocart,addto" thumbnail_width="140" thumbnail_height="140" custom_theme="em_minifilterproducts/em_list_home17.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+<div class="col-sm-8">{{widget type="minifilterproducts/list" category="35" type_filter="1" featured="em_featured" limit_count="3" order_by="name asc" frontend_title="FEATURED" show="thumb,name,review,price,addtocart,addto" thumbnail_width="140" thumbnail_height="140" custom_theme="em_minifilterproducts/em_list_home17.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+<div class="col-sm-8">{{widget type="minifilterproducts/list" category="35" type_filter="1" featured="em_hot" limit_count="3" order_by="name asc" frontend_title="TOP REATED" show="thumb,name,review,price,addtocart,addto" thumbnail_width="140" thumbnail_height="140" custom_theme="em_minifilterproducts/em_list_home17.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400"}}</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area 05 - Home - Ads 15 - Banner]]></title>
+        <position><![CDATA[em_area5]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-fashionclean-area05-home-banner]]></identifier>
+        <layout_handle><![CDATA[cms_index_index]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[0]]></display_mobile>
+        <content><![CDATA[<div class="row hidden-xs">
+<div class="em-wrapper-banners">
+<div class="col-sm-6 first img-banner text-center">
+<div class="effect-hover-text"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_04.jpg'}}" /> </a> <a class="banner-text" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_text_04.png'}}" /> </a></div>
+</div>
+<div class="col-sm-12  text-center">
+<div class="em-wrapper-ads-18">
+<div class="em-slider em-slider-category" data-emslider-pagination="true" data-emslider-items="1">
+<div class="em-ads-item"><i class="fa fa-fw fa-3x"></i>
+<div class="em-ads-img"><a href="#"><img class="img-responsive" alt="em_ads_02.png" src="{{media url='wysiwyg/em0131/layout_fashion/home/em_ads_02.png'}}" /></a></div>
+<div class="em-ads-content">
+<p class="em-ads-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in feugiat lacus. Sed vestibulum eu diam non laoreet. Donec lectus nisi.</p>
+<p class="em-ads-author"><span class="em-text-upercase">elena gilbert </span><span>- Web designer</span></p>
+</div>
+</div>
+<div class="em-ads-item"><i class="fa fa-fw fa-3x"></i>
+<div class="em-ads-img"><a href="#"><img class="img-responsive" alt="em_ads_02.png" src="{{media url='wysiwyg/em0131/layout_fashion/home/em_ads_02.png'}}" /></a></div>
+<div class="em-ads-content">
+<p class="em-ads-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in feugiat lacus. Sed vestibulum eu diam non laoreet. Donec lectus nisi.</p>
+<p class="em-ads-author"><span class="em-text-upercase">elena gilbert </span><span>- Web designer</span></p>
+</div>
+</div>
+<div class="em-ads-item"><i class="fa fa-fw fa-3x"></i>
+<div class="em-ads-img"><a href="#"><img class="img-responsive" alt="em_ads_02.png" src="{{media url='wysiwyg/em0131/layout_fashion/home/em_ads_02.png'}}" /></a></div>
+<div class="em-ads-content">
+<p class="em-ads-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in feugiat lacus. Sed vestibulum eu diam non laoreet. Donec lectus nisi.</p>
+<p class="em-ads-author"><span class="em-text-upercase">elena gilbert </span><span>- Web designer</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 last img-banner text-center">
+<div class="effect-hover-text3"><a class="banner-img" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_05.jpg'}}" /> </a> <a class="banner-text" title="em-sample-title" href="#"> <img class="img-responsive" alt="em-sample-alt" src="{{media url='wysiwyg/em0131/layout_fashionclean/home/em_ads_text_05.png'}}" /> </a></div>
+</div>
+</div>
+</div>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+      <fblock>
+        <package_theme><![CDATA[em0131/em0131_fashionclean]]></package_theme>
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Header 01 - Header Style 27]]></title>
+        <position><![CDATA[em_area_header01]]></position>
+        <custom_position><![CDATA[]]></custom_position>
+        <schedule_pattern><![CDATA[every day]]></schedule_pattern>
+        <schedule_from_time><![CDATA[]]></schedule_from_time>
+        <schedule_to_time><![CDATA[]]></schedule_to_time>
+        <category_ids><![CDATA[]]></category_ids>
+        <identifier><![CDATA[em0131-fashionclean-area-header01-header-style27]]></identifier>
+        <layout_handle><![CDATA[default]]></layout_handle>
+        <custom_layout_handle><![CDATA[]]></custom_layout_handle>
+        <additional_cache_tags><![CDATA[]]></additional_cache_tags>
+        <layout_handle_2><![CDATA[]]></layout_handle_2>
+        <position_2><![CDATA[]]></position_2>
+        <layout_handle_3><![CDATA[]]></layout_handle_3>
+        <position_3><![CDATA[]]></position_3>
+        <layout_attribute><![CDATA[]]></layout_attribute>
+        <layout_attribute_2><![CDATA[]]></layout_attribute_2>
+        <layout_attribute_3><![CDATA[]]></layout_attribute_3>
+        <layout_attribute_custom><![CDATA[]]></layout_attribute_custom>
+        <cms_page><![CDATA[-1]]></cms_page>
+        <order><![CDATA[]]></order>
+        <status><![CDATA[1]]></status>
+        <display_pc><![CDATA[1]]></display_pc>
+        <display_tablet><![CDATA[1]]></display_tablet>
+        <display_mobile><![CDATA[1]]></display_mobile>
+        <content><![CDATA[<p class="em-phone"><i class="fa fa-fw"></i><span>{{config path="general/store_information/phone"}}</span></p>]]></content>
+        <conditions><![CDATA[a:6:{s:4:"type";s:34:"catalogrule/rule_condition_combine";s:9:"attribute";N;s:8:"operator";N;s:5:"value";s:1:"1";s:18:"is_value_processed";N;s:10:"aggregator";s:3:"all";}]]></conditions>
+        <from_date><![CDATA[]]></from_date>
+        <to_date><![CDATA[]]></to_date>
+      </fblock>
+    </flexible_block>
+    <themeframework/>
+    <staticblock>
+      <block id="23">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 00 - New Arrivals - Tab01]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main00-new-arrivals-tab01]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="3" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_new_arrivals_tab01"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="24">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 00 - New Arrivals - Tab02]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main00-new-arrivals-tab02]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="3" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_new_arrivals_tab02"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="25">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 00 - New Arrivals - Tab03]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main00-new-arrivals-tab03]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="3" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_new_arrivals_tab03"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="26">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 00 - New Arrivals - Tab04]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main00-new-arrivals-tab04]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="3" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_new_arrivals_tab04"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="27">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 02 - Best Seller - Tab01]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main02-best-sellers-tab01]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="2" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_bestseller_tab01"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="28">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 02 - Best Seller - Tab02]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main02-best-sellers-tab02]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="2" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_bestseller_tab02" tmp="2"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="29">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 02 - Best Seller - Tab03]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main02-best-sellers-tab03]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="2" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_bestseller_tab03" tmp="3"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+      <block id="30">
+        <title><![CDATA[EM0131 Everything - Fashion Clean - Area Main 02 - Best Seller - Tab04]]></title>
+        <identifier><![CDATA[em0131-fashionclean-area-main02-best-sellers-tab04]]></identifier>
+        <content><![CDATA[<div class="wrapper button-show01">{{widget type="minifilterproducts/list" category="35" type_filter="2" limit_count="4" column_count="4" order_by="name asc" show="thumb,name,review,price,label,addtocart,addto" thumbnail_width="350" thumbnail_height="350" custom_theme="em_minifilterproducts/em_grid_20_noslider.phtml" img_lazyload="1" alt_img="thumbnail" cache_lifetime="86400" slider_unique_id="em_fashionclean_bestseller_tab04" tmp="4"}}</div>]]></content>
+        <is_active><![CDATA[1]]></is_active>
+      </block>
+    </staticblock>
+    <megamenu/>
+    <minislideshows>
+      <minislideshow id="17">
+        <name><![CDATA[EM0131 Everything - Fashion Clean Style Milan - Area Main Slideshow]]></name>
+        <identifier><![CDATA[em0131-fashionclean-store-area-main-slideshow]]></identifier>
+        <images><![CDATA[[{"url":"1440389069_0_17_slide01.jpg","link":"fashionclean.html","info":[{"text":"\u003Cdiv class=\"a-left\"\u003E\r\n\u003Ch4 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:1.5rem;\"\u003ETop New Collection 15\/16\u003C\/h4\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003Eem stores\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003EPURCHASE NOW\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link last\"\u003E\u003Cspan\u003ESHOP NOW\u003C\/span\u003E\u003C\/a\u003E\r\n\u003C\/div\u003E","animation":"fadeInDown"}]},{"url":"1440389069_1_17_slide02.jpg","link":"apparel.html","info":[{"text":"\u003Ch4 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 2.3rem;\"\u003EHot Discounts of The Week\u003C\/h4\u003E\r\n\u003Ch2 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;  margin-bottom: 2rem;\" class=\"em-text-upercase\"\u003Esale off\u003C\/h2\u003E\r\n\u003Ch4 class=\"em-text-upercase\"  style=\"font:500 2rem\/1 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;\" \u003Eonly on $99.99\u003C\/h4\u003E","animation":"fadeInDown"}]},{"url":"1440389069_2_17_slide03.jpg","link":"apparel\/shirt.html","info":[{"text":"\u003Cdiv class=\"a-left\"\u003E\r\n\u003Ch4 style=\"font:italic 2rem\/1 Lora,Helvetica Neue, Helvetica, Arial, sans-serif;margin-bottom:1.5rem;\"\u003ETop New Collection 15\/16\u003C\/h4\u003E\r\n\u003Ch1 style=\"font:700 6rem\/1 Raleway,Helvetica Neue, Helvetica, Arial, sans-serif;\" class=\"em-text-upercase\"\u003Eman\u2019s clothing\u003C\/h1\u003E\r\n\u003Ca href=\"#\" class=\"button-link first\"\u003E\u003Cspan\u003EPURCHASE NOW\u003C\/span\u003E\u003C\/a\u003E\r\n\u003Ca href=\"#\" class=\"button-link last\"\u003E\u003Cspan\u003ESHOP NOW\u003C\/span\u003E\u003C\/a\u003E\r\n\u003C\/div\u003E","animation":"fadeInDown"}]}]]]></images>
+        <slider_params><![CDATA[{"size_width":"960","size_height":"700"}]]></slider_params>
+        <appearance><![CDATA[{"auto_play":"true","animation_type":"fade","speed":"100","hover_pause":"true","progress_bar":"false","lazy_load":"true"}]]></appearance>
+        <navigation><![CDATA[{"nav_enable":"true","nav_type":["navigation:true","pagination:true"],"arrows_next":"","arrows_pre":"","thumb_width":"","thumb_height":""}]]></navigation>
+        <status><![CDATA[1]]></status>
+      </minislideshow>
+    </minislideshows>
+  </sample_data>
+</theme>

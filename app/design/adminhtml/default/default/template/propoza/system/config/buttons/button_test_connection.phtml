@@ -1,0 +1,12 @@
+<button onclick="executeTestConnection();" class="scalable" target="_blank" type="button"
+        id="<?php echo $this->getHtmlId() ?>">
+    <span><?php echo $this->escapeHtml($this->getButtonLabel()) ?></span>
+</button>
+
+<?php echo $this->getLayout()->createBlock('propoza/adminhtml_system_config_links_launchdashboard')->setData('link_text', $this->getLinkText())->setTemplate('propoza/system/config/links/link_propoza_dashboard.phtml')->toHtml(); ?>
+
+<script type="text/javascript">
+    var testConnectionUrl = "<?php echo Mage::helper("adminhtml")->getUrl("propoza/ajax/testConnection",array('_secure'=>true));?>";
+    var failedMessage = "<?php echo $this->getLayout()->createBlock("core/template")->setTemplate("propoza/system/config/messages/test_connection_failed_message.phtml")->toHtml();?>";
+    var successMessage = "<?php echo $this->getLayout()->createBlock("core/template")->setTemplate("propoza/system/config/messages/test_connection_success_message.phtml")->toHtml();?>";
+</script>

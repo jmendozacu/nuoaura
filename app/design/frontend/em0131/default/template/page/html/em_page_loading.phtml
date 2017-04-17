@@ -1,0 +1,16 @@
+<div id="loader-wrapper">
+    <img class="logo_loader" src="<?php echo $this->getSkinUrl('images/em_logo_loading.png'); ?>" alt="" />
+    <div id="loader"></div> 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        //$_wrapper = jQuery('.wrapper');
+        //$_wrapper.addClass('em-wrapper-loading');
+        setTimeout(function(){
+            $_body = jQuery('body');
+        	$_body.addClass('loaded');
+        }, 1000);   	
+    });
+</script>

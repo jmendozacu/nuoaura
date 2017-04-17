@@ -1,0 +1,109 @@
+<config>
+    <tabs>
+        <propoza translate="label">
+            <label>Propoza</label>
+            <sort_order>310</sort_order>
+        </propoza>
+    </tabs>
+
+    <sections>
+        <propoza translate="label">
+            <label>Propoza</label>
+            <tab>propoza</tab>
+            <header_css>propoza-header</header_css>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <setup translate="label comment">
+                    <expanded>1</expanded>
+                    <label>Setup</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[Haven't setup Propoza yet? Create a free account to start using Propoza to receive quote reuquests from your customers.]]></comment>
+                    <fields>
+                        <sign_up translate="button_label">
+                            <label></label>
+                            <button_label>Setup your free account</button_label>
+                            <frontend_model>propoza/adminhtml_system_config_buttons_setupaccount</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sign_up>
+                    </fields>
+                </setup>
+                <general translate="label comment">
+                    <expanded>1</expanded>
+                    <label>General</label>
+                    <comment><![CDATA[]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enable Propoza</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <backend_model>propoza/system_config_enable</backend_model>
+                        </enabled>
+                        <web_address translate="label comment">
+                            <label>Sub-domain</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Enter only your sub-domain.<br/>(<b><i>sub-domain</i></b>.propoza.com)]]></comment>
+                            <tooltip><![CDATA[Please enter the sub-domain that you have registered with your Propoza account.
+                            ]]></tooltip>
+                        </web_address>
+                        <api_key translate="label comment">
+                            <label>Api key</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[The API key will be send to you in our email after you have setup your Propoza account]]></comment>
+                            <tooltip><![CDATA[]]></tooltip>
+                        </api_key>
+                        <sign_up translate="button_label">
+                            <label></label>
+                            <button_label>Test connection</button_label>
+                            <link_text>Launch Propoza</link_text>
+                            <frontend_model>propoza/adminhtml_system_config_buttons_testconnection</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sign_up>
+                    </fields>
+                </general>
+                <version>
+                    <expanded>1</expanded>
+                    <label>Version</label>
+                    <comment><![CDATA[v1.0.7]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </version>
+            </groups>
+        </propoza>
+    </sections>
+</config>

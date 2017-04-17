@@ -1,0 +1,15 @@
+<layout version="0.1.0">
+
+   <practice_index_index>
+     
+       <block type="page/html" name="root" output="toHtml" template="practice/features.phtml">
+       
+       
+       
+       </block>
+      
+   
+   
+   </practice_index_index>
+
+</layout>
